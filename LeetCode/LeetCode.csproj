@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="231 Power of Two.cs" />
     <Compile Include="9 Palindrome Number.cs" />
+    <Compile Include="217 Contains Duplicate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />
+    <Compile Include="7 Reverse Integer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1 Two Sum.cs" />

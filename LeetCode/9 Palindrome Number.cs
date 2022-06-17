@@ -37,7 +37,6 @@ namespace LeetCode
             {
                 reversedNum = reversedNum * 10 + temp % 10;
                 temp = temp / 10;
-
             }
             if (reversedNum == x)
                 return true;
