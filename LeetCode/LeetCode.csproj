@@ -47,7 +47,7 @@
     <Compile Include="9 Palindrome Number.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Three_Sum.cs" />
+    <Compile Include="15 Three_Sum.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1 Two Sum.cs" />
