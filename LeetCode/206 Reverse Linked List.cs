@@ -43,6 +43,20 @@ namespace LeetCode
                 current = nextNode;
             }
             return prevNode;
+        } 
+        public static ListNode ReverseList2(ListNode head)
+        {
+
+            ListNode prevNode = null;
+            while (head != null)
+            {
+                var nextNode = head.next;
+                head.next = prevNode;
+
+                prevNode = head;
+                head = nextNode;
+            }
+            return prevNode;
         }
     }
 }

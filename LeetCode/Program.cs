@@ -22,20 +22,7 @@ namespace LeetCode
             Console.WriteLine("Hello World");
             Console.ReadKey();
         }
-        public static ListNode ReverseList(ListNode head)
-        {
-            
-            ListNode prevNode = null;      
-            while (head != null)
-            {
-                var nextNode = head.next;
-                head.next = prevNode;
-
-                prevNode = head;
-                head = nextNode;
-            }
-            return prevNode;
-        }
+        
     }
  
 }
