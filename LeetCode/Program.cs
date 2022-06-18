@@ -24,17 +24,15 @@ namespace LeetCode
         }
         public static ListNode ReverseList(ListNode head)
         {
-            if (head == null)
-                return null;
-            ListNode prevNode = null;
-            var current = head;
-            while (current != null)
+            
+            ListNode prevNode = null;      
+            while (head != null)
             {
-                var nextNode = current.next;
-                current.next = prevNode;
+                var nextNode = head.next;
+                head.next = prevNode;
 
-                prevNode = current;
-                current = nextNode;
+                prevNode = head;
+                head = nextNode;
             }
             return prevNode;
         }
