@@ -50,5 +50,29 @@ namespace LeetCode
             }
             return true;
         }
+
+        public static bool IsIsomorphic_2(string s, string t)
+        {
+            if (s.Length != t.Length)
+                return false;
+            Dictionary<char, char> sData = new Dictionary<char, char>();
+            Dictionary<char, char> tData = new Dictionary<char, char>();
+            for (int i = 0; i < s.Length; i++)
+            {
+                var sChar = s[i];
+                var tChar = t[i];
+                if (!sData.ContainsKey(sChar))
+                {
+                    sData.Add(sChar, tChar);
+                }
+                if (!tData.ContainsKey(tChar))
+                {
+                    tData.Add(tChar, sChar);
+                }
+                if (sData[sChar] != tChar || tData[tChar] != sChar)
+                    return false;
+            }
+            return true;
+        }
     }
 }
