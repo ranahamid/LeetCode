@@ -10,11 +10,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            //string[] nums = { "eat", "tea", "tan", "ate", "nat", "bat" };
-            string nums = "pwwkew";
-            Console.WriteLine( );
+            int[] nums = new int[] { 4, 5, 6, 7, 0, 1, 2 };
+
+            Console.WriteLine(Search(nums,0));
             Console.ReadKey();
         }
-        
+      
     }
 }
