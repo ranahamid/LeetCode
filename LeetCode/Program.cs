@@ -10,9 +10,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] nums = { 1, 2, 3 };
+            //string[] nums = { "eat", "tea", "tan", "ate", "nat", "bat" };
+            string nums = "pwwkew";
             Console.WriteLine( );
             Console.ReadKey();
-        } 
+        }
+        
     }
 }

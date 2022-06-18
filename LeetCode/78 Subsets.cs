@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    internal class Subsets
+    internal class Subsets78
     {
         /// <summary>
         /// Runtime: 215 ms, faster than 29.97% of C# online submissions for Subsets.
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
-        public static List<IList<int>> Subsets(int[] nums)
+        public  List<IList<int>> Subsets(int[] nums)
         {
             int[] output = new int[0];
             List<IList<int>> list = new List<IList<int>>();
