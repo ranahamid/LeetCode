@@ -5,16 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCode
-{
-
-
+{ 
     internal class Program
     {
         static void Main(string[] args)
-        { 
-            Console.WriteLine(      );
+        {
+            int[] nums = { 1, 2, 3 };
+            Console.WriteLine( );
             Console.ReadKey();
-        }
-        
+        } 
     }
 }
