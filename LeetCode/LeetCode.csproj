@@ -52,6 +52,7 @@
     <Compile Include="15 Three_Sum.cs" />
     <Compile Include="7 Reverse Integer.cs" />
     <Compile Include="206 Reverse Linked List.cs" />
+    <Compile Include="189 Rotate Array.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1 Two Sum.cs" />
