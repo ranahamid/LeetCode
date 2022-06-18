@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="231 Power of Two.cs" />
+    <Compile Include="78 Subsets.cs" />
     <Compile Include="9 Palindrome Number.cs" />
     <Compile Include="217 Contains Duplicate.cs" />
     <Compile Include="142 Linked List Cycle II.cs" />
