@@ -8,6 +8,51 @@ namespace LeetCode
 {
     internal class _34_Find_First_and_Last_Position_of_Element_in_Sorted_Array
     {
+        #region optimal solution
+        /// <summary>
+        /// Runtime: 238 ms, faster than 23.23% of C# online submissions for Find First and Last Position of Element in Sorted Array.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        public static int[] SearchRange(int[] nums, int target)
+        {
+            int first = BinarySearch(nums, target, start: 0, end: nums.Length - 1);
+            if (first == -1)
+                return new int[2] { -1, -1 };
+            int left = first;
+            while (left > 0 && nums[left - 1] == target)
+            {
+                left = BinarySearch(nums, target, start: 0, end: left - 1);
+            }
+            int right = first;
+            while (right < nums.Length - 1 && nums[right + 1] == target)
+            {
+                right = BinarySearch(nums, target, start: right + 1, end: nums.Length - 1);
+            }
+            return new int[2] { left, right };
+        }
+        public static int BinarySearch(int[] nums, int target, int start, int end)
+        {
+            //var start = 0;
+            //var end = nums.Length - 1;
+            while (start <= end)
+            {
+                var mid = (end + start) / 2;
+                if (nums[mid] == target)
+                    return mid;
+                else if (nums[mid] > target)
+                {
+                    end = mid - 1;
+                }
+                else
+                {
+                    start = mid + 1;
+                }
+            }
+            return -1;
+        }
+        #endregion
         #region algo tutorial
         /// <summary>
         /// Runtime: 304 ms, faster than 5.24% of C# online submissions for Find First and Last Position of Element in Sorted Array.
@@ -15,7 +60,7 @@ namespace LeetCode
         /// <param name="nums"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        public static int[] SearchRange(int[] nums, int target)
+        public static int[] SearchRange_3(int[] nums, int target)
         {
             int[] result = new int[2] { -1, -1 };
             if (nums.Length == 0)
