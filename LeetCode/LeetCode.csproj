@@ -43,12 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="162 Find Peak Element.cs" />
+    <Compile Include="219 Contains Duplicate II.cs" />
     <Compile Include="231 Power of Two.cs" />
+    <Compile Include="27 Remove Element.cs" />
     <Compile Include="3 Longest Substring Without Repeating Characters.cs" />
     <Compile Include="33 Search in Rotated Sorted Array.cs" />
     <Compile Include="34 Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="49 Group Anagrams.cs" />
+    <Compile Include="58 Length of Last Word.cs" />
+    <Compile Include="67 Add Binary.cs" />
     <Compile Include="704 Binary Search.cs" />
     <Compile Include="74 Search a 2D Matrix.cs" />
     <Compile Include="78 Subsets.cs" />

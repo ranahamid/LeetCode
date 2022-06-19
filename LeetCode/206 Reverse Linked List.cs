@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    public class ListNode
+    public class ListNode_206
     {
         public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
+        public ListNode_206 next;
+        public ListNode_206(int val = 0, ListNode_206 next = null)
         {
             this.val = val;
             this.next = next;
@@ -21,18 +21,18 @@ namespace LeetCode
     {
         //static void Main(string[] args)
         //{
-        //    ListNode five = new ListNode(5);
-        //    ListNode four = new ListNode(4, five);
-        //    ListNode three = new ListNode(3, four);
-        //    ListNode two = new ListNode(2, three);
-        //    ListNode one = new ListNode(1, two);
+        //    ListNode_206 five = new ListNode_206(5);
+        //    ListNode_206 four = new ListNode_206(4, five);
+        //    ListNode_206 three = new ListNode_206(3, four);
+        //    ListNode_206 two = new ListNode_206(2, three);
+        //    ListNode_206 one = new ListNode_206(1, two);
         //    Console.WriteLine(ReverseList(one));
         //}
-        public static ListNode ReverseList(ListNode head)
+        public static ListNode_206 ReverseList(ListNode_206 head)
         {
             if (head == null)
                 return null;
-            ListNode prevNode = null;
+            ListNode_206 prevNode = null;
             var current = head;
             while (current != null)
             {
@@ -44,10 +44,10 @@ namespace LeetCode
             }
             return prevNode;
         } 
-        public static ListNode ReverseList2(ListNode head)
+        public static ListNode_206 ReverseList2(ListNode_206 head)
         {
 
-            ListNode prevNode = null;
+            ListNode_206 prevNode = null;
             while (head != null)
             {
                 var nextNode = head.next;

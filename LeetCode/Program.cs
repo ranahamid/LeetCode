@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+
+
+
     internal class Program
     {
         static void Main(string[] args)
@@ -15,12 +18,11 @@ namespace LeetCode
             //    new int[4]{10,11,16,20},
             //    new int[4]{23,30,34,60}
             //};
-
-            //FindPeakElement2(new int[] { 1, 2})
-
-            Console.WriteLine();
+            Console.Write(AddBinary("11", "1"));
+            var res = new int[] { 1, 2, 3, 1 };
             Console.ReadKey();
         }
-     
+        
     }
+
 }

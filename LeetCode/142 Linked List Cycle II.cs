@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    //public class ListNode
-    //{
-    //    public int val;
-    //    public ListNode next;
-    //    public ListNode(int x)
-    //    {
-    //        val = x;
-    //        next = null;
-    //    }
-    //}
+    public class ListNode_142
+    {
+        public int val;
+        public ListNode_142 next;
+        public ListNode_142(int x)
+        {
+            val = x;
+            next = null;
+        }
+    }
     internal class Linked_List_Cycle_II
     {
-        public ListNode DetectCycle(ListNode head)
+        public ListNode_142 DetectCycle(ListNode_142 head)
         {
             if (head == null || head.next == null)
                 return null;
