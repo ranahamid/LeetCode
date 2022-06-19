@@ -46,6 +46,7 @@
     <Compile Include="231 Power of Two.cs" />
     <Compile Include="3 Longest Substring Without Repeating Characters.cs" />
     <Compile Include="33 Search in Rotated Sorted Array.cs" />
+    <Compile Include="34 Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="49 Group Anagrams.cs" />
     <Compile Include="704 Binary Search.cs" />
     <Compile Include="78 Subsets.cs" />
