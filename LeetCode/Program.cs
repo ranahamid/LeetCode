@@ -10,11 +10,17 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[] { 5, 7, 7, 8, 8, 10 };
-            var res = SearchRange(nums, 8);
-            Console.WriteLine($"{res[0]},{res[1]}");
+            //int[][] nums = new int[3][]{
+            //    new int[4]{1,3, 5,7},
+            //    new int[4]{10,11,16,20},
+            //    new int[4]{23,30,34,60}
+            //};
+
+            //FindPeakElement2(new int[] { 1, 2})
+
+            Console.WriteLine();
             Console.ReadKey();
         }
-        
+     
     }
 }

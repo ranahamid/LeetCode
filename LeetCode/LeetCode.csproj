@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="162 Find Peak Element.cs" />
     <Compile Include="231 Power of Two.cs" />
     <Compile Include="3 Longest Substring Without Repeating Characters.cs" />
     <Compile Include="33 Search in Rotated Sorted Array.cs" />
     <Compile Include="34 Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="49 Group Anagrams.cs" />
     <Compile Include="704 Binary Search.cs" />
+    <Compile Include="74 Search a 2D Matrix.cs" />
     <Compile Include="78 Subsets.cs" />
     <Compile Include="9 Palindrome Number.cs" />
     <Compile Include="217 Contains Duplicate.cs" />
