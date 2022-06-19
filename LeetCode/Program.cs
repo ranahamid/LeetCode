@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCode
-{ 
+{
     internal class Program
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[] { 2,2};
-           // var res = SearchRange(nums, 3);
-           // Console.WriteLine($"{res[0]},{res[1]}");
+            int[] nums = new int[] { 5, 7, 7, 8, 8, 10 };
+            var res = SearchRange(nums, 8);
+            Console.WriteLine($"{res[0]},{res[1]}");
             Console.ReadKey();
         }
-
+        
     }
 }

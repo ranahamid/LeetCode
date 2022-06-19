@@ -8,6 +8,28 @@ namespace LeetCode
 {
     internal class _34_Find_First_and_Last_Position_of_Element_in_Sorted_Array
     {
+        #region brute force- hahaha
+        /// <summary>
+        /// Runtime: 231 ms, faster than 27.91% of C# online submissions for Find First and Last Position of Element in Sorted Array.
+        /// Memory Usage: 43.2 MB, less than 80.08% of C# online submissions for Find First and Last Position of Element in Sorted Array.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        public static int[] SearchRange(int[] nums, int target)
+        {
+            int first = -1, last = -1;
+            var lastIndex = nums.Length - 1;
+            for (int i = 0; i <= lastIndex; i++)
+            {
+                if (nums[i] == target && first == -1)
+                    first = i;
+                if (nums[lastIndex - i] == target && last == -1)
+                    last = lastIndex - i;
+            }
+            return new int[] { first, last };
+        }
+        #endregion
         #region optimal solution
         /// <summary>
         /// Runtime: 238 ms, faster than 23.23% of C# online submissions for Find First and Last Position of Element in Sorted Array.
@@ -15,7 +37,7 @@ namespace LeetCode
         /// <param name="nums"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        public static int[] SearchRange(int[] nums, int target)
+        public static int[] SearchRange_4(int[] nums, int target)
         {
             int first = BinarySearch(nums, target, start: 0, end: nums.Length - 1);
             if (first == -1)
