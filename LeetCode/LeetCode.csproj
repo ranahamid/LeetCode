@@ -63,6 +63,7 @@
     <Compile Include="704 Binary Search.cs" />
     <Compile Include="74 Search a 2D Matrix.cs" />
     <Compile Include="78 Subsets.cs" />
+    <Compile Include="8 String to Integer %28atoi%29.cs" />
     <Compile Include="88 Merge Sorted Array.cs" />
     <Compile Include="9 Palindrome Number.cs" />
     <Compile Include="217 Contains Duplicate.cs" />
