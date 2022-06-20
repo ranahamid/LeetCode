@@ -34,7 +34,7 @@ namespace LeetCode
 
             //Console.Write(MyAtoi2("words and 987"));
             //Console.Write(MyAtoi2("-91283472332"));
-            Console.Write(MyAtoi("4193 with words"));
+            //Console.Write(MyAtoi("4193 with words"));
 
             var res = new int[] { -1, 0, 0, 3, 3, 3, 0, 0, 0 };
             var res2 = new int[] { 2, 5, 6 };
