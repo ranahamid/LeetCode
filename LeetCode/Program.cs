@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCode
-{ 
+{
+
     internal class Program
     {
         static void Main(string[] args)
@@ -15,18 +16,30 @@ namespace LeetCode
             //    new int[4]{10,11,16,20},
             //    new int[4]{23,30,34,60}
             //};
+            //ListNode six = new ListNode(4);
+            //ListNode five = new ListNode(6, six);
+            //ListNode list2 = new ListNode(5, five);
 
-            //ListNode five = new ListNode(5);
-            //ListNode four = new ListNode(4, five);
-            //ListNode three = new ListNode(3, four);
-            //ListNode two = new ListNode(2, three);
-            //ListNode one = new ListNode(1, two);
 
-            Console.Write(RemoveNthFromEnd(one, 5));
-            var res = new int[] { 1, 2, 3, 1 };
+            //ListNode three = new ListNode(3);
+            //ListNode two = new ListNode(4, three);
+            //ListNode list1 = new ListNode(2, two);
+
+
+            //ListNode six = new ListNode(4);
+            //ListNode five = new ListNode(2, six);
+            //ListNode list2 = new ListNode(1, five);
+
+
+            //ListNode list1 = new ListNode(5);
+
+            //Console.Write(AddTwoNumbers(list2, list1));
+            var res = new int[] { -1, 0, 0, 3, 3, 3, 0, 0, 0 };
+            var res2 = new int[] { 2, 5, 6 };
+            //Merge(res, 3, res2, 3);
             Console.ReadKey();
         }
-       
+        
     }
 
 }

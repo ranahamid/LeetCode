@@ -46,9 +46,14 @@
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="162 Find Peak Element.cs" />
     <Compile Include="19 Remove Nth Node From End of List.cs" />
+    <Compile Include="191 Number of 1 Bits.cs" />
+    <Compile Include="2 Add Two Numbers.cs" />
+    <Compile Include="21 Merge Two Sorted Lists.cs" />
     <Compile Include="219 Contains Duplicate II.cs" />
     <Compile Include="231 Power of Two.cs" />
+    <Compile Include="26 Remove Duplicates from Sorted Array.cs" />
     <Compile Include="27 Remove Element.cs" />
+    <Compile Include="287 Find the Duplicate Number.cs" />
     <Compile Include="3 Longest Substring Without Repeating Characters.cs" />
     <Compile Include="33 Search in Rotated Sorted Array.cs" />
     <Compile Include="34 Find First and Last Position of Element in Sorted Array.cs" />
@@ -58,6 +63,7 @@
     <Compile Include="704 Binary Search.cs" />
     <Compile Include="74 Search a 2D Matrix.cs" />
     <Compile Include="78 Subsets.cs" />
+    <Compile Include="88 Merge Sorted Array.cs" />
     <Compile Include="9 Palindrome Number.cs" />
     <Compile Include="217 Contains Duplicate.cs" />
     <Compile Include="142 Linked List Cycle II.cs" />
