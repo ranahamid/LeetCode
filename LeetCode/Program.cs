@@ -5,10 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCode
-{
-
-
-
+{ 
     internal class Program
     {
         static void Main(string[] args)
@@ -18,11 +15,18 @@ namespace LeetCode
             //    new int[4]{10,11,16,20},
             //    new int[4]{23,30,34,60}
             //};
-            Console.Write(AddBinary("11", "1"));
+
+            //ListNode five = new ListNode(5);
+            //ListNode four = new ListNode(4, five);
+            //ListNode three = new ListNode(3, four);
+            //ListNode two = new ListNode(2, three);
+            //ListNode one = new ListNode(1, two);
+
+            Console.Write(RemoveNthFromEnd(one, 5));
             var res = new int[] { 1, 2, 3, 1 };
             Console.ReadKey();
         }
-        
+       
     }
 
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="162 Find Peak Element.cs" />
+    <Compile Include="19 Remove Nth Node From End of List.cs" />
     <Compile Include="219 Contains Duplicate II.cs" />
     <Compile Include="231 Power of Two.cs" />
     <Compile Include="27 Remove Element.cs" />
