@@ -26,5 +26,16 @@ namespace LeetCode
             }
             return counter;
         }
+
+        /// <summary>
+        /// Runtime: 31 ms, faster than 53.53% of C# online submissions for Number of 1 Bits.
+        /// Memory Usage: 24.8 MB, less than 5.63% of C# online submissions for Number of 1 Bits.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public int HammingWeight_2(uint n)
+        {
+            return Convert.ToString(n, 2).ToCharArray().Where(x => x == '1').Count();
+        }
     }
 }
