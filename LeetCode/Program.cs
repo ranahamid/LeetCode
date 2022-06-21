@@ -90,6 +90,7 @@ namespace LeetCode
         {
             if (names != null && names.Count > 0)
             {
+                names.Sort();
                 var result = string.Join(",", names.ToArray());
                 return result;
             }
