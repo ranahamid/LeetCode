@@ -36,27 +36,11 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new int[] { 0, 2, 1, 5, 3, 4 };
-           Console.Write(BuildArray(res)); 
+            var res = new int[] { 3, 1, 2, 10, 1 };
+           Console.Write(RunningSum(res)); 
             Console.ReadKey();
         }
-        /// <summary>
-        /// Runtime: 264 ms, faster than 17.69% of C# online submissions for Build Array from Permutation.
-        /// Memory Usage: 45.6 MB, less than 58.16% of C# online submissions for Build Array from Permutation.
-        /// </summary>
-        /// <param name="nums"></param>
-        /// <returns></returns>
-        public static  int[] BuildArray(int[] nums)
-        {
-            var len= nums.Length;
-            var res=new int[len];
-            for(int i = 0; i < len; i++)
-            {
-                res[i]=nums[nums[i]];
-            }
-            return res;
-        }
-
+       
     }
 
 }
