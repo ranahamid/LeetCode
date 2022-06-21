@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="12 Integer to Roman.cs" />
+    <Compile Include="13 Roman to Integer.cs" />
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="162 Find Peak Element.cs" />
     <Compile Include="19 Remove Nth Node From End of List.cs" />
