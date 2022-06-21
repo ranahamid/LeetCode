@@ -55,6 +55,7 @@
     <Compile Include="219 Contains Duplicate II.cs" />
     <Compile Include="231 Power of Two.cs" />
     <Compile Include="26 Remove Duplicates from Sorted Array.cs" />
+    <Compile Include="268 Missing Number.cs" />
     <Compile Include="27 Remove Element.cs" />
     <Compile Include="287 Find the Duplicate Number.cs" />
     <Compile Include="3 Longest Substring Without Repeating Characters.cs" />

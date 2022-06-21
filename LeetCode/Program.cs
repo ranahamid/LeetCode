@@ -36,11 +36,12 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new int[] { 0 };
-           // Console.Write(SubsetsWithDup(res)); 
+            var res = new int[] { 9, 6, 4, 2, 3, 5, 7, 8, 1 };
+           Console.Write(MissingNumber(res)); 
             Console.ReadKey();
         }
-      
+       
+
     }
 
 }
