@@ -37,10 +37,10 @@ namespace LeetCode
             //Console.Write(MyAtoi("4193 with words"));
 
             var res = new int[] { 9, 6, 4, 2, 3, 5, 7, 8, 1 };
-           Console.Write(MissingNumber(res)); 
+           Console.Write(sum(-10,4)); 
             Console.ReadKey();
         }
-       
+      
 
     }
 
