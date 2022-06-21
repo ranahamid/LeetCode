@@ -48,6 +48,7 @@
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="162 Find Peak Element.cs" />
     <Compile Include="1693 Daily Leads and Partners.cs" />
+    <Compile Include="1741 Find Total Time Spent by Each Employee.cs" />
     <Compile Include="1757 Recyclable and Low Fat Products.cs" />
     <Compile Include="19 Remove Nth Node From End of List.cs" />
     <Compile Include="190 Reverse Bits.cs" />
