@@ -53,6 +53,8 @@
     <Compile Include="19 Remove Nth Node From End of List.cs" />
     <Compile Include="190 Reverse Bits.cs" />
     <Compile Include="191 Number of 1 Bits.cs" />
+    <Compile Include="1920 Build Array from Permutation.cs" />
+    <Compile Include="1929 Concatenation of Array.cs" />
     <Compile Include="2 Add Two Numbers.cs" />
     <Compile Include="21 Merge Two Sorted Lists.cs" />
     <Compile Include="219 Contains Duplicate II.cs" />
