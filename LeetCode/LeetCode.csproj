@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="12 Integer to Roman.cs" />
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="162 Find Peak Element.cs" />
     <Compile Include="19 Remove Nth Node From End of List.cs" />
+    <Compile Include="190 Reverse Bits.cs" />
     <Compile Include="191 Number of 1 Bits.cs" />
     <Compile Include="2 Add Two Numbers.cs" />
     <Compile Include="21 Merge Two Sorted Lists.cs" />
@@ -57,6 +59,7 @@
     <Compile Include="3 Longest Substring Without Repeating Characters.cs" />
     <Compile Include="33 Search in Rotated Sorted Array.cs" />
     <Compile Include="34 Find First and Last Position of Element in Sorted Array.cs" />
+    <Compile Include="35 Search Insert Position.cs" />
     <Compile Include="49 Group Anagrams.cs" />
     <Compile Include="58 Length of Last Word.cs" />
     <Compile Include="67 Add Binary.cs" />

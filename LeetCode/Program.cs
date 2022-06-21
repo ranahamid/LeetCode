@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCode
-{ 
+{
     internal class Program
     {
         static void Main(string[] args)
@@ -36,20 +36,15 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new int[] { -1, 0, 0, 3, 3, 3, 0, 0, 0 };
-            var res2 = new int[] { 2, 5, 6 };
+            var res = new int[] { };
+            Console.Write(IntToRoman(3));
             //Merge(res, 3, res2, 3);
             Console.ReadKey();
         }
 
+        
 
 
-
-
-
-
-
-    
 
     }
 
