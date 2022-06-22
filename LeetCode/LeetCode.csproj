@@ -47,9 +47,13 @@
     <Compile Include="12 Integer to Roman.cs" />
     <Compile Include="13 Roman to Integer.cs" />
     <Compile Include="141  Linked List Cycle.cs" />
+    <Compile Include="1431 Kids With the Greatest Number of Candies.cs" />
+    <Compile Include="1470 Shuffle the Array.cs" />
     <Compile Include="1480 Running Sum of 1d Array.cs" />
+    <Compile Include="1512 Number of Good Pairs.cs" />
     <Compile Include="1581 Customer Who Visited but Did Not Make Any Transactions.cs" />
     <Compile Include="162 Find Peak Element.cs" />
+    <Compile Include="1672 Richest Customer Wealth.cs" />
     <Compile Include="1693 Daily Leads and Partners.cs" />
     <Compile Include="1741 Find Total Time Spent by Each Employee.cs" />
     <Compile Include="1757 Recyclable and Low Fat Products.cs" />
@@ -62,6 +66,8 @@
     <Compile Include="2 Add Two Numbers.cs" />
     <Compile Include="2011 Final Value of Variable After Performing Operations.cs" />
     <Compile Include="21 Merge Two Sorted Lists.cs" />
+    <Compile Include="2114 Maximum Number of Words Found in Sentences.cs" />
+    <Compile Include="2160 Minimum Sum of Four Digit Number After Splitting Digits.cs" />
     <Compile Include="219 Contains Duplicate II.cs" />
     <Compile Include="2235 Add Two Integers.cs" />
     <Compile Include="2236 Root Equals Sum of Children.cs" />
@@ -79,6 +85,7 @@
     <Compile Include="67 Add Binary.cs" />
     <Compile Include="704 Binary Search.cs" />
     <Compile Include="74 Search a 2D Matrix.cs" />
+    <Compile Include="771 Jewels and Stones.cs" />
     <Compile Include="78 Subsets.cs" />
     <Compile Include="8 String to Integer %28atoi%29.cs" />
     <Compile Include="88 Merge Sorted Array.cs" />
