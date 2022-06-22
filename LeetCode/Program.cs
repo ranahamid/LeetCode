@@ -37,16 +37,46 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new int [] { 2, 3, 5, 1, 3 };
-
-            Console.WriteLine(KidsWithCandies(res,3));
-
+            var nums = new int [] { 0, 1, 2, 3, 4 };
+            var index = new int[] { 0, 1, 2, 2, 1 };
+            Console.WriteLine(CreateTargetArray(nums, index));
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
+        /// <summary>
+        /// Runtime: 152 ms, faster than 87.14% of C# online submissions for Create Target Array in the Given Order.
+        /// Memory Usage: 42 MB, less than 12.14% of C# online submissions for Create Target Array in the Given Order.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        public static int[] CreateTargetArray(int[] nums, int[] index)
+        {
+            var target= new List<int>();
+            for(int i=0; i<nums.Length; i++)
+            {
+                target.Insert(index[i],nums[i]);
+            }
+            return target.ToArray();
+        }
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
    
