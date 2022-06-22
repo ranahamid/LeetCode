@@ -52,6 +52,7 @@
     <Compile Include="1480 Running Sum of 1d Array.cs" />
     <Compile Include="1512 Number of Good Pairs.cs" />
     <Compile Include="1581 Customer Who Visited but Did Not Make Any Transactions.cs" />
+    <Compile Include="1603 Design Parking System.cs" />
     <Compile Include="162 Find Peak Element.cs" />
     <Compile Include="1672 Richest Customer Wealth.cs" />
     <Compile Include="1693 Daily Leads and Partners.cs" />
