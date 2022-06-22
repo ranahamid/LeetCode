@@ -39,32 +39,19 @@ namespace LeetCode
 
             var nums = new int [] { 0, 1, 2, 3, 4 };
             var index = new int[] { 0, 1, 2, 2, 1 };
-            Console.WriteLine(CreateTargetArray(nums, index));
+
+            var data= new List<IList<string>>();
+            data.Add(new List<string>() { "phone", "blue", "pixel" });
+            data.Add(new List<string>() { "computer", "silver", "phone" });
+            data.Add(new List<string>() { "phone", "gold", "iphone" });
+
+            Console.WriteLine(CountMatches(data, "type", "phone"));
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
-        /// <summary>
-        /// Runtime: 152 ms, faster than 87.14% of C# online submissions for Create Target Array in the Given Order.
-        /// Memory Usage: 42 MB, less than 12.14% of C# online submissions for Create Target Array in the Given Order.
-        /// </summary>
-        /// <param name="nums"></param>
-        /// <param name="index"></param>
-        /// <returns></returns>
-        public static int[] CreateTargetArray(int[] nums, int[] index)
-        {
-            var target= new List<int>();
-            for(int i=0; i<nums.Length; i++)
-            {
-                target.Insert(index[i],nums[i]);
-            }
-            return target.ToArray();
-        }
 
 
-
-
-
-
+    
 
 
 
