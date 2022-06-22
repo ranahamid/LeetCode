@@ -38,23 +38,26 @@ namespace LeetCode
             //Console.Write(MyAtoi("4193 with words"));
 
             var nums = new int [] { 0, 1, 2, 3, 4 };
-            var index = new int[] { 0, 1, 2, 2, 1 };
+            var index = new int[] { 3, 2, 1, 5, 6, 4 };
 
             var data= new List<IList<string>>();
             data.Add(new List<string>() { "phone", "blue", "pixel" });
             data.Add(new List<string>() { "computer", "silver", "phone" });
             data.Add(new List<string>() { "phone", "gold", "iphone" });
 
-            Console.WriteLine(CountMatches(data, "type", "phone"));
+            Console.WriteLine(FindKthLargest(index, 2));
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
 
-    
-
-
-
+        public static  int FindKthLargest(int[] nums, int k)
+        {
+            var list = nums.ToList();
+            list.Sort();
+            nums = list.ToArray();
+            return nums[nums.Count() - k];
+        }
 
 
 
