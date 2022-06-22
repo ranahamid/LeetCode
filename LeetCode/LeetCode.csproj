@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1108 Defanging an IP Address.cs" />
     <Compile Include="12 Integer to Roman.cs" />
     <Compile Include="13 Roman to Integer.cs" />
     <Compile Include="141  Linked List Cycle.cs" />
@@ -59,9 +60,11 @@
     <Compile Include="1920 Build Array from Permutation.cs" />
     <Compile Include="1929 Concatenation of Array.cs" />
     <Compile Include="2 Add Two Numbers.cs" />
+    <Compile Include="2011 Final Value of Variable After Performing Operations.cs" />
     <Compile Include="21 Merge Two Sorted Lists.cs" />
     <Compile Include="219 Contains Duplicate II.cs" />
     <Compile Include="2235 Add Two Integers.cs" />
+    <Compile Include="2236 Root Equals Sum of Children.cs" />
     <Compile Include="231 Power of Two.cs" />
     <Compile Include="26 Remove Duplicates from Sorted Array.cs" />
     <Compile Include="268 Missing Number.cs" />

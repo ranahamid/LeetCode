@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+
+
+ 
+
     internal class Program
     {
         static void Main(string[] args)
@@ -25,10 +29,7 @@ namespace LeetCode
             //ListNode list1 = new ListNode(2, two);
 
 
-            //ListNode six = new ListNode(4);
-            //ListNode five = new ListNode(2, six);
-            //ListNode list2 = new ListNode(1, five);
-
+           
 
             //ListNode list1 = new ListNode(5);
 
@@ -36,11 +37,24 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new int[] { 3, 1, 2, 10, 1 };
-           Console.Write(RunningSum(res)); 
+            var res = new string [] { "X++", "++X", "--X", "X--" };
+
+            Console.WriteLine(DefangIPaddr("255.100.50.0"));
+
+            Console.WriteLine("Hello");
             Console.ReadKey();
         }
+        
        
+
+
+
+
+
+
+
+
+
     }
 
 }
