@@ -45,23 +45,15 @@ namespace LeetCode
             //Console.Write(MyAtoi("4193 with words"));
 
             var res = new string  [] { "ad", "bd", "aaab", "baa", "badab" };
-            var res1 = new int [] { 3, 1, 2, 2, 2, 1, 3 };
+            var res1 = new int [] {-1 };
 
-            Console.WriteLine(CountPairs(res1,2));
+            Console.WriteLine(TruncateSentence("Hello how are you Contestant",4));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
-
-       
-
-
-
-
-
-
-
+      
 
 
 

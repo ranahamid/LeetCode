@@ -78,6 +78,7 @@
     <Compile Include="1757 Recyclable and Low Fat Products.cs" />
     <Compile Include="1791 Find Center of Star Graph.cs" />
     <Compile Include="1795 Rearrange Products Table.cs" />
+    <Compile Include="1816 Truncate Sentence.cs" />
     <Compile Include="1859 Sorting the Sentence.cs" />
     <Compile Include="19 Remove Nth Node From End of List.cs" />
     <Compile Include="190 Reverse Bits.cs" />
@@ -108,7 +109,9 @@
     <Compile Include="34 Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="35 Search Insert Position.cs" />
     <Compile Include="49 Group Anagrams.cs" />
+    <Compile Include="53 Maximum Subarray.cs" />
     <Compile Include="58 Length of Last Word.cs" />
+    <Content Include="511 Game Play Analysis I.sql" />
     <Content Include="627 Swap Salary.sql" />
     <Compile Include="67 Add Binary.cs" />
     <Compile Include="704 Binary Search.cs" />
