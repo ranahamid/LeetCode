@@ -45,20 +45,16 @@ namespace LeetCode
             //Console.Write(MyAtoi("4193 with words"));
 
             var res = new string  [] { "ad", "bd", "aaab", "baa", "badab" };
-            var res1 = new int [] { 3, 0, 1, 1, 9, 7 };
+            var res1 = new int [] { 3, 1, 2, 2, 2, 1, 3 };
 
-            Console.WriteLine(CountGoodTriplets(res1, 7,2,3));
+            Console.WriteLine(CountPairs(res1,2));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
 
-
-
-    
-
-
+       
 
 
 
