@@ -44,31 +44,14 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new string  [] { "ad", "bd", "aaab", "baa", "badab" };
-            var res1 = new int [] {-1 };
+            var res = new string  [] { "a", "b", "c" };
+            var res1 = new int [] { 4, 2, 5, 9, 7, 4, 8 };
 
-            Console.WriteLine(CheckIfPangram("thequickbrownfoxjumpsoverthelazydog"));
+            Console.WriteLine(NumOfStrings(res, "aaaaabbbbb"));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
