@@ -47,16 +47,14 @@ namespace LeetCode
             var res = new string  [] { "a", "b", "c" };
             var res1 = new int [] { 4, 2, 5, 9, 7, 4, 8 };
 
-            Console.WriteLine(NumOfStrings(res, "aaaaabbbbb"));
+            Console.WriteLine(ReverseWords("Let's take LeetCode contest"));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
 
-
-
-
+        
 
 
 
