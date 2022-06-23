@@ -44,28 +44,19 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new string  [] { "ab", "c" };
-            var res1 = new string[] { "a", "bc" };
+            var res = new string  [] { "ad", "bd", "aaab", "baa", "badab" };
+            var res1 = new int [] { 3, 0, 1, 1, 9, 7 };
 
-            Console.WriteLine(ArrayStringsAreEqual(res, res1));
+            Console.WriteLine(CountGoodTriplets(res1, 7,2,3));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
-        
 
 
 
-
-
-
-
-
-
-
-
-
+    
 
 
 

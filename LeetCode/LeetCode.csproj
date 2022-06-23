@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1108 Defanging an IP Address.cs" />
+    <Content Include="1179 Reformat Department Table.sql" />
     <Compile Include="12 Integer to Roman.cs" />
     <Compile Include="1221 Split a String in Balanced Strings.cs" />
     <Compile Include="1281 Subtract the Product and Sum of Digits of an Integer.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="1486 XOR Operation in an Array.cs" />
     <Compile Include="1512 Number of Good Pairs.cs" />
     <Compile Include="1528 Shuffle String.cs" />
+    <Compile Include="1534 Count Good Triplets.cs" />
     <Compile Include="1581 Customer Who Visited but Did Not Make Any Transactions.cs" />
     <Compile Include="1588 Sum of All Odd Length Subarrays.cs" />
     <Compile Include="1603 Design Parking System.cs" />
@@ -67,6 +69,7 @@
     <Compile Include="162 Find Peak Element.cs" />
     <Compile Include="1662 Check If Two String Arrays are Equivalent.cs" />
     <Compile Include="1672 Richest Customer Wealth.cs" />
+    <Compile Include="1684 Count the Number of Consistent Strings.cs" />
     <Compile Include="1688 Count of Matches in Tournament.cs" />
     <Compile Include="1678 Goal Parser Interpretation.cs" />
     <Compile Include="1693 Daily Leads and Partners.cs" />
@@ -90,9 +93,11 @@
     <Compile Include="215 Kth Largest Element in an Array.cs" />
     <Compile Include="2160 Minimum Sum of Four Digit Number After Splitting Digits.cs" />
     <Compile Include="219 Contains Duplicate II.cs" />
+    <Compile Include="2220 Minimum Bit Flips to Convert Number.cs" />
     <Compile Include="2235 Add Two Integers.cs" />
     <Compile Include="2236 Root Equals Sum of Children.cs" />
     <Compile Include="231 Power of Two.cs" />
+    <Compile Include="258 Add Digits.cs" />
     <Compile Include="26 Remove Duplicates from Sorted Array.cs" />
     <Compile Include="268 Missing Number.cs" />
     <Compile Include="27 Remove Element.cs" />
@@ -103,8 +108,10 @@
     <Compile Include="35 Search Insert Position.cs" />
     <Compile Include="49 Group Anagrams.cs" />
     <Compile Include="58 Length of Last Word.cs" />
+    <Content Include="627 Swap Salary.sql" />
     <Compile Include="67 Add Binary.cs" />
     <Compile Include="704 Binary Search.cs" />
+    <Compile Include="709 To Lower Case.cs" />
     <Compile Include="74 Search a 2D Matrix.cs" />
     <Compile Include="771 Jewels and Stones.cs" />
     <Compile Include="78 Subsets.cs" />
@@ -122,6 +129,9 @@
     <Compile Include="7 Reverse Integer.cs" />
     <Compile Include="206 Reverse Linked List.cs" />
     <Compile Include="189 Rotate Array.cs" />
+    <Content Include="1890 The Latest Login in 2020.sql" />
+    <Content Include="196 Delete Duplicate Emails.sql" />
+    <Content Include="197 Rising Temperature.sql" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1 Two Sum.cs" />
