@@ -81,6 +81,7 @@
     <Compile Include="1920 Build Array from Permutation.cs" />
     <Compile Include="1929 Concatenation of Array.cs" />
     <Compile Include="2 Add Two Numbers.cs" />
+    <Compile Include="2006 Count Number of Pairs With Absolute Difference K.cs" />
     <Compile Include="2011 Final Value of Variable After Performing Operations.cs" />
     <Compile Include="2037 Minimum Number of Moves to Seat Everyone.cs" />
     <Compile Include="21 Merge Two Sorted Lists.cs" />
