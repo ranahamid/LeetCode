@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-
-
- 
-
+     
     internal class Program
     {
         static void Main(string[] args)
@@ -24,12 +21,22 @@ namespace LeetCode
             //ListNode list2 = new ListNode(5, five);
 
 
-            //ListNode three = new ListNode(3);
-            //ListNode two = new ListNode(4, three);
-            //ListNode list1 = new ListNode(2, two);
+            //ListNode fifteen = new ListNode(0);
+            //ListNode fourtenn = new ListNode(0, fifteen);
+            //ListNode thirteen = new ListNode(0, fourtenn);
+            //ListNode twelve = new ListNode(0, thirteen);
+            //ListNode eleven = new ListNode(0, twelve);
+            //ListNode ten = new ListNode(0, eleven);
+            //ListNode nine = new ListNode(1, ten);
+            //ListNode eight = new ListNode(1, nine);
+            //ListNode seven = new ListNode(1, eight);
+            //ListNode six = new ListNode(0, seven);
+            //ListNode five = new ListNode(0, six);
+            //ListNode four = new ListNode(1, five);
+            //ListNode three = new ListNode(0, four);
+            //ListNode two = new ListNode(0, three);
+            //ListNode list1 = new ListNode(1, two);
 
-
-           
 
             //ListNode list1 = new ListNode(5);
 
@@ -37,16 +44,125 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new int [] { 2, 3, 5, 1, 3 };
+            var res = new int [] { 3, 1, 5 };
+            var res1 = new int[] { 2, 7, 4 };
 
-            Console.WriteLine(KidsWithCandies(res,3));
+            Console.WriteLine(MinMovesToSeat(res, res1));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
 
-        
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
    
