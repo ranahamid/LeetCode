@@ -47,16 +47,14 @@ namespace LeetCode
             var res = new string  [] { "ad", "bd", "aaab", "baa", "badab" };
             var res1 = new int [] {-1 };
 
-            Console.WriteLine(TruncateSentence("Hello how are you Contestant",4));
+            Console.WriteLine(CheckIfPangram("thequickbrownfoxjumpsoverthelazydog"));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
-      
 
-
-
+    
 
 
 
