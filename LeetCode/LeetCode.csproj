@@ -65,6 +65,7 @@
     <Compile Include="1603 Design Parking System.cs" />
     <Compile Include="1614 Maximum Nesting Depth of the Parentheses.cs" />
     <Compile Include="162 Find Peak Element.cs" />
+    <Compile Include="1662 Check If Two String Arrays are Equivalent.cs" />
     <Compile Include="1672 Richest Customer Wealth.cs" />
     <Compile Include="1688 Count of Matches in Tournament.cs" />
     <Compile Include="1678 Goal Parser Interpretation.cs" />
