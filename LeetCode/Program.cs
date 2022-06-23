@@ -44,18 +44,16 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new int [] { 3, 2, 1, 5, 4 };
-            var res1 = new int[] { 2, 7, 4 };
+            var res = new string  [] { "ab", "c" };
+            var res1 = new string[] { "a", "bc" };
 
-            Console.WriteLine(CountKDifference(res, 2));
+            Console.WriteLine(ArrayStringsAreEqual(res, res1));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
-
-
-
+        
 
 
 
