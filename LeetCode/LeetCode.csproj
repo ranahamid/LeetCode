@@ -51,6 +51,7 @@
     <Compile Include="1290 Convert Binary Number in a Linked List to Integer.cs" />
     <Compile Include="13 Roman to Integer.cs" />
     <Compile Include="1313 Decompress Run-Length Encoded List.cs" />
+    <Compile Include="1323 Maximum 69 Number.cs" />
     <Compile Include="1342 Number of Steps to Reduce a Number to Zero.cs" />
     <Compile Include="1365 How Many Numbers Are Smaller Than the Current Number.cs" />
     <Compile Include="1389 Create Target Array in the Given Order.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="1512 Number of Good Pairs.cs" />
     <Compile Include="1528 Shuffle String.cs" />
     <Compile Include="1534 Count Good Triplets.cs" />
+    <Compile Include="1572 Matrix Diagonal Sum.cs" />
     <Compile Include="1581 Customer Who Visited but Did Not Make Any Transactions.cs" />
     <Compile Include="1588 Sum of All Odd Length Subarrays.cs" />
     <Compile Include="1603 Design Parking System.cs" />
