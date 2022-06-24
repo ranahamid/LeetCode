@@ -47,28 +47,13 @@ namespace LeetCode
             var res = new string  [] { "a", "b", "c" };
             var res1 = new int [] { 4, 2, 5, 9, 7, 4, 8 };
 
-            Console.WriteLine(Maximum69Number(9999));
+            Console.WriteLine(FreqAlphabets("10#11#12"));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
-
-
-      
-        public static List<int> GetDigits(int num)
-        {
-            List<int> digitList = new List<int>();
-            while (num != 0)
-            {
-                var val = num % 10;
-                digitList.Add(val);
-                num = num / 10;
-            }
-            return digitList;
-        }
-
-
+       
 
 
 

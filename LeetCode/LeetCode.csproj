@@ -50,6 +50,7 @@
     <Compile Include="1281 Subtract the Product and Sum of Digits of an Integer.cs" />
     <Compile Include="1290 Convert Binary Number in a Linked List to Integer.cs" />
     <Compile Include="13 Roman to Integer.cs" />
+    <Compile Include="1309 Decrypt String from Alphabet to Integer Mapping.cs" />
     <Compile Include="1313 Decompress Run-Length Encoded List.cs" />
     <Compile Include="1323 Maximum 69 Number.cs" />
     <Compile Include="1342 Number of Steps to Reduce a Number to Zero.cs" />
