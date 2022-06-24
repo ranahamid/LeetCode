@@ -45,20 +45,15 @@ namespace LeetCode
             //Console.Write(MyAtoi("4193 with words"));
 
             var res = new string  [] { "a", "b", "c" };
-            var res1 = new int [] { 4, 2, 5, 9, 7, 4, 8 };
+            var res1 = new int [] { -5, 1, 5, 0, -7 };
 
-            Console.WriteLine(FreqAlphabets("10#11#12"));
+            Console.WriteLine(LargestAltitude(res1));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
        
-
-
-
-
-
 
 
 

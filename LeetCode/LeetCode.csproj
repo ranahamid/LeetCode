@@ -77,6 +77,7 @@
     <Compile Include="1678 Goal Parser Interpretation.cs" />
     <Compile Include="1693 Daily Leads and Partners.cs" />
     <Compile Include="1720 Decode XORed Array.cs" />
+    <Compile Include="1732 Find the Highest Altitude.cs" />
     <Compile Include="1741 Find Total Time Spent by Each Employee.cs" />
     <Compile Include="1757 Recyclable and Low Fat Products.cs" />
     <Compile Include="1791 Find Center of Star Graph.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="2011 Final Value of Variable After Performing Operations.cs" />
     <Compile Include="2037 Minimum Number of Moves to Seat Everyone.cs" />
     <Compile Include="21 Merge Two Sorted Lists.cs" />
+    <Compile Include="2108 Find First Palindromic String in the Array.cs" />
     <Compile Include="2114 Maximum Number of Words Found in Sentences.cs" />
     <Compile Include="215 Kth Largest Element in an Array.cs" />
     <Compile Include="2160 Minimum Sum of Four Digit Number After Splitting Digits.cs" />
