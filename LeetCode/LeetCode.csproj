@@ -57,6 +57,7 @@
     <Compile Include="1342 Number of Steps to Reduce a Number to Zero.cs" />
     <Compile Include="1365 How Many Numbers Are Smaller Than the Current Number.cs" />
     <Compile Include="1389 Create Target Array in the Given Order.cs" />
+    <Content Include="1407 Top Travellers.sql" />
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="1431 Kids With the Greatest Number of Candies.cs" />
     <Compile Include="1464 Maximum Product of Two Elements in an Array.cs" />

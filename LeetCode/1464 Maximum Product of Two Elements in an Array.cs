@@ -9,8 +9,8 @@ namespace LeetCode
     internal class _1464_Maximum_Product_of_Two_Elements_in_an_Array
     {
         /// <summary>
-        /// Runtime: 134 ms, faster than 36.18% of C# online submissions for Maximum Product of Two Elements in an Array.
-        /// Memory Usage: 38 MB, less than 25.66% of C# online submissions for Maximum Product of Two Elements in an Array.
+        /// Runtime: 95 ms, faster than 86.18% of C# online submissions for Maximum Product of Two Elements in an Array.
+        /// Memory Usage: 37.8 MB, less than 45.39% of C# online submissions for Maximum Product of Two Elements in an Array.
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
