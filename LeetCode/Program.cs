@@ -48,7 +48,7 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new string[] { "a", "b", "c" };
+            var res = new string[] { "pay", "attention", "practice", "attend" };
             var res1 = new int[] { 1, 5, 2, 4, 1 };
 
             var paths = new List<IList<string>>()
@@ -59,14 +59,12 @@ namespace LeetCode
             };
 
 
-            Console.WriteLine(GenerateTheString(3));
+            Console.WriteLine(PrefixCount(res, "at"));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
-       
-
-
+   
 
 
 
