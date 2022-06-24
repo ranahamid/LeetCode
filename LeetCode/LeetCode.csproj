@@ -114,6 +114,7 @@
     <Compile Include="35 Search Insert Position.cs" />
     <Compile Include="49 Group Anagrams.cs" />
     <Compile Include="53 Maximum Subarray.cs" />
+    <Compile Include="557 Reverse Words in a String III.cs" />
     <Compile Include="58 Length of Last Word.cs" />
     <Content Include="511 Game Play Analysis I.sql" />
     <Content Include="627 Swap Salary.sql" />
