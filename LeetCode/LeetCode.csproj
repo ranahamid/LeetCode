@@ -58,6 +58,7 @@
     <Compile Include="1389 Create Target Array in the Given Order.cs" />
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="1431 Kids With the Greatest Number of Candies.cs" />
+    <Compile Include="1464 Maximum Product of Two Elements in an Array.cs" />
     <Compile Include="1470 Shuffle the Array.cs" />
     <Compile Include="1480 Running Sum of 1d Array.cs" />
     <Compile Include="1486 XOR Operation in an Array.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="1832 Check if the Sentence Is Pangram.cs" />
     <Compile Include="1844 Replace All Digits with Characters.cs" />
     <Compile Include="1859 Sorting the Sentence.cs" />
+    <Compile Include="1863 Sum of All Subset XOR Totals.cs" />
     <Compile Include="19 Remove Nth Node From End of List.cs" />
     <Compile Include="190 Reverse Bits.cs" />
     <Compile Include="191 Number of 1 Bits.cs" />

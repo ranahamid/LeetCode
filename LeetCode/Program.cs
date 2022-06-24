@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-     
+
     internal class Program
     {
         static void Main(string[] args)
@@ -44,23 +44,15 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new string  [] { "a", "b", "c" };
-            var res1 = new int [] { -5, 1, 5, 0, -7 };
+            var res = new string[] { "a", "b", "c" };
+            var res1 = new int[] { 5, 1, 6 };
 
-            Console.WriteLine(LargestAltitude(res1));
+            Console.WriteLine(SubsetXORSum(res1));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
-
-       
-
-
-
-
-
-
-
+      
 
 
 
@@ -106,4 +98,4 @@ namespace LeetCode
     }
 
 
-    }
+}
