@@ -49,22 +49,23 @@ namespace LeetCode
             //Console.Write(MyAtoi("4193 with words"));
 
             var res = new string[] { "a", "b", "c" };
-            var res1 = new int[] { 5, 1, 6 };
+            var res1 = new int[] { 1, 5, 2, 4, 1 };
 
-            Console.WriteLine(OddCells(2,3, nums1));
+            var paths = new List<IList<string>>()
+            {
+                new List<string>() { "London", "New York" },
+                  new List<string>() { "New York","Lima" },
+                    new List<string>() { "Lima","Sao Paulo" },
+            };
+
+
+            Console.WriteLine(DestCity(paths));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
-        
-
-
-
-
-
-
-
+      
 
 
 

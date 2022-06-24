@@ -60,6 +60,7 @@
     <Content Include="1407 Top Travellers.sql" />
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="1431 Kids With the Greatest Number of Candies.cs" />
+    <Compile Include="1436 Destination City.cs" />
     <Compile Include="1464 Maximum Product of Two Elements in an Array.cs" />
     <Compile Include="1470 Shuffle the Array.cs" />
     <Compile Include="1480 Running Sum of 1d Array.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="1688 Count of Matches in Tournament.cs" />
     <Compile Include="1678 Goal Parser Interpretation.cs" />
     <Compile Include="1693 Daily Leads and Partners.cs" />
+    <Compile Include="1704 Determine if String Halves Are Alike.cs" />
     <Compile Include="1720 Decode XORed Array.cs" />
     <Compile Include="1732 Find the Highest Altitude.cs" />
     <Compile Include="1741 Find Total Time Spent by Each Employee.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="1791 Find Center of Star Graph.cs" />
     <Compile Include="1795 Rearrange Products Table.cs" />
     <Compile Include="1816 Truncate Sentence.cs" />
+    <Compile Include="1827 Minimum Operations to Make the Array Increasing.cs" />
     <Compile Include="1832 Check if the Sentence Is Pangram.cs" />
     <Compile Include="1844 Replace All Digits with Characters.cs" />
     <Compile Include="1859 Sorting the Sentence.cs" />
@@ -98,9 +101,11 @@
     <Compile Include="1929 Concatenation of Array.cs" />
     <Compile Include="1967 Number of Strings That Appear as Substrings in Word.cs" />
     <Compile Include="2 Add Two Numbers.cs" />
+    <Compile Include="2000 Reverse Prefix of Word.cs" />
     <Compile Include="2006 Count Number of Pairs With Absolute Difference K.cs" />
     <Compile Include="2011 Final Value of Variable After Performing Operations.cs" />
     <Compile Include="2037 Minimum Number of Moves to Seat Everyone.cs" />
+    <Compile Include="2089 Find Target Indices After Sorting Array.cs" />
     <Compile Include="21 Merge Two Sorted Lists.cs" />
     <Compile Include="2108 Find First Palindromic String in the Array.cs" />
     <Compile Include="2114 Maximum Number of Words Found in Sentences.cs" />
