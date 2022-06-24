@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-     
+
     internal class Program
     {
         static void Main(string[] args)
         {
-            //int[][] nums = new int[3][]{
-            //    new int[4]{1,3, 5,7},
-            //    new int[4]{10,11,16,20},
-            //    new int[4]{23,30,34,60}
-            //};
+            int[][] nums = new int[2][]{
+                new int[2]{1,1},
+                new int[2]{0,0}, 
+            };
+
+            int[][] nums1 = new int[2][]{
+                new int[2]{0,1},
+                new int[2]{1,1},
+            };
             //ListNode six = new ListNode(4);
             //ListNode five = new ListNode(6, six);
             //ListNode list2 = new ListNode(5, five);
@@ -44,15 +48,14 @@ namespace LeetCode
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
 
-            var res = new string  [] { "a", "b", "c" };
-            var res1 = new int [] { 4, 2, 5, 9, 7, 4, 8 };
+            var res = new string[] { "a", "b", "c" };
+            var res1 = new int[] { 5, 1, 6 };
 
-            Console.WriteLine(ReverseWords("Let's take LeetCode contest"));
+            Console.WriteLine(OddCells(2,3, nums1));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
-
 
         
 
@@ -94,30 +97,7 @@ namespace LeetCode
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-   
+
 
 }
