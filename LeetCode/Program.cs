@@ -59,7 +59,7 @@ namespace LeetCode
             };
 
 
-            Console.WriteLine(AreOccurrencesEqual("vvvvvvvvvvvvvvvvvvv"));
+            Console.WriteLine(AreOccurrencesEqual("wzkpzzwzpzkwkpkppzkppkpkwwkzzzwwpwwk"));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
@@ -67,30 +67,7 @@ namespace LeetCode
 
 
 
-
-        public static  bool AreOccurrencesEqual(string s)
-        {
-            var chars = s.ToCharArray();
-            Dictionary<char,int> map = new Dictionary<char,int>();
-            foreach (char c in chars)
-            {
-                if(map.ContainsKey(c))
-                {
-                    map[c] = map[c] + 1;
-                }
-                else
-                {
-                    map.Add(c, 1);
-                }
-            }
-            foreach (var  item in map)
-            {
-                var val = item.Value;
-                if (val % 2 == 1)
-                    return false;
-            }
-            return true;
-        }
+     
 
 
 
