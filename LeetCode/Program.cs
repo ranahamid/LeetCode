@@ -59,13 +59,66 @@ namespace LeetCode
             };
 
 
-            Console.WriteLine(DestCity(paths));
+            Console.WriteLine(GenerateTheString(3));
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
+       
 
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

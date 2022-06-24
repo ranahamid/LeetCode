@@ -41,5 +41,24 @@ namespace LeetCode
             }
             return result;
         }
+
+
+        /// <summary>
+        /// Runtime: 115 ms, faster than 86.42% of C# online submissions for Destination City.
+        /// Memory Usage: 41.4 MB, less than 19.75% of C# online submissions for Destination City.
+        /// </summary>
+        /// <param name="paths"></param>
+        /// <returns></returns>
+
+        public static string DestCity_2(IList<IList<string>> paths)
+        {
+            var dict = paths.ToDictionary(x => x[0], x => x[1]);
+            var dest = dict.First().Value;
+            while (dict.ContainsKey(dest))
+                dest = dict[dest];
+            return dest;
+        }
+
+
     }
 }
