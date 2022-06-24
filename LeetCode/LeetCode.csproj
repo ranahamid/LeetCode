@@ -47,6 +47,7 @@
     <Content Include="1179 Reformat Department Table.sql" />
     <Compile Include="12 Integer to Roman.cs" />
     <Compile Include="1221 Split a String in Balanced Strings.cs" />
+    <Compile Include="1252 Cells with Odd Values in a Matrix.cs" />
     <Compile Include="1281 Subtract the Product and Sum of Digits of an Integer.cs" />
     <Compile Include="1290 Convert Binary Number in a Linked List to Integer.cs" />
     <Compile Include="13 Roman to Integer.cs" />
