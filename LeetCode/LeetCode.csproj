@@ -123,6 +123,7 @@
     <Compile Include="2220 Minimum Bit Flips to Convert Number.cs" />
     <Compile Include="2235 Add Two Integers.cs" />
     <Compile Include="2236 Root Equals Sum of Children.cs" />
+    <Compile Include="2299 Strong Password Checker II.cs" />
     <Compile Include="2309 Greatest English Letter in Upper and Lower Case.cs" />
     <Compile Include="231 Power of Two.cs" />
     <Compile Include="258 Add Digits.cs" />
