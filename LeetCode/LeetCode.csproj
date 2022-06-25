@@ -50,6 +50,7 @@
     <Compile Include="1252 Cells with Odd Values in a Matrix.cs" />
     <Compile Include="1281 Subtract the Product and Sum of Digits of an Integer.cs" />
     <Compile Include="1290 Convert Binary Number in a Linked List to Integer.cs" />
+    <Compile Include="1295 Find Numbers with Even Number of Digits.cs" />
     <Compile Include="13 Roman to Integer.cs" />
     <Compile Include="1304 Find N Unique Integers Sum up to Zero.cs" />
     <Compile Include="1309 Decrypt String from Alphabet to Integer Mapping.cs" />

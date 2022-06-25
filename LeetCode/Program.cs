@@ -54,19 +54,19 @@ namespace LeetCode
                     new List<string>() { "Lima","Sao Paulo" },
             };
             var res = new string[] { "pay", "attention", "practice", "attend" };
-            var res1 = new int[] { 4, 2, 1 };
-            var data = SumZero(5);
-           
+            var res1 = new int[] { 12, 345, 2, 6, 7896 };
+       
 
+            Console.WriteLine(FindNumbers(res1));
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
+   
 
 
 
 
 
-      
 
 
 
