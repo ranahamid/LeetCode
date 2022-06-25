@@ -137,9 +137,11 @@
     <Content Include="1873 Calculate Special Bonus.sql" />
     <Content Include="511 Game Play Analysis I.sql" />
     <Content Include="627 Swap Salary.sql" />
+    <Compile Include="665 Non-decreasing Array.cs" />
     <Compile Include="67 Add Binary.cs" />
     <Compile Include="704 Binary Search.cs" />
     <Compile Include="709 To Lower Case.cs" />
+    <Compile Include="728 Self Dividing Numbers.cs" />
     <Compile Include="74 Search a 2D Matrix.cs" />
     <Compile Include="771 Jewels and Stones.cs" />
     <Compile Include="78 Subsets.cs" />

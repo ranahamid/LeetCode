@@ -13,7 +13,7 @@ namespace LeetCode
         {
             int[][] nums = new int[2][]{
                 new int[2]{1,1},
-                new int[2]{0,0}, 
+                new int[2]{0,0},
             };
 
             int[][] nums1 = new int[2][]{
@@ -47,31 +47,27 @@ namespace LeetCode
             //Console.Write(MyAtoi2("words and 987"));
             //Console.Write(MyAtoi2("-91283472332"));
             //Console.Write(MyAtoi("4193 with words"));
-
-            var res = new string[] { "pay", "attention", "practice", "attend" };
-            var res1 = new int[] { 1, 5, 2, 4, 1 };
-
             var paths = new List<IList<string>>()
             {
                 new List<string>() { "London", "New York" },
                   new List<string>() { "New York","Lima" },
                     new List<string>() { "Lima","Sao Paulo" },
             };
+            var res = new string[] { "pay", "attention", "practice", "attend" };
+            var res1 = new int[] { 4, 2, 1 };
+            var data = SelfDividingNumbers(1, 22);
+            foreach(var item in data)
+            {
 
-
-            Console.WriteLine(AreOccurrencesEqual("wzkpzzwzpzkwkpkppzkppkpkwwkzzzwwpwwk"));
+                Console.Write(item + ",");
+            }
+            Console.WriteLine();
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
-
-
-     
-
-
-
-
+      
 
 
 
