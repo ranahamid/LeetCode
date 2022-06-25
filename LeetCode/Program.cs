@@ -55,25 +55,18 @@ namespace LeetCode
             };
             var res = new string[] { "pay", "attention", "practice", "attend" };
             var res1 = new int[] { 4, 2, 1 };
-            var data = SelfDividingNumbers(1, 22);
-            foreach(var item in data)
-            {
-
-                Console.Write(item + ",");
-            }
-            Console.WriteLine();
+            var data = SumZero(5);
+           
 
             Console.WriteLine("Hello");
             Console.ReadKey();
         }
 
+
+
+
+
       
-
-
-
-
-
-
 
 
 
