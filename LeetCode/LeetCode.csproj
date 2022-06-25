@@ -94,6 +94,7 @@
     <Compile Include="1816 Truncate Sentence.cs" />
     <Compile Include="1827 Minimum Operations to Make the Array Increasing.cs" />
     <Compile Include="1832 Check if the Sentence Is Pangram.cs" />
+    <Compile Include="1837 Sum of Digits in Base K.cs" />
     <Compile Include="1844 Replace All Digits with Characters.cs" />
     <Compile Include="1859 Sorting the Sentence.cs" />
     <Compile Include="1863 Sum of All Subset XOR Totals.cs" />
@@ -155,6 +156,8 @@
     <Compile Include="11 Container With Most Water.cs" />
     <Compile Include="205 Isomorphic Strings.cs" />
     <Compile Include="90 Subsets II.cs" />
+    <Compile Include="contest-81\2315. Count Asterisks.cs" />
+    <Compile Include="contest-81\2317 Maximum XOR After Operations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />
