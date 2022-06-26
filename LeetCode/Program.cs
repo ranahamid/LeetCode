@@ -7,7 +7,14 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-
+     public class ListNode {
+       public int val;
+       public ListNode next;
+       public ListNode(int val=0, ListNode next=null) {
+           this.val = val;
+           this.next = next;
+       }
+   }
     internal class Program
     {
         static void Main(string[] args)
@@ -21,10 +28,13 @@ namespace LeetCode
                 new int[2]{0,1},
                 new int[2]{1,1},
             };
-            //ListNode six = new ListNode(4);
-            //ListNode five = new ListNode(6, six);
-            //ListNode list2 = new ListNode(5, five);
+            ListNode eig = new ListNode(3);
+            ListNode sev = new ListNode(3, eig);
+            ListNode six = new ListNode(2, sev);
+            ListNode five = new ListNode(1, six);
+            ListNode list2 = new ListNode(1, five);
 
+            #region node
 
             //ListNode fifteen = new ListNode(0);
             //ListNode fourtenn = new ListNode(0, fifteen);
@@ -41,13 +51,7 @@ namespace LeetCode
             //ListNode three = new ListNode(0, four);
             //ListNode two = new ListNode(0, three);
             //ListNode list1 = new ListNode(1, two);
-
-
-            //ListNode list1 = new ListNode(5);
-
-            //Console.Write(MyAtoi2("words and 987"));
-            //Console.Write(MyAtoi2("-91283472332"));
-            //Console.Write(MyAtoi("4193 with words"));
+            #endregion
             var paths = new List<IList<string>>()
             {
                 new List<string>() { "London", "New York" },
@@ -55,13 +59,34 @@ namespace LeetCode
                     new List<string>() { "Lima","Sao Paulo" },
             };
             var res = new string[] { "pay", "attention", "practice", "attend" };
-            var res1 = new int[] { 0, 0 };
+            var res1 = new int[] { 0 };
+            var res2 = new int[] { 3, 2, 3, 2, 2, 2 };
 
-            Console.WriteLine(LargestNumber(res1));
-        
+            Console.WriteLine(SortArrayByParity(res1));
             Console.ReadKey();
         }
+
+
        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
