@@ -62,7 +62,7 @@ namespace LeetCode
             var res1 = new int[] { 0 };
             var res2 = new int[] { 5, 1, 5, 2, 5, 3, 5, 4 };
 
-            Console.WriteLine("HELP");
+            Console.WriteLine("Hello World");
             // Console.WriteLine(RepeatedNTimes(res2));
             Console.ReadKey();
         }
