@@ -128,6 +128,7 @@
     <Compile Include="2119 A Number After a Double Reversal.cs" />
     <Compile Include="215 Kth Largest Element in an Array.cs" />
     <Compile Include="2160 Minimum Sum of Four Digit Number After Splitting Digits.cs" />
+    <Compile Include="2169 Count Operations to Obtain Zero.cs" />
     <Compile Include="2176 Count Equal and Divisible Pairs in an Array.cs" />
     <Compile Include="2185 Counting Words With a Given Prefix.cs" />
     <Compile Include="219 Contains Duplicate II.cs" />
@@ -150,6 +151,7 @@
     <Compile Include="303 Range Sum Query - Immutable.cs" />
     <Compile Include="33 Search in Rotated Sorted Array.cs" />
     <Compile Include="34 Find First and Last Position of Element in Sorted Array.cs" />
+    <Compile Include="344 Reverse String.cs" />
     <Compile Include="35 Search Insert Position.cs" />
     <Compile Include="49 Group Anagrams.cs" />
     <Compile Include="509 Fibonacci Number.cs" />

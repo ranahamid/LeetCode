@@ -62,13 +62,10 @@ namespace LeetCode
             var res1 = new int[] { 0 };
             var res2 = new int[] { 3, 2, 3, 2, 2, 2 };
 
-            Console.WriteLine(SortArrayByParity(res1));
+            Console.WriteLine(CountOperations(2,3));
             Console.ReadKey();
         }
-
-
-       
-
+     
 
 
 
