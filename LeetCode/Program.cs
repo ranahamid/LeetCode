@@ -60,14 +60,12 @@ namespace LeetCode
             };
             var res = new string[] { "pay", "attention", "practice", "attend" };
             var res1 = new int[] { 0 };
-            var res2 = new int[] { 3, 2, 3, 2, 2, 2 };
+            var res2 = new int[] { 5, 1, 5, 2, 5, 3, 5, 4 };
 
-            Console.WriteLine(CountOperations(2,3));
+            Console.WriteLine(RepeatedNTimes(res2));
             Console.ReadKey();
         }
-     
-
-
+        
 
 
 
