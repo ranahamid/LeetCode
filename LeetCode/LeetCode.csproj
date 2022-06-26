@@ -60,6 +60,7 @@
     <Compile Include="1323 Maximum 69 Number.cs" />
     <Compile Include="1332 Remove Palindromic Subsequences.cs" />
     <Compile Include="1342 Number of Steps to Reduce a Number to Zero.cs" />
+    <Compile Include="1351 Count Negative Numbers in a Sorted Matrix.cs" />
     <Compile Include="136 Single Number.cs" />
     <Compile Include="1365 How Many Numbers Are Smaller Than the Current Number.cs" />
     <Compile Include="1374 Generate a String With Characters That Have Odd Counts.cs" />

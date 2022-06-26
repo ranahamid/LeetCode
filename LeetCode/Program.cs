@@ -65,11 +65,11 @@ namespace LeetCode
             Console.WriteLine(RepeatedNTimes(res2));
             Console.ReadKey();
         }
-        
 
 
 
 
+    
 
 
 
