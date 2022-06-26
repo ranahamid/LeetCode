@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -54,28 +55,13 @@ namespace LeetCode
                     new List<string>() { "Lima","Sao Paulo" },
             };
             var res = new string[] { "pay", "attention", "practice", "attend" };
-            var res1 = new int[] { 11, 49, 100, 20, 86, 29, 72 };
-            
-            
-            Console.WriteLine(CompareVersion("1.0.1", "1"));        
+            var res1 = new int[] { 0, 0 };
+
+            Console.WriteLine(LargestNumber(res1));
+        
             Console.ReadKey();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       
 
 
 
