@@ -57,13 +57,9 @@ namespace LeetCode
             var res1 = new int[] { 11, 49, 100, 20, 86, 29, 72 };
             
             
-            Console.WriteLine(IsPalindrome("0P"));        
+            Console.WriteLine(CompareVersion("1.0.1", "1"));        
             Console.ReadKey();
         }
-
-       
-
-
 
 
 
