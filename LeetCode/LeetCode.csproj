@@ -47,6 +47,7 @@
     <Content Include="1179 Reformat Department Table.sql" />
     <Compile Include="12 Integer to Roman.cs" />
     <Compile Include="1221 Split a String in Balanced Strings.cs" />
+    <Compile Include="125 Valid Palindrome.cs" />
     <Compile Include="1252 Cells with Odd Values in a Matrix.cs" />
     <Compile Include="1281 Subtract the Product and Sum of Digits of an Integer.cs" />
     <Compile Include="1290 Convert Binary Number in a Linked List to Integer.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="1389 Create Target Array in the Given Order.cs" />
     <Content Include="1407 Top Travellers.sql" />
     <Compile Include="141  Linked List Cycle.cs" />
+    <Compile Include="1423 Maximum Points You Can Obtain from Cards.cs" />
     <Compile Include="1431 Kids With the Greatest Number of Candies.cs" />
     <Compile Include="1436 Destination City.cs" />
     <Compile Include="1464 Maximum Product of Two Elements in an Array.cs" />
