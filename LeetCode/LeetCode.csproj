@@ -49,6 +49,7 @@
     <Content Include="_584 Find Customer Referee.sql" />
     <Compile Include="_1051 Height Checker.cs" />
     <Compile Include="_1475 Final Prices With a Special Discount in a Shop.cs" />
+    <Compile Include="_2283 Check if Number Has Equal Digit Count and Digit Value.cs" />
     <Compile Include="_657 Robot Return to Origin.cs" />
     <Compile Include="_832 Flipping an Image.cs" />
     <Content Include="1179 Reformat Department Table.sql" />

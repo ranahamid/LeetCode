@@ -73,7 +73,7 @@ namespace LeetCode
             var res2 = new int[] { 5, 1, 5, 2, 5, 3, 5, 4 };
 
            // Console.WriteLine(HeightChecker(res1));
-            // Console.WriteLine(FlipAndInvertImage(nums));
+             Console.WriteLine(DigitCount("1210"));
             Console.ReadKey();
         }
         
@@ -81,9 +81,7 @@ namespace LeetCode
         
        
         
-        
-        
-        
+      
         
         
         
