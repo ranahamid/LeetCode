@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class ListNode_83
+    {
+        public int val;
+        public ListNode_83 next;
+
+        public ListNode_83(int val = 0, ListNode_83 next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
     internal class _83_Remove_Duplicates_from_Sorted_List
     {
         /// <summary>
@@ -15,11 +26,11 @@ namespace LeetCode
         /// <param name="head"></param>
         /// <returns></returns>
 
-        public static ListNode DeleteDuplicates(ListNode head)
+        public static ListNode_83 DeleteDuplicates(ListNode_83 head)
         {
             if (head == null)
                 return null;
-            var newNode = new ListNode(head.val);
+            var newNode = new ListNode_83(head.val);
             var resultHead = newNode;
 
 
@@ -27,7 +38,7 @@ namespace LeetCode
             {
                 if (head.val != newNode.val)
                 {
-                    var node = new ListNode(head.val);
+                    var node = new ListNode_83(head.val);
                     newNode.next = node;
                     newNode = newNode.next;
                 }

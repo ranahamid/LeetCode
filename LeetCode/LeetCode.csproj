@@ -54,6 +54,7 @@
     <Compile Include="2032 Two Out of Three.cs" />
     <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
     <Compile Include="2278 Percentage of Letter in String.cs" />
+    <Content Include="620 Not Boring Movies.sql" />
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="876 Middle of the Linked List.cs" />
     <Compile Include="933 Number of Recent Calls.cs" />

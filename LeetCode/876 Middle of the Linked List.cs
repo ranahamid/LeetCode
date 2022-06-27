@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+
+    public class ListNode_876
+    {
+        public int val;
+        public ListNode_876 next;
+
+        public ListNode_876(int val = 0, ListNode_876 next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
     internal class _876_Middle_of_the_Linked_List
     {
         /// <summary>
@@ -14,7 +26,7 @@ namespace LeetCode
         /// </summary>
         /// <param name="head"></param>
         /// <returns></returns>
-        public ListNode MiddleNode(ListNode head)
+        public ListNode_876 MiddleNode(ListNode_876 head)
         {
             var slow = head;
             var fast = head.next;

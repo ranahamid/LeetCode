@@ -7,17 +7,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
+    
 
     internal class Program
     {
@@ -36,13 +26,15 @@ namespace LeetCode
                 new int[2] { 0, 1 },
                 new int[2] { 1, 1 },
             };
-            ListNode eig = new ListNode(3);
-            ListNode sev = new ListNode(3, eig);
-            ListNode six = new ListNode(2, sev);
-            ListNode five = new ListNode(1, six);
-            ListNode list2 = new ListNode(1, five);
+
 
             #region node
+
+           // ListNode eig = new ListNode(3);
+            //ListNode sev = new ListNode(3, eig);
+            //ListNode six = new ListNode(2, sev);
+            //ListNode five = new ListNode(1, six);
+            //ListNode list2 = new ListNode(1, five);
 
             //ListNode fifteen = new ListNode(0);
             //ListNode fourtenn = new ListNode(0, fifteen);
@@ -73,7 +65,7 @@ namespace LeetCode
             var res2 = new int[] { 2, 3 ,2};
             var res3 = new int[] { 1,2 ,3};
             // Console.WriteLine(HeightChecker(res1));
-            Console.WriteLine(TwoOutOfThree(res1, res2, res3));
+          //  Console.WriteLine(TwoOutOfThree(res1, res2, res3));
             Console.ReadKey();
         }
 
