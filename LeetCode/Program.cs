@@ -73,16 +73,11 @@ namespace LeetCode
             var res2 = new int[] { 5, 3, 6, 1, 12 };
 
            // Console.WriteLine(HeightChecker(res1));
-             Console.WriteLine(FindFinalValue(res2, 3));
+             Console.WriteLine(IsSumEqual("acb", "cba", "cdb"));
             Console.ReadKey();
         }
 
-       
-
-
-
-
-
+      
 
 
 
