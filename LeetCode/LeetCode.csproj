@@ -51,9 +51,12 @@
     <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
+    <Compile Include="2032 Two Out of Three.cs" />
     <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
     <Compile Include="2278 Percentage of Letter in String.cs" />
     <Compile Include="682 Baseball Game.cs" />
+    <Compile Include="876 Middle of the Linked List.cs" />
+    <Compile Include="933 Number of Recent Calls.cs" />
     <Compile Include="_1051 Height Checker.cs" />
     <Compile Include="_1475 Final Prices With a Special Discount in a Shop.cs" />
     <Compile Include="_2283 Check if Number Has Equal Digit Count and Digit Value.cs" />
@@ -216,6 +219,7 @@
   <ItemGroup>
     <Compile Include="1 Two Sum.cs" />
     <Content Include="1587 Bank Account Summary II.sql" />
+    <Compile Include="2255 Count Prefixes of a Given String.cs" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />

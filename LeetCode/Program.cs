@@ -69,19 +69,15 @@ namespace LeetCode
                 new List<string>() { "Lima", "Sao Paulo" },
             };
             var res = new string[] { "5", "-2", "4", "C", "D", "9", "+", "+" };
-            var res1 = new int[] { 1,1,4,2,1,3 };
-            var res2 = new int[] { 5, 3, 6, 1, 12 };
-
-           // Console.WriteLine(HeightChecker(res1));
-             Console.WriteLine(CalPoints(res));
+            var res1 = new int[] { 3, 1 ,1};
+            var res2 = new int[] { 2, 3 ,2};
+            var res3 = new int[] { 1,2 ,3};
+            // Console.WriteLine(HeightChecker(res1));
+            Console.WriteLine(TwoOutOfThree(res1, res2, res3));
             Console.ReadKey();
         }
 
-      
-
-
-
-
+        
 
 
 
@@ -91,4 +87,7 @@ namespace LeetCode
 
 
     }
+
+ 
+
 }
