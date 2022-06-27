@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1108 Defanging an IP Address.cs" />
+    <Content Include="1148 Article Views I.sql" />
+    <Content Include="_584 Find Customer Referee.sql" />
+    <Compile Include="_1475 Final Prices With a Special Discount in a Shop.cs" />
     <Compile Include="_832 Flipping an Image.cs" />
     <Content Include="1179 Reformat Department Table.sql" />
     <Compile Include="12 Integer to Roman.cs" />
