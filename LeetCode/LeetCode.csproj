@@ -47,6 +47,7 @@
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Content Include="1148 Article Views I.sql" />
     <Content Include="_584 Find Customer Referee.sql" />
+    <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
     <Compile Include="_1051 Height Checker.cs" />
     <Compile Include="_1475 Final Prices With a Special Discount in a Shop.cs" />
     <Compile Include="_2283 Check if Number Has Equal Digit Count and Digit Value.cs" />
