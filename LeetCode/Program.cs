@@ -19,9 +19,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[][] nums = new int[2][]{
-                new int[2]{1,1},
-                new int[2]{0,0},
+            int[][] nums = new int[4][]{
+                new int[4]{1,1,0,0},
+                new int[4]{1,0,0,1},
+                new int[4]{0,1,1,1},
+                new int[4]{1,0,1,0},
             };
 
             int[][] nums1 = new int[2][]{
@@ -63,11 +65,10 @@ namespace LeetCode
             var res2 = new int[] { 5, 1, 5, 2, 5, 3, 5, 4 };
 
             Console.WriteLine("Hello World");
-            // Console.WriteLine(RepeatedNTimes(res2));
+             Console.WriteLine(FlipAndInvertImage(nums));
             Console.ReadKey();
         }
 
-        
         
 
     
