@@ -69,15 +69,43 @@ namespace LeetCode
                 new List<string>() { "Lima", "Sao Paulo" },
             };
             var res = new string[] { "pay", "attention", "practice", "attend" };
-            var res1 = new int[] { 8, 4, 6, 2, 3 };
+            var res1 = new int[] { 1,1,4,2,1,3 };
             var res2 = new int[] { 5, 1, 5, 2, 5, 3, 5, 4 };
 
-            Console.WriteLine(FinalPrices(res1));
+           // Console.WriteLine(HeightChecker(res1));
             // Console.WriteLine(FlipAndInvertImage(nums));
             Console.ReadKey();
         }
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
 
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 }

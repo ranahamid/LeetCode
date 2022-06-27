@@ -16,7 +16,7 @@ namespace LeetCode.Contest_291
         }
         public static string RemoveDigit(string number, char digit)
         {
-            long maxNumber = 0;
+            
             var chars = number.ToCharArray();
             var len = chars.Where(x => x == digit).Count();
             var resultMax = new List<string>();
