@@ -70,18 +70,14 @@ namespace LeetCode
             };
             var res = new string[] { "pay", "attention", "practice", "attend" };
             var res1 = new int[] { 1,1,4,2,1,3 };
-            var res2 = new int[] { 17, 18, 5, 4, 6, 1 };
+            var res2 = new int[] { 5, 3, 6, 1, 12 };
 
            // Console.WriteLine(HeightChecker(res1));
-             Console.WriteLine(ReplaceElements(res2));
+             Console.WriteLine(FindFinalValue(res2, 3));
             Console.ReadKey();
         }
-     
 
-
-
-
-
+       
 
 
 
