@@ -68,18 +68,54 @@ namespace LeetCode
                 new List<string>() { "New York", "Lima" },
                 new List<string>() { "Lima", "Sao Paulo" },
             };
-            var res = new string[] { "pay", "attention", "practice", "attend" };
+            var res = new string[] { "5", "-2", "4", "C", "D", "9", "+", "+" };
             var res1 = new int[] { 1,1,4,2,1,3 };
             var res2 = new int[] { 5, 3, 6, 1, 12 };
 
            // Console.WriteLine(HeightChecker(res1));
-             Console.WriteLine(IsSumEqual("acb", "cba", "cdb"));
+             Console.WriteLine(CalPoints(res));
             Console.ReadKey();
         }
 
-      
 
+        public static int CalPoints(string[] ops)
+        {
+            
+            var result = new int[ops.Length];
+            var counter = 0;
+            for(int i = 0;i < ops.Length; i++)
+            {
+                if(ops[i]=="C")
+                {
+                    result[counter-1] = 0;
+                    counter--;
+                }
+                else if (ops[i] == "D")
+                {
+                    var number = result[counter - 1] *2;
+                    result[counter++] = number;
+                }
+                else if (ops[i] == "+")
+                {
+                    var number = result[counter - 1] + result[counter - 2];
+                    result[counter++] = number;
+                }
+                else
+                {
+                    if(Int32.TryParse(ops[i], out int number))
+                    {
+                        result[counter++] = number;
+                    }                   
 
+                }
+            }
+            var sum = 0;
+            for(int i=0;i<ops.Length;i++)
+            {
+                sum=sum+ result[i];
+            }
+            return sum;
+        }
 
 
 
