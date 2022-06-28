@@ -72,7 +72,12 @@ namespace LeetCode
             Console.ReadKey();
         }
  
-      
+        public int MinDeletionSize(string[] strs)
+        {
+            int sum = 0;
+            var firstItem= strs.
+            return sum;
+        }
 
 
 

@@ -70,6 +70,7 @@
     <Content Include="620 Not Boring Movies.sql" />
     <Content Include="607. Sales Person.sql" />
     <Compile Include="682 Baseball Game.cs" />
+    <Compile Include="852. Peak Index in a Mountain Array.cs" />
     <Compile Include="876 Middle of the Linked List.cs" />
     <Compile Include="922. Sort Array By Parity II.cs" />
     <Compile Include="933 Number of Recent Calls.cs" />
