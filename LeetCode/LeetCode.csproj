@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1108 Defanging an IP Address.cs" />
+    <Compile Include="_1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.cs" />
+    <Compile Include="_338 Counting Bits.cs" />
     <Content Include="1179 Reformat Department Table.sql" />
     <Compile Include="12 Integer to Roman.cs" />
     <Compile Include="1221 Split a String in Balanced Strings.cs" />
@@ -155,6 +157,7 @@
     <Compile Include="34 Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="344 Reverse String.cs" />
     <Compile Include="35 Search Insert Position.cs" />
+    <Compile Include="461 Hamming Distance.cs" />
     <Compile Include="49 Group Anagrams.cs" />
     <Compile Include="509 Fibonacci Number.cs" />
     <Compile Include="53 Maximum Subarray.cs" />
