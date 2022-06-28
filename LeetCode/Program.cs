@@ -7,12 +7,19 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    
+
 
     internal class Program
     {
         static void Main(string[] args)
         {
+            OrderedStream os = new OrderedStream(5);
+            os.Insert(3, "ccccc"); // Inserts (3, "ccccc"), returns [].
+            os.Insert(1, "aaaaa"); // Inserts (1, "aaaaa"), returns ["aaaaa"].
+            os.Insert(2, "bbbbb"); // Inserts (2, "bbbbb"), returns ["bbbbb", "ccccc"].
+            os.Insert(5, "eeeee"); // Inserts (5, "eeeee"), returns [].
+            os.Insert(4, "ddddd"); // Inserts (4, "ddddd"), returns ["ddddd", "eeeee"].
+
             int[][] nums = new int[4][]
             {
                 new int[4] { 1, 1, 0, 0 },
@@ -69,7 +76,91 @@ namespace LeetCode
             Console.ReadKey();
         }
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,6 +171,6 @@ namespace LeetCode
 
     }
 
- 
+
 
 }
