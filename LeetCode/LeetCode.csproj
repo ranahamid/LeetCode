@@ -46,8 +46,11 @@
   <ItemGroup>
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Content Include="1148 Article Views I.sql" />
+    <Content Include="1729 Find Followers Count.sql" />
     <Content Include="586 Customer Placing the Largest Number of Orders.sql" />
+    <Content Include="595 Big Countries.sql" />
     <Content Include="_584 Find Customer Referee.sql" />
+    <Compile Include="1207 Unique Number of Occurrences.cs" />
     <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />

@@ -13,12 +13,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            OrderedStream os = new OrderedStream(5);
-            os.Insert(3, "ccccc"); // Inserts (3, "ccccc"), returns [].
-            os.Insert(1, "aaaaa"); // Inserts (1, "aaaaa"), returns ["aaaaa"].
-            os.Insert(2, "bbbbb"); // Inserts (2, "bbbbb"), returns ["bbbbb", "ccccc"].
-            os.Insert(5, "eeeee"); // Inserts (5, "eeeee"), returns [].
-            os.Insert(4, "ddddd"); // Inserts (4, "ddddd"), returns ["ddddd", "eeeee"].
+              
 
             int[][] nums = new int[4][]
             {
@@ -70,15 +65,14 @@ namespace LeetCode
             var res = new string[] { "5", "-2", "4", "C", "D", "9", "+", "+" };
             var res1 = new int[] { 3, 1 ,1};
             var res2 = new int[] { 2, 3 ,2};
-            var res3 = new int[] { 1,2 ,3};
+            var res3 = new int[] { 1, 2, 2, 1, 1, 3};
             // Console.WriteLine(HeightChecker(res1));
-          //  Console.WriteLine(TwoOutOfThree(res1, res2, res3));
+           Console.WriteLine(UniqueOccurrences(  res3));
             Console.ReadKey();
         }
 
 
-
-
+       
 
 
 
