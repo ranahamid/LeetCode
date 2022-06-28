@@ -52,6 +52,7 @@
     <Content Include="586 Customer Placing the Largest Number of Orders.sql" />
     <Content Include="595 Big Countries.sql" />
     <Content Include="584 Find Customer Referee.sql" />
+    <Compile Include="1200. Minimum Absolute Difference.cs" />
     <Compile Include="1207 Unique Number of Occurrences.cs" />
     <Compile Include="1217. Minimum Cost to Move Chips to The Same Position.cs" />
     <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
