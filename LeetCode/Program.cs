@@ -7,26 +7,18 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
+    
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            int[][] nums = new int[2][]
+            int[][] nums = new int[4][]
             {
-                new int[2] { 1, 1 },
-                new int[2] { 0, 0 },
+                new int[4] { 1, 1, 0, 0 },
+                new int[4] { 1, 0, 0, 1 },
+                new int[4] { 0, 1, 1, 1 },
+                new int[4] { 1, 0, 1, 0 },
             };
 
             int[][] nums1 = new int[2][]
@@ -34,13 +26,15 @@ namespace LeetCode
                 new int[2] { 0, 1 },
                 new int[2] { 1, 1 },
             };
-            ListNode eig = new ListNode(3);
-            ListNode sev = new ListNode(3, eig);
-            ListNode six = new ListNode(2, sev);
-            ListNode five = new ListNode(1, six);
-            ListNode list2 = new ListNode(1, five);
+
 
             #region node
+
+           // ListNode eig = new ListNode(3);
+            //ListNode sev = new ListNode(3, eig);
+            //ListNode six = new ListNode(2, sev);
+            //ListNode five = new ListNode(1, six);
+            //ListNode list2 = new ListNode(1, five);
 
             //ListNode fifteen = new ListNode(0);
             //ListNode fourtenn = new ListNode(0, fifteen);
@@ -66,26 +60,26 @@ namespace LeetCode
                 new List<string>() { "New York", "Lima" },
                 new List<string>() { "Lima", "Sao Paulo" },
             };
-            var res = new string[] { "pay", "attention", "practice", "attend" };
-            var res1 = new int[] { 0 };
-            var res2 = new int[] { 5, 1, 5, 2, 5, 3, 5, 4 };
-
-             Console.WriteLine(MinPartitions("27346209830709182346"));
-            // Console.WriteLine(RepeatedNTimes(res2));
+            var res = new string[] { "5", "-2", "4", "C", "D", "9", "+", "+" };
+            var res1 = new int[] { 3, 1 ,1};
+            var res2 = new int[] { 2, 3 ,2};
+            var res3 = new int[] { 1,2 ,3};
+            // Console.WriteLine(HeightChecker(res1));
+          //  Console.WriteLine(TwoOutOfThree(res1, res2, res3));
             Console.ReadKey();
         }
 
         
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-       
+
+
+
+
+
+
+
+
     }
+
+ 
+
 }

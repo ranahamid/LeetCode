@@ -45,6 +45,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1108 Defanging an IP Address.cs" />
+    <Content Include="1148 Article Views I.sql" />
+    <Content Include="586 Customer Placing the Largest Number of Orders.sql" />
+    <Content Include="_584 Find Customer Referee.sql" />
+    <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
+    <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
+    <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
+    <Compile Include="2032 Two Out of Three.cs" />
+    <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
+    <Compile Include="2278 Percentage of Letter in String.cs" />
+    <Content Include="620 Not Boring Movies.sql" />
+    <Compile Include="682 Baseball Game.cs" />
+    <Compile Include="876 Middle of the Linked List.cs" />
+    <Compile Include="933 Number of Recent Calls.cs" />
+    <Compile Include="_1051 Height Checker.cs" />
+    <Compile Include="_1475 Final Prices With a Special Discount in a Shop.cs" />
+    <Compile Include="_2283 Check if Number Has Equal Digit Count and Digit Value.cs" />
+    <Compile Include="_657 Robot Return to Origin.cs" />
+    <Compile Include="_832 Flipping an Image.cs" />
     <Compile Include="_1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.cs" />
     <Compile Include="_338 Counting Bits.cs" />
     <Content Include="1179 Reformat Department Table.sql" />
@@ -205,6 +223,7 @@
   <ItemGroup>
     <Compile Include="1 Two Sum.cs" />
     <Content Include="1587 Bank Account Summary II.sql" />
+    <Compile Include="2255 Count Prefixes of a Given String.cs" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
