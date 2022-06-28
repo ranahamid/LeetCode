@@ -52,6 +52,7 @@
     <Content Include="_584 Find Customer Referee.sql" />
     <Compile Include="1207 Unique Number of Occurrences.cs" />
     <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
+    <Compile Include="1356 Sort Integers by The Number of 1 Bits.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
