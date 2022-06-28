@@ -62,6 +62,7 @@
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="876 Middle of the Linked List.cs" />
     <Compile Include="933 Number of Recent Calls.cs" />
+    <Compile Include="977 Squares of a Sorted Array.cs" />
     <Compile Include="_1051 Height Checker.cs" />
     <Compile Include="_1475 Final Prices With a Special Discount in a Shop.cs" />
     <Compile Include="_2283 Check if Number Has Equal Digit Count and Digit Value.cs" />
