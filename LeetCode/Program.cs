@@ -62,33 +62,17 @@ namespace LeetCode
                 new List<string>() { "New York", "Lima" },
                 new List<string>() { "Lima", "Sao Paulo" },
             };
-            var res = new string[] { "5", "-2", "4", "C", "D", "9", "+", "+" };
+            var resW1 = new string[] { "a","ab"};
+            var resW2 = new string[] { "a","a","a","ab"};
             var res1 = new int[] { 3, 1 ,1};
             var res2 = new int[] { 2, 3 ,2};
-            var res3 = new int[] { 1,2,3 };
+            var res3 = new int[] {1,2};
             // Console.WriteLine(HeightChecker(res1));
-           Console.WriteLine(MinCostToMoveChips(  res3));
+           Console.WriteLine(CountWords( words1:resW1,resW2));
             Console.ReadKey();
         }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
 
 
 

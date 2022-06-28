@@ -44,9 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Content Include="1148 Article Views I.sql" />
     <Content Include="1729 Find Followers Count.sql" />
+    <Content Include="175. Combine Two Tables.sql" />
     <Content Include="586 Customer Placing the Largest Number of Orders.sql" />
     <Content Include="595 Big Countries.sql" />
     <Content Include="584 Find Customer Referee.sql" />
@@ -54,15 +56,22 @@
     <Compile Include="1217. Minimum Cost to Move Chips to The Same Position.cs" />
     <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
     <Compile Include="1356 Sort Integers by The Number of 1 Bits.cs" />
+    <Compile Include="1403. Minimum Subsequence in Non-Increasing Order.cs" />
+    <Compile Include="1441. Build an Array With Stack Operations.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
+    <Compile Include="1935. Maximum Number of Words You Can Type.cs" />
     <Compile Include="2032 Two Out of Three.cs" />
+    <Compile Include="2085. Count Common Words With One Occurrence.cs" />
+    <Compile Include="2124. Check if All A's Appears Before All B's.cs" />
     <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
     <Compile Include="2278 Percentage of Letter in String.cs" />
     <Content Include="620 Not Boring Movies.sql" />
+    <Content Include="607. Sales Person.sql" />
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="876 Middle of the Linked List.cs" />
+    <Compile Include="922. Sort Array By Parity II.cs" />
     <Compile Include="933 Number of Recent Calls.cs" />
     <Compile Include="977 Squares of a Sorted Array.cs" />
     <Compile Include="1051 Height Checker.cs" />
