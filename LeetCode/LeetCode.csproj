@@ -60,6 +60,7 @@
     <Compile Include="1403. Minimum Subsequence in Non-Increasing Order.cs" />
     <Compile Include="1413. Minimum Value to Get Positive Step by Step Sum.cs" />
     <Compile Include="1441. Build an Array With Stack Operations.cs" />
+    <Compile Include="1636. Sort Array by Increasing Frequency.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
     <Content Include="182. Duplicate Emails.sql" />
