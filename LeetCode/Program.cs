@@ -66,20 +66,24 @@ namespace LeetCode
             var resW2 = new string[] { "a","a","a","ab"};
             var res1 = new int[] { 3, 1 ,1};
             var res2 = new int[] { 2, 3 ,2};
-            var res3 = new int[] {40,11,26,27,-20};
+            var res3 = new int[] {-3,2,-3,4,2};
            // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-           Console.WriteLine(CountGoodSubstrings( "aababcabc"));
+           Console.WriteLine(MinStartValue( res3));
             Console.ReadKey();
         }
-       
+        
 
-
-
-
-
-
-
+        public int[] FrequencySort(int[] nums) 
+        {
+            Array.Sort(nums, (a ,b)=> b.CompareTo(a));
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                
+                
+            }
+        }
 
 
 
