@@ -61,6 +61,7 @@
     <Compile Include="1441. Build an Array With Stack Operations.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
+    <Compile Include="1876. Substrings of Size Three with Distinct Characters.cs" />
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
     <Compile Include="1935. Maximum Number of Words You Can Type.cs" />
     <Compile Include="2032 Two Out of Three.cs" />

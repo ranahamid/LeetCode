@@ -69,54 +69,11 @@ namespace LeetCode
             var res3 = new int[] {40,11,26,27,-20};
            // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-           Console.WriteLine(MinimumAbsDifference( res3));
+           Console.WriteLine(CountGoodSubstrings( "aababcabc"));
             Console.ReadKey();
         }
- 
-        public static IList<IList<int>> MinimumAbsDifference(int[] arr) {
-            List<IList<int>> result = new List<IList<int>>();
-            Array.Sort(arr);
-            var min = Int32.MaxValue;
-            for (int i = 0; i < arr.Length-1; i++)
-            {
-                if (i + 1 < arr.Length)
-                {
-                    var diff = arr[i + 1] - arr[i];
-                    if (diff <= min)
-                    {
-                        List<int> data = new List<int>();
-                        data.Add(arr[i]);data.Add(arr[i+1]);
-                        result.Add(data);
-                        //i++;
-                        min = diff;
-                    }
-                }
-            }
-            List<IList<int>> result2 = new List<IList<int>>();
-            var minDiff = Int32.MaxValue;
-            foreach (var item in result)
-            {
-                var diff = Math.Abs(item[0] - item[1]);
-                minDiff = Math.Min(minDiff, diff);
-            }
-            foreach (var item in result)
-            {
-                var diff = Math.Abs(item[0] - item[1]);
-                if (minDiff == diff)
-                {
-                    result2.Add(item);
-                } 
-            }
-
-            return result2;
-        }
-
-
-
-
-
-
-
+        
+        
 
 
 
