@@ -72,8 +72,7 @@ namespace LeetCode
            Console.WriteLine(CountGoodSubstrings( "aababcabc"));
             Console.ReadKey();
         }
-        
-        
+       
 
 
 
