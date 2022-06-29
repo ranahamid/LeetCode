@@ -89,7 +89,7 @@ namespace LeetCode
                     dictionary[nums[i]] = 1;
                 }
 
-               var data= dictionary.OrderByDescending(x => x.Value).ThenBy(x => x.Key);
+               var data= dictionary.OrderByDescending(x => x.Value).ThenByDescending(x => x.Key);
                var result = new int[nums.Length];
                return result;
             }
