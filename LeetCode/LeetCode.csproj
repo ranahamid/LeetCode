@@ -44,19 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1002. Find Common Characters.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Content Include="1148 Article Views I.sql" />
     <Content Include="1729 Find Followers Count.sql" />
     <Content Include="175. Combine Two Tables.sql" />
+    <Content Include="1965 Employees With Missing Information.sql" />
     <Content Include="586 Customer Placing the Largest Number of Orders.sql" />
     <Content Include="595 Big Countries.sql" />
     <Content Include="584 Find Customer Referee.sql" />
     <Compile Include="1200. Minimum Absolute Difference.cs" />
     <Compile Include="1207 Unique Number of Occurrences.cs" />
     <Compile Include="1217. Minimum Cost to Move Chips to The Same Position.cs" />
+    <Compile Include="1266. Minimum Time Visiting All Points.cs" />
     <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
     <Compile Include="1356 Sort Integers by The Number of 1 Bits.cs" />
+    <Compile Include="1380. Lucky Numbers in a Matrix.cs" />
     <Compile Include="1403. Minimum Subsequence in Non-Increasing Order.cs" />
     <Compile Include="1413. Minimum Value to Get Positive Step by Step Sum.cs" />
     <Compile Include="1441. Build an Array With Stack Operations.cs" />
@@ -77,7 +81,10 @@
     <Content Include="620 Not Boring Movies.sql" />
     <Content Include="607. Sales Person.sql" />
     <Compile Include="349. Intersection of Two Arrays.cs" />
+    <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
+    <Compile Include="500. Keyboard Row.cs" />
     <Compile Include="682 Baseball Game.cs" />
+    <Compile Include="821. Shortest Distance to a Character.cs" />
     <Compile Include="852. Peak Index in a Mountain Array.cs" />
     <Compile Include="876 Middle of the Linked List.cs" />
     <Compile Include="922. Sort Array By Parity II.cs" />

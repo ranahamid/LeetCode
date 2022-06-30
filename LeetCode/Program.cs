@@ -15,12 +15,11 @@ namespace LeetCode
         {
               
 
-            int[][] nums = new int[4][]
+            int[][] nums = new int[3][]
             {
-                new int[4] { 1, 1, 0, 0 },
-                new int[4] { 1, 0, 0, 1 },
-                new int[4] { 0, 1, 1, 1 },
-                new int[4] { 1, 0, 1, 0 },
+                new int[3] { 3,7,8 },
+                new int[3] { 9,11,13 },
+                new int[3] { 15,16,17 }, 
             };
 
             int[][] nums1 = new int[2][]
@@ -63,33 +62,19 @@ namespace LeetCode
                 new List<string>() { "Lima", "Sao Paulo" },
             };
             var resW1 = new string[] { "a","ab"};
-            var resW2 = new string[] { "a","a","a","ab"};
+            var resW2 = new string[] { "Hello","Alaska","Dad","Peace"};
             var res1 = new int[] { 3, 1 ,1};
             var res2 = new int[] { 2, 3 ,2};
-            var res3 = new int[] {2,3,1,3,2};
+            var res3 = new int[] {1,0,0,8,6};
            // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-           Console.WriteLine(FrequencySort( res3));
+           Console.WriteLine(FindWords( resW2));
             Console.ReadKey();
         }
+     
         
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
 
 
 
