@@ -8,19 +8,15 @@ using System.Xml.XPath;
 
 namespace LeetCode
 {
-
-
     internal class Program
     {
         static void Main(string[] args)
         {
-              
-
             int[][] nums = new int[3][]
             {
-                new int[3] { 3,7,8 },
-                new int[3] { 9,11,13 },
-                new int[3] { 15,16,17 }, 
+                new int[3] { 3, 7, 8 },
+                new int[3] { 9, 11, 13 },
+                new int[3] { 15, 16, 17 },
             };
 
             int[][] nums1 = new int[2][]
@@ -32,7 +28,7 @@ namespace LeetCode
 
             #region node
 
-           // ListNode eig = new ListNode(3);
+            // ListNode eig = new ListNode(3);
             //ListNode sev = new ListNode(3, eig);
             //ListNode six = new ListNode(2, sev);
             //ListNode five = new ListNode(1, six);
@@ -62,32 +58,23 @@ namespace LeetCode
                 new List<string>() { "New York", "Lima" },
                 new List<string>() { "Lima", "Sao Paulo" },
             };
-            var resW1 = new string[] { "a","ab"};
-            var resW2 = new string[] { "cat","bt","hat","tree"};
-            var res1 = new int[] { 1,3};
-            var res2 = new int[] { 2,4};
-            var res3 = new int[] {3,1,5,4,2};
-           // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
+            var resW1 = new string[] { "a", "ab" };
+            var resW2 = new string[]
+            {
+                "a@leetcode.com", "b@leetcode.com", "c@leetcode.com"
+            };
+            var res1 = new int[] { 1, 3 };
+            var res2 = new int[] { 2, 4 };
+            var res3 = new int[] { 3, 1, 5, 4, 2 };
+            // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-           Console.WriteLine(CountCharacters( resW2,"atach"));
+            Console.WriteLine(CountPrimeSetBits(6,10));
             Console.ReadKey();
         }
-        
-        
 
 
-
-
-
-
-
-
+   
 
 
     }
-
-
-
 }
-
-   

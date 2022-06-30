@@ -71,6 +71,7 @@
     <Compile Include="1656 Design an Ordered Stream.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
     <Content Include="182. Duplicate Emails.sql" />
+    <Content Include="181. Employees Earning More Than Their Managers.sql" />
     <Compile Include="1876. Substrings of Size Three with Distinct Characters.cs" />
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
     <Compile Include="1925. Count Square Sum Triples.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="2085. Count Common Words With One Occurrence.cs" />
     <Compile Include="2124. Check if All A's Appears Before All B's.cs" />
     <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
+    <Compile Include="2164. Sort Even and Odd Indices Independently.cs" />
     <Compile Include="2215. Find the Difference of Two Arrays.cs" />
     <Compile Include="2248. Intersection of Multiple Arrays.cs" />
     <Compile Include="2278 Percentage of Letter in String.cs" />
@@ -88,14 +90,18 @@
     <Compile Include="32. Longest Valid Parentheses.cs" />
     <Compile Include="349. Intersection of Two Arrays.cs" />
     <Compile Include="4. Median of Two Sorted Arrays.cs" />
+    <Compile Include="412. Fizz Buzz.cs" />
     <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
     <Compile Include="500. Keyboard Row.cs" />
     <Compile Include="682 Baseball Game.cs" />
+    <Compile Include="762. Prime Number of Set Bits in Binary Representation.cs" />
     <Compile Include="766. Toeplitz Matrix.cs" />
     <Compile Include="821. Shortest Distance to a Character.cs" />
     <Compile Include="852. Peak Index in a Mountain Array.cs" />
     <Compile Include="876 Middle of the Linked List.cs" />
+    <Compile Include="908. Smallest Range I.cs" />
     <Compile Include="922. Sort Array By Parity II.cs" />
+    <Compile Include="929. Unique Email Addresses.cs" />
     <Compile Include="933 Number of Recent Calls.cs" />
     <Compile Include="977 Squares of a Sorted Array.cs" />
     <Compile Include="1051 Height Checker.cs" />
