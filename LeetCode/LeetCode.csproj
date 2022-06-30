@@ -71,6 +71,7 @@
     <Content Include="182. Duplicate Emails.sql" />
     <Compile Include="1876. Substrings of Size Three with Distinct Characters.cs" />
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
+    <Compile Include="1925. Count Square Sum Triples.cs" />
     <Compile Include="1935. Maximum Number of Words You Can Type.cs" />
     <Compile Include="2032 Two Out of Three.cs" />
     <Compile Include="2078. Two Furthest Houses With Different Colors.cs" />
