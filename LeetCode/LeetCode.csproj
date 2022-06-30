@@ -73,6 +73,7 @@
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
     <Compile Include="1935. Maximum Number of Words You Can Type.cs" />
     <Compile Include="2032 Two Out of Three.cs" />
+    <Compile Include="2078. Two Furthest Houses With Different Colors.cs" />
     <Compile Include="2085. Count Common Words With One Occurrence.cs" />
     <Compile Include="2124. Check if All A's Appears Before All B's.cs" />
     <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
