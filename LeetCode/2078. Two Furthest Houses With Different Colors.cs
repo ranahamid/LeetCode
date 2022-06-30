@@ -1,4 +1,7 @@
-﻿namespace LeetCode
+﻿using System;
+using System.Linq;
+
+namespace LeetCode
 {
     public class _2078__Two_Furthest_Houses_With_Different_Colors {
         
