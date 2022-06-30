@@ -55,6 +55,7 @@
     <Content Include="595 Big Countries.sql" />
     <Content Include="584 Find Customer Referee.sql" />
     <Compile Include="1122. Relative Sort Array.cs" />
+    <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
     <Compile Include="1200. Minimum Absolute Difference.cs" />
     <Compile Include="1207 Unique Number of Occurrences.cs" />
     <Compile Include="1217. Minimum Cost to Move Chips to The Same Position.cs" />
@@ -86,6 +87,7 @@
     <Content Include="607. Sales Person.sql" />
     <Compile Include="32. Longest Valid Parentheses.cs" />
     <Compile Include="349. Intersection of Two Arrays.cs" />
+    <Compile Include="4. Median of Two Sorted Arrays.cs" />
     <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
     <Compile Include="500. Keyboard Row.cs" />
     <Compile Include="682 Baseball Game.cs" />
