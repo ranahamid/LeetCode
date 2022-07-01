@@ -69,6 +69,7 @@
     <Compile Include="1526. Minimum Number of Increments on Subarrays to Form a Target Array.cs" />
     <Compile Include="1636. Sort Array by Increasing Frequency.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
+    <Compile Include="1710. Maximum Units on a Truck.cs" />
     <Compile Include="1700. Number of Students Unable to Eat Lunch.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
     <Content Include="182. Duplicate Emails.sql" />
@@ -90,6 +91,7 @@
     <Compile Include="2278 Percentage of Letter in String.cs" />
     <Content Include="620 Not Boring Movies.sql" />
     <Content Include="607. Sales Person.sql" />
+    <Compile Include="232. Implement Queue using Stacks.cs" />
     <Compile Include="2319. Check if Matrix Is X-Matrix.cs" />
     <Compile Include="32. Longest Valid Parentheses.cs" />
     <Compile Include="349. Intersection of Two Arrays.cs" />
@@ -282,8 +284,12 @@
     <Compile Include="1 Two Sum.cs" />
     <Content Include="1587 Bank Account Summary II.sql" />
     <Compile Include="2255 Count Prefixes of a Given String.cs" />
+    <Compile Include="150. Evaluate Reverse Polish Notation.cs" />
+    <Compile Include="1385. Find the Distance Value Between Two Arrays.cs" />
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Algo-1\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
