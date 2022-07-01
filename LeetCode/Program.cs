@@ -12,11 +12,12 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[][] nums = new int[3][]
+            int[][] nums = new int[4][]
             {
-                new int[3] { 3, 7, 8 },
-                new int[3] { 9, 11, 13 },
-                new int[3] { 15, 16, 17 },
+                new int[4] { 2, 0, 0, 1 },
+                new int[4] { 0, 3, 1, 0 },
+                new int[4] { 0, 5, 2, 0 },
+                new int[4] { 4, 0, 0, 2 },
             };
 
             int[][] nums1 = new int[2][]
@@ -63,18 +64,20 @@ namespace LeetCode
             {
                 "a@leetcode.com", "b@leetcode.com", "c@leetcode.com"
             };
-            var res1 = new int[] { 1, 3 };
-            var res2 = new int[] { 2, 4 };
-            var res3 = new int[] { 3, 1, 5, 4, 2 };
+            var res1 = new int[] {4,1,2 };
+            var res2 = new int[] {1,3,4,2 };
+            var res3 = new int[]
+            {
+                41, 65, 14, 80, 20, 10, 55, 58, 24, 56, 28, 86, 96, 10, 3, 84, 4, 41, 13, 32, 42, 43, 83, 78, 82, 70,
+                15, -41
+            };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-            Console.WriteLine(CountPrimeSetBits(6,10));
+            Console.WriteLine(CheckAlmostEquivalent("abcdeef","abaaacc"));
             Console.ReadKey();
         }
-
-
-   
-
+        
+ 
 
     }
 }
