@@ -12,11 +12,12 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[][] nums = new int[3][]
+            int[][] nums = new int[4][]
             {
-                new int[3] { 3, 7, 8 },
-                new int[3] { 9, 11, 13 },
-                new int[3] { 15, 16, 17 },
+                new int[2] { 5,10 },
+                new int[2] { 2,5 },
+                new int[2] { 4,7 },
+                new int[2] { 3,9 },
             };
 
             int[][] nums1 = new int[2][]
@@ -68,9 +69,23 @@ namespace LeetCode
             var res3 = new int[] { 3, 1, 5, 4, 2 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-            Console.WriteLine(CountPrimeSetBits(6,10));
+            Console.WriteLine(MaximumUnits(nums,10));
             Console.ReadKey();
         }
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
 
    
