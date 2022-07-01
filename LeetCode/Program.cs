@@ -62,33 +62,30 @@ namespace LeetCode
             var resW1 = new string[] { "a", "ab" };
             var resW2 = new string[]
             {
-                "a@leetcode.com", "b@leetcode.com", "c@leetcode.com"
+                "10","6","9","3","+","-11","*","/","*","17","+","5","+"
             };
             var res1 = new int[] { 1, 3 };
             var res2 = new int[] { 2, 4 };
             var res3 = new int[] { 3, 1, 5, 4, 2 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-            Console.WriteLine(MaximumUnits(nums,10));
+            Console.WriteLine(EvalRPN(resW2));
             Console.ReadKey();
         }
-        
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
 
-   
+      
+
+
+
+
+
+
+
+
+
+
+
 
 
     }

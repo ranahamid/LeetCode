@@ -277,6 +277,7 @@
     <Compile Include="1 Two Sum.cs" />
     <Content Include="1587 Bank Account Summary II.sql" />
     <Compile Include="2255 Count Prefixes of a Given String.cs" />
+    <Compile Include="150. Evaluate Reverse Polish Notation.cs" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
