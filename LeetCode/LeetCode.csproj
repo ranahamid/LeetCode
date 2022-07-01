@@ -107,6 +107,7 @@
     <Compile Include="824. Goat Latin.cs" />
     <Compile Include="852. Peak Index in a Mountain Array.cs" />
     <Compile Include="876 Middle of the Linked List.cs" />
+    <Compile Include="884. Uncommon Words from Two Sentences.cs" />
     <Compile Include="908. Smallest Range I.cs" />
     <Compile Include="922. Sort Array By Parity II.cs" />
     <Compile Include="929. Unique Email Addresses.cs" />
