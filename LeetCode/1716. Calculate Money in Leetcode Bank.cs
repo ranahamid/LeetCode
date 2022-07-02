@@ -1,6 +1,13 @@
 ﻿namespace LeetCode
 {
     public class _1716__Calculate_Money_in_Leetcode_Bank {
+
+        /// <summary>
+        /// Runtime: 29 ms, faster than 77.78% of C# online submissions for Calculate Money in Leetcode Bank.
+        /// Memory Usage: 26.6 MB, less than 15.56% of C# online submissions for Calculate Money in Leetcode Bank.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public static int TotalMoney(int n)
         {
             if(n<=7)
