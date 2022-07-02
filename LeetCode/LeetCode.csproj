@@ -70,6 +70,7 @@
     <Compile Include="1636. Sort Array by Increasing Frequency.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
     <Compile Include="1710. Maximum Units on a Truck.cs" />
+    <Compile Include="1716. Calculate Money in Leetcode Bank.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
     <Content Include="182. Duplicate Emails.sql" />
     <Content Include="181. Employees Earning More Than Their Managers.sql" />

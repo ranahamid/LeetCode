@@ -69,13 +69,11 @@ namespace LeetCode
             var res3 = new int[] { 3, 1, 5, 4, 2 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-            // Console.WriteLine(FindTheDistanceValue(res1, res2,3));
+             Console.WriteLine(TotalMoney(10));
             Console.ReadKey();
         }
 
 
-
-       
 
 
 
