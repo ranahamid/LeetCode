@@ -66,6 +66,7 @@
     <Compile Include="1403. Minimum Subsequence in Non-Increasing Order.cs" />
     <Compile Include="1413. Minimum Value to Get Positive Step by Step Sum.cs" />
     <Compile Include="1441. Build an Array With Stack Operations.cs" />
+    <Compile Include="1507. Reformat Date.cs" />
     <Compile Include="1526. Minimum Number of Increments on Subarrays to Form a Target Array.cs" />
     <Compile Include="1636. Sort Array by Increasing Frequency.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
