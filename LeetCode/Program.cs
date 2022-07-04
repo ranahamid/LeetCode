@@ -84,14 +84,29 @@ namespace LeetCode
             Console.WriteLine(ReformatDate("20th Oct 2052"));
             Console.ReadKey();
         }
-        
 
 
+        public static IEnumerable<T> Supersect<T>( IEnumerable<T> a, ICollection<T> b)
+              => a.Where(b.Remove);
+
+        public int[] Intersect(int[] nums1, int[] nums2)
+        {
+            return Intersect2(nums1,nums2).ToArray();
+        }
 
 
-
-
-
+        public static IEnumerable<T> Intersect2<T>(this IEnumerable<T> source, IEnumerable<T> target)
+        {
+            List<T> list = target.ToList();
+            foreach (T item in source)
+            {
+                if (list.Contains(item))
+                {
+                    list.Remove(item);
+                    yield return item;
+                }
+            }
+        }
 
 
 
