@@ -1,5 +1,6 @@
 ﻿package main
-
+///Runtime: 0 ms, faster than 100.00% of Go online submissions for Reformat Phone Number.
+/// Memory Usage: 2.3 MB, less than 26.67% of Go online submissions for Reformat Phone Number.
 import (
 	"fmt"
 	"strings"
