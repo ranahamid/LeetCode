@@ -293,6 +293,7 @@
     <Compile Include="1385. Find the Distance Value Between Two Arrays.cs" />
     <None Include="App.config" />
     <Compile Include="contest-300\2326. Spiral Matrix IV.cs" />
+    <None Include="Go\1694. Reformat Phone Number.Go" />
     <None Include="Go\376. Wiggle Subsequence.Go" />
   </ItemGroup>
   <ItemGroup>
