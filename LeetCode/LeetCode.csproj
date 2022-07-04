@@ -98,6 +98,7 @@
     <Compile Include="2319. Check if Matrix Is X-Matrix.cs" />
     <Compile Include="32. Longest Valid Parentheses.cs" />
     <Compile Include="349. Intersection of Two Arrays.cs" />
+    <Compile Include="350. Intersection of Two Arrays II.cs" />
     <Compile Include="4. Median of Two Sorted Arrays.cs" />
     <Compile Include="412. Fizz Buzz.cs" />
     <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
