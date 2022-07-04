@@ -275,6 +275,7 @@
     <Compile Include="contest-300\2325. Decode the Message.cs" />
     <Compile Include="contest-81\2315. Count Asterisks.cs" />
     <Compile Include="contest-81\2317 Maximum XOR After Operations.cs" />
+    <Compile Include="Go\2062. Count Vowel Substrings of a String.Go" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />
