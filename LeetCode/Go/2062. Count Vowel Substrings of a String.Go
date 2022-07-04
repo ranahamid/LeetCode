@@ -33,18 +33,7 @@ func (s *set) Contains(value string) bool {
 	return c
 }
 
-func main() {
-	// s := NewSet()
-
-	// s.Add("Peter")
-	// s.Add("David")
-	// s.Add("Peter")
-
-	// fmt.Println(s.Contains("Peter"))  // True
-	// fmt.Println(s.Contains("George")) // False
-
-	// s.Remove("Peter")
-	// fmt.Println(s.Contains("Peter")) // False
+func main() { 
 
 	fmt.Println(countVowelSubstrings("aeiouu"))
 }

@@ -271,12 +271,12 @@
     <Compile Include="905 Sort Array By Parity.cs" />
     <Compile Include="942 DI String Match.cs" />
     <Compile Include="961 N-Repeated Element in Size 2N Array.cs" />
+    <Compile Include="Codeforces\Contest 804\A. The Third Three Number Problem.cs" />
     <Compile Include="Contest 291\2259 Remove Digit From Number to Maximize Result.cs" />
     <Compile Include="Contest 291\2260 Minimum Consecutive Cards to Pick Up.cs" />
     <Compile Include="contest-300\2325. Decode the Message.cs" />
     <Compile Include="contest-81\2315. Count Asterisks.cs" />
     <Compile Include="contest-81\2317 Maximum XOR After Operations.cs" />
-    <Compile Include="Go\2062. Count Vowel Substrings of a String.Go" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />
@@ -295,9 +295,6 @@
     <Compile Include="1385. Find the Distance Value Between Two Arrays.cs" />
     <None Include="App.config" />
     <Compile Include="contest-300\2326. Spiral Matrix IV.cs" />
-    <None Include="Go\1694. Reformat Phone Number.Go" />
-    <None Include="Go\2042. Check if Numbers Are Ascending in a Sentence.go" />
-    <None Include="Go\376. Wiggle Subsequence.Go" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Algo-1\" />

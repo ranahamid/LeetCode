@@ -6,9 +6,19 @@ using System.Threading.Tasks;
 
 namespace LeetCode.contest_300
 {
+    public class ListNode_300
+    {
+        public int val;
+        public ListNode_300 next;
+        public ListNode_300(int val = 0, ListNode_300 next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
     class _6111
     {
-       public static int[][] SpiralMatrix(int m, int n, ListNode head)
+       public static int[][] SpiralMatrix(int m, int n, ListNode_300 head)
         {
             var result = new int[m][];
             for (var i = 0; i < result.Length; i++)
