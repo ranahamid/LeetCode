@@ -1,0 +1,61 @@
+﻿package main
+//Runtime: 753 ms, faster than 14.88% of Go online submissions for Longest Consecutive Sequence.
+//Memory Usage: 11.1 MB, less than 45.13% of Go online submissions for Longest Consecutive Sequence.
+
+import (
+	"fmt"
+	"math"
+)
+
+var exists = struct{}{}
+
+type set struct {
+	m map[int]struct{}
+}
+
+func NewSet() *set {
+	s := &set{}
+	s.m = make(map[int]struct{})
+	return s
+}
+
+func (s *set) Add(value int) {
+	s.m[value] = exists
+}
+
+func (s *set) Remove(value int) {
+	delete(s.m, value)
+}
+
+func (s *set) Length() int {
+	return len(s.m)
+}
+
+func (s *set) Contains(value int) bool {
+	_, c := s.m[value]
+	return c
+}
+
+func main() {
+	var nums = []int{0, 3, 7, 2, 5, 8, 4, 6, 0, 1}
+	fmt.Println(longestConsecutive(nums))
+}
+func longestConsecutive(nums []int) int {
+	set := NewSet()
+	for i := 0; i < len(nums); i++ {
+		set.Add(nums[i])
+	}
+	var max = 0
+	for i := 0; i < len(nums); i++ {
+		x := nums[i]
+		if !set.Contains(x - 1) {
+
+			y := x + 1
+			for _ = 0; set.Contains(y); {
+				y++
+			}
+			max = int(math.Max(float64(max), float64(y-x)))
+		}
+	}
+	return max
+}
