@@ -271,7 +271,7 @@
     <Compile Include="905 Sort Array By Parity.cs" />
     <Compile Include="942 DI String Match.cs" />
     <Compile Include="961 N-Repeated Element in Size 2N Array.cs" />
-    <Compile Include="Codeforces\Contest 804\A. The Third Three Number Problem.cs" />
+    <Content Include="Codeforces\Contest 804\A. The Third Three Number Problem.txt" />
     <Compile Include="Contest 291\2259 Remove Digit From Number to Maximize Result.cs" />
     <Compile Include="Contest 291\2260 Minimum Consecutive Cards to Pick Up.cs" />
     <Compile Include="contest-300\2325. Decode the Message.cs" />
