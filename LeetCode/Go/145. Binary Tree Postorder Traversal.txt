@@ -1,0 +1,31 @@
+﻿package main
+////Runtime: 4 ms, faster than 7.86% of Go online submissions for Binary Tree Postorder Traversal.
+//Memory Usage: 2 MB, less than 88.21% of Go online submissions for Binary Tree Postorder Traversal.
+func main() {
+
+}
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
+func postorderTraversal(root *TreeNode) []int {
+	var result = []int{}
+	if root != nil {
+		Traverse(root, &result)
+	}
+	return result
+}
+
+func Traverse(current *TreeNode, result *[]int) {
+
+	if current.Left != nil {
+		Traverse(current.Left, result)
+	}
+	if current.Right != nil {
+		Traverse(current.Right, result)
+	}
+	*result = append(*result, current.Val)
+}

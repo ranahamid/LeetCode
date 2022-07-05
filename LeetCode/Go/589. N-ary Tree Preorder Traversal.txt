@@ -1,0 +1,31 @@
+﻿package main
+
+func main() {
+
+}
+//Runtime: 6 ms, faster than 40.46% of Go online submissions for N-ary Tree Preorder Traversal.
+//Memory Usage: 4.1 MB, less than 42.43% of Go online submissions for N-ary Tree Preorder Traversal.
+type Node struct {
+	Val      int
+	Children []*Node
+}
+
+func preorder(root *Node) []int {
+	var result = []int{}
+	if root != nil {
+		Traverse(root, &result)
+	}
+	return result
+}
+
+func Traverse(current *Node, result *[]int) {
+
+	*result = append(*result, current.Val)
+	var length = len(current.Children)
+	if length > 0 {
+		for i := 0; i < length; i++ {
+			Traverse(current.Children[i], result)
+		}
+	}
+
+}

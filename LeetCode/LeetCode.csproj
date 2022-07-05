@@ -60,12 +60,16 @@
     <Compile Include="1207 Unique Number of Occurrences.cs" />
     <Compile Include="1217. Minimum Cost to Move Chips to The Same Position.cs" />
     <Compile Include="1266. Minimum Time Visiting All Points.cs" />
+    <Compile Include="128. Longest Consecutive Sequence.cs" />
     <Compile Include="1299 Replace Elements with Greatest Element on Right Side.cs" />
     <Compile Include="1356 Sort Integers by The Number of 1 Bits.cs" />
+    <Compile Include="1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree.cs" />
     <Compile Include="1380. Lucky Numbers in a Matrix.cs" />
     <Compile Include="1403. Minimum Subsequence in Non-Increasing Order.cs" />
     <Compile Include="1413. Minimum Value to Get Positive Step by Step Sum.cs" />
+    <Compile Include="144. Binary Tree Preorder Traversal.cs" />
     <Compile Include="1441. Build an Array With Stack Operations.cs" />
+    <Compile Include="145. Binary Tree Postorder Traversal.cs" />
     <Compile Include="1507. Reformat Date.cs" />
     <Compile Include="1526. Minimum Number of Increments on Subarrays to Form a Target Array.cs" />
     <Compile Include="1636. Sort Array by Increasing Frequency.cs" />
@@ -104,6 +108,7 @@
     <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
     <Compile Include="496. Next Greater Element I.cs" />
     <Compile Include="500. Keyboard Row.cs" />
+    <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="762. Prime Number of Set Bits in Binary Representation.cs" />
     <Compile Include="766. Toeplitz Matrix.cs" />
@@ -116,6 +121,8 @@
     <Compile Include="922. Sort Array By Parity II.cs" />
     <Compile Include="929. Unique Email Addresses.cs" />
     <Compile Include="933 Number of Recent Calls.cs" />
+    <Compile Include="938. Range Sum of BST.cs" />
+    <Compile Include="94. Binary Tree Inorder Traversal.cs" />
     <Compile Include="977 Squares of a Sorted Array.cs" />
     <Compile Include="1051 Height Checker.cs" />
     <Compile Include="1460. Make Two Arrays Equal by Reversing Sub-arrays.cs" />
@@ -279,6 +286,8 @@
     <Compile Include="contest-81\2317 Maximum XOR After Operations.cs" />
     <Content Include="Go\104. Maximum Depth of Binary Tree.txt" />
     <Content Include="Go\128. Longest Consecutive Sequence.txt" />
+    <Content Include="Go\144. Binary Tree Preorder Traversal.txt" />
+    <Content Include="Go\145. Binary Tree Postorder Traversal.txt" />
     <Content Include="Go\2062. Count Vowel Substrings of a String.txt" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -289,6 +298,9 @@
     <Content Include="1890 The Latest Login in 2020.sql" />
     <Content Include="196 Delete Duplicate Emails.sql" />
     <Content Include="197 Rising Temperature.sql" />
+    <Content Include="Go\589. N-ary Tree Preorder Traversal.txt" />
+    <Content Include="Go\938. Range Sum of BST.txt" />
+    <Content Include="Go\94. Binary Tree Inorder Traversal.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1 Two Sum.cs" />

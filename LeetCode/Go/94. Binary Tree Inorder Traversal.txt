@@ -1,0 +1,31 @@
+﻿
+ type TreeNode struct {
+     Val int
+     Left *TreeNode
+     Right *TreeNode
+ }
+ 
+ //Runtime: 0 ms, faster than 100.00% of Go online submissions for Binary Tree Inorder Traversal.
+ //Memory Usage: 2 MB, less than 29.42% of Go online submissions for Binary Tree Inorder Traversal.
+
+func inorderTraversal(root *TreeNode) []int {
+  	var result = []int{}
+	if root != nil {
+		Traverse(root, &result)
+	}
+	return result
+}
+
+
+func Traverse(current *TreeNode, result *[]int) {
+
+	
+	if current.Left != nil {
+		Traverse(current.Left, result)
+	}
+     *result = append(*result, current.Val)
+	if current.Right != nil {
+		Traverse(current.Right, result)
+	}	 
+   
+}
