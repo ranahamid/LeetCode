@@ -277,6 +277,7 @@
     <Compile Include="contest-300\2325. Decode the Message.cs" />
     <Compile Include="contest-81\2315. Count Asterisks.cs" />
     <Compile Include="contest-81\2317 Maximum XOR After Operations.cs" />
+    <Content Include="Go\104. Maximum Depth of Binary Tree.txt" />
     <Content Include="Go\128. Longest Consecutive Sequence.txt" />
     <Content Include="Go\2062. Count Vowel Substrings of a String.txt" />
     <Compile Include="Program.cs" />
