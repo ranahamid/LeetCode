@@ -1,0 +1,24 @@
+﻿package main
+
+import "math"
+
+func main() {
+
+}
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
+func maxDepth(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
+
+	var leftMax = maxDepth(root.Left)
+	var rightMax = maxDepth(root.Right)
+
+	return 1 + int(math.Max(float64(leftMax), float64(rightMax)))
+}
