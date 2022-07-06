@@ -34,9 +34,9 @@ namespace LeetCode
 
             //ListNode eig = new ListNode(3);
             //ListNode sev = new ListNode(3, eig);
-            TreeNode six = new TreeNode(3 );
-            TreeNode five = new TreeNode(1 );
-            TreeNode list2 = new TreeNode(2, five,six);
+            //TreeNode six = new TreeNode(3 );
+            //TreeNode five = new TreeNode(1 );
+            //TreeNode list2 = new TreeNode(2, five,six);
 
             //ListNode fifteen = new ListNode(0);
             //ListNode fourtenn = new ListNode(0, fifteen);
@@ -83,27 +83,9 @@ namespace LeetCode
 
             Console.ReadKey();
         }
-        public static TreeNode InvertTree(TreeNode root)
-        {
-            if(root == null)
-                return null;
-            var newRoot = new TreeNode(root.val);
-            newRoot.left = InvertTree(root.right);
-            newRoot.right = InvertTree(root.left);
-            return newRoot;
-        }
+    
 
 
     }
 
-   public class TreeNode {
-       public int val;
-       public TreeNode left;
-       public TreeNode right;
-       public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-           this.val = val;
-           this.left = left;
-           this.right = right;
-       }
-   }
 }

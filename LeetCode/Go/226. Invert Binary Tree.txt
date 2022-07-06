@@ -1,0 +1,18 @@
+﻿package main
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+//Runtime: 3 ms, faster than 34.08% of Go online submissions for Invert Binary Tree.
+//Memory Usage: 2.2 MB, less than 70.89% of Go online submissions for Invert Binary Tree.
+func main() {
+
+}
+func invertTree(root *TreeNode) *TreeNode {
+	if root != nil {
+		root.Left, root.Right = invertTree(root.Right),  invertTree(root.Left)	 
+	}
+	return root
+}
