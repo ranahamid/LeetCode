@@ -1,0 +1,23 @@
+﻿//Runtime: 2 ms, faster than 42.59% of Go online submissions for Binary Tree Preorder Traversal.
+//Memory Usage: 2 MB, less than 42.60% of Go online submissions for Binary Tree Preorder Traversal.
+func preorderTraversal(root *TreeNode) []int {
+  	var result = []int{}
+	if root != nil {
+		Traverse(root, &result)
+	}
+	return result
+}
+
+
+func Traverse(current *TreeNode, result *[]int) {
+
+	  *result = append(*result, current.Val)
+	if current.Left != nil {
+		Traverse(current.Left, result)
+	}
+   
+	if current.Right != nil {
+		Traverse(current.Right, result)
+	}	 
+   
+}

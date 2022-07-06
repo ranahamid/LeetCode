@@ -1,0 +1,45 @@
+﻿package main
+
+func main() {
+
+}
+//Runtime: 133 ms, faster than 36.98% of Go online submissions for Range Sum of BST.
+//Memory Usage: 8.8 MB, less than 73.58% of Go online submissions for Range Sum of BST.
+type Node struct {
+	Val      int
+	Children []*Node
+}
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
+func rangeSumBST(root *TreeNode, low int, high int) int {
+	var result = []int{}
+	if root != nil {
+		Traverse(root, &result)
+	}
+	//sort result
+	//sort.Ints(result)
+	var sum = 0
+	for i := 0; i < len(result); i++ {
+		if result[i] >= low && result[i] <= high {
+			sum = sum + result[i]
+		}
+	}
+	return sum
+}
+
+func Traverse(current *TreeNode, result *[]int) {
+
+	if current.Left != nil {
+		Traverse(current.Left, result)
+	}
+	*result = append(*result, current.Val)
+	if current.Right != nil {
+		Traverse(current.Right, result)
+	}
+
+}
