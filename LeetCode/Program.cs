@@ -72,11 +72,12 @@ namespace LeetCode
             var res2 = new int[] { -4, -3, 6, 10, 20, 30 };
             var res3 = new int[] {4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
-            Console.WriteLine(NumberOfLines(res3, "bbbcccdddaaa"));
+            Console.WriteLine(DivideString("abcdefghij",3, 'x'));
             //Console.WriteLine(ReformatDate("20th Oct 2052")); 
             Console.ReadKey();
         }
-      
+
+        
 
     }
 }

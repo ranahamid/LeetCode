@@ -95,6 +95,7 @@
     <Compile Include="2078. Two Furthest Houses With Different Colors.cs" />
     <Compile Include="2085. Count Common Words With One Occurrence.cs" />
     <Compile Include="2124. Check if All A's Appears Before All B's.cs" />
+    <Compile Include="2138. Divide a String Into Groups of Size k.cs" />
     <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
     <Compile Include="2164. Sort Even and Odd Indices Independently.cs" />
     <Compile Include="2215. Find the Difference of Two Arrays.cs" />
@@ -307,6 +308,7 @@
     <Content Include="Go\1822. Sign of the Product of an Array.txt" />
     <Content Include="Go\2057. Smallest Index With Equal Value.txt" />
     <Content Include="Go\2062. Count Vowel Substrings of a String.txt" />
+    <Content Include="Go\2138. Divide a String Into Groups of Size k.txt" />
     <Content Include="Go\2235. Add Two Integers.txt" />
     <Content Include="Go\231. Power of Two.txt" />
     <Content Include="Go\237. Delete Node in a Linked List.txt" />

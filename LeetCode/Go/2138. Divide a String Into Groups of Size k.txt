@@ -1,0 +1,31 @@
+﻿///Runtime: 0 ms, faster than 100.00% of Go online submissions for Divide a String Into Groups of Size k.
+///Memory Usage: 2.6 MB, less than 10.71% of Go online submissions for Divide a String Into Groups of Size k.
+func divideString(s string, k int, fill byte) []string {
+    var length = len(s)
+	var len = length / k
+	var remaining = length % k
+	var totalLength = len
+	if remaining > 0 {
+		totalLength = len + 1
+	}
+	var position = 0
+
+	result := make([]string, totalLength)
+	var counter = 0
+	for i := 0; i < len; i++ {
+		//var subs = s.Substring(position, k)
+		var subs = s[position : position+k]
+		result[counter] = subs
+		counter++
+		position = k + position
+	}
+	if remaining > 0 {
+		//var subs = s.Substring(position, remaining)
+		var subs = s[position : position+remaining]
+		for j := 0; j < k-remaining; j++ {
+			subs = subs + string(rune(fill))
+		}
+		result[counter] = subs
+	}
+	return result
+}
