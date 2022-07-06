@@ -1,0 +1,24 @@
+﻿package main
+//Runtime: 1 ms, faster than 34.09% of Go online submissions for Number Complement.
+//Memory Usage: 2 MB, less than 45.45% of Go online submissions for Number Complement.
+import "math"
+
+func main() {
+
+}
+func findComplement(num int) int {
+	var sum = 0
+
+	for counter := 0; true; counter++ {
+		var bit = num & 1
+		if bit == 0 {
+			sum = sum + int(math.Pow(2, float64(counter)))
+		}
+		num = num >> 1
+		if num <= 0 {
+			break
+		}
+
+	}
+	return sum
+}

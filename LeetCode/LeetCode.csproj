@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1002. Find Common Characters.cs" />
+    <Compile Include="1009. Complement of Base 10 Integer.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Content Include="1148 Article Views I.sql" />
@@ -107,10 +108,12 @@
     <Compile Include="4. Median of Two Sorted Arrays.cs" />
     <Compile Include="412. Fizz Buzz.cs" />
     <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
+    <Compile Include="476. Number Complement.cs" />
     <Compile Include="496. Next Greater Element I.cs" />
     <Compile Include="500. Keyboard Row.cs" />
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
     <Compile Include="682 Baseball Game.cs" />
+    <Compile Include="705. Design HashSet.cs" />
     <Compile Include="762. Prime Number of Set Bits in Binary Representation.cs" />
     <Compile Include="766. Toeplitz Matrix.cs" />
     <Compile Include="821. Shortest Distance to a Character.cs" />
@@ -124,6 +127,7 @@
     <Compile Include="933 Number of Recent Calls.cs" />
     <Compile Include="938. Range Sum of BST.cs" />
     <Compile Include="94. Binary Tree Inorder Traversal.cs" />
+    <Compile Include="965. Univalued Binary Tree.cs" />
     <Compile Include="977 Squares of a Sorted Array.cs" />
     <Compile Include="1051 Height Checker.cs" />
     <Compile Include="1460. Make Two Arrays Equal by Reversing Sub-arrays.cs" />
@@ -285,11 +289,16 @@
     <Compile Include="contest-300\2325. Decode the Message.cs" />
     <Compile Include="contest-81\2315. Count Asterisks.cs" />
     <Compile Include="contest-81\2317 Maximum XOR After Operations.cs" />
+    <Content Include="Go\1009. Complement of Base 10 Integer.txt" />
     <Content Include="Go\104. Maximum Depth of Binary Tree.txt" />
     <Content Include="Go\128. Longest Consecutive Sequence.txt" />
     <Content Include="Go\144. Binary Tree Preorder Traversal.txt" />
     <Content Include="Go\145. Binary Tree Postorder Traversal.txt" />
     <Content Include="Go\2062. Count Vowel Substrings of a String.txt" />
+    <Content Include="Go\476. Number Complement.txt" />
+    <Content Include="Go\559. Maximum Depth of N-ary Tree.txt" />
+    <Content Include="Go\705. Design HashSet.txt" />
+    <Content Include="Go\965. Univalued Binary Tree.txt" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />

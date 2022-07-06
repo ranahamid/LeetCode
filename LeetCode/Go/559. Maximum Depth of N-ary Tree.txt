@@ -1,0 +1,24 @@
+﻿package main
+
+import "math"
+
+type Node struct {
+	Val      int
+	Children []*Node
+}
+
+func main() {
+
+}
+func maxDepth(root *Node) int {
+	if root == nil {
+		return 0
+	}
+	var maxNum = 0
+	for i := 0; i < len(root.Children); i++ {
+
+		var temp = maxDepth(root.Children[i])
+		maxNum = int(math.Max(float64(maxNum), float64(temp)))
+	}
+	return maxNum + 1
+}

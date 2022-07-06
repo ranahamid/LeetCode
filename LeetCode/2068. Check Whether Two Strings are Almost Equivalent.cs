@@ -15,7 +15,7 @@ namespace LeetCode
         {
             var first = GetFrquencty(word1);
             var second = GetFrquencty(word2);
-            var counter = 0;
+            //var counter = 0;
             foreach (var item in first)
             {
                 var secondCount = 0;

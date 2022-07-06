@@ -1,0 +1,19 @@
+﻿func bitwiseComplement(n int) int {
+    var sum = 0
+
+	for counter := 0; true; counter++ {
+		var bit = n & 1
+		if bit == 0 {
+			sum = sum + int(math.Pow(2, float64(counter)))
+		}
+		n = n >> 1
+		if n <= 0 {
+			break
+		}
+
+	}
+	return sum
+}
+
+//Runtime: 2 ms, faster than 38.71% of Go online submissions for Complement of Base 10 Integer.
+  //Memory Usage: 2 MB, less than 12.90% of Go online submissions for Complement of Base 10 Integer.

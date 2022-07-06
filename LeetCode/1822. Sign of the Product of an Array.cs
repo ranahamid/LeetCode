@@ -5,7 +5,7 @@
         
         public static int ArraySign(int[] nums) {
         
-            int zeroCount=0;
+            
             int negetiveCount = 0;
             foreach(var item in nums)
             {
