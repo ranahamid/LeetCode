@@ -66,18 +66,33 @@ namespace LeetCode
             var resW1 = new string[] { "a", "ab" };
             var resW2 = new string[]
             {
-                "10","6","9","3","+","-11","*","/","*","17","+","5","+"
+             "apple","pen"
             };
             var res1 = new int[] { 1, 7, 4, 9, 2, 5 };
             var res2 = new int[] { -4, -3, 6, 10, 20, 30 };
             var res3 = new int[] {4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
-            Console.WriteLine(DivideString("abcdefghij",3, 'x'));
+            Console.WriteLine(ReverseWords("a good   example"));
             //Console.WriteLine(ReformatDate("20th Oct 2052")); 
             Console.ReadKey();
         }
 
-        
+        public static string ReverseWords(string s)
+        {
+            s = s.Trim();
+            var words = s.Split(' ');
 
+            var lsit= words.Reverse().ToArray();
+            var result= new List<string>(); 
+            foreach(var word in lsit)
+            {
+                if (!string.IsNullOrEmpty(word))
+                {
+                    result.Add(word.Trim());
+                }
+            }
+            var sentence=string.Join(" ", result);
+            return sentence;
+        }
     }
 }
