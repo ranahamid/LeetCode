@@ -1,0 +1,18 @@
+﻿package main
+
+import "math"
+
+func main() {
+
+}
+func minStartValue(nums []int) int {
+
+	var minVal = 0
+	var sum = 0
+	for i := 0; i < len(nums); i++ {
+
+		sum = sum + nums[i]
+		minVal = int(math.Min(float64(sum), float64(minVal)))
+	}
+	return 1 - minVal
+}

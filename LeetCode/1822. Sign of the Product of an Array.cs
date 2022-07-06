@@ -3,9 +3,7 @@
     public class _1822__Sign_of_the_Product_of_an_Array 
     {
         
-        public static int ArraySign(int[] nums) {
-        
-            
+        public static int ArraySign(int[] nums) { 
             int negetiveCount = 0;
             foreach(var item in nums)
             {

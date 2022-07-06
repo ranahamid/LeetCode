@@ -1,0 +1,24 @@
+﻿package main
+
+import "sort"
+
+func main() {
+
+}
+
+
+func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
+
+	nums1 = append(nums1, nums2...)
+	sort.Ints(nums1)
+
+	var len = len(nums1)
+	var mid = len / 2
+	if len%2 == 1 {
+		return float64(nums1[mid])
+	} else {
+		var first = float64(nums1[mid]+nums1[mid-1]) / 2
+		return first
+	}
+
+}

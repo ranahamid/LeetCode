@@ -1,0 +1,26 @@
+﻿package main
+
+func main() {
+
+}
+func arraySign(nums []int) int {
+	var negetiveCount = 0
+	for i := 0; i < len(nums); i++ {
+		item := nums[i]
+
+		if item == 0 {
+			return 0
+		}
+
+		if item < 0 {
+			negetiveCount++
+		}
+
+	}
+
+	if negetiveCount%2 == 0 {
+		return 1
+	} else {
+		return -1
+	}
+}

@@ -1,0 +1,17 @@
+﻿func numberOfLines(widths []int, s string) []int {
+    var lines = 0
+	var sum = 0
+	for i := 0; i < len(s); i++ {
+		var currentpixel = widths[s[i]-97]
+		sum = sum + currentpixel
+		if sum > 100 {
+			lines++
+			sum = currentpixel
+		}
+	}
+	var result = []int{lines + 1, sum}
+	return result
+}
+
+//Runtime: 0 ms, faster than 100.00% of Go online submissions for Number of Lines To Write String.
+//Memory Usage: 2 MB, less than 69.57% of Go online submissions for Number of Lines To Write String.

@@ -1,0 +1,11 @@
+﻿func reverseString(s []byte) {
+	for i := 0; i < len(s)/2; i++ {
+		var temp = s[i]
+		s[i] = s[len(s)-1-i]
+		s[len(s)-1-i] = temp
+	}
+}
+
+
+//Runtime: 51 ms, faster than 34.34% of Go online submissions for Reverse String.
+//Memory Usage: 7.2 MB, less than 8.99% of Go online submissions for Reverse String.

@@ -1,0 +1,12 @@
+﻿
+func removeElement(nums []int, val int) int {
+
+	var counter = 0
+	for i := 0; i < len(nums); i = i + 1 {
+		if nums[i] != val {
+			nums[counter] = nums[i]
+			counter++
+		}
+	}
+	return counter
+}

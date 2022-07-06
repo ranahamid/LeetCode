@@ -1,0 +1,13 @@
+﻿
+func smallestEqual(nums []int) int {
+	for i := 0; i < len(nums); i++ {
+		if i%10 == nums[i] {
+			return i
+		}
+
+	}
+	return -1
+}
+
+//Runtime: 6 ms, faster than 97.14% of Go online submissions for Smallest Index With Equal Value.
+//Memory Usage: 4 MB, less than 88.57% of Go online submissions for Smallest Index With Equal Value.

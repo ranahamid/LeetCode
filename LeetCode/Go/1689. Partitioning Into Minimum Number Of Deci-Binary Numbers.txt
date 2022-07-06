@@ -1,0 +1,18 @@
+﻿package main
+
+func main() {
+
+}
+func minPartitions(n string) int {
+
+	var maxChar byte = 48
+
+	for i := 0; i < len(n); i++ {
+		item := n[i]
+		if item > maxChar {
+			maxChar = item
+		}
+
+	}
+	return (int)(maxChar - 48)
+}
