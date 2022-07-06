@@ -95,6 +95,7 @@
     <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
     <Compile Include="2164. Sort Even and Odd Indices Independently.cs" />
     <Compile Include="2215. Find the Difference of Two Arrays.cs" />
+    <Compile Include="2243. Calculate Digit Sum of a String.cs" />
     <Compile Include="2248. Intersection of Multiple Arrays.cs" />
     <Compile Include="226. Invert Binary Tree.cs" />
     <Compile Include="2278 Percentage of Letter in String.cs" />
