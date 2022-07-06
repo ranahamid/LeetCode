@@ -1,0 +1,26 @@
+﻿package main
+
+func main() {
+
+}
+//Runtime: 26 ms, faster than 5.49% of Go online submissions for Remove Outermost Parentheses.
+  //Memory Usage: 9.7 MB, less than 6.59% of Go online submissions for Remove Outermost Parentheses.
+func removeOuterParentheses(s string) string {
+	var counter = 0
+	var sb = ""
+	for i := 0; i < len(s); i++ {
+		if s[i] == '(' {
+			if counter > 0 {
+				sb = sb + "("
+			}
+			counter++
+		} else if s[i] == ')' {
+			counter--
+			if counter > 0 {
+				sb = sb + ")"
+			}
+		}
+
+	}
+	return sb
+}

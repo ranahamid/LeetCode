@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="1002. Find Common Characters.cs" />
     <Compile Include="1009. Complement of Base 10 Integer.cs" />
+    <Compile Include="1021. Remove Outermost Parentheses.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Content Include="1148 Article Views I.sql" />
@@ -291,6 +292,7 @@
     <Compile Include="contest-81\2315. Count Asterisks.cs" />
     <Compile Include="contest-81\2317 Maximum XOR After Operations.cs" />
     <Content Include="Go\1009. Complement of Base 10 Integer.txt" />
+    <Content Include="Go\1021. Remove Outermost Parentheses.txt" />
     <Content Include="Go\104. Maximum Depth of Binary Tree.txt" />
     <Content Include="Go\128. Longest Consecutive Sequence.txt" />
     <Content Include="Go\144. Binary Tree Preorder Traversal.txt" />
