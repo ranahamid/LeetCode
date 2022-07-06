@@ -34,13 +34,13 @@ namespace LeetCode
 
             //ListNode eig = new ListNode(3);
             //ListNode sev = new ListNode(3, eig);
-            //ListNode six = new ListNode(2, sev);
-            //ListNode five = new ListNode(1, six);
-            //ListNode list2 = new ListNode(1, five);
+            TreeNode six = new TreeNode(3 );
+            TreeNode five = new TreeNode(1 );
+            TreeNode list2 = new TreeNode(2, five,six);
 
             //ListNode fifteen = new ListNode(0);
             //ListNode fourtenn = new ListNode(0, fifteen);
-         
+
             //ListNode thirteen = new ListNode(0);
             //ListNode twelve = new ListNode(5, thirteen);
             //ListNode eleven = new ListNode(5, twelve);
@@ -73,7 +73,7 @@ namespace LeetCode
             var res3 = new int[] { 3, 1, 5, 4, 2 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             // Console.WriteLine(HeightChecker(res1));
-            //Console.WriteLine(ReformatDate("20th Oct 2052"));
+            Console.WriteLine(InvertTree(list2));
 
 
 
@@ -83,8 +83,27 @@ namespace LeetCode
 
             Console.ReadKey();
         }
-
+        public static TreeNode InvertTree(TreeNode root)
+        {
+            if(root == null)
+                return null;
+            var newRoot = new TreeNode(root.val);
+            newRoot.left = InvertTree(root.right);
+            newRoot.right = InvertTree(root.left);
+            return newRoot;
+        }
 
 
     }
+
+   public class TreeNode {
+       public int val;
+       public TreeNode left;
+       public TreeNode right;
+       public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+           this.val = val;
+           this.left = left;
+           this.right = right;
+       }
+   }
 }
