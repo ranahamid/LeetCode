@@ -118,6 +118,7 @@
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="705. Design HashSet.cs" />
+    <Compile Include="706. Design HashMap.cs" />
     <Compile Include="762. Prime Number of Set Bits in Binary Representation.cs" />
     <Compile Include="766. Toeplitz Matrix.cs" />
     <Compile Include="806. Number of Lines To Write String.cs" />
@@ -317,6 +318,7 @@
     <Content Include="Go\559. Maximum Depth of N-ary Tree.txt" />
     <Content Include="Go\561. Array Partition.txt" />
     <Content Include="Go\705. Design HashSet.txt" />
+    <Content Include="Go\706. Design HashMap.txt" />
     <Content Include="Go\806. Number of Lines To Write String.txt" />
     <Content Include="Go\852. Peak Index in a Mountain Array.txt" />
     <Content Include="Go\908. Smallest Range I.txt" />

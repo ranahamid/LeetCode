@@ -1,0 +1,37 @@
+﻿//Runtime: 945 ms, faster than 5.11% of Go online submissions for Design HashMap.
+//Memory Usage: 245.7 MB, less than 5.11% of Go online submissions for Design HashMap.
+
+type MyHashMap struct {
+	h []int
+}
+
+func Constructor() MyHashMap {
+
+	var s = MyHashMap{make([]int, 10000001)}
+
+	for i := range s.h {
+		s.h[i] = -1
+	}
+	return s
+}
+
+func (this *MyHashMap) Put(key int, value int) {
+
+	this.h[key] = value
+}
+
+func (this *MyHashMap) Get(key int) int {
+	return this.h[key]
+}
+
+func (this *MyHashMap) Remove(key int) {
+	this.h[key] = -1
+}
+
+/**
+ * Your MyHashMap object will be instantiated and called as such:
+ * obj := Constructor();
+ * obj.Put(key,value);
+ * param_2 := obj.Get(key);
+ * obj.Remove(key);
+ */
