@@ -8,6 +8,12 @@ namespace LeetCode
 {
     internal class _1619
     {
+        /// <summary>
+        /// Runtime: 93 ms, faster than 86.96% of C# online submissions for Mean of Array After Removing Some Elements.
+        /// Memory Usage: 40 MB, less than 15.22% of C# online submissions for Mean of Array After Removing Some Elements.
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
         public static double TrimMean(int[] arr)
         {
             var totalSum = arr.Sum();
