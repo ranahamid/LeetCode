@@ -77,6 +77,7 @@
     <Compile Include="1507. Reformat Date.cs" />
     <Compile Include="151. Reverse Words in a String.cs" />
     <Compile Include="1526. Minimum Number of Increments on Subarrays to Form a Target Array.cs" />
+    <Compile Include="1619. Mean of Array After Removing Some Elements.cs" />
     <Compile Include="1636. Sort Array by Increasing Frequency.cs" />
     <Compile Include="1656 Design an Ordered Stream.cs" />
     <Compile Include="1700. Number of Students Unable to Eat Lunch.cs" />

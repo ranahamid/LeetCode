@@ -70,29 +70,26 @@ namespace LeetCode
             };
             var res1 = new int[] { 1, 7, 4, 9, 2, 5 };
             var res2 = new int[] { -4, -3, 6, 10, 20, 30 };
-            var res3 = new int[] {4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
+            var res3 = new int[] { 6, 0, 7, 0, 7, 5, 7, 8, 3, 4, 0, 7, 8, 1, 6, 8, 1, 1, 2, 4, 8, 1, 9, 5, 4, 3, 8, 5, 10, 8, 6, 6, 1, 0, 6, 10, 8, 2, 3, 4 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
-            Console.WriteLine(ReverseWords("a good   example"));
+            Console.WriteLine(TrimMean(res3));
             //Console.WriteLine(ReformatDate("20th Oct 2052")); 
             Console.ReadKey();
         }
 
-        public static string ReverseWords(string s)
+        public static double TrimMean(int[] arr)
         {
-            s = s.Trim();
-            var words = s.Split(' ');
-
-            var lsit= words.Reverse().ToArray();
-            var result= new List<string>(); 
-            foreach(var word in lsit)
+            var totalSum=arr.Sum();
+            var removeNumbs = arr.Length / 20;
+            Array.Sort(arr);
+            for(int i = 0; i < removeNumbs; i++)
             {
-                if (!string.IsNullOrEmpty(word))
-                {
-                    result.Add(word.Trim());
-                }
+                totalSum = totalSum - arr[i];
+                totalSum = totalSum - arr[arr.Length- i-1];
+                 
             }
-            var sentence=string.Join(" ", result);
-            return sentence;
+            var avg=(double)(totalSum/( (double)(arr.Length - 2 * removeNumbs)));
+            return avg;
         }
     }
 }
