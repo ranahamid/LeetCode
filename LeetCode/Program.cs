@@ -72,24 +72,10 @@ namespace LeetCode
             var res2 = new int[] { -4, -3, 6, 10, 20, 30 };
             var res3 = new int[] { 6, 0, 7, 0, 7, 5, 7, 8, 3, 4, 0, 7, 8, 1, 6, 8, 1, 1, 2, 4, 8, 1, 9, 5, 4, 3, 8, 5, 10, 8, 6, 6, 1, 0, 6, 10, 8, 2, 3, 4 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
-            Console.WriteLine(TrimMean(res3));
+            Console.WriteLine(CountEven(6));
             //Console.WriteLine(ReformatDate("20th Oct 2052")); 
             Console.ReadKey();
         }
-
-        public static double TrimMean(int[] arr)
-        {
-            var totalSum=arr.Sum();
-            var removeNumbs = arr.Length / 20;
-            Array.Sort(arr);
-            for(int i = 0; i < removeNumbs; i++)
-            {
-                totalSum = totalSum - arr[i];
-                totalSum = totalSum - arr[arr.Length- i-1];
-                 
-            }
-            var avg=(double)(totalSum/( (double)(arr.Length - 2 * removeNumbs)));
-            return avg;
-        }
+     
     }
 }
