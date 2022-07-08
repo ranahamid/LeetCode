@@ -49,14 +49,6 @@
     <Compile Include="1021. Remove Outermost Parentheses.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
-    <Content Include="1148 Article Views I.sql" />
-    <Content Include="1413. Minimum Value to Get Positive Step by Step Sum.txt" />
-    <Content Include="1729 Find Followers Count.sql" />
-    <Content Include="175. Combine Two Tables.sql" />
-    <Content Include="1965 Employees With Missing Information.sql" />
-    <Content Include="586 Customer Placing the Largest Number of Orders.sql" />
-    <Content Include="595 Big Countries.sql" />
-    <Content Include="584 Find Customer Referee.sql" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
     <Compile Include="1200. Minimum Absolute Difference.cs" />
@@ -84,8 +76,6 @@
     <Compile Include="1710. Maximum Units on a Truck.cs" />
     <Compile Include="1716. Calculate Money in Leetcode Bank.cs" />
     <Compile Include="1742 Maximum Number of Balls in a Box.cs" />
-    <Content Include="182. Duplicate Emails.sql" />
-    <Content Include="181. Employees Earning More Than Their Managers.sql" />
     <Compile Include="1773 Count Items Matching a Rule.cs" />
     <Compile Include="1822. Sign of the Product of an Array.cs" />
     <Compile Include="1835. Find XOR Sum of All Pairs Bitwise AND.cs" />
@@ -107,8 +97,6 @@
     <Compile Include="2248. Intersection of Multiple Arrays.cs" />
     <Compile Include="226. Invert Binary Tree.cs" />
     <Compile Include="2278 Percentage of Letter in String.cs" />
-    <Content Include="620 Not Boring Movies.sql" />
-    <Content Include="607. Sales Person.sql" />
     <Compile Include="232. Implement Queue using Stacks.cs" />
     <Compile Include="2319. Check if Matrix Is X-Matrix.cs" />
     <Compile Include="32. Longest Valid Parentheses.cs" />
@@ -153,7 +141,6 @@
     <Compile Include="832 Flipping an Image.cs" />
     <Compile Include="1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.cs" />
     <Compile Include="338 Counting Bits.cs" />
-    <Content Include="1179 Reformat Department Table.sql" />
     <Compile Include="12 Integer to Roman.cs" />
     <Compile Include="1221 Split a String in Balanced Strings.cs" />
     <Compile Include="125 Valid Palindrome.cs" />
@@ -173,7 +160,6 @@
     <Compile Include="1365 How Many Numbers Are Smaller Than the Current Number.cs" />
     <Compile Include="1374 Generate a String With Characters That Have Odd Counts.cs" />
     <Compile Include="1389 Create Target Array in the Given Order.cs" />
-    <Content Include="1407 Top Travellers.sql" />
     <Compile Include="141  Linked List Cycle.cs" />
     <Compile Include="1423 Maximum Points You Can Obtain from Cards.cs" />
     <Compile Include="1431 Kids With the Greatest Number of Candies.cs" />
@@ -270,9 +256,6 @@
     <Compile Include="557 Reverse Words in a String III.cs" />
     <Compile Include="561 Array Partition I.cs" />
     <Compile Include="58 Length of Last Word.cs" />
-    <Content Include="1873 Calculate Special Bonus.sql" />
-    <Content Include="511 Game Play Analysis I.sql" />
-    <Content Include="627 Swap Salary.sql" />
     <Compile Include="665 Non-decreasing Array.cs" />
     <Compile Include="67 Add Binary.cs" />
     <Compile Include="70 Climbing Stairs.cs" />
@@ -305,6 +288,7 @@
     <Content Include="Go\104. Maximum Depth of Binary Tree.txt" />
     <Content Include="Go\1108. Defanging an IP Address.txt" />
     <Content Include="Go\128. Longest Consecutive Sequence.txt" />
+    <Content Include="Go\1413. Minimum Value to Get Positive Step by Step Sum.txt" />
     <Content Include="Go\144. Binary Tree Preorder Traversal.txt" />
     <Content Include="Go\145. Binary Tree Postorder Traversal.txt" />
     <Content Include="Go\1480. Running Sum of 1d Array.txt" />
@@ -335,20 +319,36 @@
     <Compile Include="7 Reverse Integer.cs" />
     <Compile Include="206 Reverse Linked List.cs" />
     <Compile Include="189 Rotate Array.cs" />
-    <Content Include="1890 The Latest Login in 2020.sql" />
-    <Content Include="196 Delete Duplicate Emails.sql" />
-    <Content Include="197 Rising Temperature.sql" />
     <Content Include="Go\226. Invert Binary Tree.txt" />
     <Content Include="Go\509. Fibonacci Number.txt" />
     <Content Include="Go\589. N-ary Tree Preorder Traversal.txt" />
     <Content Include="Go\938. Range Sum of BST.txt" />
     <Content Include="Go\94. Binary Tree Inorder Traversal.txt" />
+    <Content Include="SQL\1148 Article Views I.sql" />
+    <Content Include="SQL\1179 Reformat Department Table.sql" />
+    <Content Include="SQL\1407 Top Travellers.sql" />
+    <Content Include="SQL\1587 Bank Account Summary II.sql" />
     <Content Include="SQL\1667. Fix Names in a Table.sql" />
+    <Content Include="SQL\1729 Find Followers Count.sql" />
+    <Content Include="SQL\175. Combine Two Tables.sql" />
+    <Content Include="SQL\181. Employees Earning More Than Their Managers.sql" />
+    <Content Include="SQL\182. Duplicate Emails.sql" />
     <Content Include="SQL\183. Customers Who Never Order.sql" />
+    <Content Include="SQL\1873 Calculate Special Bonus.sql" />
+    <Content Include="SQL\1890 The Latest Login in 2020.sql" />
+    <Content Include="SQL\196 Delete Duplicate Emails.sql" />
+    <Content Include="SQL\1965 Employees With Missing Information.sql" />
+    <Content Include="SQL\197 Rising Temperature.sql" />
+    <Content Include="SQL\511 Game Play Analysis I.sql" />
+    <Content Include="SQL\584 Find Customer Referee.sql" />
+    <Content Include="SQL\586 Customer Placing the Largest Number of Orders.sql" />
+    <Content Include="SQL\595 Big Countries.sql" />
+    <Content Include="SQL\607. Sales Person.sql" />
+    <Content Include="SQL\620 Not Boring Movies.sql" />
+    <Content Include="SQL\627 Swap Salary.sql" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1 Two Sum.cs" />
-    <Content Include="1587 Bank Account Summary II.sql" />
     <Compile Include="2255 Count Prefixes of a Given String.cs" />
     <Compile Include="150. Evaluate Reverse Polish Notation.cs" />
     <Compile Include="1385. Find the Distance Value Between Two Arrays.cs" />
