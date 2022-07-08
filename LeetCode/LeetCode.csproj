@@ -88,6 +88,7 @@
     <Content Include="181. Employees Earning More Than Their Managers.sql" />
     <Compile Include="1773 Count Items Matching a Rule.cs" />
     <Compile Include="1822. Sign of the Product of an Array.cs" />
+    <Compile Include="1835. Find XOR Sum of All Pairs Bitwise AND.cs" />
     <Compile Include="1876. Substrings of Size Three with Distinct Characters.cs" />
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
     <Compile Include="1925. Count Square Sum Triples.cs" />
