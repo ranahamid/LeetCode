@@ -343,6 +343,7 @@
     <Content Include="Go\589. N-ary Tree Preorder Traversal.txt" />
     <Content Include="Go\938. Range Sum of BST.txt" />
     <Content Include="Go\94. Binary Tree Inorder Traversal.txt" />
+    <Content Include="SQL\1667. Fix Names in a Table.sql" />
     <Content Include="SQL\183. Customers Who Never Order.sql" />
   </ItemGroup>
   <ItemGroup>
