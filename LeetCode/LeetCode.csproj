@@ -324,8 +324,10 @@
     <Content Include="Go\589. N-ary Tree Preorder Traversal.txt" />
     <Content Include="Go\938. Range Sum of BST.txt" />
     <Content Include="Go\94. Binary Tree Inorder Traversal.txt" />
+    <Content Include="SQL\1050. Actors and Directors Who Cooperated At Least Three Times.sql" />
     <Content Include="SQL\1148 Article Views I.sql" />
     <Content Include="SQL\1179 Reformat Department Table.sql" />
+    <Content Include="SQL\1393. Capital Gain Loss.sql" />
     <Content Include="SQL\1407 Top Travellers.sql" />
     <Content Include="SQL\1587 Bank Account Summary II.sql" />
     <Content Include="SQL\1667. Fix Names in a Table.sql" />
