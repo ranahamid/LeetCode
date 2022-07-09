@@ -360,6 +360,7 @@
     <Content Include="Go\2042. Check if Numbers Are Ascending in a Sentence.txt" />
     <Content Include="Go\376. Wiggle Subsequence.txt" />
     <None Include="Go\1137. N-th Tribonacci Number.go" />
+    <None Include="Go\70. Climbing Stairs.go" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Algo-1\" />
