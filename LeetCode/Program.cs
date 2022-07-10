@@ -74,7 +74,8 @@ namespace LeetCode
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             //Console.WriteLine(MaxScoreWords(resW2, resW1, res1));
             Solution s = new Solution();
-            s.LevelOrder(res1);
+            var root=s.LevelOrder(res1);
+            BFS.BFSSearch(root);
             //Console.WriteLine(ReformatDate("20th Oct 2052")); 
             Console.ReadKey();
         }
