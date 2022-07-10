@@ -68,12 +68,13 @@ namespace LeetCode
             {
              "xxxz","ax","bx","cx"
             };
-            var res1 = new int[] { 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 10 };
+            var res1 = new int?[] { 3, 9, 20, null, null, 15, 7 };
             var res2 = new int[] { 6,5};
             var res3 = new int[] { 6, 0, 7, 0, 7, 5, 7, 8, 3, 4, 0, 7, 8, 1, 6, 8, 1, 1, 2, 4, 8, 1, 9, 5, 4, 3, 8, 5, 10, 8, 6, 6, 1, 0, 6, 10, 8, 2, 3, 4 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
-          Console.WriteLine(MaxScoreWords(resW2, resW1, res1));
-            
+            //Console.WriteLine(MaxScoreWords(resW2, resW1, res1));
+            Solution s = new Solution();
+            s.LevelOrder(res1);
             //Console.WriteLine(ReformatDate("20th Oct 2052")); 
             Console.ReadKey();
         }
