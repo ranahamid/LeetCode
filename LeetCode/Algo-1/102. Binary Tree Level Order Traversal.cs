@@ -22,7 +22,7 @@ namespace LeetCode
 	public class Solution
 	{
 		private TreeNode root = null;
-		public TreeNode LevelOrder(int?[] array)
+		public TreeNode LevelOrderPrint(int?[] array)
 		{
 			if (array.Count() == 0 || array[0] == null)
 				return null;

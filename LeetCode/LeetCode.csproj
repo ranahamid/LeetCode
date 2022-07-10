@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="1002. Find Common Characters.cs" />
     <Compile Include="1009. Complement of Base 10 Integer.cs" />
+    <Compile Include="102. Binary Tree Level Order Traversal.cs" />
     <Compile Include="1021. Remove Outermost Parentheses.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
@@ -279,6 +280,7 @@
     <Compile Include="961 N-Repeated Element in Size 2N Array.cs" />
     <Content Include="Codeforces\Contest 804\A. The Third Three Number Problem.txt" />
     <Compile Include="Algo-1\BFS.cs" />
+    <Compile Include="Algo-1\BFSLEVEL.cs" />
     <Compile Include="Contest 291\2259 Remove Digit From Number to Maximize Result.cs" />
     <Compile Include="Contest 291\2260 Minimum Consecutive Cards to Pick Up.cs" />
     <Compile Include="contest-300\2325. Decode the Message.cs" />
