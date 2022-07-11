@@ -19,10 +19,10 @@ namespace LeetCode
             {
                 TreeNode node = queue.Dequeue();
                 result.Add(node);
-                if (node.left != null)
-                {
-                    queue.Enqueue(node.left);
-                }
+                //if (node.left != null)
+                //{
+                //    queue.Enqueue(node.left);
+                //}
                 if (node.right != null)
                 {
                     queue.Enqueue(node.right);
@@ -30,5 +30,7 @@ namespace LeetCode
             }
             return result.ToArray();
         }
+
+     
     }
 }
