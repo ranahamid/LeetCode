@@ -50,6 +50,7 @@
     <Compile Include="102. Binary Tree Level Order Traversal.cs" />
     <Compile Include="1021. Remove Outermost Parentheses.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
+    <Compile Include="1103. Distribute Candies to People.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="821. Shortest Distance to a Character.cs" />
     <Compile Include="824. Goat Latin.cs" />
     <Compile Include="852. Peak Index in a Mountain Array.cs" />
+    <Compile Include="867. Transpose Matrix.cs" />
     <Compile Include="876 Middle of the Linked List.cs" />
     <Compile Include="884. Uncommon Words from Two Sentences.cs" />
     <Compile Include="908. Smallest Range I.cs" />

@@ -87,11 +87,36 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(ThreeConsecutiveOdds( res1));
+            Console.WriteLine(DistributeCandies(10,3));
             Console.ReadKey();
         }
-       
-
+        public static int[] DistributeCandies(int candies, int num_people)
+        {
+            var counter = 1;
+             
+            int sum = 0;
+            var result = new int[num_people];
+            var index = 0;
+            while (candies > 0)
+            {
+                if (candies - sum > counter)
+                {
+                    sum += counter;
+                    result[index] = result[index] +counter;
+                }
+                else
+                {
+                    var remaining = candies - sum;
+                    result[index] = result[index] + remaining;
+                    break;
+                }
+                counter++;
+                index++;
+                if (index >= num_people)
+                    index = 0;
+            }
+            return result.ToArray();
+        }
 
 
 
