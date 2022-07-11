@@ -9,7 +9,7 @@ namespace LeetCode
     internal class _66
     {
         /// <summary>
-        /// Runtime: 218 ms, faster than 34.41% of C# online submissions for Plus One.
+        /// Runtime: 140 ms, faster than 93.57% of C# online submissions for Plus One.
         /// Memory Usage: 40.8 MB, less than 81.77% of C# online submissions for Plus One.
         /// </summary>
         /// <param name="digits"></param>
@@ -28,11 +28,7 @@ namespace LeetCode
                     {
                         carry = 1;
                         nmbr = 0;
-                    }
-                    else
-                    {
-                        carry = 0;
-                    }
+                    } 
                 }
                 else
                 {
