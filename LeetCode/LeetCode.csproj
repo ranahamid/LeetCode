@@ -84,6 +84,7 @@
     <Compile Include="1880 Check if Word Equals Summation of Two Words.cs" />
     <Compile Include="1925. Count Square Sum Triples.cs" />
     <Compile Include="1935. Maximum Number of Words You Can Type.cs" />
+    <Compile Include="199. Binary Tree Right Side View.cs" />
     <Compile Include="2032 Two Out of Three.cs" />
     <Compile Include="2068. Check Whether Two Strings are Almost Equivalent.cs" />
     <Compile Include="2078. Two Furthest Houses With Different Colors.cs" />
