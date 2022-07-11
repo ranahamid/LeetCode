@@ -81,17 +81,17 @@ namespace LeetCode
             };
             var res1 = new int[] { 2, 2, 3, 4 };
             var res2 = new int[] { 1,2,9 };
-            var res3 = new int[] { 6, 0, 7, 0, 7, 5, 7, 8, 3, 4, 0, 7, 8, 1, 6, 8, 1, 1, 2, 4, 8, 1, 9, 5, 4, 3, 8, 5, 10, 8, 6, 6, 1, 0, 6, 10, 8, 2, 3, 4 };
+            var res3 = new int[] { 1, 3, 5, 2, 4, 8, 2, 2 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             //Solution s = new Solution();
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(FindLucky(res1));
+            Console.WriteLine(MinMaxGame(res3));
             Console.ReadKey();
         }
-        
 
+    
 
 
 
