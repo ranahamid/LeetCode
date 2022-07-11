@@ -49,6 +49,7 @@
     <Compile Include="1009. Complement of Base 10 Integer.cs" />
     <Compile Include="102. Binary Tree Level Order Traversal.cs" />
     <Compile Include="1021. Remove Outermost Parentheses.cs" />
+    <Compile Include="1046. Last Stone Weight.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
     <Compile Include="1078. Occurrences After Bigram.cs" />
     <Compile Include="1103. Distribute Candies to People.cs" />
