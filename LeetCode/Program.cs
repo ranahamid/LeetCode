@@ -85,11 +85,11 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(ConvertTime("00:00", "23:59"));
+            Console.WriteLine(FindOcurrences("alice is a good girl she is a good", "a", "good"));
             Console.ReadKey();
         }
 
-       
+  
 
 
 
