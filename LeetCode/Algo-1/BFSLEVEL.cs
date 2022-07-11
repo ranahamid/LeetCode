@@ -6,14 +6,26 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_BFS
+    {
+        public int val;
+        public TreeNode_BFS left;
+        public TreeNode_BFS right;
+        public TreeNode_BFS(int val = 0, TreeNode_BFS left = null, TreeNode_BFS right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     internal class BFSLEVEL
     {
-        public static IList<IList<int>> LevelOrder(TreeNode root)
+        public static IList<IList<int>> LevelOrder(TreeNode_BFS root)
         {
             var result = new List<IList<int>>();
             if (root == null)
                 return result;
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<TreeNode_BFS> queue = new Queue<TreeNode_BFS>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
@@ -23,7 +35,7 @@ namespace LeetCode
                 while (count < queueLen)
                 {
 
-                    TreeNode node = queue.Dequeue();
+                    TreeNode_BFS node = queue.Dequeue();
                     currentVal.Add(node.val);
                     if (node.left != null)
                     {

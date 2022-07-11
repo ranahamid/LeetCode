@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_199
+    {
+        public int val;
+        public TreeNode_199 left;
+        public TreeNode_199 right;
+        public TreeNode_199(int val = 0, TreeNode_199 left = null, TreeNode_199 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     internal class _199
     {
         /// <summary>
@@ -14,19 +26,19 @@ namespace LeetCode
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
-        public static IList<int> RightSideView(TreeNode root)
+        public static IList<int> RightSideView(TreeNode_199 root)
         {
-            var result = new List<TreeNode>();
+            var result = new List<TreeNode_199>();
             if (root == null)
                 return new List<int>();
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<TreeNode_199> queue = new Queue<TreeNode_199>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
                 var size = queue.Count();
                 for (int i = 0; i < size; i++)
                 {
-                    TreeNode node = queue.Dequeue();
+                    TreeNode_199 node = queue.Dequeue();
                     if (i == 0)
                     {
                         result.Add(node);

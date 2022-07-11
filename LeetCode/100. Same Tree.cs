@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_100
+    {
+        public int val;
+        public TreeNode_100 left;
+        public TreeNode_100 right;
+        public TreeNode_100(int val = 0, TreeNode_100 left = null, TreeNode_100 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     internal class _100
     {
         /// <summary>
@@ -15,7 +27,7 @@ namespace LeetCode
         /// <param name="p"></param>
         /// <param name="q"></param>
         /// <returns></returns>
-        public static bool IsSameTree(TreeNode p, TreeNode q)
+        public static bool IsSameTree(TreeNode_100 p, TreeNode_100 q)
         {
             if (p == null && q == null)
                 return true;
@@ -25,9 +37,9 @@ namespace LeetCode
                 return false;
             if (p.val != q.val)
                 return false;
-            Queue<TreeNode> queueP = new Queue<TreeNode>();
+            Queue<TreeNode_100> queueP = new Queue<TreeNode_100>();
 
-            Queue<TreeNode> queueQ = new Queue<TreeNode>();
+            Queue<TreeNode_100> queueQ = new Queue<TreeNode_100>();
             queueP.Enqueue(p);
             queueQ.Enqueue(q);
 
@@ -36,8 +48,8 @@ namespace LeetCode
                 if (queueP.Count != queueQ.Count)
                     return false;
 
-                TreeNode nodeP = queueP.Dequeue();
-                TreeNode nodeQ = queueQ.Dequeue();
+                TreeNode_100 nodeP = queueP.Dequeue();
+                TreeNode_100 nodeQ = queueQ.Dequeue();
 
                 if (nodeP.left == null && nodeQ.left != null)
                     return false;

@@ -361,7 +361,6 @@
     <Compile Include="2255 Count Prefixes of a Given String.cs" />
     <Compile Include="150. Evaluate Reverse Polish Notation.cs" />
     <Compile Include="1385. Find the Distance Value Between Two Arrays.cs" />
-    <Compile Include="Algo-1\102. Binary Tree Level Order Traversal.cs" />
     <None Include="App.config" />
     <Compile Include="contest-300\2326. Spiral Matrix IV.cs" />
     <Content Include="Go\1694. Reformat Phone Number.txt" />

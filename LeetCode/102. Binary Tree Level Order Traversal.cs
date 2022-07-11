@@ -6,16 +6,28 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+
+
+       public class TreeNode_1002 {
+       public int val;
+       public TreeNode_1002 left;
+       public TreeNode_1002 right;
+       public TreeNode_1002(int val=0, TreeNode_1002 left=null, TreeNode_1002 right=null) {
+           this.val = val;
+           this.left = left;
+           this.right = right;
+       }
+   }
     internal class _102
     {
         //Runtime: 254 ms, faster than 17.21% of C# online submissions for Binary Tree Level Order Traversal.
        // Memory Usage: 41.9 MB, less than 50.07% of C# online submissions for Binary Tree Level Order Traversal.
-        public static IList<IList<int>> LevelOrder(TreeNode root)
+        public static IList<IList<int>> LevelOrder(TreeNode_1002 root)
         {
             var result = new List<IList<int>>();
             if (root == null)
                 return result;
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<TreeNode_1002> queue = new Queue<TreeNode_1002>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
@@ -25,7 +37,7 @@ namespace LeetCode
                 while (count < queueLen)
                 {
 
-                    TreeNode node = queue.Dequeue();
+                    TreeNode_1002 node = queue.Dequeue();
                     currentVal.Add(node.val);
                     if (node.left != null)
                     {
