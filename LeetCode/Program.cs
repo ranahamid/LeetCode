@@ -87,14 +87,12 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(StringMatching(resW2));
+            Console.WriteLine(MaxNumberOfBalloons("loonbalxballpoon"));
             Console.ReadKey();
         }
-         
 
 
-
-
+   
 
 
 

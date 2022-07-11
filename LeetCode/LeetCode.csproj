@@ -54,6 +54,7 @@
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
+    <Compile Include="1189. Maximum Number of Balloons.cs" />
     <Compile Include="1200. Minimum Absolute Difference.cs" />
     <Compile Include="1207 Unique Number of Occurrences.cs" />
     <Compile Include="1217. Minimum Cost to Move Chips to The Same Position.cs" />
