@@ -89,7 +89,13 @@ namespace LeetCode
             Console.ReadKey();
         }
 
-    
+        public double Average(int[] salary)
+        {
+            var sum = salary.Sum();
+            var totalSum = sum - salary.Min() - salary.Max();
+            var avg = totalSum / (double)(salary.Length - 2);
+            return avg;
+        }
 
 
 
