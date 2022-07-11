@@ -85,20 +85,11 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(MatrixReshape(nums,1,4));
+            Console.WriteLine(ConvertTime("00:00", "23:59"));
             Console.ReadKey();
         }
 
-        public double Average(int[] salary)
-        {
-            var sum = salary.Sum();
-            var totalSum = sum - salary.Min() - salary.Max();
-            var avg = totalSum / (double)(salary.Length - 2);
-            return avg;
-        }
-
-
-
+       
 
 
 
