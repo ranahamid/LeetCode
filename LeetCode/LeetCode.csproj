@@ -73,6 +73,7 @@
     <Compile Include="1507. Reformat Date.cs" />
     <Compile Include="151. Reverse Words in a String.cs" />
     <Compile Include="1526. Minimum Number of Increments on Subarrays to Form a Target Array.cs" />
+    <Compile Include="1550. Three Consecutive Odds.cs" />
     <Compile Include="1598. Crawler Log Folder.cs" />
     <Compile Include="1619. Mean of Array After Removing Some Elements.cs" />
     <Compile Include="1636. Sort Array by Increasing Frequency.cs" />

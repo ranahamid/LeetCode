@@ -79,7 +79,7 @@ namespace LeetCode
             {
             "./","wz4/","../","mj2/","../","../","ik0/","il7/"
             };
-            var res1 = new int[] { 3,5,1};
+            var res1 = new int[] {1,1,1 };
             var res2 = new int[] { 1,2,9 };
             var res3 = new int[] { 6, 0, 7, 0, 7, 5, 7, 8, 3, 4, 0, 7, 8, 1, 6, 8, 1, 1, 2, 4, 8, 1, 9, 5, 4, 3, 8, 5, 10, 8, 6, 6, 1, 0, 6, 10, 8, 2, 3, 4 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
@@ -87,10 +87,10 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(CanMakeArithmeticProgression( res1));
+            Console.WriteLine(ThreeConsecutiveOdds( res1));
             Console.ReadKey();
         }
-     
+       
 
 
 
