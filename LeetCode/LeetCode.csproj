@@ -73,6 +73,7 @@
     <Compile Include="1441. Build an Array With Stack Operations.cs" />
     <Compile Include="145. Binary Tree Postorder Traversal.cs" />
     <Compile Include="1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence.cs" />
+    <Compile Include="1491. Average Salary Excluding the Minimum and Maximum Salary.cs" />
     <Compile Include="1502. Can Make Arithmetic Progression From Sequence.cs" />
     <Compile Include="1507. Reformat Date.cs" />
     <Compile Include="151. Reverse Words in a String.cs" />
