@@ -74,15 +74,14 @@ namespace LeetCode
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             Solution s = new Solution();
             var rd=s.LevelOrderPrint(res1);
-            Console.WriteLine(BFS.RightSideView(rd));
+            Console.WriteLine(IsSameTree(rd,rd));
              
             //Console.WriteLine(ReformatDate("20th Oct 2052")); 
             Console.ReadKey();
         }
-        
 
 
-
+     
 
 
 
