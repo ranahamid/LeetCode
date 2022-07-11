@@ -77,7 +77,7 @@ namespace LeetCode
             var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
             var resW2 = new string[]
             {
-            "./","wz4/","../","mj2/","../","../","ik0/","il7/"
+           "leetcode","et","code","leet"
             };
             var res1 = new int[] { 2, 2, 3, 4 };
             var res2 = new int[] { 1,2,9 };
@@ -87,12 +87,10 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(MinMaxGame(res3));
+            Console.WriteLine(StringMatching(resW2));
             Console.ReadKey();
         }
-
-    
-
+         
 
 
 
