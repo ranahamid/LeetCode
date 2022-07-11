@@ -26,12 +26,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[][] nums = new int[4][]
+            int[][] nums = new int[2][]
             {
-                new int[2] { 5,10 },
-                new int[2] { 2,5 },
-                new int[2] { 4,7 },
-                new int[2] { 3,9 },
+                new int[2] { 1,2 },
+                new int[2] { 3,4 }, 
             };
 
             int[][] nums1 = new int[2][]
@@ -87,11 +85,11 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(MaxNumberOfBalloons("loonbalxballpoon"));
+            Console.WriteLine(MatrixReshape(nums,1,4));
             Console.ReadKey();
         }
 
-
+    
 
 
 
