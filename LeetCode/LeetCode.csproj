@@ -115,6 +115,7 @@
     <Compile Include="500. Keyboard Row.cs" />
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
     <Compile Include="682 Baseball Game.cs" />
+    <Compile Include="69. Sqrt%28x%29.cs" />
     <Compile Include="705. Design HashSet.cs" />
     <Compile Include="706. Design HashMap.cs" />
     <Compile Include="762. Prime Number of Set Bits in Binary Representation.cs" />
