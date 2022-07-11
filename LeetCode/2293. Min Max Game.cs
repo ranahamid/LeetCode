@@ -8,6 +8,12 @@ namespace LeetCode
 {
     internal class _2293
     {
+        /// <summary>
+        /// Runtime: 131 ms, faster than 49.29% of C# online submissions for Min Max Game.
+        /// Memory Usage: 37.5 MB, less than 92.50% of C# online submissions for Min Max Game.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public static int MinMaxGame(int[] nums)
         {
             if (nums.Length == 1)
