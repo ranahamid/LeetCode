@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="100. Same Tree.cs" />
     <Compile Include="1002. Find Common Characters.cs" />
     <Compile Include="1009. Complement of Base 10 Integer.cs" />
     <Compile Include="102. Binary Tree Level Order Traversal.cs" />
