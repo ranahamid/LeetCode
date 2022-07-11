@@ -107,6 +107,7 @@
     <Compile Include="2248. Intersection of Multiple Arrays.cs" />
     <Compile Include="226. Invert Binary Tree.cs" />
     <Compile Include="2278 Percentage of Letter in String.cs" />
+    <Compile Include="2293. Min Max Game.cs" />
     <Compile Include="232. Implement Queue using Stacks.cs" />
     <Compile Include="2319. Check if Matrix Is X-Matrix.cs" />
     <Compile Include="2335. Minimum Amount of Time to Fill Cups.cs" />
