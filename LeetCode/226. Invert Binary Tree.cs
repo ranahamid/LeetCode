@@ -36,4 +36,30 @@ namespace LeetCode
             return newRoot;
         }
     }
+    public class Solution
+    {
+        public TreeNode_226 InvertTree(TreeNode_226 root)
+        {
+            if (root == null)
+                return null;
+            Queue<TreeNode_226> queue = new Queue<TreeNode_226>();
+            queue.Enqueue(root);
+            while (queue.Count > 0)
+            {
+                TreeNode_226 node = queue.Dequeue();
+                var temp = node.left;
+                node.left = node.right;
+                node.right = temp;
+                if (node.left != null)
+                {
+                    queue.Enqueue(node.left);
+                }
+                if (node.right != null)
+                {
+                    queue.Enqueue(node.right);
+                }
+            }
+            return root;
+        }
+    }
 }

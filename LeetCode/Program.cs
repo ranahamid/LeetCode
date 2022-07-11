@@ -10,7 +10,18 @@ using System.Xml.XPath;
 namespace LeetCode
 {
 
-
+    public class TreeNode
+    {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -76,17 +87,13 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(MinOperations(resW2));
+            Console.WriteLine(IsPrefixOfWord("i love eating burger", "burg"));
             Console.ReadKey();
         }
 
-         
 
 
-
-
-
-
+       
 
 
 
