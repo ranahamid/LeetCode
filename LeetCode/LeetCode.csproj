@@ -298,6 +298,7 @@
     <Compile Include="905 Sort Array By Parity.cs" />
     <Compile Include="942 DI String Match.cs" />
     <Compile Include="961 N-Repeated Element in Size 2N Array.cs" />
+    <Compile Include="2224. Minimum Number of Operations to Convert Time.cs" />
     <Content Include="Codeforces\Contest 804\A. The Third Three Number Problem.txt" />
     <Compile Include="Algo-1\BFS.cs" />
     <Compile Include="Algo-1\BFSLEVEL.cs" />
