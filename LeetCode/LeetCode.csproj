@@ -64,6 +64,7 @@
     <Compile Include="1356 Sort Integers by The Number of 1 Bits.cs" />
     <Compile Include="1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree.cs" />
     <Compile Include="1380. Lucky Numbers in a Matrix.cs" />
+    <Compile Include="1394. Find Lucky Integer in an Array.cs" />
     <Compile Include="1403. Minimum Subsequence in Non-Increasing Order.cs" />
     <Compile Include="1413. Minimum Value to Get Positive Step by Step Sum.cs" />
     <Compile Include="144. Binary Tree Preorder Traversal.cs" />
