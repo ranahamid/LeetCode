@@ -50,6 +50,7 @@
     <Compile Include="102. Binary Tree Level Order Traversal.cs" />
     <Compile Include="1021. Remove Outermost Parentheses.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
+    <Compile Include="1078. Occurrences After Bigram.cs" />
     <Compile Include="1103. Distribute Candies to People.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
