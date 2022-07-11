@@ -76,12 +76,12 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
              
-            //Console.WriteLine(ReformatDate("20th Oct 2052")); 
+             Console.WriteLine(MySqrt(2147395600)); 
             Console.ReadKey();
         }
 
 
-     
+   
 
 
 
