@@ -115,6 +115,7 @@
     <Compile Include="496. Next Greater Element I.cs" />
     <Compile Include="500. Keyboard Row.cs" />
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
+    <Compile Include="66. Plus One.cs" />
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="69. Sqrt%28x%29.cs" />
     <Compile Include="705. Design HashSet.cs" />
