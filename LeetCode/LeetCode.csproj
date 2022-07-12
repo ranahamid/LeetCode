@@ -107,6 +107,7 @@
     <Compile Include="2085. Count Common Words With One Occurrence.cs" />
     <Compile Include="2124. Check if All A's Appears Before All B's.cs" />
     <Compile Include="2138. Divide a String Into Groups of Size k.cs" />
+    <Compile Include="2148. Count Elements With Strictly Smaller and Greater Elements.cs" />
     <Compile Include="2154 Keep Multiplying Found Values by Two.cs" />
     <Compile Include="2164. Sort Even and Odd Indices Independently.cs" />
     <Compile Include="2180. Count Integers With Even Digit Sum.cs" />
