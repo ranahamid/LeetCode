@@ -85,14 +85,13 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(GetLucky("leetcode", 2));
+            Console.WriteLine(MaxPower("abbcccddddeeeeedcba" ));
             Console.ReadKey();
         }
 
 
 
-
-
+       
 
 
 
