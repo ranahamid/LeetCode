@@ -115,10 +115,12 @@
     <Compile Include="226. Invert Binary Tree.cs" />
     <Compile Include="2278 Percentage of Letter in String.cs" />
     <Compile Include="2293. Min Max Game.cs" />
+    <Compile Include="2303. Calculate Amount Paid in Taxes.cs" />
     <Compile Include="232. Implement Queue using Stacks.cs" />
     <Compile Include="2319. Check if Matrix Is X-Matrix.cs" />
     <Compile Include="2335. Minimum Amount of Time to Fill Cups.cs" />
     <Compile Include="2336. Smallest Number in Infinite Set.cs" />
+    <Compile Include="242. Valid Anagram.cs" />
     <Compile Include="32. Longest Valid Parentheses.cs" />
     <Compile Include="349. Intersection of Two Arrays.cs" />
     <Compile Include="350. Intersection of Two Arrays II.cs" />

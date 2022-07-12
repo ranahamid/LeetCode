@@ -26,10 +26,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[][] nums = new int[2][]
+            int[][] nums = new int[3][]
             {
-                new int[2] { 1,2 },
-                new int[2] { 3,4 }, 
+                new int[2] { 3,50 },
+                new int[2] { 7,10 }, 
+                new int[2] { 12,25 },
             };
 
             int[][] nums1 = new int[2][]
@@ -85,17 +86,10 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(MaxPower("abbcccddddeeeeedcba" ));
+            Console.WriteLine(CalculateTax(nums, 10)); 
             Console.ReadKey();
         }
-
-
-
-       
-
-
-
-
+   
 
 
 
