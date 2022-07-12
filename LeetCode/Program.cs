@@ -78,7 +78,7 @@ namespace LeetCode
             {
            "leetcode","et","code","leet"
             };
-            var res1 = new int[] { 2, 2, 3, 4 };
+            var res1 = new int[] { 3, 2, 3 };
             var res2 = new int[] { 1,2,9 };
             var res3 = new int[] { 2, 7, 4, 1, 8, 1 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
@@ -86,18 +86,13 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(CalculateTax(nums, 10)); 
+            Console.WriteLine(BinaryGap(8)); 
             Console.ReadKey();
         }
-   
 
 
 
-
-
-
-
-
+       
 
     }
 
