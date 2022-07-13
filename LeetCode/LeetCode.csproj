@@ -377,6 +377,7 @@
     <Content Include="Premium\1350. Students With Invalid Departments.sql" />
     <Content Include="Premium\1378. Replace Employee ID With The Unique Identifier.sql" />
     <Content Include="Premium\1683. Invalid Tweets.sql" />
+    <Content Include="Premium\2026. Low-Quality Problems.sql" />
     <Content Include="SQL\1050. Actors and Directors Who Cooperated At Least Three Times.sql" />
     <Content Include="SQL\1148 Article Views I.sql" />
     <Content Include="SQL\1179 Reformat Department Table.sql" />
