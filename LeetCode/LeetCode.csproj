@@ -357,10 +357,12 @@
     <Content Include="Go\908. Smallest Range I.txt" />
     <Content Include="Go\965. Univalued Binary Tree.txt" />
     <Compile Include="Premium\1119. Remove Vowels from a String.cs" />
+    <Content Include="Premium\1421. NPV Queries.sql" />
     <Content Include="Premium\1777. Product%27s Price for Each Store.sql" />
     <Content Include="Premium\1821. Find Customers With Positive Revenue this Year.sql" />
     <Content Include="Premium\1623. All Valid Triplets That Can Represent a Country.sql" />
     <Compile Include="Premium\1165. Single-Row Keyboard.cs" />
+    <Content Include="Premium\1251. Average Selling Price.sql" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />
