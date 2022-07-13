@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_637
+    {
+        public int val;
+        public TreeNode_637 left;
+        public TreeNode_637 right;
+        public TreeNode_637(int val = 0, TreeNode_637 left = null, TreeNode_637 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     internal class _637
     {
         /// <summary>
@@ -14,12 +26,12 @@ namespace LeetCode
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
-        public IList<double> AverageOfLevels(TreeNode root)
+        public IList<double> AverageOfLevels(TreeNode_637 root)
         {
             var result = new List<double>();
             if (root == null)
                 return result;
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<TreeNode_637> queue = new Queue<TreeNode_637>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
@@ -29,7 +41,7 @@ namespace LeetCode
 
                 while (count < queueLen)
                 {
-                    TreeNode node = queue.Dequeue();
+                    TreeNode_637 node = queue.Dequeue();
                     currentVal += node.val;
                     if (node.left != null)
                     {

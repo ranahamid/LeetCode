@@ -55,6 +55,7 @@
     <Compile Include="1078. Occurrences After Bigram.cs" />
     <Compile Include="1103. Distribute Candies to People.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
+    <Compile Include="111. Minimum Depth of Binary Tree.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
     <Compile Include="1189. Maximum Number of Balloons.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="350. Intersection of Two Arrays II.cs" />
     <Compile Include="4. Median of Two Sorted Arrays.cs" />
     <Compile Include="412. Fizz Buzz.cs" />
+    <Compile Include="429. N-ary Tree Level Order Traversal.cs" />
     <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
     <Compile Include="476. Number Complement.cs" />
     <Compile Include="496. Next Greater Element I.cs" />
@@ -137,6 +139,7 @@
     <Compile Include="566. Reshape the Matrix.cs" />
     <Compile Include="575. Distribute Candies.cs" />
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
+    <Compile Include="590. N-ary Tree Postorder Traversal.cs" />
     <Compile Include="637. Average of Levels in Binary Tree.cs" />
     <Compile Include="66. Plus One.cs" />
     <Compile Include="682 Baseball Game.cs" />
@@ -312,6 +315,7 @@
     <Compile Include="961 N-Repeated Element in Size 2N Array.cs" />
     <Compile Include="2224. Minimum Number of Operations to Convert Time.cs" />
     <Content Include="Codeforces\Contest 804\A. The Third Three Number Problem.txt" />
+    <Compile Include="993. Cousins in Binary Tree.cs" />
     <Compile Include="Algo-1\BFS.cs" />
     <Compile Include="Algo-1\BFSLEVEL.cs" />
     <Compile Include="Contest 291\2259 Remove Digit From Number to Maximize Result.cs" />

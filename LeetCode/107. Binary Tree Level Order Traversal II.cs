@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_107
+    {
+        public int val;
+        public TreeNode_107 left;
+        public TreeNode_107 right;
+        public TreeNode_107(int val = 0, TreeNode_107 left = null, TreeNode_107 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     internal class _107
     {
         /// <summary>
@@ -15,12 +27,12 @@ namespace LeetCode
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
-        public IList<IList<int>> LevelOrderBottom(TreeNode root)
+        public IList<IList<int>> LevelOrderBottom(TreeNode_107 root)
         {
             var result = new List<IList<int>>();
             if (root == null)
                 return result;
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<TreeNode_107> queue = new Queue<TreeNode_107>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
@@ -30,7 +42,7 @@ namespace LeetCode
                 while (count < queueLen)
                 {
 
-                    TreeNode node = queue.Dequeue();
+                    TreeNode_107 node = queue.Dequeue();
                     currentVal.Add(node.val);
                     if (node.left != null)
                     {
@@ -56,12 +68,12 @@ namespace LeetCode
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
-        public IList<IList<int>> LevelOrderBottom_2(TreeNode root)
+        public IList<IList<int>> LevelOrderBottom_2(TreeNode_107 root)
         {
             var result = new List<IList<int>>();
             if (root == null)
                 return result;
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<TreeNode_107> queue = new Queue<TreeNode_107>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
@@ -71,7 +83,7 @@ namespace LeetCode
                 while (count < queueLen)
                 {
 
-                    TreeNode node = queue.Dequeue();
+                    TreeNode_107 node = queue.Dequeue();
                     currentVal.Add(node.val);
                     if (node.left != null)
                     {
