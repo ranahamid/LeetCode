@@ -360,6 +360,7 @@
     <Content Include="Premium\1777. Product%27s Price for Each Store.sql" />
     <Content Include="Premium\1821. Find Customers With Positive Revenue this Year.sql" />
     <Content Include="Premium\1623. All Valid Triplets That Can Represent a Country.sql" />
+    <Compile Include="Premium\1165. Single-Row Keyboard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />
