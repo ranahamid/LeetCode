@@ -355,6 +355,9 @@
     <Content Include="Go\852. Peak Index in a Mountain Array.txt" />
     <Content Include="Go\908. Smallest Range I.txt" />
     <Content Include="Go\965. Univalued Binary Tree.txt" />
+    <Compile Include="Premium\1119. Remove Vowels from a String.cs" />
+    <Content Include="Premium\1821. Find Customers With Positive Revenue this Year.sql" />
+    <Content Include="Premium\1623. All Valid Triplets That Can Represent a Country.sql" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />
@@ -366,6 +369,9 @@
     <Content Include="Go\589. N-ary Tree Preorder Traversal.txt" />
     <Content Include="Go\938. Range Sum of BST.txt" />
     <Content Include="Go\94. Binary Tree Inorder Traversal.txt" />
+    <Content Include="Premium\1350. Students With Invalid Departments.sql" />
+    <Content Include="Premium\1378. Replace Employee ID With The Unique Identifier.sql" />
+    <Content Include="Premium\1683. Invalid Tweets.sql" />
     <Content Include="SQL\1050. Actors and Directors Who Cooperated At Least Three Times.sql" />
     <Content Include="SQL\1148 Article Views I.sql" />
     <Content Include="SQL\1179 Reformat Department Table.sql" />
