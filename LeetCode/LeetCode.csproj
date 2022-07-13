@@ -366,6 +366,8 @@
     <Content Include="Premium\1623. All Valid Triplets That Can Represent a Country.sql" />
     <Compile Include="Premium\1165. Single-Row Keyboard.cs" />
     <Content Include="Premium\1251. Average Selling Price.sql" />
+    <Compile Include="Premium\1469. Find All The Lonely Nodes.cs" />
+    <Compile Include="Premium\760. Find Anagram Mappings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />

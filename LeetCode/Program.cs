@@ -78,41 +78,18 @@ namespace LeetCode
             Console.WriteLine(CalculateTime("pqrstuvwxyzabcdefghijklmno", "leetcode"));
             Console.ReadKey();
         }
-        //public class TreeNode
-        //{
-        //    public int val;
-        //    public TreeNode left;
-        //    public TreeNode right;
-        //    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-        //    {
-        //        this.val = val;
-        //        this.left = left;
-        //        this.right = right;
-        //    }
-        //}
-
-
-
-        public static int CalculateTime(string keyboard, string word)
+        public class TreeNode
         {
-
-            var sum = 0;
-            var currentPosition = 0;
-            for (int i = 0; i < word.Length; i++)
+            public int val;
+            public TreeNode left;
+            public TreeNode right;
+            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
             {
-                var index = keyboard.IndexOf(word[i]);
-                var firstLen = Math.Abs(index - currentPosition); 
-                currentPosition = index;
+                this.val = val;
+                this.left = left;
+                this.right = right;
             }
-            return sum;
         }
-
-
-
-
-
-
-
 
 
 
