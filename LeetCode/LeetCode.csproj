@@ -137,6 +137,7 @@
     <Compile Include="566. Reshape the Matrix.cs" />
     <Compile Include="575. Distribute Candies.cs" />
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
+    <Compile Include="637. Average of Levels in Binary Tree.cs" />
     <Compile Include="66. Plus One.cs" />
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="69. Sqrt%28x%29.cs" />
