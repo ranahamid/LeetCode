@@ -75,7 +75,11 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(LargestSubarray(res3, 3));
+            String str = "ABC";
+            int n = str.Length;
+            Permutations.permute(str, 0, n - 1);
+
+            //Console.WriteLine(LargestSubarray(res3, 3));
             Console.ReadKey();
         }
         public class TreeNode

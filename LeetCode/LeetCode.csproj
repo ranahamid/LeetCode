@@ -322,6 +322,7 @@
     <Compile Include="993. Cousins in Binary Tree.cs" />
     <Compile Include="Algo-1\BFS.cs" />
     <Compile Include="Algo-1\BFSLEVEL.cs" />
+    <Compile Include="Algo-1\permutations.cs" />
     <Compile Include="Contest 291\2259 Remove Digit From Number to Maximize Result.cs" />
     <Compile Include="Contest 291\2260 Minimum Consecutive Cards to Pick Up.cs" />
     <Compile Include="contest-300\2325. Decode the Message.cs" />
