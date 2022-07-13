@@ -133,6 +133,7 @@
     <Compile Include="476. Number Complement.cs" />
     <Compile Include="496. Next Greater Element I.cs" />
     <Compile Include="500. Keyboard Row.cs" />
+    <Compile Include="521. Longest Uncommon Subsequence I.cs" />
     <Compile Include="566. Reshape the Matrix.cs" />
     <Compile Include="575. Distribute Candies.cs" />
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
