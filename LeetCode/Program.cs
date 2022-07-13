@@ -65,7 +65,7 @@ namespace LeetCode
             var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
             var resW2 = new string[]
             {
-           "leetcode","et","code","leet"
+               "leetcode","et","code","leet"
             };
             var res1 = new int[] { 3, 2, 3 };
             var res2 = new int[] { 1, 2, 9 };
@@ -75,7 +75,7 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-              Console.WriteLine(StrStr("hello", "ll")); 
+            Console.WriteLine(CalculateTime("pqrstuvwxyzabcdefghijklmno", "leetcode"));
             Console.ReadKey();
         }
         //public class TreeNode
@@ -92,14 +92,20 @@ namespace LeetCode
         //}
 
 
-        public static int StrStr(string haystack, string needle)
+
+        public static int CalculateTime(string keyboard, string word)
         {
-            return haystack.IndexOf(needle);
-            
+
+            var sum = 0;
+            var currentPosition = 0;
+            for (int i = 0; i < word.Length; i++)
+            {
+                var index = keyboard.IndexOf(word[i]);
+                var firstLen = Math.Abs(index - currentPosition); 
+                currentPosition = index;
+            }
+            return sum;
         }
-
-
-
 
 
 
