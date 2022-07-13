@@ -232,7 +232,6 @@
     <Compile Include="1768 Merge Strings Alternately.cs" />
     <Compile Include="179 Largest Number.cs" />
     <Compile Include="1791 Find Center of Star Graph.cs" />
-    <Compile Include="1795 Rearrange Products Table.cs" />
     <Compile Include="1812 Determine Color of a Chessboard Square.cs" />
     <Compile Include="1816 Truncate Sentence.cs" />
     <Compile Include="1827 Minimum Operations to Make the Array Increasing.cs" />
@@ -316,6 +315,7 @@
     <Compile Include="942 DI String Match.cs" />
     <Compile Include="961 N-Repeated Element in Size 2N Array.cs" />
     <Compile Include="2224. Minimum Number of Operations to Convert Time.cs" />
+    <Content Include="1795 Rearrange Products Table.sql" />
     <Content Include="Codeforces\Contest 804\A. The Third Three Number Problem.txt" />
     <Compile Include="993. Cousins in Binary Tree.cs" />
     <Compile Include="Algo-1\BFS.cs" />
@@ -356,6 +356,7 @@
     <Content Include="Go\908. Smallest Range I.txt" />
     <Content Include="Go\965. Univalued Binary Tree.txt" />
     <Compile Include="Premium\1119. Remove Vowels from a String.cs" />
+    <Content Include="Premium\1777. Product%27s Price for Each Store.sql" />
     <Content Include="Premium\1821. Find Customers With Positive Revenue this Year.sql" />
     <Content Include="Premium\1623. All Valid Triplets That Can Represent a Country.sql" />
     <Compile Include="Program.cs" />
