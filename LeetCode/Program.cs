@@ -75,13 +75,28 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            //  Console.WriteLine(IsCousins(list2,4,3)); 
+              Console.WriteLine(StrStr("hello", "ll")); 
             Console.ReadKey();
         }
+        //public class TreeNode
+        //{
+        //    public int val;
+        //    public TreeNode left;
+        //    public TreeNode right;
+        //    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        //    {
+        //        this.val = val;
+        //        this.left = left;
+        //        this.right = right;
+        //    }
+        //}
 
 
-      
-   
+        public static int StrStr(string haystack, string needle)
+        {
+            return haystack.IndexOf(needle);
+            
+        }
 
 
 
