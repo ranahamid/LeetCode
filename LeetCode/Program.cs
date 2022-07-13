@@ -65,7 +65,7 @@ namespace LeetCode
             var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
             var resW2 = new string[]
             {
-               "leetcode","et","code","leet"
+           "this","is","a","long","run","sentence","is","fun","day","today","sunny","weather","is","a","day","tuesday","this","sentence","running","rainy"
             };
             var res1 = new int[] { 3, 2, 3 };
             var res2 = new int[] { 1, 2, 9 };
@@ -75,7 +75,7 @@ namespace LeetCode
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(CalculateTime("pqrstuvwxyzabcdefghijklmno", "leetcode"));
+            Console.WriteLine(ShortestDistance(resW2, "running","run"));
             Console.ReadKey();
         }
         public class TreeNode
@@ -91,10 +91,7 @@ namespace LeetCode
             }
         }
 
-
-
-
-
+      
 
 
 

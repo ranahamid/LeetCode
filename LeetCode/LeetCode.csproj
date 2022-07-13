@@ -360,6 +360,7 @@
     <Compile Include="Premium\1119. Remove Vowels from a String.cs" />
     <Content Include="Premium\1173. Immediate Food Delivery I.sql" />
     <Content Include="Premium\1421. NPV Queries.sql" />
+    <Content Include="Premium\1543. Fix Product Name Format.sql" />
     <Content Include="Premium\1565. Unique Orders and Customers Per Month.sql" />
     <Content Include="Premium\1777. Product%27s Price for Each Store.sql" />
     <Content Include="Premium\1821. Find Customers With Positive Revenue this Year.sql" />
@@ -367,6 +368,8 @@
     <Compile Include="Premium\1165. Single-Row Keyboard.cs" />
     <Content Include="Premium\1251. Average Selling Price.sql" />
     <Compile Include="Premium\1469. Find All The Lonely Nodes.cs" />
+    <Compile Include="Premium\243. Shortest Word Distance.cs" />
+    <Compile Include="Premium\266. Palindrome Permutation.cs" />
     <Compile Include="Premium\760. Find Anagram Mappings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
