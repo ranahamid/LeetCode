@@ -368,6 +368,7 @@
     <Compile Include="Premium\1165. Single-Row Keyboard.cs" />
     <Content Include="Premium\1251. Average Selling Price.sql" />
     <Compile Include="Premium\1469. Find All The Lonely Nodes.cs" />
+    <Compile Include="Premium\1708. Largest Subarray Length K.cs" />
     <Compile Include="Premium\243. Shortest Word Distance.cs" />
     <Compile Include="Premium\266. Palindrome Permutation.cs" />
     <Compile Include="Premium\760. Find Anagram Mappings.cs" />
