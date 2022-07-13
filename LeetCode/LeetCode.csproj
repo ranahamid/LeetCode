@@ -317,6 +317,7 @@
     <Compile Include="961 N-Repeated Element in Size 2N Array.cs" />
     <Compile Include="2224. Minimum Number of Operations to Convert Time.cs" />
     <Content Include="1795 Rearrange Products Table.sql" />
+    <Content Include="2082. The Number of Rich Customers.sql" />
     <Content Include="Codeforces\Contest 804\A. The Third Three Number Problem.txt" />
     <Compile Include="993. Cousins in Binary Tree.cs" />
     <Compile Include="Algo-1\BFS.cs" />
