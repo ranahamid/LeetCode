@@ -69,13 +69,13 @@ namespace LeetCode
             };
             var res1 = new int[] { 3, 2, 3 };
             var res2 = new int[] { 1, 2, 9 };
-            var res3 = new int[] { 2, 7, 4, 1, 8, 1 };
+            var res3 = new int[] { 1, 4, 5, 2, 3 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             //Solution s = new Solution();
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(ShortestDistance(resW2, "running","run"));
+            Console.WriteLine(LargestSubarray(res3, 3));
             Console.ReadKey();
         }
         public class TreeNode
@@ -90,9 +90,6 @@ namespace LeetCode
                 this.right = right;
             }
         }
-
-      
-
 
 
 
