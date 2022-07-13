@@ -49,11 +49,14 @@
     <Compile Include="1009. Complement of Base 10 Integer.cs" />
     <Compile Include="102. Binary Tree Level Order Traversal.cs" />
     <Compile Include="1021. Remove Outermost Parentheses.cs" />
+    <Compile Include="103. Binary Tree Zigzag Level Order Traversal.cs" />
     <Compile Include="1046. Last Stone Weight.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
+    <Compile Include="107. Binary Tree Level Order Traversal II.cs" />
     <Compile Include="1078. Occurrences After Bigram.cs" />
     <Compile Include="1103. Distribute Candies to People.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
+    <Compile Include="111. Minimum Depth of Binary Tree.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
     <Compile Include="1189. Maximum Number of Balloons.cs" />
@@ -124,11 +127,13 @@
     <Compile Include="2335. Minimum Amount of Time to Fill Cups.cs" />
     <Compile Include="2336. Smallest Number in Infinite Set.cs" />
     <Compile Include="242. Valid Anagram.cs" />
+    <Compile Include="28. Implement strStr%28%29.cs" />
     <Compile Include="32. Longest Valid Parentheses.cs" />
     <Compile Include="349. Intersection of Two Arrays.cs" />
     <Compile Include="350. Intersection of Two Arrays II.cs" />
     <Compile Include="4. Median of Two Sorted Arrays.cs" />
     <Compile Include="412. Fizz Buzz.cs" />
+    <Compile Include="429. N-ary Tree Level Order Traversal.cs" />
     <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
     <Compile Include="476. Number Complement.cs" />
     <Compile Include="496. Next Greater Element I.cs" />
@@ -137,6 +142,8 @@
     <Compile Include="566. Reshape the Matrix.cs" />
     <Compile Include="575. Distribute Candies.cs" />
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
+    <Compile Include="590. N-ary Tree Postorder Traversal.cs" />
+    <Compile Include="637. Average of Levels in Binary Tree.cs" />
     <Compile Include="66. Plus One.cs" />
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="69. Sqrt%28x%29.cs" />
@@ -226,7 +233,6 @@
     <Compile Include="1768 Merge Strings Alternately.cs" />
     <Compile Include="179 Largest Number.cs" />
     <Compile Include="1791 Find Center of Star Graph.cs" />
-    <Compile Include="1795 Rearrange Products Table.cs" />
     <Compile Include="1812 Determine Color of a Chessboard Square.cs" />
     <Compile Include="1816 Truncate Sentence.cs" />
     <Compile Include="1827 Minimum Operations to Make the Array Increasing.cs" />
@@ -310,7 +316,9 @@
     <Compile Include="942 DI String Match.cs" />
     <Compile Include="961 N-Repeated Element in Size 2N Array.cs" />
     <Compile Include="2224. Minimum Number of Operations to Convert Time.cs" />
+    <Content Include="1795 Rearrange Products Table.sql" />
     <Content Include="Codeforces\Contest 804\A. The Third Three Number Problem.txt" />
+    <Compile Include="993. Cousins in Binary Tree.cs" />
     <Compile Include="Algo-1\BFS.cs" />
     <Compile Include="Algo-1\BFSLEVEL.cs" />
     <Compile Include="Contest 291\2259 Remove Digit From Number to Maximize Result.cs" />
@@ -348,6 +356,10 @@
     <Content Include="Go\852. Peak Index in a Mountain Array.txt" />
     <Content Include="Go\908. Smallest Range I.txt" />
     <Content Include="Go\965. Univalued Binary Tree.txt" />
+    <Compile Include="Premium\1119. Remove Vowels from a String.cs" />
+    <Content Include="Premium\1777. Product%27s Price for Each Store.sql" />
+    <Content Include="Premium\1821. Find Customers With Positive Revenue this Year.sql" />
+    <Content Include="Premium\1623. All Valid Triplets That Can Represent a Country.sql" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="15 Three_Sum.cs" />
@@ -359,6 +371,9 @@
     <Content Include="Go\589. N-ary Tree Preorder Traversal.txt" />
     <Content Include="Go\938. Range Sum of BST.txt" />
     <Content Include="Go\94. Binary Tree Inorder Traversal.txt" />
+    <Content Include="Premium\1350. Students With Invalid Departments.sql" />
+    <Content Include="Premium\1378. Replace Employee ID With The Unique Identifier.sql" />
+    <Content Include="Premium\1683. Invalid Tweets.sql" />
     <Content Include="SQL\1050. Actors and Directors Who Cooperated At Least Three Times.sql" />
     <Content Include="SQL\1148 Article Views I.sql" />
     <Content Include="SQL\1179 Reformat Department Table.sql" />

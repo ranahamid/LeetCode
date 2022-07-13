@@ -10,18 +10,7 @@ using System.Xml.XPath;
 namespace LeetCode
 {
 
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-        {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -29,7 +18,7 @@ namespace LeetCode
             int[][] nums = new int[3][]
             {
                 new int[2] { 3,50 },
-                new int[2] { 7,10 }, 
+                new int[2] { 7,10 },
                 new int[2] { 12,25 },
             };
 
@@ -43,10 +32,10 @@ namespace LeetCode
             #region node
 
             //ListNode eig = new ListNode(3);
-            //ListNode sev = new ListNode(3, eig);
-            //TreeNode six = new TreeNode(3 );
-            //TreeNode five = new TreeNode(1 );
-            //TreeNode list2 = new TreeNode(2, five,six);
+            //TreeNode sev = new TreeNode(4);
+            //TreeNode six = new TreeNode(3);
+            //TreeNode five = new TreeNode(2,sev);
+            //TreeNode list2 = new TreeNode(1, five, six);
 
             //ListNode fifteen = new ListNode(0);
             //ListNode fourtenn = new ListNode(0, fifteen);
@@ -79,18 +68,75 @@ namespace LeetCode
            "leetcode","et","code","leet"
             };
             var res1 = new int[] { 3, 2, 3 };
-            var res2 = new int[] { 1,2,9 };
+            var res2 = new int[] { 1, 2, 9 };
             var res3 = new int[] { 2, 7, 4, 1, 8, 1 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             //Solution s = new Solution();
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
 
-            Console.WriteLine(BinaryGap(8)); 
+              Console.WriteLine(StrStr("hello", "ll")); 
             Console.ReadKey();
         }
+        //public class TreeNode
+        //{
+        //    public int val;
+        //    public TreeNode left;
+        //    public TreeNode right;
+        //    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        //    {
+        //        this.val = val;
+        //        this.left = left;
+        //        this.right = right;
+        //    }
+        //}
 
-      
+
+        public static int StrStr(string haystack, string needle)
+        {
+            return haystack.IndexOf(needle);
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
