@@ -134,7 +134,9 @@
     <Compile Include="4. Median of Two Sorted Arrays.cs" />
     <Compile Include="412. Fizz Buzz.cs" />
     <Compile Include="429. N-ary Tree Level Order Traversal.cs" />
+    <Compile Include="46. Permutations.cs" />
     <Compile Include="462. Minimum Moves to Equal Array Elements II.cs" />
+    <Compile Include="47. Permutations II.cs" />
     <Compile Include="476. Number Complement.cs" />
     <Compile Include="496. Next Greater Element I.cs" />
     <Compile Include="500. Keyboard Row.cs" />
@@ -143,6 +145,7 @@
     <Compile Include="575. Distribute Candies.cs" />
     <Compile Include="589. N-ary Tree Preorder Traversal.cs" />
     <Compile Include="590. N-ary Tree Postorder Traversal.cs" />
+    <Compile Include="60. Permutation Sequence.cs" />
     <Compile Include="637. Average of Levels in Binary Tree.cs" />
     <Compile Include="66. Plus One.cs" />
     <Compile Include="682 Baseball Game.cs" />

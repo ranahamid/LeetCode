@@ -67,19 +67,19 @@ namespace LeetCode
             {
            "this","is","a","long","run","sentence","is","fun","day","today","sunny","weather","is","a","day","tuesday","this","sentence","running","rainy"
             };
-            var res1 = new int[] { 3, 2, 3 };
+            var res1 = new int[] { 1, 1, 2 };
             var res2 = new int[] { 1, 2, 9 };
             var res3 = new int[] { 1, 4, 5, 2, 3 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             //Solution s = new Solution();
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
+            
+            //String str = "ABC";
+            // int n = str.Length;
+            // Permutations.permute(str, 0, n - 1);
 
-            String str = "ABC";
-            int n = str.Length;
-            Permutations.permute(str, 0, n - 1);
-
-            //Console.WriteLine(LargestSubarray(res3, 3));
+            Console.WriteLine(PermuteUnique(res1));
             Console.ReadKey();
         }
         public class TreeNode
@@ -94,15 +94,6 @@ namespace LeetCode
                 this.right = right;
             }
         }
-
-
-
-
-
-
-
-
-
 
 
 
