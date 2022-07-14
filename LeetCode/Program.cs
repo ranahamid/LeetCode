@@ -67,69 +67,36 @@ namespace LeetCode
             {
            "this","is","a","long","run","sentence","is","fun","day","today","sunny","weather","is","a","day","tuesday","this","sentence","running","rainy"
             };
-            var res1 = new int[] { 1, 1, 2 };
+            var res1 = new int[] { 1,2,0};
             var res2 = new int[] { 1, 2, 9 };
-            var res3 = new int[] { 1, 4, 5, 2, 3 };
+            var res3 = new int[] { 3, 4, -1, 1 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
             //Solution s = new Solution();
             //var rd=s.LevelOrderPrint(res1);
             //Console.WriteLine(IsSameTree(rd,rd));
-            
+
             //String str = "ABC";
             // int n = str.Length;
             // Permutations.permute(str, 0, n - 1);
 
-            Console.WriteLine(MaxLengthBetweenEqualCharacters("cbzxy"));
+            Console.WriteLine(CapitalizeTitle("capiTalIze tHe titLe"));
+
             Console.ReadKey();
         }
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-            {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
+        //public class TreeNode
+        //{
+        //    public int val;
+        //    public TreeNode left;
+        //    public TreeNode right;
+        //    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        //    {
+        //        this.val = val;
+        //        this.left = left;
+        //        this.right = right;
+        //    }
+        //}
 
-
-        public static int MaxLengthBetweenEqualCharacters(string s)
-        {
-            var max = -1;
-            var len = s.Length;
-            var map = new Dictionary<char, int>();
-            for(int i=0; i<len; i++)
-            {
-                if (map.ContainsKey(s[i]))
-                {
-                    var val = map[s[i]];
-                    max = Math.Max(max, i - val - 1);
-                }
-                else
-                {
-                    map[s[i]] = i;
-                }
-            }
-            //if (map.Count == len)
-            //    return -1;
-            return max;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
+     
     }
 
 
