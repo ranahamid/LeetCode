@@ -79,7 +79,7 @@ namespace LeetCode
             // int n = str.Length;
             // Permutations.permute(str, 0, n - 1);
 
-            Console.WriteLine(CapitalizeTitle("capiTalIze tHe titLe"));
+            Console.WriteLine(ConvertToTitle(52));
 
             Console.ReadKey();
         }
@@ -96,7 +96,29 @@ namespace LeetCode
         //    }
         //}
 
+
      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 

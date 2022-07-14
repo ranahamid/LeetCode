@@ -59,6 +59,8 @@
     <Compile Include="111. Minimum Depth of Binary Tree.cs" />
     <Compile Include="1518. Water Bottles.cs" />
     <Compile Include="1624. Largest Substring Between Two Equal Characters.cs" />
+    <Compile Include="168. Excel Sheet Column Title.cs" />
+    <Compile Include="171. Excel Sheet Column Number.cs" />
     <Compile Include="2129. Capitalize the Title.cs" />
     <Compile Include="389. Find the Difference.cs" />
     <Compile Include="41. First Missing Positive.cs" />
