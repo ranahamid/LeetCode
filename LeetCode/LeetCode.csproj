@@ -57,6 +57,8 @@
     <Compile Include="1103. Distribute Candies to People.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Compile Include="111. Minimum Depth of Binary Tree.cs" />
+    <Compile Include="1624. Largest Substring Between Two Equal Characters.cs" />
+    <Compile Include="Premium\1118. Number of Days in a Month.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
     <Compile Include="1189. Maximum Number of Balloons.cs" />
@@ -147,6 +149,7 @@
     <Compile Include="590. N-ary Tree Postorder Traversal.cs" />
     <Compile Include="60. Permutation Sequence.cs" />
     <Compile Include="637. Average of Levels in Binary Tree.cs" />
+    <Compile Include="653. Two Sum IV - Input is a BST.cs" />
     <Compile Include="66. Plus One.cs" />
     <Compile Include="682 Baseball Game.cs" />
     <Compile Include="69. Sqrt%28x%29.cs" />
@@ -373,6 +376,7 @@
     <Content Include="Premium\1251. Average Selling Price.sql" />
     <Compile Include="Premium\1469. Find All The Lonely Nodes.cs" />
     <Compile Include="Premium\1708. Largest Subarray Length K.cs" />
+    <Compile Include="Premium\2330. Valid Palindrome IV.cs" />
     <Compile Include="Premium\243. Shortest Word Distance.cs" />
     <Compile Include="Premium\266. Palindrome Permutation.cs" />
     <Compile Include="Premium\760. Find Anagram Mappings.cs" />
@@ -391,6 +395,7 @@
     <Content Include="Premium\1378. Replace Employee ID With The Unique Identifier.sql" />
     <Content Include="Premium\1683. Invalid Tweets.sql" />
     <Content Include="Premium\2026. Low-Quality Problems.sql" />
+    <Content Include="Premium\2339. All the Matches of the League.sql" />
     <Content Include="Premium\613. Shortest Distance in a Line.sql" />
     <Content Include="SQL\1050. Actors and Directors Who Cooperated At Least Three Times.sql" />
     <Content Include="SQL\1148 Article Views I.sql" />

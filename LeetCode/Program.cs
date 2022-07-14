@@ -32,10 +32,10 @@ namespace LeetCode
             #region node
 
             //ListNode eig = new ListNode(3);
-            //TreeNode sev = new TreeNode(4);
+            //TreeNode sev = new TreeNode(0);
             //TreeNode six = new TreeNode(3);
-            //TreeNode five = new TreeNode(2,sev);
-            //TreeNode list2 = new TreeNode(1, five, six);
+            //TreeNode five = new TreeNode();
+            //TreeNode list2 = new TreeNode(2, five, six);
 
             //ListNode fifteen = new ListNode(0);
             //ListNode fourtenn = new ListNode(0, fifteen);
@@ -79,7 +79,7 @@ namespace LeetCode
             // int n = str.Length;
             // Permutations.permute(str, 0, n - 1);
 
-            Console.WriteLine(PermuteUnique(res1));
+            Console.WriteLine(MaxLengthBetweenEqualCharacters("cbzxy"));
             Console.ReadKey();
         }
         public class TreeNode
@@ -96,8 +96,27 @@ namespace LeetCode
         }
 
 
-
-
+        public static int MaxLengthBetweenEqualCharacters(string s)
+        {
+            var max = -1;
+            var len = s.Length;
+            var map = new Dictionary<char, int>();
+            for(int i=0; i<len; i++)
+            {
+                if (map.ContainsKey(s[i]))
+                {
+                    var val = map[s[i]];
+                    max = Math.Max(max, i - val - 1);
+                }
+                else
+                {
+                    map[s[i]] = i;
+                }
+            }
+            //if (map.Count == len)
+            //    return -1;
+            return max;
+        }
 
 
 
