@@ -78,6 +78,8 @@
     <Compile Include="543. Diameter of Binary Tree.cs" />
     <Compile Include="693. Binary Number with Alternating Bits.cs" />
     <Compile Include="696. Count Binary Substrings.cs" />
+    <Content Include="Codeforces\1705\A. Mark the Photographer.txt" />
+    <Compile Include="Codeforces\1705\C. Mark and His Unfinished Essay.cs" />
     <Compile Include="Premium\1118. Number of Days in a Month.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />

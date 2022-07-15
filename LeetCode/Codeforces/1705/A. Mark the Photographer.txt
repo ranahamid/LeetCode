@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace LeetCode
+{
+    internal class Program
+    {
+        /// <summary>
+        /// https://codeforces.com/contest/1705/problem/A
+        /// </summary>
+        /// <param name="args"></param>
+        static void Main(string[] args)
+        {
+            int intTemp = Convert.ToInt32(Console.ReadLine());
+            for (int index = 0; index < intTemp; index++)
+            {
+                //Read line, and split it by whitespace into an array of strings
+                string[] tokens = Console.ReadLine().Split();
+                //Parse element 0
+                int a = int.Parse(tokens[0]);
+                //Parse element 1
+                int person = int.Parse(tokens[1]);
+
+                string[] numbers = Console.ReadLine().Split();
+                var heigh = new List<int>();
+                foreach(var num in numbers)
+                {
+                    heigh.Add( int.Parse(num));
+                }
+                 
+                heigh.Sort();
+                var col = heigh.Count / 2;
+                var isNo = false;
+                for (int i = 0; i < col; i++)
+                {
+                    var first = heigh[i + a];
+                    var last = heigh[i];
+                    if (first - last < person)
+                    {
+                        isNo = true;
+                        Console.WriteLine("NO");
+                        break;
+                    }
+                }
+                if(isNo==false)
+                    Console.WriteLine("YES");
+            }
+        }
+    }
+}
