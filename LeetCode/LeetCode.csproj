@@ -70,6 +70,7 @@
     <Compile Include="2129. Capitalize the Title.cs" />
     <Compile Include="2194. Cells in a Range on an Excel Sheet.cs" />
     <Compile Include="271. Encode and Decode Strings.cs" />
+    <Compile Include="290. Word Pattern.cs" />
     <Compile Include="389. Find the Difference.cs" />
     <Compile Include="41. First Missing Positive.cs" />
     <Compile Include="442. Find All Duplicates in an Array.cs" />
