@@ -65,20 +65,12 @@ namespace LeetCode
             var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
             var resW2 = new string[]
             {
-           "this","is","a","long","run","sentence","is","fun","day","today","sunny","weather","is","a","day","tuesday","this","sentence","running","rainy"
+                "ab","a"
             };
             var res1 = new int[] { 2, 3, 2 };
             var res2 = new int[] { 1, 2, 9 };
-            var res3 = new int[] { 3, 4, -1, 1 };
-            // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
-            //Solution s = new Solution();
-            //var rd=s.LevelOrderPrint(res1);
-            //Console.WriteLine(IsSameTree(rd,rd));
-
-            //String str = "ABC";
-            // int n = str.Length;
-            // Permutations.permute(str, 0, n - 1);
-             
+            var res3 = new int[] { 2, 4, 9, 3 };
+            Console.WriteLine(WordPattern("abba", "dog cat cat dog"));
 
             Console.ReadKey();
         }
@@ -95,8 +87,53 @@ namespace LeetCode
         //    }
         //}
 
-      
-     
+
+
+        public static bool WordPattern(string pattern, string s)
+        {
+            var dicFirst=new Dictionary<char, string>();
+            var dicSec = new Dictionary<string, char>();
+
+            var words = s.Split(' ');
+            if (words.Length != pattern.Length)
+                return false;
+            
+            for (int i = 0; i <pattern.Length;i++)
+            {
+                var currentVal = words[i];
+                if (dicFirst.ContainsKey(pattern[i]))
+                {
+                    var dicVal=dicFirst[pattern[i]];                   
+                    if (!currentVal.Equals(dicVal))
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    dicFirst[pattern[i]] = currentVal;
+                }
+            }
+            for (int i = 0; i < words.Length; i++)
+            {
+                var currentVal = pattern[i];
+                if (dicFirst.ContainsKey(pattern[i]))
+                {
+                    var dicVal = dicFirst[pattern[i]];
+                    if (!currentVal.Equals(dicVal))
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    dicFirst[pattern[i]] = currentVal;
+                }
+            }
+
+            return true;
+
+        }
 
 
 
