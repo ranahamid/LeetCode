@@ -67,6 +67,7 @@
     <Compile Include="41. First Missing Positive.cs" />
     <Compile Include="442. Find All Duplicates in an Array.cs" />
     <Compile Include="448. Find All Numbers Disappeared in an Array.cs" />
+    <Compile Include="693. Binary Number with Alternating Bits.cs" />
     <Compile Include="Premium\1118. Number of Days in a Month.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />

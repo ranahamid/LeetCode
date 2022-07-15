@@ -79,7 +79,7 @@ namespace LeetCode
             // int n = str.Length;
             // Permutations.permute(str, 0, n - 1);
 
-            Console.WriteLine(CellsInRange("K1:L2"));
+            Console.WriteLine(HasAlternatingBits(5));
 
             Console.ReadKey();
         }
@@ -98,9 +98,7 @@ namespace LeetCode
 
 
 
-
-
-
+        
 
 
 
