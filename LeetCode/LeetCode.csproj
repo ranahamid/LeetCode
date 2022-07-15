@@ -61,6 +61,7 @@
     <Compile Include="1624. Largest Substring Between Two Equal Characters.cs" />
     <Compile Include="168. Excel Sheet Column Title.cs" />
     <Compile Include="171. Excel Sheet Column Number.cs" />
+    <Compile Include="2073. Time Needed to Buy Tickets.cs" />
     <Compile Include="2129. Capitalize the Title.cs" />
     <Compile Include="2194. Cells in a Range on an Excel Sheet.cs" />
     <Compile Include="389. Find the Difference.cs" />

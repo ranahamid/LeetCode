@@ -67,7 +67,7 @@ namespace LeetCode
             {
            "this","is","a","long","run","sentence","is","fun","day","today","sunny","weather","is","a","day","tuesday","this","sentence","running","rainy"
             };
-            var res1 = new int[] { 1,2,0};
+            var res1 = new int[] { 2, 3, 2 };
             var res2 = new int[] { 1, 2, 9 };
             var res3 = new int[] { 3, 4, -1, 1 };
             // var res3 = new int[] {3,8,-10,23,19,-4,-14,27};
@@ -79,7 +79,7 @@ namespace LeetCode
             // int n = str.Length;
             // Permutations.permute(str, 0, n - 1);
 
-            Console.WriteLine(HasAlternatingBits(5));
+            Console.WriteLine(TimeRequiredToBuy(res1,2));
 
             Console.ReadKey();
         }
@@ -96,9 +96,8 @@ namespace LeetCode
         //    }
         //}
 
+       
 
-
-        
 
 
 
