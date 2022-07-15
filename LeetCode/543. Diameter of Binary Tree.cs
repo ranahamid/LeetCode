@@ -40,9 +40,9 @@ namespace LeetCode
                 return -1;
             var left = DFS(node.left, ref max);
             var right = DFS(node.right, ref max);
-            var diameter = left + right + 1 + 1;
+            var diameter = left + right + 1 + 1; //diameter
             max = Math.Max(diameter, max);
-            return Math.Max(left, right) + 1;
+            return Math.Max(left, right) + 1;//maximum height
         }
 
 
