@@ -78,8 +78,7 @@ namespace LeetCode
             //String str = "ABC";
             // int n = str.Length;
             // Permutations.permute(str, 0, n - 1);
-
-            Console.WriteLine(TimeRequiredToBuy(res1,2));
+             
 
             Console.ReadKey();
         }
@@ -96,14 +95,8 @@ namespace LeetCode
         //    }
         //}
 
-       
-
-
-
-
-
-
-
+      
+     
 
 
 

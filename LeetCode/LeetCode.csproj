@@ -58,6 +58,7 @@
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Compile Include="111. Minimum Depth of Binary Tree.cs" />
     <Compile Include="1518. Water Bottles.cs" />
+    <Compile Include="1522. Diameter of N-Ary Tree.cs" />
     <Compile Include="1624. Largest Substring Between Two Equal Characters.cs" />
     <Compile Include="168. Excel Sheet Column Title.cs" />
     <Compile Include="171. Excel Sheet Column Number.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="41. First Missing Positive.cs" />
     <Compile Include="442. Find All Duplicates in an Array.cs" />
     <Compile Include="448. Find All Numbers Disappeared in an Array.cs" />
+    <Compile Include="543. Diameter of Binary Tree.cs" />
     <Compile Include="693. Binary Number with Alternating Bits.cs" />
     <Compile Include="Premium\1118. Number of Days in a Month.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
