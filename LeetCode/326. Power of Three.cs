@@ -31,7 +31,7 @@ namespace LeetCode
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
-        public bool IsPowerOfThree(int n)
+        public bool IsPowerOfThree_3(int n)
         {
             return n > 0 && 1162261467 % n == 0;
         }
