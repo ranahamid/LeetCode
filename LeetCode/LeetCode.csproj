@@ -57,6 +57,7 @@
     <Compile Include="1103. Distribute Candies to People.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
     <Compile Include="111. Minimum Depth of Binary Tree.cs" />
+    <Compile Include="1185. Day of the Week.cs" />
     <Compile Include="14. Longest Common Prefix.cs" />
     <Compile Include="1422. Maximum Score After Splitting a String.cs" />
     <Compile Include="1518. Water Bottles.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="41. First Missing Positive.cs" />
     <Compile Include="442. Find All Duplicates in an Array.cs" />
     <Compile Include="448. Find All Numbers Disappeared in an Array.cs" />
+    <Compile Include="492. Construct the Rectangle.cs" />
     <Compile Include="541. Reverse String II.cs" />
     <Compile Include="543. Diameter of Binary Tree.cs" />
     <Compile Include="606. Construct String from Binary Tree.cs" />

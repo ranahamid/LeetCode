@@ -65,17 +65,16 @@ namespace LeetCode
             var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
             var resW2 = new string[]
             {
-                "ab","a"
+              "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
             };
             var res1 = new int[] { -1, 0, 3, 5, 9, 12 };
             var res2 = new int[] { 1, 2, 9 };
             var res3 = new int[] { 6, 5, 4, 4 };
-            Console.WriteLine(IsMonotonic(res3));
+            Console.WriteLine(ConstructRectangle(122122));
 
             Console.ReadKey();
         }
 
-      
 
 
     }
