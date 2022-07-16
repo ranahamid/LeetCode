@@ -32,10 +32,10 @@ namespace LeetCode
             #region node
 
             //ListNode eig = new ListNode(3);
-            //TreeNode sev = new TreeNode(0);
+            //TreeNode sev = new TreeNode(4);
             //TreeNode six = new TreeNode(3);
-            //TreeNode five = new TreeNode();
-            //TreeNode list2 = new TreeNode(2, five, six);
+            //TreeNode five = new TreeNode(2,null,sev);
+            //TreeNode list2 = new TreeNode(1, five, six);
 
             //ListNode fifteen = new ListNode(0);
             //ListNode fourtenn = new ListNode(0, fifteen);
@@ -69,31 +69,13 @@ namespace LeetCode
             };
             var res1 = new int[] { -1, 0, 3, 5, 9, 12 };
             var res2 = new int[] { 1, 2, 9 };
-            var res3 = new int[] { 1, 1000,2};
-            Console.WriteLine(BinaryGap(8));
+            var res3 = new int[] { 6, 5, 4, 4 };
+            Console.WriteLine(IsMonotonic(res3));
 
             Console.ReadKey();
         }
-        //public class TreeNode
-        //{
-        //    public int val;
-        //    public TreeNode start ;
-        //    public TreeNode end ;
-        //    public TreeNode(int val = 0, TreeNode start  = null, TreeNode end  = null)
-        //    {
-        //        this.val = val;
-        //        this.start  = start ;
-        //        this.end  = end ;
-        //    }
-        //}
 
-
-
-
-
-
-        
-
+      
 
 
     }
