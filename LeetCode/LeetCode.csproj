@@ -76,6 +76,8 @@
     <Compile Include="271. Encode and Decode Strings.cs" />
     <Compile Include="278. First Bad Version.cs" />
     <Compile Include="290. Word Pattern.cs" />
+    <Compile Include="326. Power of Three.cs" />
+    <Compile Include="342. Power of Four.cs" />
     <Compile Include="374. Guess Number Higher or Lower.cs" />
     <Compile Include="380. Insert Delete GetRandom O%281%29.cs" />
     <Compile Include="381. Insert Delete GetRandom O%281%29 - Duplicates allowed.cs" />
