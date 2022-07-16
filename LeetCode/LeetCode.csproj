@@ -69,11 +69,14 @@
     <Compile Include="1869. Longer Contiguous Segments of Ones than Zeros.cs" />
     <Compile Include="2073. Time Needed to Buy Tickets.cs" />
     <Compile Include="2129. Capitalize the Title.cs" />
+    <Compile Include="2190. Most Frequent Number Following Key In an Array.cs" />
     <Compile Include="2194. Cells in a Range on an Excel Sheet.cs" />
     <Compile Include="271. Encode and Decode Strings.cs" />
     <Compile Include="278. First Bad Version.cs" />
     <Compile Include="290. Word Pattern.cs" />
     <Compile Include="374. Guess Number Higher or Lower.cs" />
+    <Compile Include="380. Insert Delete GetRandom O%281%29.cs" />
+    <Compile Include="381. Insert Delete GetRandom O%281%29 - Duplicates allowed.cs" />
     <Compile Include="389. Find the Difference.cs" />
     <Compile Include="41. First Missing Positive.cs" />
     <Compile Include="442. Find All Duplicates in an Array.cs" />
@@ -85,6 +88,7 @@
     <Content Include="Codeforces\1705\A. Mark the Photographer.txt" />
     <Content Include="Codeforces\1705\C. Mark and His Unfinished Essay.txt" />
     <Compile Include="702. Search in a Sorted Array of Unknown Size.cs" />
+    <Compile Include="917. Reverse Only Letters.cs" />
     <Compile Include="Premium\1118. Number of Days in a Month.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />

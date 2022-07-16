@@ -69,8 +69,8 @@ namespace LeetCode
             };
             var res1 = new int[] { -1, 0, 3, 5, 9, 12 };
             var res2 = new int[] { 1, 2, 9 };
-            var res3 = new int[] { 2, 4, 9, 3 };
-            Console.WriteLine(Search(res1, 2));
+            var res3 = new int[] { 1, 1000,2};
+            Console.WriteLine(ReverseOnlyLetters("Test1ng-Leet=code-Q!"));
 
             Console.ReadKey();
         }
@@ -87,10 +87,9 @@ namespace LeetCode
         //    }
         //}
 
- 
 
 
-
+  
 
 
 
