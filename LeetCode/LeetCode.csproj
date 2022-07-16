@@ -60,6 +60,7 @@
     <Compile Include="14. Longest Common Prefix.cs" />
     <Compile Include="1518. Water Bottles.cs" />
     <Compile Include="1522. Diameter of N-Ary Tree.cs" />
+    <Compile Include="1533. Find the Index of the Large Integer.cs" />
     <Compile Include="1624. Largest Substring Between Two Equal Characters.cs" />
     <Compile Include="1652. Defuse the Bomb.cs" />
     <Compile Include="168. Excel Sheet Column Title.cs" />
@@ -70,7 +71,9 @@
     <Compile Include="2129. Capitalize the Title.cs" />
     <Compile Include="2194. Cells in a Range on an Excel Sheet.cs" />
     <Compile Include="271. Encode and Decode Strings.cs" />
+    <Compile Include="278. First Bad Version.cs" />
     <Compile Include="290. Word Pattern.cs" />
+    <Compile Include="374. Guess Number Higher or Lower.cs" />
     <Compile Include="389. Find the Difference.cs" />
     <Compile Include="41. First Missing Positive.cs" />
     <Compile Include="442. Find All Duplicates in an Array.cs" />
@@ -81,6 +84,7 @@
     <Compile Include="696. Count Binary Substrings.cs" />
     <Content Include="Codeforces\1705\A. Mark the Photographer.txt" />
     <Content Include="Codeforces\1705\C. Mark and His Unfinished Essay.txt" />
+    <Compile Include="702. Search in a Sorted Array of Unknown Size.cs" />
     <Compile Include="Premium\1118. Number of Days in a Month.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
