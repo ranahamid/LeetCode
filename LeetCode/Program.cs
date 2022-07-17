@@ -71,7 +71,7 @@ namespace LeetCode
             var res2 = new int[] { 8, 2, 6, 10 };
 
           
-            Console.WriteLine(Encode(7));
+            
 
             Console.WriteLine("END");
             Console.ReadKey();
