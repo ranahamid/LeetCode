@@ -64,20 +64,20 @@ namespace LeetCode
             var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
             var resW2 = new string[]
             {
-            "64333639502","65953866768","17845691654","87148775908","58954177897","70439926174","48059986638","47548857440","18418180516","06364956881","01866627626","36824890579",
-                "14672385151","71207752868"
+            
             };
 
-            var res1 = new int[] {1,0,0,0,0,1};
-            var res2 = new int[] { 2, 4, 5, 5, 5, 5, 5, 6, 6 };
+            var res1 = new int[] { 4, 3, 6 };
+            var res2 = new int[] { 8, 2, 6, 10 };
 
-            Console.WriteLine(CanPlaceFlowers(res1,2));
+          
+            Console.WriteLine(Encode(7));
 
             Console.WriteLine("END");
             Console.ReadKey();
         }
-    
 
+       
 
 
 
