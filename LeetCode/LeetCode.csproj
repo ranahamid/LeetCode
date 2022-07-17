@@ -53,6 +53,7 @@
     <Compile Include="1046. Last Stone Weight.cs" />
     <Compile Include="1047. Remove All Adjacent Duplicates In String.cs" />
     <Compile Include="107. Binary Tree Level Order Traversal II.cs" />
+    <Compile Include="1071. Greatest Common Divisor of Strings.cs" />
     <Compile Include="1078. Occurrences After Bigram.cs" />
     <Compile Include="1103. Distribute Candies to People.cs" />
     <Compile Include="1108 Defanging an IP Address.cs" />
@@ -69,8 +70,12 @@
     <Compile Include="171. Excel Sheet Column Number.cs" />
     <Compile Include="1784. Check if Binary String Has at Most One Segment of Ones.cs" />
     <Compile Include="1869. Longer Contiguous Segments of Ones than Zeros.cs" />
+    <Compile Include="1952. Three Divisors.cs" />
+    <Compile Include="1963. Minimum Number of Swaps to Make the String Balanced.cs" />
+    <Compile Include="1979. Find Greatest Common Divisor of Array.cs" />
     <Compile Include="2073. Time Needed to Buy Tickets.cs" />
     <Compile Include="2129. Capitalize the Title.cs" />
+    <Compile Include="2181. Merge Nodes in Between Zeros.cs" />
     <Compile Include="2190. Most Frequent Number Following Key In an Array.cs" />
     <Compile Include="2194. Cells in a Range on an Excel Sheet.cs" />
     <Compile Include="271. Encode and Decode Strings.cs" />
@@ -88,12 +93,14 @@
     <Compile Include="492. Construct the Rectangle.cs" />
     <Compile Include="541. Reverse String II.cs" />
     <Compile Include="543. Diameter of Binary Tree.cs" />
+    <Compile Include="605. Can Place Flowers.cs" />
     <Compile Include="606. Construct String from Binary Tree.cs" />
     <Compile Include="693. Binary Number with Alternating Bits.cs" />
     <Compile Include="696. Count Binary Substrings.cs" />
     <Content Include="Codeforces\1705\A. Mark the Photographer.txt" />
     <Content Include="Codeforces\1705\C. Mark and His Unfinished Essay.txt" />
     <Compile Include="702. Search in a Sorted Array of Unknown Size.cs" />
+    <Compile Include="817. Linked List Components.cs" />
     <Compile Include="896. Monotonic Array.cs" />
     <Compile Include="917. Reverse Only Letters.cs" />
     <Compile Include="Contest 302\6120. Maximum Number of Pairs in Array.cs" />
@@ -474,6 +481,7 @@
     <Content Include="Go\376. Wiggle Subsequence.txt" />
     <None Include="Go\1137. N-th Tribonacci Number.go" />
     <None Include="Go\70. Climbing Stairs.go" />
+    <Compile Include="Premium\1150. Check If a Number Is Majority Element in a Sorted Array.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
