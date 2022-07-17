@@ -9,8 +9,8 @@ namespace LeetCode
     internal class _495
     {
         /// <summary>
-        /// Runtime: 269 ms, faster than 5.13% of C# online submissions for Teemo Attacking.
-        /// Memory Usage: 47.9 MB, less than 20.51% of C# online submissions for Teemo Attacking.
+        /// Runtime: 228 ms, faster than 12.82% of C# online submissions for Teemo Attacking.
+        /// Memory Usage: 43.8 MB, less than 93.59% of C# online submissions for Teemo Attacking.
         /// https://leetcode.com/problems/teemo-attacking/discuss/866913/C-soltuion
         /// </summary>
         /// <param name="timeSeries"></param>
