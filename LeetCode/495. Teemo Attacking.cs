@@ -11,6 +11,7 @@ namespace LeetCode
         /// <summary>
         /// Runtime: 269 ms, faster than 5.13% of C# online submissions for Teemo Attacking.
         /// Memory Usage: 47.9 MB, less than 20.51% of C# online submissions for Teemo Attacking.
+        /// https://leetcode.com/problems/teemo-attacking/discuss/866913/C-soltuion
         /// </summary>
         /// <param name="timeSeries"></param>
         /// <param name="duration"></param>
