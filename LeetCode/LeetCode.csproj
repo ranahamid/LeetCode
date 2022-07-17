@@ -96,6 +96,8 @@
     <Compile Include="702. Search in a Sorted Array of Unknown Size.cs" />
     <Compile Include="896. Monotonic Array.cs" />
     <Compile Include="917. Reverse Only Letters.cs" />
+    <Compile Include="Contest 302\6120. Maximum Number of Pairs in Array.cs" />
+    <Compile Include="Contest 302\6164. Max Sum of a Pair With Equal Sum of Digits.cs" />
     <Compile Include="Premium\1118. Number of Days in a Month.cs" />
     <Compile Include="1122. Relative Sort Array.cs" />
     <Compile Include="1160. Find Words That Can Be Formed by Characters.cs" />
