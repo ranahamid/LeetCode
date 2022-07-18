@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Numerics;
+using System.Text;
 
 int[][] nums = new int[][]
           {
@@ -6,13 +7,9 @@ int[][] nums = new int[][]
                  new int[2]{10,3}, new int[2]{13,1}, new int[2]{13,1}, new int[2]{6,1}, new int[2]{5,10}
           };
 
-int[][] nums1 = new int[4][]
+int[][] nums1 = new int[29][]
 {
-                new int[2] { 1, 1 },
-                new int[2] { 2,3 },
-
-                new int[2] { 4,2 },
-                new int[2] { 1,2 },
+new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new int[2] {9,9},new int[2] {21,4},new int[2] {24,2},new int[2] {12,11},new int[2] {2,5},new int[2] {24,12},new int[2] {25,7},new int[2] {7,13},new int[2] {14,9},new int[2] {23,15},new int[2] {18,17},new int[2] {22,16},new int[2] {4,14},new int[2] {14,17},new int[2] {25,11},new int[2] {12,16},new int[2] {29,3},new int[2] {22,11},new int[2] {29,2},new int[2] {24,2},new int[2] {24,15},new int[2] {7,14},new int[2] {7,3},new int[2] {7,14},new int[2] {1,3}
 };
 
 
@@ -52,7 +49,7 @@ var paths = new List<IList<string>>()
 var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
 var resW2 = new string[]
 {
-  "102","473","251","814"
+ "8331019423839036903","2215783497319194533","3244863164120264914","2723857887888553250","1069645833408356268","3799170975306313470","3300849027471666477","8896469467436127218","9595084104356246555","4601424390471226348","2777623221871959897","2660664761264162910","4830224756337097853","2239177595019260973","5704104074606481922","5158962343348888307","4957489822885409209","5533958195540658313","6712811206814843536","9775503283462317096","1975389311819120035","1292135637676764140","9838972337538013522","7609294617007602893","0186572359592634437","9236053726818307461","7264888050655615544","4990296885039745852","1417868535147288083"
 };
 
 var res1 = new int[] { 2, 7, 11, 15 };
@@ -67,24 +64,24 @@ Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 public class Solution
-{ 
+{
     public int[] SmallestTrimmedNumbers(string[] nums, int[][] queries)
     {
-        var result=new List<int>();
-        for(int i = 0; i < nums.Length; i++)
+        var result = new List<int>();
+        for (int i = 0; i < nums.Length; i++)
         {
             nums[i] = nums[i].Trim();
         }
-        foreach(var item in queries)
+        foreach (var item in queries)
         {
-            var listNum=new List<long>();
+            var listNum = new List<BigInteger>();
             for (int i = 0; i < nums.Length; i++)
             {
-                var data= nums[i].Substring(nums[i].Length - item[1]);
-                if(long.TryParse(data,out var val))
+                var data = nums[i].Substring(nums[i].Length - item[1]);
+                if (BigInteger.TryParse(data, out var val))
                 {
                     listNum.Add(val);
-                } 
+                }
             }
             //smallest number 2,3,1,4
             var index = GetSmallestElement(listNum, item[0]);
@@ -92,10 +89,34 @@ public class Solution
         }
         return result.ToArray();
     }
-    public static int GetSmallestElement(List<long> listNum, int nTh)
+    public static int GetSmallestElement(List<BigInteger> listNum, int nTh)
     {
-        var result = -1;
+        var sorted = new List<BigInteger>();
+        foreach (var item in listNum)
+        {
+            sorted.Add(item);
+        }
+        sorted.Sort();
+        var temp = new List<BigInteger>();
+        for (int i = 0; i < nTh - 1; i++)
+        {
+            temp.Add(sorted[i]);
+        }
 
-        return result;
+        for (int i = 0; i < listNum.Count; i++)
+        {
+            var a = listNum[i];
+            var b = sorted[nTh - 1];
+            if (a == b)
+            {
+                if (temp.Contains(a))
+                {
+                    temp.Remove(a);
+                    continue;
+                }
+                return i;
+            }
+        }
+        return -1;
     }
 }
