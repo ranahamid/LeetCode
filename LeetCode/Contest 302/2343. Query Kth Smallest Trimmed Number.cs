@@ -9,6 +9,12 @@ namespace LeetCode.Contest_302
 {
     internal class _2343
     {
+        public class NumberFormat
+        {
+            public int Index { get; set; }
+            public string ValueNum { get; set; }
+        }
+
         /// <summary>
         /// Runtime: 2681 ms, faster than 100.00% of C# online submissions for Query Kth Smallest Trimmed Number.
         /// Memory Usage: 46.9 MB, less than 100.00% of C# online submissions for Query Kth Smallest Trimmed Number.
@@ -25,14 +31,11 @@ namespace LeetCode.Contest_302
             }
             foreach (var item in queries)
             {
-                var listNum = new List<BigInteger>();
+                var listNum = new List<string>();
                 for (int i = 0; i < nums.Length; i++)
                 {
                     var data = nums[i].Substring(nums[i].Length - item[1]);
-                    if (BigInteger.TryParse(data, out var val))
-                    {
-                        listNum.Add(val);
-                    }
+                    listNum.Add(data);
                 }
                 //smallest number 2,3,1,4
                 var index = GetSmallestElement(listNum, item[0]);
@@ -40,6 +43,19 @@ namespace LeetCode.Contest_302
             }
             return result.ToArray();
         }
+        public static int GetSmallestElement(List<string> listNum, int nTh)
+        {
+            var list = new List<NumberFormat>();
+            var counter = 0;
+            foreach (var ite in listNum)
+            {
+                list.Add(new NumberFormat { Index = counter++, ValueNum = ite });
+            }
+            list = list.OrderBy(x => x.ValueNum).ThenBy(x => x.Index).ToList();
+            var item = list[nTh - 1];
+            return item.Index;
+        }
+        /*
         public static int GetSmallestElement(List<BigInteger> listNum, int nTh)
         {
             var sorted = new List<BigInteger>();
@@ -70,5 +86,6 @@ namespace LeetCode.Contest_302
             }
             return -1;
         }
+        */
     }
 }
