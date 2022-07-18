@@ -1,4 +1,6 @@
-﻿int[][] nums = new int[][]
+﻿using System.Text;
+
+int[][] nums = new int[][]
           {
                 new int[2] {9,4}, new int[2]{6,1}, new int[2]{3,8}, new int[2]{12,9}, new int[2]{11,4}, new int[2]{4,9}, new int[2]{2,7},
                  new int[2]{10,3}, new int[2]{13,1}, new int[2]{13,1}, new int[2]{6,1}, new int[2]{5,10}
@@ -53,7 +55,7 @@ var resW2 = new string[]
 var res1 = new int[] { 1, 2 };
 var res2 = new int[] { 8, 2, 6, 10 };
 Solution solution = new Solution();
-Console.WriteLine(solution.ReadBinaryWatch(1));
+Console.WriteLine(solution.ToHexspeak("619879596177"));
 
 
 
@@ -63,5 +65,5 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-
+  
 }
