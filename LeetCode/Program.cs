@@ -50,9 +50,10 @@ var resW2 = new string[]
 
 };
 
-var res1 = new int[] {1,2};
+var res1 = new int[] { 1, 2 };
 var res2 = new int[] { 8, 2, 6, 10 };
-Console.WriteLine(Solution.FindPoisonedDuration(res1, 2));
+Solution solution = new Solution();
+Console.WriteLine(solution.LetterCombinations(""));
 
 
 
@@ -62,5 +63,5 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-    
+  
 }
