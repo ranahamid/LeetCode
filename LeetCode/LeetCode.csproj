@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Codeforces\Contest 809\A. Another String Minimization Problem.cs" />
     <Compile Remove="NOT SUBMITTED\387. First Unique Character in a String.cs" />
     <Compile Remove="Premium\1271. Hexspeak.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Codeforces\Contest 809\A. Another String Minimization Problem.cs" />
     <None Include="NOT SUBMITTED\387. First Unique Character in a String.cs" />
     <None Include="Premium\1271. Hexspeak.cs" />
   </ItemGroup>
