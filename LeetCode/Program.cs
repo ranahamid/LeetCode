@@ -79,9 +79,19 @@ public class Solution
 
     public int[] Shuffle()
     {
-        var length= array.Count;
-
-
+        List<int> randomList = new List<int>();
+        var arrayCopy=new List<int>();
+        foreach(var item in array)
+        {
+            arrayCopy.Add(item);
+        }
+        while (arrayCopy.Count != 0)
+        {
+            var index = rd.Next(0, arrayCopy.Count);
+            randomList.Add(arrayCopy[index]);
+            arrayCopy.RemoveAt(index);
+        }
+        return randomList.ToArray();
     }
 }
 
