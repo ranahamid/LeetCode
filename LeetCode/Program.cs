@@ -55,7 +55,7 @@ var resW2 = new string[]
 var res1 = new int[] { 2, 7, 11, 15 };
 var res2 = new int[] { 8, 2, 6, 10 };
 Solution solution = new Solution();
-Console.WriteLine(solution.CountPrimes(10));
+Console.WriteLine(solution.FirstUniqChar("leetcode"));
 
 
 
@@ -65,5 +65,15 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-    
+    public int FirstUniqChar(string s)
+    {
+        for(int i = 0; i < s.Length; i++)
+        {
+            if(s.IndexOf(s[i])== s.LastIndexOf(s[i]))
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
