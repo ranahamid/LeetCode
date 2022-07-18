@@ -65,32 +65,7 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-    public class NumberFormat
-    {
-        public int Index { get; set; }
-        public string ValueNum { get; set; }
-    }
-    public int[] SmallestTrimmedNumbers(string[] nums, int[][] queries)
-    {
-        var result = new List<int>();
-        for (int i = 0; i < nums.Length; i++)
-        {
-            nums[i] = nums[i].Trim();
-        }
-        foreach (var item in queries)
-        {
-            var listNum = new List<string>();
-            for (int i = 0; i < nums.Length; i++)
-            {
-                var data = nums[i].Substring(nums[i].Length - item[1]);
-                listNum.Add(data);
-                 
-            }
-            //smallest number 2,3,1,4
-            var index = GetSmallestElement(listNum, item[0]);
-            result.Add(index);
-        }
-        return result.ToArray();
-    }
+  
+
    
 }
