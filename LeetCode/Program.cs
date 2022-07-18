@@ -52,10 +52,10 @@ var resW2 = new string[]
 
 };
 
-var res1 = new int[] { 1, 2 };
+var res1 = new int[] { 2, 7, 11, 15 };
 var res2 = new int[] { 8, 2, 6, 10 };
 Solution solution = new Solution();
-Console.WriteLine(solution.ToHexspeak("619879596177"));
+Console.WriteLine(solution.TwoSum(res1,9));
 
 
 
@@ -65,5 +65,5 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-  
+   
 }
