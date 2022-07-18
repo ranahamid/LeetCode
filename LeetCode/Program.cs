@@ -63,40 +63,31 @@ Console.WriteLine("END");
 Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
-public class MinStack
+public class Solution
 {
-    Stack<int> stack;
-    public MinStack()
+    List<int> array;
+    Random rd=new Random();
+    public Solution(int[] nums)
     {
-        stack = new Stack<int>();
+        array = new List<int>(nums);
     }
 
-    public void Push(int val)
+    public int[] Reset()
     {
-        stack.Push(val);
+        return array.ToArray();
     }
 
-    public void Pop()
+    public int[] Shuffle()
     {
-        stack.Pop();
-    }
+        var length= array.Count;
 
-    public int Top()
-    {
-        return stack.Peek();
-    }
 
-    public int GetMin()
-    {
-        return stack.Min();
     }
 }
 
 /**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
- * obj.Push(val);
- * obj.Pop();
- * int param_3 = obj.Top();
- * int param_4 = obj.GetMin();
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(nums);
+ * int[] param_1 = obj.Reset();
+ * int[] param_2 = obj.Shuffle();
  */
