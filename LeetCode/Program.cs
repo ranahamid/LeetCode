@@ -65,39 +65,5 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-    List<int> array;
-    Random rd=new Random();
-    public Solution(int[] nums)
-    {
-        array = new List<int>(nums);
-    }
 
-    public int[] Reset()
-    {
-        return array.ToArray();
-    }
-
-    public int[] Shuffle()
-    {
-        List<int> randomList = new List<int>();
-        var arrayCopy=new List<int>();
-        foreach(var item in array)
-        {
-            arrayCopy.Add(item);
-        }
-        while (arrayCopy.Count != 0)
-        {
-            var index = rd.Next(0, arrayCopy.Count);
-            randomList.Add(arrayCopy[index]);
-            arrayCopy.RemoveAt(index);
-        }
-        return randomList.ToArray();
-    }
 }
-
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(nums);
- * int[] param_1 = obj.Reset();
- * int[] param_2 = obj.Shuffle();
- */
