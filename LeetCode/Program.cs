@@ -63,17 +63,40 @@ Console.WriteLine("END");
 Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
-public class Solution
+public class MinStack
 {
-    public int FirstUniqChar(string s)
+    Stack<int> stack;
+    public MinStack()
     {
-        for(int i = 0; i < s.Length; i++)
-        {
-            if(s.IndexOf(s[i])== s.LastIndexOf(s[i]))
-            {
-                return i;
-            }
-        }
-        return -1;
+        stack = new Stack<int>();
+    }
+
+    public void Push(int val)
+    {
+        stack.Push(val);
+    }
+
+    public void Pop()
+    {
+        stack.Pop();
+    }
+
+    public int Top()
+    {
+        return stack.Peek();
+    }
+
+    public int GetMin()
+    {
+        return stack.Min();
     }
 }
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.Push(val);
+ * obj.Pop();
+ * int param_3 = obj.Top();
+ * int param_4 = obj.GetMin();
+ */
