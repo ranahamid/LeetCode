@@ -6,10 +6,13 @@ int[][] nums = new int[][]
                  new int[2]{10,3}, new int[2]{13,1}, new int[2]{13,1}, new int[2]{6,1}, new int[2]{5,10}
           };
 
-int[][] nums1 = new int[2][]
+int[][] nums1 = new int[4][]
 {
-                new int[2] { 0, 1 },
                 new int[2] { 1, 1 },
+                new int[2] { 2,3 },
+
+                new int[2] { 4,2 },
+                new int[2] { 1,2 },
 };
 
 
@@ -49,13 +52,13 @@ var paths = new List<IList<string>>()
 var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
 var resW2 = new string[]
 {
-
+  "102","473","251","814"
 };
 
 var res1 = new int[] { 2, 7, 11, 15 };
 var res2 = new int[] { 8, 2, 6, 10 };
 Solution solution = new Solution();
-Console.WriteLine(solution.TwoSum(res1,9));
+Console.WriteLine(solution.SmallestTrimmedNumbers(resW2, nums1));
 
 
 
@@ -64,6 +67,35 @@ Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 public class Solution
-{
-   
+{ 
+    public int[] SmallestTrimmedNumbers(string[] nums, int[][] queries)
+    {
+        var result=new List<int>();
+        for(int i = 0; i < nums.Length; i++)
+        {
+            nums[i] = nums[i].Trim();
+        }
+        foreach(var item in queries)
+        {
+            var listNum=new List<long>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var data= nums[i].Substring(nums[i].Length - item[1]);
+                if(long.TryParse(data,out var val))
+                {
+                    listNum.Add(val);
+                } 
+            }
+            //smallest number 2,3,1,4
+            var index = GetSmallestElement(listNum, item[0]);
+            result.Add(index);
+        }
+        return result.ToArray();
+    }
+    public static int GetSmallestElement(List<long> listNum, int nTh)
+    {
+        var result = -1;
+
+        return result;
+    }
 }
