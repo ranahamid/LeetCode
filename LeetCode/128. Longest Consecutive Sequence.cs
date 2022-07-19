@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace LeetCode
 {
-    public class _128__Longest_Consecutive_Sequence 
+    public class _128__Longest_Consecutive_Sequence
     {
         /// <summary>
-        /// Runtime: 575 ms, faster than 7.92% of C# online submissions for Longest Consecutive Sequence.
-        /// Memory Usage: 45.4 MB, less than 78.21% of C# online submissions for Longest Consecutive Sequence.
+        /// Runtime: 370 ms, faster than 33.32% of C# online submissions for Longest Consecutive Sequence.
+        /// Memory Usage: 45.8 MB, less than 76.13% of C# online submissions for Longest Consecutive Sequence.
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
@@ -31,8 +31,8 @@ namespace LeetCode
             }
             return maxVal;
         }
-        
-        
+
+
         /// <summary>
         /// Runtime: 204 ms, faster than 72.51% of C# online submissions for Longest Consecutive Sequence.
         /// Memory Usage: 45.7 MB, less than 77.19% of C# online submissions for Longest Consecutive Sequence.
@@ -42,27 +42,25 @@ namespace LeetCode
         public static int LongestConsecutive_2(int[] nums)
         {
             if (nums.Length == 0)
-                return 0;
-            if (nums.Length == 1)
-                return 1;
+                return 0; 
             HashSet<int> set = new HashSet<int>(nums);
             var list = set.ToArray();
             Array.Sort(list);
-            var maxVal = 0;
-            var counter = 0;
+            var maxVal = 1;
+            var counter = 1;
             for (int i = 1; i < list.Length; i++)
             {
-                if (list[i]  == list[i-1]+ 1 )
+                if (list[i] == list[i - 1] + 1)
                 {
                     counter++;
-                    maxVal = Math.Max(counter +1 , maxVal);
+                    maxVal = Math.Max(counter, maxVal);
                 }
                 else
                 {
-                    counter = 0;
+                    counter = 1;
                 }
             }
-            return maxVal==0?1:maxVal;
+            return maxVal;
         }
 
     }

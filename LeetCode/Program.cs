@@ -53,9 +53,9 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 2, 7, 11, 15 };
-var res2 = new int[] { 8, 2, 6, 10 };
-//Solution solution = new Solution();
-//Console.WriteLine(solution.Divide(-2147483648,-1));
+var res2 = new int[] { 1, 2, 3, 4, 5 };
+Solution solution = new Solution();
+Console.WriteLine(solution.LargestGoodInteger("6777133339"));
 
 
 
@@ -64,28 +64,8 @@ Console.WriteLine("END");
 Console.WriteLine("Hello, World!");
 
 
-
 public class Solution
-{ 
-    public int Divide(int dividend, int divisor)
-    {
-
-        long a = dividend;
-        long b = divisor;
-        long result = a / b;
-        if (result > Int32.MaxValue)
-        {
-            return Int32.MaxValue;
-        }
-        else if (result < Int32.MinValue)
-        {
-            return Int32.MinValue;
-        }
-        else
-        {
-            return (int)result;
-        }  
-    }
+{
+   
 }
-
 
