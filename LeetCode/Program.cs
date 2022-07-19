@@ -63,10 +63,7 @@ List<IList<string>> favoriteCompanies = new List<IList<string>>()
       new List<string>(){"google","facebook"},
        new List<string>(){"google"},
         new List<string>(){"amazon"},
-};
-Console.WriteLine(solution.ReplaceWords(resW2, "the cattle was rattled by the battery"));
-
-
+}; 
 
 Console.WriteLine("END");
 //Console.ReadKey();
@@ -75,31 +72,8 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-    public string ReplaceWords(IList<string> dictionary, string sentence)
-    {
-        dictionary = dictionary.OrderBy(x => x.Length).ToList();
-        var words = sentence.Split(' ');
-        var sb = new List<string>();
-        foreach (var word in words)
-        {
-            var isFound = false;
-            foreach (var item in dictionary)
-            {
-                if (word.StartsWith(item))
-                {
-                    isFound = true;
-                    sb.Add(item);
-                    break;
-                }
-            }
-            if (!isFound)
-            {
-                sb.Add(word);
-            }
-        }
-        return String.Join( " ",sb);
-    }
+    
+
 }
 
 
- 
