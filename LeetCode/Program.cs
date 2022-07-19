@@ -49,7 +49,7 @@ var paths = new List<IList<string>>()
 var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
 var resW2 = new string[]
 {
-    "cat","bat","rat"
+   "bob", "hit"
 };
 
 var res1 = new int[] { 2, 7, 11, 15 };
@@ -65,15 +65,14 @@ List<IList<string>> favoriteCompanies = new List<IList<string>>()
         new List<string>(){"amazon"},
 }; 
 
-Console.WriteLine("END");
+Console.WriteLine(solution.MostCommonWord("Bob. hIt, baLl", resW2));
 //Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 
 public class Solution
-{
-    
-
+{ 
+   
 }
 
 

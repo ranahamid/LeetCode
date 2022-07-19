@@ -57,3 +57,4 @@ F:\F\Project\LeetCode\LeetCode\obj\Debug\net6.0\LeetCode.dll
 F:\F\Project\LeetCode\LeetCode\obj\Debug\net6.0\ref\LeetCode.dll
 F:\F\Project\LeetCode\LeetCode\obj\Debug\net6.0\LeetCode.pdb
 F:\F\Project\LeetCode\LeetCode\obj\Debug\net6.0\LeetCode.genruntimeconfig.cache
+F:\F\Project\LeetCode\LeetCode\obj\Debug\net6.0\LeetCode.csproj.AssemblyReference.cache
