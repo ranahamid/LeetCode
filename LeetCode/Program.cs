@@ -52,8 +52,8 @@ var resW2 = new string[]
    "bob", "hit"
 };
 
-var res1 = new int[] { 2, 7, 11, 15 };
-var res2 = new int[] { 1, 2, 3, 4, 5 };
+var res1 = new int[] { 0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1 };
+var res2 = new int[] { 2, 3, -1, 8, 4 };
 Solution solution = new Solution();
 
 List<IList<string>> favoriteCompanies = new List<IList<string>>()
@@ -63,16 +63,16 @@ List<IList<string>> favoriteCompanies = new List<IList<string>>()
       new List<string>(){"google","facebook"},
        new List<string>(){"google"},
         new List<string>(){"amazon"},
-}; 
+};
 
-Console.WriteLine(solution.MostCommonWord("Bob. hIt, baLl", resW2));
+Console.WriteLine(solution.CanThreePartsEqualSum(res1));
 //Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 
 public class Solution
-{ 
-   
+{
+  
 }
 
 
