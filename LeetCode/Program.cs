@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Numerics;
+using System.Text;
 
 int[][] nums = new int[][]
           {
@@ -6,10 +7,9 @@ int[][] nums = new int[][]
                  new int[2]{10,3}, new int[2]{13,1}, new int[2]{13,1}, new int[2]{6,1}, new int[2]{5,10}
           };
 
-int[][] nums1 = new int[2][]
+int[][] nums1 = new int[29][]
 {
-                new int[2] { 0, 1 },
-                new int[2] { 1, 1 },
+new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new int[2] {9,9},new int[2] {21,4},new int[2] {24,2},new int[2] {12,11},new int[2] {2,5},new int[2] {24,12},new int[2] {25,7},new int[2] {7,13},new int[2] {14,9},new int[2] {23,15},new int[2] {18,17},new int[2] {22,16},new int[2] {4,14},new int[2] {14,17},new int[2] {25,11},new int[2] {12,16},new int[2] {29,3},new int[2] {22,11},new int[2] {29,2},new int[2] {24,2},new int[2] {24,15},new int[2] {7,14},new int[2] {7,3},new int[2] {7,14},new int[2] {1,3}
 };
 
 
@@ -52,10 +52,10 @@ var resW2 = new string[]
 
 };
 
-var res1 = new int[] { 1, 2 };
+var res1 = new int[] { 2, 7, 11, 15 };
 var res2 = new int[] { 8, 2, 6, 10 };
 Solution solution = new Solution();
-Console.WriteLine(solution.ToHexspeak("619879596177"));
+Console.WriteLine(solution.Divide(-2147483648,-1));
 
 
 
@@ -63,7 +63,31 @@ Console.WriteLine("END");
 Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
+ 
+
 public class Solution
 {
-  
+
+    public int Divide(int dividend, int divisor)
+    {
+
+        long a = dividend;
+        long b = divisor;
+        long result = a / b;
+        if (result > Int32.MaxValue)
+        {
+            return Int32.MaxValue;
+        }
+        else if (result < Int32.MinValue)
+        {
+            return Int32.MinValue;
+        }
+        else
+        {
+            return (int)result;
+        }
+
+
+
+    }
 }

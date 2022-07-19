@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "661d6aaa-812f-4b52-a475-1295ab779f43": {
+      "ProjectGuid": "661d6aaa-812f-4b52-a475-1295ab779f43",
+      "DisplayName": "LeetCode",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "e87f9e7c-37c2-422b-a72c-ceeefefb03c1": {
+      "ProjectGuid": "e87f9e7c-37c2-422b-a72c-ceeefefb03c1",
+      "DisplayName": "LeetCode",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
