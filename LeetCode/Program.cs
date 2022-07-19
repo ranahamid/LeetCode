@@ -55,7 +55,16 @@ var resW2 = new string[]
 var res1 = new int[] { 2, 7, 11, 15 };
 var res2 = new int[] { 1, 2, 3, 4, 5 };
 Solution solution = new Solution();
-Console.WriteLine(solution.LargestGoodInteger("6777133339"));
+
+List<IList<string>> favoriteCompanies = new List<IList<string>>()
+{
+    new List<string>(){"leetcode","google","facebook"},
+     new List<string>(){"google","microsoft"},
+      new List<string>(){"google","facebook"},
+       new List<string>(){"google"},
+        new List<string>(){"amazon"},
+};
+Console.WriteLine(solution.PeopleIndexes(favoriteCompanies));
 
 
 
@@ -66,6 +75,6 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-   
+  
 }
 
