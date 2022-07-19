@@ -64,7 +64,7 @@ List<IList<string>> favoriteCompanies = new List<IList<string>>()
        new List<string>(){"google"},
         new List<string>(){"amazon"},
 };
-Console.WriteLine(solution.PeopleIndexes(favoriteCompanies));
+Console.WriteLine(solution.CountPoints("B0B6G0R6R0R6G9"));
 
 
 
@@ -75,6 +75,6 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
-  
+ 
 }
 
