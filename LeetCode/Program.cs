@@ -53,7 +53,7 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1 };
-var res2 = new int[] { 2, 3, -1, 8, 4 };
+var res2 = new int[] {  };
 Solution solution = new Solution();
 
 List<IList<string>> favoriteCompanies = new List<IList<string>>()
@@ -65,14 +65,16 @@ List<IList<string>> favoriteCompanies = new List<IList<string>>()
         new List<string>(){"amazon"},
 };
 
-//Console.WriteLine(solution.CanThreePartsEqualSum(res1));
+List<int> v = new List<int> {12,24,10,24};
+Solution.breakingRecords(v);
+Console.WriteLine();
 //Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 
 public class Solution
 {
-   
+    
 }
 
 
