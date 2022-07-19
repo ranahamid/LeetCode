@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Premium\1661. Average Time of Process per Machine.sql" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="NOT SUBMITTED\387. First Unique Character in a String.cs" />
     <None Include="Premium\1271. Hexspeak.cs" />
   </ItemGroup>
