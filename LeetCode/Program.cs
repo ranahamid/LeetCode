@@ -54,20 +54,19 @@ var resW2 = new string[]
 
 var res1 = new int[] { 2, 7, 11, 15 };
 var res2 = new int[] { 8, 2, 6, 10 };
-Solution solution = new Solution();
-Console.WriteLine(solution.Divide(-2147483648,-1));
+//Solution solution = new Solution();
+//Console.WriteLine(solution.Divide(-2147483648,-1));
 
 
 
 Console.WriteLine("END");
-Console.ReadKey();
+//Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
- 
+
 
 public class Solution
-{
-
+{ 
     public int Divide(int dividend, int divisor)
     {
 
@@ -85,9 +84,8 @@ public class Solution
         else
         {
             return (int)result;
-        }
-
-
-
+        }  
     }
 }
+
+
