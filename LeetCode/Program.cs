@@ -65,14 +65,14 @@ List<IList<string>> favoriteCompanies = new List<IList<string>>()
         new List<string>(){"amazon"},
 };
 
-Console.WriteLine(solution.CanThreePartsEqualSum(res1));
+//Console.WriteLine(solution.CanThreePartsEqualSum(res1));
 //Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 
 public class Solution
 {
-  
+   
 }
 
 
