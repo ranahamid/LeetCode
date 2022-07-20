@@ -32,6 +32,8 @@ namespace LeetCode
                     return nums[mid + 1]; //nums[mid] > nums[mid + 1] Hence, mid+1 is the smallest.
                 if (nums[mid - 1] > nums[mid])
                     return nums[mid]; //nums[mid - 1] > nums[mid] Hence, mid is the smallest.
+
+
                 if (nums[mid] > nums[0])
                 {
                     left = mid + 1; //If mid element > first element of array this means that we need to look for the inflection point on the right of mid.

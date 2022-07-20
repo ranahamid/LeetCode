@@ -52,18 +52,18 @@ var resW2 = new string[]
    "bob", "hit"
 };
 
-var res1 = new int[] { 0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1 };
+var res1 = new int[] { 2, 2, 2, 0, 1 };
 var res2 = new int[] { 4, 5, 6, 7, 1, 2 };
 Solution solution = new Solution(); 
 
-Console.WriteLine(solution.FindMin(res2));
+Console.WriteLine(solution.FindMin(res1));
 //Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 
 public class Solution
 {
-   
+  
 }
 
 
