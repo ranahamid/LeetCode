@@ -66,15 +66,33 @@ List<IList<string>> favoriteCompanies = new List<IList<string>>()
 };
 
 List<int> v = new List<int> {12,24,10,24};
-Solution.breakingRecords(v);
-Console.WriteLine();
+
+Console.WriteLine(solution.IsSubsequence("abc", "ahbgdc"));
 //Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 
 public class Solution
 {
-    
+    public bool IsSubsequence(string s, string t)
+    {
+        if (string.IsNullOrEmpty(s))
+            return true;
+        var tLength = t.Length;
+        var i = 0;
+        var counter = 0;
+        while (counter < tLength)
+        {
+            if (s[i]==t[counter])
+            {
+                i++;
+            }
+            counter++;
+            if (i == s.Length)
+                return true;
+        } 
+        return false;
+    }
 }
 
 
