@@ -25,7 +25,7 @@ namespace LeetCode
             if (nums[right] > nums[0])
                 return nums[0]; //If the array is not rotated and the array is in ascending order, then last element > first element.
 
-            while (left <= right)
+            while (left < right)
             {
                 mid = left + (right - left) / 2; //Find the mid element of the array.
                 if (nums[mid] > nums[mid + 1])
