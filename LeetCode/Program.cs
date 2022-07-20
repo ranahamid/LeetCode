@@ -55,12 +55,9 @@ var res1 = new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 };
 var res2 = new int[] { 4, 5, 6, 7, 1, 2 };
 
 Solution s = new Solution();
-var list = new List<List<int>>();
-list.Add(new List<int> { 1, 2, 3 });
-list.Add(new List<int> { 4, 5, 6 });
-list.Add(new List<int> { 9, 8, 9 });
+var list = new List<int> {73,67,38,33};
 
-Console.WriteLine(Solution.hackerrankInString("bvxqokorcxbivcnvdmcametgxvzftjkiyzatzatnapwttpxwqegvxllbtvxfnmwwbkicnaxmjxwgecexnndlgmwfsiusksumczuzfpajpmsboatncwzecbkxavloimnkllziuvaikvogykbcqizbqmdxyipclavzgvgonstdzpzskwvixgdfyblmmymtxwoxsoyqlqzbsyuatyebgkwznlnxqjefgkeluqcvtgmtvjsbaalxpqdmkptbqyefleiulcbsijglnawbwmbzuqybuqfmpewqnvnxqpawngtmuplfvlctyysbicubvnbjaayepapsotfzzfpdifsnpovufuuxsevipbbylkyoboqjatntvtqpbxjgposuleiqjnzbdecuzdjujweuztnwoggaoljoniwpkdbttjpnfomegodafcqpfjoxcpaiejdnnkvavjxgnbffuzkaozveqekvmdvwfnldlpzbkyioczsqnggspqgeyktlksupywxkgydwzovlndectcjwnxikuwcqdapqlvsdlboaesypkpujcdmwqmvfoqlsptkkzwsmauadiuqoygoucdzcgoodmdmwcaafwygzktolpqzvyovekgpobndncyzmpemzsxtzovjxzettonibczyyxdfvbealnzsoysminakkcwlmnnxnlultsnagfllmckenvbyimcmxsxkwfxcozjniayaydmausxgwntoxplvmnbqmgnbqibbksgxzjydswmdlmxdcjzszicsowtnntakaopldgywibqdbiapexeumwizozfdjzdjfevwkycctuoplypfvnlclilayfgntuaidctvxntujlaqzizoiueqgkydnzqfeaizobbniyswfaooxuzxfcuvsplksvgqnpitctdkymlytpxtzikveznmvzakpiecagzilefzluzfxexzwiwcfmwfgbvumcalixagmikxgdwjdblzlowyximkgwtwgkcycluaiuddfocelymvfccfb{-truncated-}"));
+Console.WriteLine(Solution.andProduct(12,15));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -68,8 +65,8 @@ Console.WriteLine("Hello, World!");
 
 class Solution
 {
-    
 
+  
     public static int flippingMatrix(List<List<int>> matrix)
     {
         int n = matrix.Count / 2;
