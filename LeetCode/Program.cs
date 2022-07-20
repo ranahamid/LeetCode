@@ -57,7 +57,7 @@ var res2 = new int[] { 4, 5, 6, 7, 1, 2 };
 Solution s = new Solution();
 var list = new List<int> { 1, 2, 3 ,4 ,5, 4 ,3 ,2, 1, 3 ,4 };
 
-Console.WriteLine(Solution.migratoryBirds(1918));
+Console.WriteLine(Solution.fibonacciModified(0,1,10));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -65,8 +65,28 @@ Console.WriteLine("Hello, World!");
 
 class Solution
 {
-
-
+    /// <summary>
+    /// https://www.hackerrank.com/challenges/fibonacci-modified/problem?isFullScreen=true
+    /// </summary>
+    /// <param name="t1"></param>
+    /// <param name="t2"></param>
+    /// <param name="n"></param>
+    /// <returns></returns>
+    public static BigInteger fibonacciModified(int t1, int t2, int n)
+    {
+        if (n == 0)
+            return t1;
+        if (n == 1)
+            return t2;
+        var result = new BigInteger[n + 1];
+        result[0] = t1;
+        result[1] = t2;
+        for (int i = 2; i <= n; i++)
+        {
+            result[i] = result[i - 1] * result[i - 1] + result[i - 2];
+        }
+        return result[n-1];
+    }
 
 
     public static int flippingMatrix(List<List<int>> matrix)
