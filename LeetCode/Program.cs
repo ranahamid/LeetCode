@@ -3,8 +3,7 @@ using System.Text;
 
 int[][] nums = new int[][]
           {
-                new int[2] {9,4}, new int[2]{6,1}, new int[2]{3,8}, new int[2]{12,9}, new int[2]{11,4}, new int[2]{4,9}, new int[2]{2,7},
-                 new int[2]{10,3}, new int[2]{13,1}, new int[2]{13,1}, new int[2]{6,1}, new int[2]{5,10}
+                new int[3] {1,2,3}, new int[3]{4,5,6}, new int[3]{9,8,9}, 
           };
 
 int[][] nums1 = new int[29][]
@@ -56,7 +55,13 @@ var res1 = new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 };
 var res2 = new int[] { 4, 5, 6, 7, 1, 2 };
 
 Solution s = new Solution();
-Console.WriteLine(s.MinCostClimbingStairs(res1));
+var list = new List<List<int>>();
+list.Add(new List<int> { 1, 2, 3 });
+list.Add(new List<int> { 4, 5, 6 });
+list.Add(new List<int> { 9, 8, 9 });
+
+Solution.staircase(4);
+Console.WriteLine();
 //Console.ReadKey();
 ;
 Console.WriteLine("Hello, World!");
@@ -64,17 +69,10 @@ Console.WriteLine("Hello, World!");
 
 class Solution
 {
-    public int MinCostClimbingStairs(int[] cost)
-    {
-        var minCost =new int[cost.Length + 1];
-        minCost[0] = 0;
-        minCost[1] = 0;
-        for (var i = 2; i < cost.Length+1; i++)
-        {
-            minCost[i]= Math.Min(minCost[i-1]+ cost[i - 1], minCost[i - 2] + cost[i - 2]);             
-        }
-        return minCost[cost.Length];
-    }
+  
+
+   
+
     public static int flippingMatrix(List<List<int>> matrix)
     {
         int n= matrix.Count/2;
