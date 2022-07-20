@@ -8,8 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NOT SUBMITTED\**" />
+    <EmbeddedResource Remove="NOT SUBMITTED\**" />
+    <None Remove="NOT SUBMITTED\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="387. First Unique Character in a String.cs" />
-    <Compile Remove="NOT SUBMITTED\387. First Unique Character in a String.cs" />
     <Compile Remove="Premium\1271. Hexspeak.cs" />
   </ItemGroup>
 
@@ -20,10 +25,6 @@
   <ItemGroup>
     <None Include="387. First Unique Character in a String.cs" />
     <None Include="Premium\1271. Hexspeak.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NOT SUBMITTED\" />
   </ItemGroup>
 
 </Project>
