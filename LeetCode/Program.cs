@@ -52,14 +52,42 @@ var resW2 = new string[]
    "bob", "hit"
 };
 
-var res1 = new int[] { 2, 2, 2, 0, 1 };
+var res1 = new int[] { 1 ,3 ,2 ,6 ,1, 2 };
 var res2 = new int[] { 4, 5, 6, 7, 1, 2 };
 
 
-//Console.WriteLine(solution.FindMin(res1));
+Console.WriteLine(Solution.divisibleSumPairs(6, 3, res1.ToList()));
 //Console.ReadKey();
+;
 Console.WriteLine("Hello, World!");
 
 
+class Solution
+{
+
+    public static int flippingMatrix(List<List<int>> matrix)
+    {
+        int n= matrix.Count/2;
+        int[] arrayStorage = new int[4];
+        List<int> result = new List<int>();
+
+        // There would only be 3 other points that can be flipped
+        // into a specific point in the upper-left quadrant. So for
+        // each point in the upper-left quadrant, we have to compare 4
+        // points
+        for (int x = 0; x < n; x++)
+            for (int y = 0; y < n; y++)
+            {
+                arrayStorage[0] = matrix[x][y];
+                arrayStorage[1] = matrix[2 * n - 1 - x][y];
+                arrayStorage[2] = matrix[x][2 * n - 1 - y];
+                arrayStorage[3] = matrix[2 * n - 1 - x][2 * n - 1 - y];
+
+                result.Add(arrayStorage.Max());
+            }
+
+        return result.Sum();
+    }
 
 
+}

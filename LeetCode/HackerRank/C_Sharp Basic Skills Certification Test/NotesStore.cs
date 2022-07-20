@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Solution
+namespace Notes_Solution
 {
     public class Notes
     {
