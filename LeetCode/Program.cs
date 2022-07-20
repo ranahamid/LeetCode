@@ -53,46 +53,17 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1 };
-var res2 = new int[] {  };
-Solution solution = new Solution();
+var res2 = new int[] { 4, 5, 6, 7, 1, 2 };
+Solution solution = new Solution(); 
 
-List<IList<string>> favoriteCompanies = new List<IList<string>>()
-{
-    new List<string>(){"leetcode","google","facebook"},
-     new List<string>(){"google","microsoft"},
-      new List<string>(){"google","facebook"},
-       new List<string>(){"google"},
-        new List<string>(){"amazon"},
-};
-
-List<int> v = new List<int> {12,24,10,24};
-
-Console.WriteLine(solution.IsSubsequence("abc", "ahbgdc"));
+Console.WriteLine(solution.FindMin(res2));
 //Console.ReadKey();
 Console.WriteLine("Hello, World!");
 
 
 public class Solution
 {
-    public bool IsSubsequence(string s, string t)
-    {
-        if (string.IsNullOrEmpty(s))
-            return true;
-        var tLength = t.Length;
-        var i = 0;
-        var counter = 0;
-        while (counter < tLength)
-        {
-            if (s[i]==t[counter])
-            {
-                i++;
-            }
-            counter++;
-            if (i == s.Length)
-                return true;
-        } 
-        return false;
-    }
+   
 }
 
 
