@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode.HackerRank.string_algo
 {
-    internal class caesarCipher
+    internal class caesarCipherT
     {
         public static string caesarCipher(string s, int k)
         {
