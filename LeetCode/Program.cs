@@ -55,9 +55,9 @@ var res1 = new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 };
 var res2 = new int[] { 4, 5, 6, 7, 1, 2 };
 
 Solution s = new Solution();
-var list = new List<int> {73,67,38,33};
+var list = new List<int> { 1, 2, 3 ,4 ,5, 4 ,3 ,2, 1, 3 ,4 };
 
-Console.WriteLine(Solution.andProduct(12,15));
+Console.WriteLine(Solution.migratoryBirds(1918));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -66,7 +66,9 @@ Console.WriteLine("Hello, World!");
 class Solution
 {
 
-  
+
+
+
     public static int flippingMatrix(List<List<int>> matrix)
     {
         int n = matrix.Count / 2;
