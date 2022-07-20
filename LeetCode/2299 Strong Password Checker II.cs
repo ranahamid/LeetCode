@@ -15,9 +15,7 @@ namespace LeetCode
         /// <param name="password"></param>
         /// <returns></returns>
         public static bool StrongPasswordCheckerII(string password)
-        {
-
-
+        { 
             var chars = password.ToCharArray();
             var len = chars.Length;
             if (len < 8)

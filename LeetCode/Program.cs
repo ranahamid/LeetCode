@@ -3,7 +3,7 @@ using System.Text;
 
 int[][] nums = new int[][]
           {
-                new int[3] {1,2,3}, new int[3]{4,5,6}, new int[3]{9,8,9}, 
+                new int[3] {1,2,3}, new int[3]{4,5,6}, new int[3]{9,8,9},
           };
 
 int[][] nums1 = new int[29][]
@@ -60,22 +60,21 @@ list.Add(new List<int> { 1, 2, 3 });
 list.Add(new List<int> { 4, 5, 6 });
 list.Add(new List<int> { 9, 8, 9 });
 
-Solution.staircase(4);
-Console.WriteLine();
+Console.WriteLine(Solution.caesarCipher("middle-Outz",2));
 //Console.ReadKey();
-;
+
 Console.WriteLine("Hello, World!");
 
 
 class Solution
 {
-  
-
    
+
+
 
     public static int flippingMatrix(List<List<int>> matrix)
     {
-        int n= matrix.Count/2;
+        int n = matrix.Count / 2;
         int[] arrayStorage = new int[4];
         List<int> result = new List<int>();
 
