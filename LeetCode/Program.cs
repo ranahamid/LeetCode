@@ -65,10 +65,7 @@ Console.WriteLine("Hello, World!");
  
 class Solution
 {
-
-
-  
-
+   
     public static int flippingMatrix(List<List<int>> matrix)
     {
         int n = matrix.Count / 2;
