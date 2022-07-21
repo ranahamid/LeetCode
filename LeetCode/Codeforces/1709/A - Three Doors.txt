@@ -1,0 +1,49 @@
+﻿using System.Numerics;
+using System.Text;
+
+
+
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    int x = Convert.ToInt32(Console.ReadLine());
+
+    //Read line, and split it by whitespace into an array of strings
+    string[] tokens = Console.ReadLine().Split();
+    //Parse element 0
+    var arr = new int[3];
+    arr[0] = int.Parse(tokens[0]);
+    //Parse element 1
+    arr[1] = int.Parse(tokens[1]);
+    arr[2] = int.Parse(tokens[2]);
+
+    var firstNum = arr[x - 1];//2
+    if (firstNum != 0)
+    {
+        var sec = arr[firstNum - 1];//1
+        if (sec != 0)
+        {
+            var third = arr[sec - 1];
+            if (third == 0)
+            {
+                Console.WriteLine("YES");
+
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
+        }
+        else
+        {
+            Console.WriteLine("NO");
+        }
+    }
+    else
+    {
+        Console.WriteLine("NO");
+    }
+
+
+
+}

@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-using System.Text;
-
+﻿
 int[][] nums = new int[][]
           {
                 new int[3] {1,2,3}, new int[3]{4,5,6}, new int[3]{9,8,9},
@@ -52,20 +50,20 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 };
-var res2 = new int[] {3,6,2,3};
+var res2 = new int[] { 3, 6, 2, 3 };
 
 Solution s = new Solution();
 var list = new List<int> { 3, 9, 2, 5, 2, 19 };
-var str= "pageCount";
+var str = "pageCount";
 Console.WriteLine(Solution.LargestPerimeter(res2));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
 
- 
+
 class Solution
 {
-   
+
     public static int flippingMatrix(List<List<int>> matrix)
     {
         int n = matrix.Count / 2;

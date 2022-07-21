@@ -21,7 +21,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Codeforces\1709\A - Three Doors.txt" />
     <None Remove="Premium\1661. Average Time of Process per Machine.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Codeforces\1709\A - Three Doors.txt" />
   </ItemGroup>
 
   <ItemGroup>
