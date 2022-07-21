@@ -14,6 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="121. Best Time to Buy and Sell Stock.cs" />
+    <Compile Remove="123. Best Time to Buy and Sell Stock III.cs" />
     <Compile Remove="387. First Unique Character in a String.cs" />
     <Compile Remove="Premium\1271. Hexspeak.cs" />
   </ItemGroup>
@@ -23,6 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="121. Best Time to Buy and Sell Stock.cs" />
+    <None Include="123. Best Time to Buy and Sell Stock III.cs" />
     <None Include="387. First Unique Character in a String.cs" />
     <None Include="Premium\1271. Hexspeak.cs" />
   </ItemGroup>

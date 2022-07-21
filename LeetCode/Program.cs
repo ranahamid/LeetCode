@@ -52,20 +52,28 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 };
-var res2 = new int[] { 4, 5, 6, 7, 1, 2 };
+var res2 = new int[] { 3, 2, 6, 5, 0, 3 };
 
 Solution s = new Solution();
-var list = new List<int> { 1, 2, 3 ,4 ,5, 4 ,3 ,2, 1, 3 ,4 };
+var list = new List<int> { 1, 2, 3, 4, 5, 4, 3, 2, 1, 3, 4 };
 
-Console.WriteLine(Solution.fibonacciModified(0,1,10));
+Console.WriteLine(Solution.MaxProfit(res2));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
 
-
+public class ListNode
+{
+    public int val;
+    public ListNode next;
+    public ListNode(int val = 0, ListNode next = null)
+    {
+        this.val = val;
+        this.next = next;
+    }
+}
 class Solution
 {
-    
 
 
     public static int flippingMatrix(List<List<int>> matrix)
