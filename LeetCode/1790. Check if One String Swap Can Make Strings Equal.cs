@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+
     internal class _1790
     {
         //    Runtime: 157 ms, faster than 5.33% of C# online submissions for Check if One String Swap Can Make Strings Equal.
