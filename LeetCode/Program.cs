@@ -1,4 +1,7 @@
 ﻿
+using System.Numerics;
+using System.Text;
+
 int[][] nums = new int[][]
           {
                 new int[3] {1,2,3}, new int[3]{4,5,6}, new int[3]{9,8,9},
@@ -55,7 +58,7 @@ var res2 = new int[] { 3, 6, 2, 3 };
 Solution s = new Solution();
 var list = new List<int> { 3, 9, 2, 5, 2, 19 };
 var str = "pageCount";
-Console.WriteLine(Solution.LargestPerimeter(res2));
+Console.WriteLine(Solution.CustomSortString("cba", "abcd"));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -63,17 +66,15 @@ Console.WriteLine("Hello, World!");
 
 class Solution
 {
-
+    
     public static int flippingMatrix(List<List<int>> matrix)
     {
         int n = matrix.Count / 2;
         int[] arrayStorage = new int[4];
         List<int> result = new List<int>();
 
-        // There would only be 3 other points that can be flipped
-        // into a specific point in the upper-left quadrant. So for
-        // each point in the upper-left quadrant, we have to compare 4
-        // points
+        // There would only be 3 other points that can be flipped into a specific point in the upper-left quadrant.
+        // So for  each point in the upper-left quadrant, we have to compare 4 points
         for (int x = 0; x < n; x++)
             for (int y = 0; y < n; y++)
             {
