@@ -53,12 +53,12 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 };
-var res2 = new int[] { 3, 6, 2, 3 };
+var res2 = new int[] { 1,1 };
 
 Solution s = new Solution();
-var list = new List<int> { 3, 9, 2, 5, 2, 19 };
+var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(Solution.MinSteps(36));
+Console.WriteLine(Solution.CanBeIncreasing(res2));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
