@@ -8,7 +8,30 @@ namespace LeetCode
 {
     internal class _744
     {
+        /// <summary>
+        /// Linear Scan [Accepted]
+        /// Runtime: 182 ms, faster than 27.86% of C# online submissions for Find Smallest Letter Greater Than Target.
+        /// Memory Usage: 40.3 MB, less than 75.95% of C# online submissions for Find Smallest Letter Greater Than Target.
+        /// </summary>
+        /// <param name="letters"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public static char NextGreatestLetter(char[] letters, char target)
+        {
+            foreach (var item in letters)
+            {
+                if (item > target)
+                    return item;
+            }
+            return letters[0];
+        }
+        /// <summary>
+        /// Record Letters Seen 
+        /// </summary>
+        /// <param name="letters"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        public static char NextGreatestLetter_2(char[] letters, char target)
         {
             var seen = new int[26];
             foreach (var item in letters)

@@ -58,7 +58,7 @@ var res2 = new int[] { 1,1 };
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(Solution.NextGreatestLetter(resW2,'a'));
+Console.WriteLine(Solution.AreAlmostEqual("bank", "kanb"));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -66,7 +66,8 @@ Console.WriteLine("Hello, World!");
 
 class Solution
 {
-   
+
+
     public static int flippingMatrix(List<List<int>> matrix)
     {
         int n = matrix.Count / 2;
