@@ -47,9 +47,9 @@ var paths = new List<IList<string>>()
                 new List<string>() { "Lima", "Sao Paulo" },
             };
 var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
-var resW2 = new string[]
+var resW2 = new char[]
 {
-   "bob", "hit"
+    'c','f','j'
 };
 
 var res1 = new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 };
@@ -58,7 +58,7 @@ var res2 = new int[] { 1,1 };
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(Solution.CanBeIncreasing(res2));
+Console.WriteLine(Solution.NextGreatestLetter(resW2,'a'));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
