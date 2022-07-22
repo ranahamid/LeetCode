@@ -52,13 +52,19 @@ var resW2 = new char[]
     'c','f','j'
 };
 
-var res1 = new int[] { 203 ,204 ,205 ,206, 207, 208, 203, 204, 205 ,206 };
-var res2 = new int[] { 203 ,204 ,204 ,205, 206, 207, 205 ,208 ,203, 206, 205, 206, 204 };
+var res1 = new int[] {
+1,
+3,
+1,
+5,
+9,
+10 };
+var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204 };
 
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(Solution.missingNumbers(res1.ToList(), res2.ToList()));
+Console.WriteLine(Solution.weightedUniformStrings("abccddde", res1.ToList()));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -66,7 +72,14 @@ Console.WriteLine("Hello, World!");
 
 class Solution
 {
+
+
   
+
+
+
+
+
     public static int flippingMatrix(List<List<int>> matrix)
     {
         int n = matrix.Count / 2;
