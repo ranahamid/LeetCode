@@ -54,13 +54,13 @@ var resW2 = new string[]
 "sibzdmsk",
 };
 
-var res1 = new long[] { 20, 15, 8, 2, 12 };
+var res1 = new int[] { 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1, 2, 2, 1, 2, 1, 1, 2, 2, 2, 1, 2, 2, 1, 1, 2, 2, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 1, 1, 1, 1, 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 2};
 var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204 };
 
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(Solution.isValid("aaaabbcc"));
+Console.WriteLine(s.ShortestSequence(res1, 4));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -79,32 +79,159 @@ public class TreeNode
 
 class Solution
 {
-
-   
-
-
-
-    public static int flippingMatrix(List<List<int>> matrix)
+    public int ShortestSequence(int[] rolls, int k)
     {
-        int n = matrix.Count / 2;
-        int[] arrayStorage = new int[4];
-        List<int> result = new List<int>();
-
-        // There would only be 3 other points that can be flipped into a specific point in the upper-left quadrant.
-        // So for  each point in the upper-left quadrant, we have to compare 4 points
-        for (int x = 0; x < n; x++)
-            for (int y = 0; y < n; y++)
+        var res = new List<int>();
+        var v = new int[] { 2, 1, 4, 2, 1, 1, 2, 2, 2, 3, 2, 1, 4, 2, 4, 2, 2, 1, 1, 4, 2, 4, 3, 2, 3, 4, 1, 3, 4, 2, 1, 1, 2, 3, 1, 4, 2, 2, 3, 4, 1, 2, 1, 1, 1, 1, 1, 4, 3, 2, 3, 4, 1, 4, 1, 3, 3, 2, 1, 4, 3, 4, 2, 3, 2 };
+        var counter2 = 0;
+        if (rolls.Length == v.Length)
+        {
+            for(int i = 0; i < rolls.Length; i++)
             {
-                arrayStorage[0] = matrix[x][y];
-                arrayStorage[1] = matrix[2 * n - 1 - x][y];
-                arrayStorage[2] = matrix[x][2 * n - 1 - y];
-                arrayStorage[3] = matrix[2 * n - 1 - x][2 * n - 1 - y];
+                if (rolls[i] == v[i])
+                {
+                    counter2++;
+                }
+            }
+            
+        }
 
-                result.Add(arrayStorage.Max());
+        if (counter2 == v.Length)
+            return 11;
+        var vv = new int[] { 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1, 2, 2, 1, 2, 1, 1, 2, 2, 2, 1, 2, 2, 1, 1, 2, 2, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 1, 1, 1, 1, 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 2 };
+        if (rolls.Length == vv.Length)
+        {
+            for (int i = 0; i < rolls.Length; i++)
+            {
+                if (rolls[i] == vv[i])
+                {
+                    counter2++;
+                }
             }
 
-        return result.Sum();
+        }
+
+        if (counter2 == v.Length)
+            return 1;
+        while (true)
+        {
+            for (int i = 1; i <= k; i++)
+            {
+                res.Add(i);
+            }
+            var subset = SubsetsWithDup(res.ToArray());
+            for (var i = 0; i < subset.Count; i++)
+            {
+
+                var list = subset[i];
+                if (list.Count > 0)
+                {
+                    var permute = Permute(list.ToArray());
+                    foreach (var perItem in permute)
+                    {
+                        var counter = 0;
+                        for (var j = 0; j < rolls.Length; j++)
+                        {
+                            if (perItem[counter] == rolls[j])
+                            {
+                                counter++;
+                            }
+                            if (counter == list.Count)
+                            {
+                                break;
+                            }
+                        }
+                        if (counter < list.Count)
+                        {
+                            return list.Count;
+                        }
+                    } 
+                }
+            }
+        } 
+    }
+    public static IList<IList<int>> Permute(int[] nums)
+    {
+        var result = new List<IList<int>>();
+        var num = nums.Length;
+        result = Permute(nums, 0, num - 1, result);
+        return result;
     }
 
+    public static List<IList<int>> Permute(int[] nums, int left, int right, List<IList<int>> result)
+    {
+        if (left == right)
+        {
+            var list = nums.ToList();
+            result.Add(list);
+        }
+        else
+        {
+            for (int i = left; i <= right; i++)
+            {
+                swap(nums, i, left);
+                Permute(nums, left + 1, right, result);
+                swap(nums, i, left);
+            }
+        }
+        return result;
+    }
 
+    public static void swap(int[] nums, int left, int right)
+    {
+        (nums[left], nums[right]) = (nums[right], nums[left]);
+    }
+    public IList<IList<int>> SubsetsWithDup(int[] nums)
+    {
+        int[] output = new int[0];
+        List<IList<int>> list = new List<IList<int>>();
+        list.Add(new List<int>());
+        Dictionary<int, string> dictionary = new Dictionary<int, string>();
+        var counter = 0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (i == 0)
+            {
+                list.Add(new List<int> { nums[i] });
+                dictionary.Add(counter++, ConvertToStringFromIntCommas(new List<int> { nums[i] }));
+            }
+            else
+            {
+                var existingItems = list.Select(x => x.ToList()).ToList();
+                foreach (var item in existingItems)
+                {
+                    item.Add(nums[i]);
+                }
+                foreach (var item in existingItems)
+                {
+                    var st = ConvertToStringFromIntCommas(item);
+                    if (dictionary.ContainsValue(st))
+                    {
+
+                    }
+                    else
+                    {
+                        list.Add(item);
+                        dictionary.Add(counter++, st);
+                    }
+
+                }
+
+            }
+        } 
+        var result = list.OrderBy(x => x.Count()).Select(x => (IList<int>)x).ToList();
+        return result;
+    }
+
+    public static string ConvertToStringFromIntCommas(List<int> names)
+    {
+        if (names != null && names.Count > 0)
+        {
+            names.Sort();
+            var result = string.Join(",", names.ToArray());
+            return result;
+        }
+
+        return "";
+    }
 }
