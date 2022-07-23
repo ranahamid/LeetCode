@@ -47,9 +47,11 @@ var paths = new List<IList<string>>()
                 new List<string>() { "Lima", "Sao Paulo" },
             };
 var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
-var resW2 = new char[]
+var resW2 = new string[]
 {
-    'c','f','j'
+    "vtrjvgbj",
+"mkmjyaeav",
+"sibzdmsk", 
 };
 
 var res1 = new long[] { 20,15,8,2,12};
@@ -58,7 +60,7 @@ var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 20
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(Solution.minimumLoss(res1.ToList()));
+Console.WriteLine(Solution.gemstones(resW2.ToList()));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -76,8 +78,8 @@ Console.WriteLine("Hello, World!");
 class Solution
 {
 
+   
 
-    
 
 
 
