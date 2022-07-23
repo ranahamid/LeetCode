@@ -60,7 +60,7 @@ var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 20
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(s.ShortestSequence(res1, 4));
+Console.WriteLine(Solution.findDigits(1012));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -79,5 +79,31 @@ public class TreeNode
 
 class Solution
 {
-   
+    public static int findDigits(int n)
+    {
+        var stack= GetDigits(n);
+        var counter = 0;
+        var len = stack.Count;
+        for (int i = 0; i < len; i++)
+        {
+            var div = stack.Pop();
+            if (div != 0)
+            { 
+                if (n % div == 0)
+                    counter++;
+            }
+        }
+        return counter;
+    }
+    public static Stack<int> GetDigits(int source)
+    {
+        Stack<int> digits = new Stack<int>();
+        while (source > 0)
+        {
+            var digit = source % 10;
+            digits.Push(digit);
+            source = source / 10;
+        }
+        return digits;
+    }
 }
