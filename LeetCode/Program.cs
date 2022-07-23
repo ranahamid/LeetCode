@@ -52,30 +52,32 @@ var resW2 = new char[]
     'c','f','j'
 };
 
-var res1 = new int[] {
-1,
-3,
-1,
-5,
-9,
-10 };
+var res1 = new long[] { 20,15,8,2,12};
 var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204 };
 
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(Solution.weightedUniformStrings("abccddde", res1.ToList()));
+Console.WriteLine(Solution.minimumLoss(res1.ToList()));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
-  
+     public class TreeNode {
+       public int val;
+       public TreeNode left;
+       public TreeNode right;
+       public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+           this.val = val;
+           this.left = left;
+           this.right = right;
+       }
+   }
 
 class Solution
 {
 
 
-
-   
+    
 
 
 
