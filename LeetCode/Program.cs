@@ -4,7 +4,8 @@ using System.Text;
 
 int[][] nums = new int[][]
           {
-                new int[3] {1,2,3}, new int[3]{4,5,6}, new int[3]{9,8,9},
+                new int[2] {1,2}, new int[2]{2,3}, new int[2]{3,4},
+                    new int[2] {4,5}, new int[2]{5,6}, new int[2]{6,7},
           };
 
 int[][] nums1 = new int[29][]
@@ -60,7 +61,7 @@ var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 20
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "pageCount";
-Console.WriteLine(Solution.findDigits(1012));
+Console.WriteLine(s.CheckStraightLine(nums));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -79,31 +80,5 @@ public class TreeNode
 
 class Solution
 {
-    public static int findDigits(int n)
-    {
-        var stack= GetDigits(n);
-        var counter = 0;
-        var len = stack.Count;
-        for (int i = 0; i < len; i++)
-        {
-            var div = stack.Pop();
-            if (div != 0)
-            { 
-                if (n % div == 0)
-                    counter++;
-            }
-        }
-        return counter;
-    }
-    public static Stack<int> GetDigits(int source)
-    {
-        Stack<int> digits = new Stack<int>();
-        while (source > 0)
-        {
-            var digit = source % 10;
-            digits.Push(digit);
-            source = source / 10;
-        }
-        return digits;
-    }
+    
 }
