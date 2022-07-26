@@ -60,8 +60,8 @@ var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 20
 
 Solution s = new Solution();
 var list = new List<int> { };
-var str = "pageCount";
-Console.WriteLine(s.CheckStraightLine(nums));
+var str = "abccbaacz";
+Console.WriteLine(s.SumOfDigits(str));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -78,7 +78,8 @@ public class TreeNode
     }
 }
 
-class Solution
+
+public class Solution
 {
-    
+  
 }
