@@ -65,9 +65,35 @@ var str = "abccbaacz";
 Console.WriteLine("Hello, World!");
 
 
-
+   public class ListNode {
+       public int val;
+       public ListNode next;
+       public ListNode(int val=0, ListNode next=null) {
+           this.val = val;
+           this.next = next;
+       }
+   }
 public class Solution
 {
- 
+    public ListNode DeleteNodes(ListNode head, int m, int n)
+    {
+        var result=new ListNode();
+        var ret = result;
+        while (head != null)
+        {
+            for(int i = 0; i < m && head!=null; i++)
+            {
+                result.next = new ListNode(head.val);                
+                result = result.next;
+
+                head = head.next;
+            }
+            for(int j = 0; j < n && head != null; j++)
+            {
+                head= head.next;
+            }
+        }
+        return ret.next;
+    }
 }
 
