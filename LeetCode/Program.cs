@@ -50,9 +50,7 @@ var paths = new List<IList<string>>()
 var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
 var resW2 = new string[]
 {
-    "vtrjvgbj",
-"mkmjyaeav",
-"sibzdmsk",
+    "apple","app"
 };
 
 var res1 = new int[] { 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1, 2, 2, 1, 2, 1, 1, 2, 2, 2, 1, 2, 2, 1, 1, 2, 2, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 1, 2, 2, 1, 1, 1, 1, 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 1, 2, 2, 2, 2, 2};
@@ -61,25 +59,14 @@ var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 20
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "abccbaacz";
-Console.WriteLine(s.SumOfDigits(str));
+Console.WriteLine(s.IsAlienSorted(resW2, "worldabcefghijkmnpqstuvxyz"));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
-public class TreeNode
-{
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-    {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+
 
 
 public class Solution
 {
-  
+ 
 }
