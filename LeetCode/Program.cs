@@ -54,31 +54,42 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 5, 7, 3, 9, 4, 9, 8, 3, 1 };
-var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204 };
+var res2 = new int[] { 0, 4, 3, 0, 4 };
 
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "abccbaacz";
 
-Console.WriteLine(s.MakeGood("qFxXfQo"));
+Console.WriteLine(s.SpecialArray(res2));
 //Console.WriteLine(s.MakeGood("abBAcC"));
 //Console.WriteLine(s.MakeGood("leEeetcode"));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
 
-   public class TreeNode {
-       public int val;
-       public TreeNode left;
-       public TreeNode right;
-       public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-           this.val = val;
-           this.left = left;
-           this.right = right;
-       }
-   }
+ 
 public class Solution
 {
- 
+     
+    public bool MakeEqual(string[] words)
+    {
+        var dic=new Dictionary<char, int>();
+        foreach(var item in words)
+        {
+            foreach(var ch in item)
+            {
+                if (dic.ContainsKey(ch))
+                    dic[ch]++;
+                else
+                    dic[ch] = 1;
+            }
+        }
+        foreach (var item in dic)
+        {
+            if (item.Value % words.Length != 0)
+                return false;
+        }
+        return true;
+    }
 }
 
