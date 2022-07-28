@@ -59,7 +59,10 @@ var res2 = new int[] { 203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 20
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "abccbaacz";
-Console.WriteLine(s.FixedPoint(res1));
+
+Console.WriteLine(s.MakeGood("qFxXfQo"));
+//Console.WriteLine(s.MakeGood("abBAcC"));
+//Console.WriteLine(s.MakeGood("leEeetcode"));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
@@ -76,6 +79,6 @@ Console.WriteLine("Hello, World!");
    }
 public class Solution
 {
-    
+ 
 }
 
