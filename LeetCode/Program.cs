@@ -68,8 +68,47 @@ Console.WriteLine(s.FindAndReplacePattern(resW2, "abb"));
 Console.WriteLine("Hello, World!");
 
  
-public class Solution
+public class Food
 {
-  
+    public string  FoodName { get; set; }
+    public string CuisinesName { get; set; }
+    public int Rating{ get; set; }
+
 }
+public class FoodRatings
+{
+    public List<Food> Foods = new List<Food>();
+    public FoodRatings(string[] foods, string[] cuisines, int[] ratings)
+    {
+        for(int i = 0; i < foods.Length; i++)
+        {
+            Food food = new Food();
+            food.FoodName = foods[i];
+            food.CuisinesName = cuisines[i];
+            food.Rating = ratings[i];
+
+            Foods.Add(food);
+        }
+    }
+    public void ChangeRating(string food, int newRating)
+    {
+        var foodObj= Foods.Where(x=>x.FoodName == food).FirstOrDefault();
+        if(foodObj!=null)
+        {
+            foodObj.Rating = newRating;
+        }
+    }
+
+    public string HighestRated(string cuisine)
+    {
+        
+        var foodObj = Foods.Where(x => x.CuisinesName == cuisine).OrderByDescending(x=>x.Rating).ThenBy(x=>x.FoodName).FirstOrDefault();
+        if (foodObj != null)
+        {
+            return foodObj.FoodName;
+        }
+        return String.Empty;
+    }
+}
+
 
