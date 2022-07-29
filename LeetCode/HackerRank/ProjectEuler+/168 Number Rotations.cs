@@ -8,10 +8,8 @@ namespace LeetCode.HackerRank.ProjectEuler_
 {
     internal class _168_Number_Rotations
     {
-        public static Display()
+        public static void Display()
         {
-
-
             /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
             var m = Int32.Parse(Console.ReadLine());
             var res = new int[]{
