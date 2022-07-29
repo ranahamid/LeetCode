@@ -21,8 +21,8 @@ namespace LeetCode
     internal class _876_Middle_of_the_Linked_List
     {
         /// <summary>
-        /// Runtime: 158 ms, faster than 8.70% of C# online submissions for Middle of the Linked List.
-        /// Memory Usage: 36.9 MB, less than 31.12% of C# online submissions for Middle of the Linked List.
+        /// Runtime: 82 ms, faster than 96.43% of C# online submissions for Middle of the Linked List.
+        /// Memory Usage: 38.1 MB, less than 6.57% of C# online submissions for Middle of the Linked List.
         /// </summary>
         /// <param name="head"></param>
         /// <returns></returns>

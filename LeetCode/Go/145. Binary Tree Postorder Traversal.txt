@@ -1,6 +1,6 @@
 ﻿package main
-////Runtime: 4 ms, faster than 7.86% of Go online submissions for Binary Tree Postorder Traversal.
-//Memory Usage: 2 MB, less than 88.21% of Go online submissions for Binary Tree Postorder Traversal.
+////Runtime: 0 ms, faster than 100.00% of Go online submissions for Binary Tree Postorder Traversal.
+//Memory Usage: 2.2 MB, less than 88.21% of Go online submissions for Binary Tree Postorder Traversal.
 func main() {
 
 }

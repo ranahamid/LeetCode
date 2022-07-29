@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LeetCode.Premium
+{
+    internal class _1099
+    {
+        public int TwoSumLessThanK(int[] nums, int k)
+        {
+            var max = -1;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    var sum = nums[i] + nums[j];
+                    if (sum < k)
+                    {
+                        max = Math.Max(max, sum);
+                    }
+                }
+            }
+            return max;
+        }
+    }
+}
