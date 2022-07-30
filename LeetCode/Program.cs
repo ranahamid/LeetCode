@@ -68,9 +68,7 @@ Console.WriteLine(s.DayOfYear("2016-02-09"));
 Console.WriteLine("Hello, World!");
 
 
-
-
 public class Solution
 {
-    
+
 }
