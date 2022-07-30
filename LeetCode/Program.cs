@@ -47,10 +47,10 @@ var paths = new List<IList<string>>()
                 new List<string>() { "New York", "Lima" },
                 new List<string>() { "Lima", "Sao Paulo" },
             };
-var resW1 = new char[] { 'z', 'a', 'b', 'c', 'x', 'x', 'x' };
+var resW1 = new string[] { "lo", "eo" };
 var resW2 = new string[]
 {
-"abc","deq","mee","aqq","dkd","ccc"
+"leetcode"
 };
 
 var res1 = new int[] { 5, 7, 3, 9, 4, 9, 8, 3, 1 };
@@ -60,55 +60,18 @@ Solution s = new Solution();
 var list = new List<int> { };
 var str = "abccbaacz";
 
-Console.WriteLine(s.FindAndReplacePattern(resW2, "abb"));
+Console.WriteLine(s.WordSubsets(resW2, resW1));
 //Console.WriteLine(s.MakeGood("abBAcC"));
 //Console.WriteLine(s.MakeGood("leEeetcode"));
 //Console.ReadKey();
 
 Console.WriteLine("Hello, World!");
 
+
+
+
+public class Solution
+{
  
-public class Food
-{
-    public string  FoodName { get; set; }
-    public string CuisinesName { get; set; }
-    public int Rating{ get; set; }
 
 }
-public class FoodRatings
-{
-    public List<Food> Foods = new List<Food>();
-    public FoodRatings(string[] foods, string[] cuisines, int[] ratings)
-    {
-        for(int i = 0; i < foods.Length; i++)
-        {
-            Food food = new Food();
-            food.FoodName = foods[i];
-            food.CuisinesName = cuisines[i];
-            food.Rating = ratings[i];
-
-            Foods.Add(food);
-        }
-    }
-    public void ChangeRating(string food, int newRating)
-    {
-        var foodObj= Foods.Where(x=>x.FoodName == food).FirstOrDefault();
-        if(foodObj!=null)
-        {
-            foodObj.Rating = newRating;
-        }
-    }
-
-    public string HighestRated(string cuisine)
-    {
-        
-        var foodObj = Foods.Where(x => x.CuisinesName == cuisine).OrderByDescending(x=>x.Rating).ThenBy(x=>x.FoodName).FirstOrDefault();
-        if (foodObj != null)
-        {
-            return foodObj.FoodName;
-        }
-        return String.Empty;
-    }
-}
-
-
