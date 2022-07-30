@@ -60,7 +60,7 @@ Solution s = new Solution();
 var list = new List<int> { };
 var str = "abccbaacz";
 
-Console.WriteLine(s.WordSubsets(resW2, resW1));
+Console.WriteLine(s.DayOfYear("2016-02-09"));
 //Console.WriteLine(s.MakeGood("abBAcC"));
 //Console.WriteLine(s.MakeGood("leEeetcode"));
 //Console.ReadKey();
@@ -72,6 +72,5 @@ Console.WriteLine("Hello, World!");
 
 public class Solution
 {
- 
-
+    
 }
