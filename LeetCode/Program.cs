@@ -53,14 +53,14 @@ var resW2 = new string[]
 "leetcode"
 };
 
-var res1 = new int[] { 5, 7, 3, 9, 4, 9, 8, 3, 1 };
+var res1 = new int[] { 2, 31, 41, 31, 36, 46, 33, 45, 47, 8, 31, 6, 12, 12, 15, 35 };
 var res2 = new int[] { 0, 4, 3, 0, 4 };
 
 Solution s = new Solution();
 var list = new List<int> { };
 var str = "abccbaacz";
 
-Console.WriteLine(s.DayOfYear("2016-02-09"));
+Console.WriteLine(s.MaximumGroups(res1));
 //Console.WriteLine(s.MakeGood("abBAcC"));
 //Console.WriteLine(s.MakeGood("leEeetcode"));
 //Console.ReadKey();
@@ -81,6 +81,19 @@ public class TreeNode
 
 public class Solution
 {
+    public int MaximumGroups(int[] grades)
+    {
+        var length= grades.Length; 
+        for (int i= 1; i <= Int32.MaxValue; i++)
+        {
+            long total = i * (i + 1) / 2;
+            if (total == length)
+                return i;
+            if (total > length)
+                return i-1;
+        }
+        return 0;
+    }
 
 }
 
