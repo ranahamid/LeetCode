@@ -21,7 +21,7 @@ namespace LeetCode.Algo_1
         public static void Sort(List<int> arr)
         {
             int n = arr.Count;
-            MaxHeap(arr, n);
+            MaxHeap(arr);
             //sort         
             for (int i = n - 1; i >= 0; i--)
             {
@@ -50,9 +50,9 @@ namespace LeetCode.Algo_1
             }
 
         }
-        public static void MaxHeap(List<int> arr, int n)
+        public static void MaxHeap(List<int> arr)
         {
-
+            int n= arr.Count;
             for (int i = n / 2 - 1; i >= 0; i--)
             {
                 Heapify(arr, n, i);

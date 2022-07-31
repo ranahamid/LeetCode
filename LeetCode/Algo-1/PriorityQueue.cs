@@ -44,8 +44,9 @@ namespace LeetCode.Algo_1
             }
 
         }
-        public static void MaxHeap(List<int> arr, int n)
+        public static void MaxHeap(List<int> arr)
         {
+            int n= arr.Count;
             for (int i = n / 2 - 1; i >= 0; i--)
             {
                 Heapify(arr, n, i);
@@ -60,7 +61,7 @@ namespace LeetCode.Algo_1
             {
                 arr.Add(number);
                 n = arr.Count;
-                MaxHeap(arr, n);
+                MaxHeap(arr);
             }
         }
         public static void Delete(List<int> arr, int number)
@@ -77,7 +78,7 @@ namespace LeetCode.Algo_1
             (arr[j], arr[n - 1]) = (arr[n - 1], arr[j]);
 
             arr.RemoveAt(n - 1);
-            MaxHeap(arr, n - 1);
+            MaxHeap(arr);
         }
         public static int Peek(List<int> arr)
         {

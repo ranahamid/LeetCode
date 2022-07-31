@@ -61,21 +61,14 @@ var list = new List<int> { };
 var str = "abccbaacz";
 
 
-List<int> arr = new List<int>();
+List<int> arr = new List<int> { };
 
 
 
-//Heap.Delete(arr, 4);
-//Heap.PrintHeap(arr);
 
 
-//Console.WriteLine(s.MakeGood("abBAcC"));
-//Console.WriteLine(s.MakeGood("leEeetcode"));
-//Console.ReadKey();
 
 
-Console.WriteLine("Hello, World!");
- 
 
 
 
