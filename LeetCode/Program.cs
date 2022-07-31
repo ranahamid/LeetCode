@@ -56,44 +56,26 @@ var resW2 = new string[]
 var res1 = new int[] { 2, 31, 41, 31, 36, 46, 33, 45, 47, 8, 31, 6, 12, 12, 15, 35 };
 var res2 = new int[] { 0, 4, 3, 0, 4 };
 
-Solution s = new Solution();
+
 var list = new List<int> { };
 var str = "abccbaacz";
 
-Console.WriteLine(s.MaximumGroups(res1));
+
+List<int> arr = new List<int>();
+
+
+
+//Heap.Delete(arr, 4);
+//Heap.PrintHeap(arr);
+
+
 //Console.WriteLine(s.MakeGood("abBAcC"));
 //Console.WriteLine(s.MakeGood("leEeetcode"));
 //Console.ReadKey();
 
+
 Console.WriteLine("Hello, World!");
-public class TreeNode
-{
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-    {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+ 
 
-public class Solution
-{
-    public int MaximumGroups(int[] grades)
-    {
-        var length= grades.Length; 
-        for (int i= 1; i <= Int32.MaxValue; i++)
-        {
-            long total = i * (i + 1) / 2;
-            if (total == length)
-                return i;
-            if (total > length)
-                return i-1;
-        }
-        return 0;
-    }
 
-}
 
