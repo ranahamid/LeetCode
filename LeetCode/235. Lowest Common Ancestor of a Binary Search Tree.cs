@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_235
+    {
+        public int val;
+        public TreeNode_235 left;
+        public TreeNode_235 right;
+        public TreeNode_235(int val = 0, TreeNode_235 left = null, TreeNode_235 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     internal class _235
     {
         /// <summary>
@@ -16,7 +29,7 @@ namespace LeetCode
         /// <param name="p"></param>
         /// <param name="q"></param>
         /// <returns></returns>
-        public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
+        public TreeNode_235 LowestCommonAncestor(TreeNode_235 root, TreeNode_235 p, TreeNode_235 q)
         {
             if (root.val > p.val && root.val > q.val)
             {

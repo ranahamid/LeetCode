@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_700
+    {
+        public int val;
+        public TreeNode_700 left;
+        public TreeNode_700 right;
+        public TreeNode_700(int val = 0, TreeNode_700 left = null, TreeNode_700 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     internal class _700
     {
         /// <summary>
@@ -15,7 +28,7 @@ namespace LeetCode
         /// <param name="root"></param>
         /// <param name="val"></param>
         /// <returns></returns>
-        public TreeNode SearchBST(TreeNode root, int val)
+        public TreeNode_700 SearchBST(TreeNode_700 root, int val)
         {
             while (root != null && root.val != val)
             {

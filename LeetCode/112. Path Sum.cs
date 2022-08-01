@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+	public class TreeNode_112
+	{
+		public int val;
+		public TreeNode_112 left;
+		public TreeNode_112 right;
+		public TreeNode_112(int val = 0, TreeNode_112 left = null, TreeNode_112 right = null)
+		{
+			this.val = val;
+			this.left = left;
+			this.right = right;
+		}
+	}
+
 	class _112
 	{
 		/// <summary>
@@ -15,7 +28,7 @@ namespace LeetCode
 		/// <param name="root"></param>
 		/// <param name="targetSum"></param>
 		/// <returns></returns>
-		public bool HasPathSum(TreeNode root, int targetSum)
+		public bool HasPathSum(TreeNode_112 root, int targetSum)
 		{
 			if (root == null)
 				return false;

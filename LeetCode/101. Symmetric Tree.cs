@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_101
+    {
+        public int val;
+        public TreeNode_101 left;
+        public TreeNode_101 right;
+        public TreeNode_101(int val = 0, TreeNode_101 left = null, TreeNode_101 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     internal class _101
     {
         /// <summary>
@@ -14,11 +27,11 @@ namespace LeetCode
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
-        public bool IsSymmetric(TreeNode root)
+        public bool IsSymmetric(TreeNode_101 root)
         {
             return SymmetricTree(root, root);
         }
-        public static bool SymmetricTree(TreeNode left, TreeNode right)
+        public static bool SymmetricTree(TreeNode_101 left, TreeNode_101 right)
         {
             if (left == null && right == null)
                 return true;

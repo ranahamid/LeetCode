@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_701
+    {
+        public int val;
+        public TreeNode_701 left;
+        public TreeNode_701 right;
+        public TreeNode_701(int val = 0, TreeNode_701 left = null, TreeNode_701 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     internal class _701
     {
         /// <summary>
@@ -15,10 +27,10 @@ namespace LeetCode
         /// <param name="root"></param>
         /// <param name="val"></param>
         /// <returns></returns>
-        public TreeNode InsertIntoBST(TreeNode root, int val)
+        public TreeNode_701 InsertIntoBST(TreeNode_701 root, int val)
         {
             if (root == null)
-                return new TreeNode(val);
+                return new TreeNode_701(val);
             if (val > root.val)
                 root.right = InsertIntoBST(root.right, val);
             else if (val < root.val)

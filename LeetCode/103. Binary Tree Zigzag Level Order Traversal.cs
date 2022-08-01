@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    public class TreeNode
+    public class TreeNode_103
     {
         public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        public TreeNode_103 left;
+        public TreeNode_103 right;
+        public TreeNode_103(int val = 0, TreeNode_103 left = null, TreeNode_103 right = null)
         {
             this.val = val;
             this.left = left;
@@ -27,12 +27,12 @@ namespace LeetCode
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
-        public static IList<IList<int>> ZigzagLevelOrder(TreeNode root)
+        public static IList<IList<int>> ZigzagLevelOrder(TreeNode_103 root)
         {
             var result = new List<IList<int>>();
             if (root == null)
                 return result;
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<TreeNode_103> queue = new Queue<TreeNode_103>();
             queue.Enqueue(root);
             var indexer = 0;
             while (queue.Count > 0)
@@ -44,7 +44,7 @@ namespace LeetCode
                 //while (count < queueLen)
                 for(int i = 0; i < queueLen; i++)
                 {
-                    TreeNode node = queue.Dequeue();
+                    TreeNode_103 node = queue.Dequeue();
                     currentVal.Add(node.val);
                     if (node.left != null)
                     {

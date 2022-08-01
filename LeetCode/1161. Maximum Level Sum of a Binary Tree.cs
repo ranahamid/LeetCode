@@ -6,9 +6,22 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_1161
+    {
+        public int val;
+        public TreeNode_1161 left;
+        public TreeNode_1161 right;
+        public TreeNode_1161(int val = 0, TreeNode_1161 left = null, TreeNode_1161 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     internal class _1161
     {
-        public int LevelOrder(TreeNode root)
+        public int LevelOrder(TreeNode_1161 root)
         {
 
             if (root == null)
@@ -16,7 +29,7 @@ namespace LeetCode
             var maxVal = Int32.MinValue;
             var maxIndex = -1;
             var counter = 1;
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            Queue<TreeNode_1161> queue = new Queue<TreeNode_1161>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
@@ -26,7 +39,7 @@ namespace LeetCode
                 while (count < queueLen)
                 {
 
-                    TreeNode node = queue.Dequeue();
+                    TreeNode_1161 node = queue.Dequeue();
                     sum += node.val;
 
                     if (node.left != null)

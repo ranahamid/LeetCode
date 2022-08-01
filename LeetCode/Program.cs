@@ -53,22 +53,15 @@ var resW2 = new string[]
 "leetcode"
 };
 
-var res1 = new int[] { 2, 31, 41, 31, 36, 46, 33, 45, 47, 8, 31, 6, 12, 12, 15, 35 };
-var res2 = new int[] { 0, 4, 3, 0, 4 };
-  public class TreeNode {
-      public int val;
-      public TreeNode left;
-      public TreeNode right;
-      public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
-  }
+var res1 = new int[] { 2, 3, 4, 7, 11 };
+var res2 = new int[] { 1, 2, 3, 4 };
 
+Solution solution= new Solution();
+Console.WriteLine(solution.FindKthPositive(res1, 5));//1,5,6,8,9,10,12,13,...
+Console.WriteLine(solution.FindKthPositive(res2, 2));
 public class Solution
 {
-   
+
 }
 
 
