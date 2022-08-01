@@ -94,7 +94,6 @@ namespace LeetCode
             {
                 return arr.LastOrDefault() + k;
             }
-
         }
         #endregion
     }
