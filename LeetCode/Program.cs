@@ -55,17 +55,21 @@ var resW2 = new string[]
 
 var res1 = new int[] { 2, 31, 41, 31, 36, 46, 33, 45, 47, 8, 31, 6, 12, 12, 15, 35 };
 var res2 = new int[] { 0, 4, 3, 0, 4 };
+  public class TreeNode {
+      public int val;
+      public TreeNode left;
+      public TreeNode right;
+      public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+          this.val = val;
+          this.left = left;
+          this.right = right;
+      }
+  }
 
-
-var list = new List<int> { };
-var str = "abccbaacz";
-
-
-List<int> arr = new List<int> { };
-
-
-
-
+public class Solution
+{
+   
+}
 
 
 
