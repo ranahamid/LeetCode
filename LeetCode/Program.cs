@@ -11,7 +11,8 @@ int[][] nums = new int[][]
 
 int[][] nums2 = new int[][]
           {
-                new int[2] {-5,2}, 
+                new int[3] {1,2,3},
+                new int[3] {4,5,6},
           };
 
 int[][] nums1 = new int[29][]
@@ -66,14 +67,7 @@ Solution solution = new Solution();
 Console.WriteLine(solution.KthSmallest(nums2,1));
 public class Solution
 {
-    public int KthSmallest(int[][] matrix, int k)
-    {
-        var n=matrix.Length;
-
-        var row = k / n; //8/3= 2
-        var column=k % n;// 8%3= 2
-        return matrix[row][column];
-    }
+   
 }
 
 
