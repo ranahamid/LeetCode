@@ -60,18 +60,46 @@ var resW2 = new string[]
 "leetcode"
 };
 
-var res1 = new int[] { 1, 2, 2, 3, 1 };
+var res1 = new int[] { 4, 5, 8, 2 };
 var res2 = new int[] { 1, 2, 3, 4 };
 
 Solution solution = new Solution();
-Console.WriteLine(solution.KthSmallest(nums2,1));
+ 
+Console.WriteLine(solution.IsPathCrossing("NESWW"));
 public class Solution
 {
-   
+    public bool IsPathCrossing(string path)
+    {
+        var list = new List<string>();
+        int x = 0, y = 0;
+        var numInStr = "("+ x.ToString() +"),(" + y.ToString()+")";
+        list.Add(numInStr);
+
+        foreach (var ch in path)
+        {
+            if (ch == 'N')
+            {
+                y++;
+            }
+            else if (ch == 'S')
+            {
+                y--;
+            }
+            else if (ch == 'E')
+            {
+                x++;
+            }
+            else if (ch == 'W')
+            {
+                x--;
+            }
+            numInStr = "(" + x.ToString() + "),(" + y.ToString() + ")";
+            if (list.Contains(numInStr))
+                return true;
+            list.Add(numInStr);
+        }
+        return false;
+    }
 }
-
-
-
-
 
 
