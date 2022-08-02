@@ -57,53 +57,24 @@ var res1 = new int[] { 1, 2, 2, 3, 1 };
 var res2 = new int[] { 1, 2, 3, 4 };
 
 Solution solution = new Solution();
-Console.WriteLine(solution.FindShortestSubArray(res1));
+Console.WriteLine(solution.DetectCapitalUse("Leetcode"));
 public class Solution
 {
-    public int FindShortestSubArray(int[] nums)
+    public int KthSmallest(int[][] matrix, int k)
     {
-        var dic = GetFrequency(nums);
-        var maxNum = dic.Select(x => x.Value).Max();
-        var maxValues = dic.Where(x => x.Value == maxNum).OrderByDescending(x => x.Key).Select(x => x.Key).ToList();      
-
-        var minVal = Int32.MaxValue;
-
-        foreach (var max in maxValues)
+        var n = matrix.Length;
+        var row = k % n;
+        var col = k / n;
+        if(row != 0)
         {
-            var first = Int32.MinValue;
-            var last = Int32.MinValue;
-            for (int i = 0; i < nums.Length; i++)
-            {
-                if (nums[i] == max)
-                {
-                    if (first == Int32.MinValue)
-                    {
-                        first = i;
-                        last = i;
-                    }
-                    last = i;
-                }
-             
-            }
-            minVal = Math.Min(minVal, last - first + 1);
+            row--;
         }
-        return minVal;
-    }
-    public static Dictionary<int, int> GetFrequency(int[] nums)
-    {
-        Dictionary<int, int> map = new Dictionary<int, int>();
-        for (int i = 0; i < nums.Length; i++)
+        else
         {
-            if (map.ContainsKey(nums[i]))
-            {
-                map[nums[i]]++;
-            }
-            else
-            {
-                map[nums[i]] = 1;
-            }
+            row = n - 1;
+            col--;
         }
-        return map;
+        return matrix[row][col];
     }
 }
 
