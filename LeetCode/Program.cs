@@ -8,6 +8,12 @@ int[][] nums = new int[][]
                     new int[2] {4,5}, new int[2]{5,6}, new int[2]{6,7},
           };
 
+
+int[][] nums2 = new int[][]
+          {
+                new int[2] {-5,2}, 
+          };
+
 int[][] nums1 = new int[29][]
 {
 new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new int[2] {9,9},new int[2] {21,4},new int[2] {24,2},new int[2] {12,11},new int[2] {2,5},new int[2] {24,12},new int[2] {25,7},new int[2] {7,13},new int[2] {14,9},new int[2] {23,15},new int[2] {18,17},new int[2] {22,16},new int[2] {4,14},new int[2] {14,17},new int[2] {25,11},new int[2] {12,16},new int[2] {29,3},new int[2] {22,11},new int[2] {29,2},new int[2] {24,2},new int[2] {24,15},new int[2] {7,14},new int[2] {7,3},new int[2] {7,14},new int[2] {1,3}
@@ -57,10 +63,17 @@ var res1 = new int[] { 1, 2, 2, 3, 1 };
 var res2 = new int[] { 1, 2, 3, 4 };
 
 Solution solution = new Solution();
-Console.WriteLine(solution.FindShortestSubArray(res1));
+Console.WriteLine(solution.KthSmallest(nums2,1));
 public class Solution
 {
-    
+    public int KthSmallest(int[][] matrix, int k)
+    {
+        var n=matrix.Length;
+
+        var row = k / n; //8/3= 2
+        var column=k % n;// 8%3= 2
+        return matrix[row][column];
+    }
 }
 
 
