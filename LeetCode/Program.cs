@@ -74,7 +74,7 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 10, 3, 8, 9, 4 };
-var res2 = new int[] {14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0, 3, 30, 9};
+var res2 = new int[] { 14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0, 3, 30, 9 };
 
 
 Solution solution = new Solution();
@@ -82,6 +82,16 @@ Console.WriteLine(solution.DivisorSubstrings(430043, 2));
 
 public class Solution
 {
-   
+    //https://leetcode.com/problems/random-pick-index/
+    private List<int> list;
+    public Solution(int[] nums)
+    {
+        list = new List<int>(nums);
+    }
+
+    public int Pick(int target)
+    {
+        
+    }
 }
 
