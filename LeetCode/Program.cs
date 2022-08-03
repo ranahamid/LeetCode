@@ -73,14 +73,15 @@ var resW2 = new string[]
 "i","love","leetcode","apples"
 };
 
-var res1 = new int[] { 1, 2, 3, 4 };
-var res2 = new int[] { 1, 2, 3, 4 };
+var res1 = new int[] { 10, 3, 8, 9, 4 };
+var res2 = new int[] {14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0, 3, 30, 9};
 
 
 Solution solution = new Solution();
-Console.WriteLine(solution.Construct2DArray(res1));
+Console.WriteLine(solution.DistanceBetweenBusStops(res2, 12,3));
+
 public class Solution
 {
-
+  
 }
 
