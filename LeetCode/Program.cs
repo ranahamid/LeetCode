@@ -48,12 +48,25 @@ new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new i
 
 #endregion
 
-var paths = new List<IList<string>>()
+
+
+
+
+
+
+
+var paths = new List<List<int>>()
             {
-                new List<string>() { "London", "New York" },
-                new List<string>() { "New York", "Lima" },
-                new List<string>() { "Lima", "Sao Paulo" },
+                 new List<int>() { 0,1,0,0,0,1 },
+                 new List<int>() { 1,0,1,0,0,1},
+                 new List<int>() { 0,1,0,1,1,0 },
+
+                 new List<int>() { 0,0,1,0,1,0},
+                 new List<int>() {0,0,1,1,0,1 },
+                 new List<int>() { 1,1,0,0,1,0 },
             };
+
+
 var resW1 = new string[] { "lo", "eo" };
 var resW2 = new string[]
 {
@@ -63,44 +76,48 @@ var resW2 = new string[]
 var res1 = new int[] { 4, 5, 8, 2 };
 var res2 = new int[] { 1, 2, 3, 4 };
 
-MyCalendarThree myCalendarTwo = new MyCalendarThree();
-myCalendarTwo.Book(10, 20); // return True, The event can be booked. 
-myCalendarTwo.Book(50, 60); // return True, The event can be double booked. 
-myCalendarTwo.Book(10, 40);
-myCalendarTwo.Book(5, 15);
 
-Solution solution = new Solution(); 
-//Console.WriteLine(solution.IsPathCrossing("NESWW"));
+Solution solution = new Solution();
+Console.WriteLine(solution.BFS_Graph(paths, 'A'));
 public class Solution
 {
-    
-}
-public class MyCalendarThree
-{
-     private SortedDictionary<int, int> books  ;
-    public MyCalendarThree()
+    public List<char> BFS_Graph(List<List<int>> paths, char start)
     {
-        books = new SortedDictionary<int, int>();
-    }
+        var vertices = new char[] { 'A', 'B', 'C', 'D', 'E', 'F' };
+        var vertexIndices = new Dictionary<char, int>()
+        {
+          { 'A', 0 },
+          { 'B', 1 },
+          { 'C', 2 },
+          { 'D', 3 },
+          { 'E', 4 },
+          { 'F', 5 },
+        };
 
-    public int Book(int start, int end)
-    { 
-        if(!books.ContainsKey(start))
-            books.Add(start, 0);
-        books[start]++;
-        if (!books.ContainsKey(end))
+        var result = new List<char>();
+        var queue = new Queue<char>();
+        queue.Enqueue(start);
+
+        var visited = new List<char>();
+        visited.Add(start);
+
+        while (queue.Count > 0)
         {
-            books.Add(end, 0);
+            var item = queue.Dequeue();
+            result.Add(item);
+
+            var neigbours = paths[vertexIndices[item]];//paht[0]
+
+            for (int i = 0; i < neigbours.Count; i++)
+            { 
+                if (neigbours[i] == 1 && !visited.Contains(vertices[i]))
+                {
+                    visited.Add(vertices[i]);
+                    queue.Enqueue(vertices[i]);
+                }
+            }
         }
-        books[end]--;
-        int sum = 0;
-        var max = 1;
-        foreach(var item in books)
-        {
-            sum += item.Value;
-            max = Math.Max(max, sum);
-        }
-        return max;
+        return result;
     }
 }
 
