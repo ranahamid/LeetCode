@@ -81,6 +81,6 @@ Solution solution = new Solution();
 Console.WriteLine(solution.LongestPalindrome("abccccdd"));
 public class Solution
 {
-
+  
 }
 
