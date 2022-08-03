@@ -21,6 +21,5 @@ namespace LeetCode.contest_304
             }
             return 0;
         }
-
     }
 }

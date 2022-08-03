@@ -70,54 +70,17 @@ var paths = new List<List<int>>()
 var resW1 = new string[] { "lo", "eo" };
 var resW2 = new string[]
 {
-"leetcode"
+"i","love","leetcode","apples"
 };
 
-var res1 = new int[] { 4, 5, 8, 2 };
+var res1 = new int[] {5, 7, 7, 1, 7};
 var res2 = new int[] { 1, 2, 3, 4 };
 
 
 Solution solution = new Solution();
-Console.WriteLine(solution.BFS_Graph(paths, 'A'));
+Console.WriteLine(solution.LongestPalindrome("abccccdd"));
 public class Solution
 {
-    public List<char> BFS_Graph(List<List<int>> paths, char start)
-    {
-        var vertices = new char[] { 'A', 'B', 'C', 'D', 'E', 'F' };
-        var vertexIndices = new Dictionary<char, int>()
-        {
-          { 'A', 0 },
-          { 'B', 1 },
-          { 'C', 2 },
-          { 'D', 3 },
-          { 'E', 4 },
-          { 'F', 5 },
-        };
 
-        var result = new List<char>();
-        var queue = new Queue<char>();
-        queue.Enqueue(start);
-
-        var visited = new List<char>();
-        visited.Add(start);
-
-        while (queue.Count > 0)
-        {
-            var item = queue.Dequeue();
-            result.Add(item);
-
-            var neigbours = paths[vertexIndices[item]];//paht[0]
-
-            for (int i = 0; i < neigbours.Count; i++)
-            { 
-                if (neigbours[i] == 1 && !visited.Contains(vertices[i]))
-                {
-                    visited.Add(vertices[i]);
-                    queue.Enqueue(vertices[i]);
-                }
-            }
-        }
-        return result;
-    }
 }
 
