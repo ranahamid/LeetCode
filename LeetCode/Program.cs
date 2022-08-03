@@ -63,43 +63,44 @@ var resW2 = new string[]
 var res1 = new int[] { 4, 5, 8, 2 };
 var res2 = new int[] { 1, 2, 3, 4 };
 
-Solution solution = new Solution();
- 
-Console.WriteLine(solution.IsPathCrossing("NESWW"));
+MyCalendarThree myCalendarTwo = new MyCalendarThree();
+myCalendarTwo.Book(10, 20); // return True, The event can be booked. 
+myCalendarTwo.Book(50, 60); // return True, The event can be double booked. 
+myCalendarTwo.Book(10, 40);
+myCalendarTwo.Book(5, 15);
+
+Solution solution = new Solution(); 
+//Console.WriteLine(solution.IsPathCrossing("NESWW"));
 public class Solution
 {
-    public bool IsPathCrossing(string path)
+    
+}
+public class MyCalendarThree
+{
+     private SortedDictionary<int, int> books  ;
+    public MyCalendarThree()
     {
-        var list = new List<string>();
-        int x = 0, y = 0;
-        var numInStr = "("+ x.ToString() +"),(" + y.ToString()+")";
-        list.Add(numInStr);
+        books = new SortedDictionary<int, int>();
+    }
 
-        foreach (var ch in path)
+    public int Book(int start, int end)
+    { 
+        if(!books.ContainsKey(start))
+            books.Add(start, 0);
+        books[start]++;
+        if (!books.ContainsKey(end))
         {
-            if (ch == 'N')
-            {
-                y++;
-            }
-            else if (ch == 'S')
-            {
-                y--;
-            }
-            else if (ch == 'E')
-            {
-                x++;
-            }
-            else if (ch == 'W')
-            {
-                x--;
-            }
-            numInStr = "(" + x.ToString() + "),(" + y.ToString() + ")";
-            if (list.Contains(numInStr))
-                return true;
-            list.Add(numInStr);
+            books.Add(end, 0);
         }
-        return false;
+        books[end]--;
+        int sum = 0;
+        var max = 1;
+        foreach(var item in books)
+        {
+            sum += item.Value;
+            max = Math.Max(max, sum);
+        }
+        return max;
     }
 }
-
 
