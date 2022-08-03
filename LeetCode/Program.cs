@@ -73,14 +73,14 @@ var resW2 = new string[]
 "i","love","leetcode","apples"
 };
 
-var res1 = new int[] {5, 7, 7, 1, 7};
+var res1 = new int[] { 1, 2, 3, 4 };
 var res2 = new int[] { 1, 2, 3, 4 };
 
 
 Solution solution = new Solution();
-Console.WriteLine(solution.LongestPalindrome("abccccdd"));
+Console.WriteLine(solution.Construct2DArray(res1));
 public class Solution
 {
-    
+
 }
 
