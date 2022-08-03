@@ -78,10 +78,10 @@ var res2 = new int[] {14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0, 
 
 
 Solution solution = new Solution();
-Console.WriteLine(solution.DistanceBetweenBusStops(res2, 12,3));
+Console.WriteLine(solution.DivisorSubstrings(430043, 2));
 
 public class Solution
 {
-  
+   
 }
 
