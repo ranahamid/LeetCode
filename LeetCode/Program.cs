@@ -48,14 +48,8 @@ new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new i
 
 #endregion
 
-
-
-
-
-
-
-
-var paths = new List<List<int>>()
+ 
+var pathsMatrix = new List<List<int>>()
             {
                  new List<int>() { 0,1,0,0,0,1 },
                  new List<int>() { 1,0,1,0,0,1},
@@ -64,6 +58,17 @@ var paths = new List<List<int>>()
                  new List<int>() { 0,0,1,0,1,0},
                  new List<int>() {0,0,1,1,0,1 },
                  new List<int>() { 1,1,0,0,1,0 },
+            };
+
+var pathsAdjacency = new List<(Char, List<Char>)>()
+            {
+                ('A',new List<Char>() { 'B','F' }),
+                ('B',new List<Char>() { 'A','C'}),
+                ('C',new List<Char>() { 'B','E','D' }),
+
+                ('D',new List<Char>() { 'C','E' }),
+                ('E',new List<Char>() { 'D','C','F' }),
+                ('F',new List<Char>() { 'A', 'E' }),
             };
 
 
@@ -77,9 +82,39 @@ var res1 = new int[] { 10, 3, 8, 9, 4 };
 var res2 = new int[] { 14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0, 3, 30, 9 };
 
 
-Solution solution = new Solution();
-Console.WriteLine(solution.MirrorReflection(3, 1));
 
+Solution solution = new Solution();
+//Console.WriteLine(solution.MirrorReflection(3, 1));
+DFS_AjacencyList df= new DFS_AjacencyList();
+df.DFSGraph(pathsAdjacency);
+
+public class DFS_AjacencyList
+{
+    public static List<char> Visited=new List<char>();
+    public static  List<char> result=new List<char>();
+    public void DFSGraph(List<(Char, List<Char>)> path)
+    {
+        DFS(path, 'A');
+        foreach (var item in result)
+            Console.Write(item + " ");
+    }
+    public static void DFS(List<(Char, List<Char>)> path, char start)
+    {
+        result.Add(start);
+        Visited.Add(start);
+        var childrens = path.Where(x => x.Item1 == start).Select(x => x.Item2).FirstOrDefault();
+        if (childrens != null)
+        {
+            foreach (var child in childrens)
+            {
+                if (!Visited.Contains(child))
+                {
+                    DFS(path, child);
+                }
+            }
+        }
+    }
+}
 public class Solution
 {
    

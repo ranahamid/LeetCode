@@ -52,7 +52,6 @@ namespace LeetCode.Algo_1
 
                 for (int i = 0; i < neigbours.Count; i++)
                 {
-
                     if (neigbours[i] == 1 && !visited.Contains(vertices[i]))
                     {
                         visited.Add(vertices[i]);
