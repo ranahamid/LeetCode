@@ -88,12 +88,7 @@ Solution solution = new Solution();
 var list = new List<string>()
 {
  "abc", "1a", "1e", "e3", "99e2.5", "--6", "-+3", "95a54e53"
-};
- 
-Console.WriteLine(solution.NewInteger(9));
- 
-
-
+}; 
  
     
  
