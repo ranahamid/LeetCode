@@ -3,9 +3,9 @@ i:{00000000-0000-0000-0000-000000000000}:LeetCode.sln
 ++LeetCode
 i:{00000000-0000-0000-0000-000000000000}:LeetCode
 ++Dependencies
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>1647
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>1649
 ++Imports
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>772
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>773
 ++Algo-1
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\
 ++BFS Graph Adjacency Matrix.cs
@@ -43,6 +43,14 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 302\
 ++Contest- 83
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\
+++2350. Shortest Impossible Sequence of Rolls.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\2350. shortest impossible sequence of rolls.cs
+++6128. Best Poker Hand.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6128. best poker hand.cs
+++6129. Number of Zero-Filled Subarrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6129. number of zero-filled subarrays.cs
+++6130. Design a Number Container System.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6130. design a number container system.cs
 ++contest-300
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-300\
 ++contest-304
@@ -193,6 +201,8 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\613. shortest distance in a line.sql
 ++619. Biggest Single Number.sql
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\619. biggest single number.sql
+++660. Remove 9.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\660. remove 9.cs
 ++760. Find Anagram Mappings.cs
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\760. find anagram mappings.cs
 ++SQL
@@ -857,6 +867,8 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\441. arr
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\442. find all duplicates in an array.cs
 ++448. Find All Numbers Disappeared in an Array.cs
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\448. find all numbers disappeared in an array.cs
+++458. Poor Pigs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\458. poor pigs.cs
 ++46. Permutations.cs
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\46. permutations.cs
 ++461 Hamming Distance.cs
@@ -983,6 +995,8 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\728 self
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\729. my calendar i.cs
 ++731. My Calendar II.cs
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\731. my calendar ii.cs
+++732. My Calendar III.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\732. my calendar iii.cs
 ++74 Search a 2D Matrix.cs
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\74 search a 2d matrix.cs
 ++744. Find Smallest Letter Greater Than Target.cs
@@ -1077,7 +1091,6 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\98. vali
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\993. cousins in binary tree.cs
 ++Program.cs
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\program.cs
-++public class MyCalendarThree.cs
 ++Analyzers
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:analyzers
 ++Frameworks
@@ -1113,14 +1126,6 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 302\6120. maximum number of pairs in array.cs
 ++6164. Max Sum of a Pair With Equal Sum of Digits.cs
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 302\6164. max sum of a pair with equal sum of digits.cs
-++2350. Shortest Impossible Sequence of Rolls.cs
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\2350. shortest impossible sequence of rolls.cs
-++6128. Best Poker Hand.cs
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6128. best poker hand.cs
-++6129. Number of Zero-Filled Subarrays.cs
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6129. number of zero-filled subarrays.cs
-++6130. Design a Number Container System.cs
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6130. design a number container system.cs
 ++2325. Decode the Message.cs
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-300\2325. decode the message.cs
 ++2326. Spiral Matrix IV.cs
@@ -1346,7 +1351,7 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\packs\microsoft
 ++Microsoft.NETCore.App
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\microsoft.netcore.app
 ++System.Collections (4.3.0)
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>1655
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>1657
 ++Microsoft.Common.props
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\microsoft.common.props
 ++Microsoft.NET.Sdk.props
@@ -1374,8 +1379,8 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debu
 ++LeetCode.pdb
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\leetcode.pdb
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.pdb
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.pdb
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.pdb
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.pdb
 ++A. Mark the Photographer.txt
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\1705\a. mark the photographer.txt
 ++C. Mark and His Unfinished Essay.txt
@@ -1496,7 +1501,6 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debu
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\designtimeresolveassemblyreferencesinput.cache
 ++LeetCode.csproj.AssemblyReference.cache
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.csproj.assemblyreference.cache
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.csproj.assemblyreference.cache
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\leetcode.csproj.assemblyreference.cache
 ++LeetCode.csproj.CoreCompileInputs.cache
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.csproj.corecompileinputs.cache
@@ -1608,11 +1612,11 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debu
 ++LeetCode.deps.json
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.deps.json
 ++LeetCode.dll
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.dll
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.dll
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\ref\leetcode.dll
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\ref\leetcode.dll
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\refint\leetcode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\ref\leetcode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\ref\leetcode.dll
 ++LeetCode.runtimeconfig.json
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.runtimeconfig.json
 ++Find the Median.cs
@@ -1731,5 +1735,5 @@ i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studi
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
 ++Microsoft.QualityTools.Testing.Fakes.targets
 i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\microsoft\visualstudio\v17.0\fakes\microsoft.qualitytools.testing.fakes.targets
-++732. My Calendar III.cs
-i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\732. my calendar iii.cs
+++810. Chalkboard XOR Game.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\810. chalkboard xor game.cs

@@ -76,7 +76,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "lo", "eo" };
 var resW2 = new string[]
 {
-    "i","love","leetcode","apples"
+  "gin","zen","gig","msg"
 };
 
 var res1 = new int[] { 10, 3, 8, 9, 4 };
@@ -85,16 +85,14 @@ var res2 = new int[] { 14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0,
 
 
 Solution solution = new Solution();
-var list = new List<string>()
-{
- "abc", "1a", "1e", "e3", "99e2.5", "--6", "-+3", "95a54e53"
-}; 
+Console.WriteLine(solution.UniqueMorseRepresentations(resW2));
  
     
  
 
 public class Solution
 {
- 
+   
+
 }
 
