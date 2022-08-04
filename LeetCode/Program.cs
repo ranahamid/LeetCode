@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
+using System.Text.RegularExpressions;
 
 int[][] nums = new int[][]
           {
@@ -84,50 +85,22 @@ var res2 = new int[] { 14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0,
 
 
 Solution solution = new Solution();
-//Console.WriteLine(solution.MirrorReflection(3, 1));
-DFS_AjacencyList df= new DFS_AjacencyList();
-df.DFSGraph(pathsAdjacency);
-
-public class DFS_AjacencyList
+var list = new List<string>()
 {
-    public static List<char> Visited=new List<char>();
-    public static  List<char> result=new List<char>();
-    public void DFSGraph(List<(Char, List<Char>)> path)
-    {
-        DFS(path, 'A');
-        foreach (var item in result)
-            Console.Write(item + " ");
-    }
-    public static void DFS(List<(Char, List<Char>)> path, char start)
-    {
-        result.Add(start);
-        Visited.Add(start);
-        var childrens = path.Where(x => x.Item1 == start).Select(x => x.Item2).FirstOrDefault();
-        if (childrens != null)
-        {
-            foreach (var child in childrens)
-            {
-                if (!Visited.Contains(child))
-                {
-                    DFS(path, child);
-                }
-            }
-        }
-    }
+ "abc", "1a", "1e", "e3", "99e2.5", "--6", "-+3", "95a54e53"
+};
+foreach(var item in list)
+{
+    Console.WriteLine(solution.IsNumber(item));
 }
+
+
+ 
+    
+ 
+
 public class Solution
 {
    
-    //https://leetcode.com/problems/random-pick-index/
-    private List<int> list;
-    //public Solution(int[] nums)
-    //{
-    //    list = new List<int>(nums);
-    //}
-
-    public int Pick(int target)
-    {
-        return 0;
-    }
 }
 

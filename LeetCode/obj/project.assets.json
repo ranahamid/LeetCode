@@ -246,11 +246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\E\\Project\\Home\\LeetCode\\LeetCode\\LeetCode.csproj",
+      "projectUniqueName": "F:\\F\\Project\\LeetCode\\LeetCode\\LeetCode.csproj",
       "projectName": "LeetCode",
-      "projectPath": "E:\\E\\Project\\Home\\LeetCode\\LeetCode\\LeetCode.csproj",
+      "projectPath": "F:\\F\\Project\\LeetCode\\LeetCode\\LeetCode.csproj",
       "packagesPath": "C:\\Users\\RanaHamid\\.nuget\\packages\\",
-      "outputPath": "E:\\E\\Project\\Home\\LeetCode\\LeetCode\\obj\\",
+      "outputPath": "F:\\F\\Project\\LeetCode\\LeetCode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RanaHamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
