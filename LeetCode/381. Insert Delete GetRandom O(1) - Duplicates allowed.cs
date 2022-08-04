@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    /// <summary>
+    /// Runtime: 669 ms, faster than 48.00% of C# online submissions for Insert Delete GetRandom O(1) - Duplicates allowed.
+    /// Memory Usage: 100.1 MB, less than 84.00% of C# online submissions for Insert Delete GetRandom O(1) - Duplicates allowed.
+    /// </summary>
     public class RandomizedCollection
     {
         List<int> set;

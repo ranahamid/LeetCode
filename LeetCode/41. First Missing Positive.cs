@@ -9,8 +9,8 @@ namespace LeetCode
     internal class _41
     {
         /// <summary>
-        /// Runtime: 309 ms, faster than 75.20% of C# online submissions for First Missing Positive.
-        /// Memory Usage: 61.5 MB, less than 84.33% of C# online submissions for First Missing Positive.
+        /// Runtime: 260 ms, faster than 89.19% of C# online submissions for First Missing Positive.
+        /// Memory Usage: 68.5 MB, less than 33.46% of C# online submissions for First Missing Positive.
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>

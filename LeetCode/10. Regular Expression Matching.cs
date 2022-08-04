@@ -10,8 +10,8 @@ namespace LeetCode
     internal class _10
     {
         /// <summary>
-        /// Runtime: 134 ms, faster than 54.33% of C# online submissions for Regular Expression Matching.
-        /// Memory Usage: 39.9 MB, less than 12.98% of C# online submissions for Regular Expression Matching.
+        /// Runtime: 99 ms, faster than 84.43% of C# online submissions for Regular Expression Matching.
+        /// Memory Usage: 41.7 MB, less than 6.23% of C# online submissions for Regular Expression Matching.
         /// </summary>
         public class Solution
         {

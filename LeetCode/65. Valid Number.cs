@@ -9,8 +9,8 @@ namespace LeetCode
     internal class _65
     {
         /// <summary>
-        /// Runtime: 138 ms, faster than 31.51% of C# online submissions for Valid Number.
-        /// Memory Usage: 38.2 MB, less than 95.21% of C# online submissions for Valid Number.
+        /// Runtime: 73 ms, faster than 98.63% of C# online submissions for Valid Number.
+        /// Memory Usage: 41.4 MB, less than 15.07% of C# online submissions for Valid Number.
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>

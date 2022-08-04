@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace LeetCode
 {
     /// <summary>
-    /// Runtime: 519 ms, faster than 63.16% of C# online submissions for My Calendar III.
-    /// Memory Usage: 43.8 MB, less than 68.42% of C# online submissions for My Calendar III.
+    /// Runtime: 385 ms, faster than 73.68% of C# online submissions for My Calendar III.
+    /// Memory Usage: 52.1 MB, less than 15.79% of C# online submissions for My Calendar III.
     /// </summary>
     public class MyCalendarThree
     {
@@ -38,5 +38,4 @@ namespace LeetCode
             return max;
         }
     }
-
 }

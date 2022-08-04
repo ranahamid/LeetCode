@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace LeetCode.Contest__83
 {
     internal class _2350
-    { 
-        
+    {
+
         /// <summary>
-      /// Runtime: 430 ms, faster than 100.00% of C# online submissions for Shortest Impossible Sequence of Rolls.
-      /// Memory Usage: 50 MB, less than 100.00% of C# online submissions for Shortest Impossible Sequence of Rolls.
+        /// Runtime: 361 ms, faster than 53.49% of C# online submissions for Shortest Impossible Sequence of Rolls.
+       //// Memory Usage: 49.9 MB, less than 37.21% of C# online submissions for Shortest Impossible Sequence of Rolls.
       /// </summary>
       /// <param name="rolls"></param>
       /// <param name="k"></param>
