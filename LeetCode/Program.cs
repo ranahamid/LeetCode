@@ -76,7 +76,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "lo", "eo" };
 var resW2 = new string[]
 {
-"i","love","leetcode","apples"
+    "i","love","leetcode","apples"
 };
 
 var res1 = new int[] { 10, 3, 8, 9, 4 };
@@ -89,10 +89,9 @@ var list = new List<string>()
 {
  "abc", "1a", "1e", "e3", "99e2.5", "--6", "-+3", "95a54e53"
 };
-foreach(var item in list)
-{
-    Console.WriteLine(solution.IsNumber(item));
-}
+ 
+Console.WriteLine(solution.NewInteger(9));
+ 
 
 
  
@@ -101,6 +100,6 @@ foreach(var item in list)
 
 public class Solution
 {
-   
+  
 }
 
