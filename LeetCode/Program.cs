@@ -21,7 +21,6 @@ int[][] nums1 = new int[29][]
 new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new int[2] {9,9},new int[2] {21,4},new int[2] {24,2},new int[2] {12,11},new int[2] {2,5},new int[2] {24,12},new int[2] {25,7},new int[2] {7,13},new int[2] {14,9},new int[2] {23,15},new int[2] {18,17},new int[2] {22,16},new int[2] {4,14},new int[2] {14,17},new int[2] {25,11},new int[2] {12,16},new int[2] {29,3},new int[2] {22,11},new int[2] {29,2},new int[2] {24,2},new int[2] {24,15},new int[2] {7,14},new int[2] {7,3},new int[2] {7,14},new int[2] {1,3}
 };
 
-
 #region node
 
 //ListNode eig = new ListNode(3);
@@ -48,7 +47,6 @@ new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new i
 //ListNode list1 = new ListNode(3, two);
 
 #endregion
-
  
 var pathsMatrix = new List<List<int>>()
             {
@@ -86,13 +84,9 @@ var res2 = new int[] { 14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0,
 
 Solution solution = new Solution();
 Console.WriteLine(solution.UniqueMorseRepresentations(resW2));
- 
-    
- 
 
 public class Solution
 {
-   
-
+  
 }
 
