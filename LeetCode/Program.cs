@@ -47,7 +47,7 @@ new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new i
 //ListNode list1 = new ListNode(3, two);
 
 #endregion
- 
+
 var pathsMatrix = new List<List<int>>()
             {
                  new List<int>() { 0,1,0,0,0,1 },
@@ -77,16 +77,16 @@ var resW2 = new string[]
   "gin","zen","gig","msg"
 };
 
-var res1 = new int[] { 10, 3, 8, 9, 4 };
+var res1 = new int[] { 1, 2, 3 };
 var res2 = new int[] { 14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0, 3, 30, 9 };
 
 
 
 Solution solution = new Solution();
-Console.WriteLine(solution.UniqueMorseRepresentations(resW2));
+Console.WriteLine(solution.CombinationSum4(res1, 4));
 
 public class Solution
 {
-  
+
 }
 
