@@ -87,6 +87,6 @@ Console.WriteLine(solution.GetHint("1807", "7810"));
 
 public class Solution
 {
-  
+ 
 }
 
