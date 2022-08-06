@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCode.Algo_1
-{
-    
+{ 
     /// <summary>
     /// https://www.programiz.com/dsa/heap-sort#heap
     /// </summary>
@@ -29,6 +28,14 @@ namespace LeetCode.Algo_1
                 Heapify(arr, i, 0);
             }
         }
+        public static void MaxHeap(List<int> arr)
+        {
+            int n = arr.Count;
+            for (int i = n / 2 - 1; i >= 0; i--)
+            {
+                Heapify(arr, n, i);
+            }
+        }
         public static void Heapify(List<int> arr, int n, int i)
         {
             var largest = i;
@@ -47,18 +54,8 @@ namespace LeetCode.Algo_1
             {
                 (arr[largest], arr[i]) = (arr[i], arr[largest]);
                 Heapify(arr, n, largest);
-            }
-
-        }
-        public static void MaxHeap(List<int> arr)
-        {
-            int n= arr.Count;
-            for (int i = n / 2 - 1; i >= 0; i--)
-            {
-                Heapify(arr, n, i);
-            }
-        }
-
+            } 
+        } 
         public static void PrintHeap(List<int> arr)
         {
             foreach (int i in arr)
@@ -66,8 +63,6 @@ namespace LeetCode.Algo_1
                 Console.Write(i + " ");
             }
             Console.WriteLine();
-        }
-
-
+        } 
     }
 }

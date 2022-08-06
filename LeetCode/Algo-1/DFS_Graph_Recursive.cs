@@ -34,6 +34,7 @@ namespace LeetCode.Algo_1
         {
             result.Add(start);
             Visited.Add(start);
+
             var childrens = path.Where(x => x.Item1 == start).Select(x => x.Item2).FirstOrDefault();
             if (childrens != null)
             {
