@@ -41,4 +41,8 @@
     <PackageReference Include="System.Collections" Version="4.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contest 84\" />
+  </ItemGroup>
+
 </Project>
