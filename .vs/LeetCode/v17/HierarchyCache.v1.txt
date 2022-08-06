@@ -1,0 +1,1739 @@
+﻿++Solution 'LeetCode' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:LeetCode.sln
+++LeetCode
+i:{00000000-0000-0000-0000-000000000000}:LeetCode
+++Dependencies
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>1649
+++Imports
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>773
+++Algo-1
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\
+++BFS Graph Adjacency Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\bfs graph adjacency matrix.cs
+++BFS Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\bfs tree.cs
+++BFS_Graph Adjacency List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\bfs_graph adjacency list.cs
+++BFSLEVEL Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\bfslevel tree.cs
+++DFS_Graph_Iterative.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\dfs_graph_iterative.cs
+++DFS_Graph_Recursive.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\dfs_graph_recursive.cs
+++GCD_LCM.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\gcd_lcm.cs
+++Heap.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\heap.cs
+++HeapSort.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\heapsort.cs
+++permutations.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\permutations.cs
+++PriorityQueue.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\priorityqueue.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\learn\priorityqueue.cs
+++Valid Heap.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\algo-1\valid heap.cs
+++bin
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\
+++Codeforces
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\
+++Contest 291
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 291\
+++Contest 302
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 302\
+++Contest- 83
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\
+++2350. Shortest Impossible Sequence of Rolls.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\2350. shortest impossible sequence of rolls.cs
+++6128. Best Poker Hand.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6128. best poker hand.cs
+++6129. Number of Zero-Filled Subarrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6129. number of zero-filled subarrays.cs
+++6130. Design a Number Container System.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest- 83\6130. design a number container system.cs
+++contest-300
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-300\
+++contest-304
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-304\
+++contest-81
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-81\
+++Go
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\
+++HackerRank
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\
+++Learn
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\learn\
+++obj
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\
+++Premium
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\
+++1064. Fixed Point.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1064. fixed point.cs
+++1065. Index Pairs of a String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1065. index pairs of a string.cs
+++1068. Product Sales Analysis I.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1068. product sales analysis i.sql
+++1069. Product Sales Analysis II.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1069. product sales analysis ii.sql
+++1070. Product Sales Analysis III.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1070. product sales analysis iii.sql
+++1075. Project Employees I.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1075. project employees i.sql
+++1085. Sum of Digits in the Minimum Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1085. sum of digits in the minimum number.cs
+++1086. High Five.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1086. high five.cs
+++1099. Two Sum Less Than K.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1099. two sum less than k.cs
+++1113. Reported Posts.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1113. reported posts.sql
+++1118. Number of Days in a Month.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1118. number of days in a month.cs
+++1119. Remove Vowels from a String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1119. remove vowels from a string.cs
+++1133. Largest Unique Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1133. largest unique number.cs
+++1134. Armstrong Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1134. armstrong number.cs
+++1150. Check If a Number Is Majority Element in a Sorted Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1150. check if a number is majority element in a sorted array.cs
+++1165. Single-Row Keyboard.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1165. single-row keyboard.cs
+++1173. Immediate Food Delivery I.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1173. immediate food delivery i.sql
+++1180. Count Substrings with Only One Distinct Letter.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1180. count substrings with only one distinct letter.cs
+++1196. How Many Apples Can You Put into the Basket.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1196. how many apples can you put into the basket.cs
+++1211. Queries Quality and Percentage.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1211. queries quality and percentage.sql
+++1213. Intersection of Three Sorted Arrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1213. intersection of three sorted arrays.cs
+++1241. Number of Comments per Post.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1241. number of comments per post.sql
+++1251. Average Selling Price.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1251. average selling price.sql
+++1271. Hexspeak.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1271. hexspeak.cs
+++1279. Traffic Light Controlled Intersection.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1279. traffic light controlled intersection.cs
+++1280. Students and Examinations.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1280. students and examinations.sql
+++1303. Find the Team Size.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1303. find the team size.sql
+++1322. Ads Performance.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1322. ads performance.sql
+++1350. Students With Invalid Departments.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1350. students with invalid departments.sql
+++1378. Replace Employee ID With The Unique Identifier.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1378. replace employee id with the unique identifier.sql
+++1421. NPV Queries.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1421. npv queries.sql
+++1435. Create a Session Bar Chart.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1435. create a session bar chart.sql
+++1445. Apples  Oranges.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1445. apples  oranges.sql
+++1469. Find All The Lonely Nodes.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1469. find all the lonely nodes.cs
+++1474. Delete N Nodes After M Nodes of a Linked List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1474. delete n nodes after m nodes of a linked list.cs
+++1479. Sales by Day of the Week.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1479. sales by day of the week.sql
+++1511. Customer Order Frequency.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1511. customer order frequency.sql
+++1543. Fix Product Name Format.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1543. fix product name format.sql
+++1565. Unique Orders and Customers Per Month.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1565. unique orders and customers per month.sql
+++1571. Warehouse Manager.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1571. warehouse manager.sql
+++1623. All Valid Triplets That Can Represent a Country.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1623. all valid triplets that can represent a country.sql
+++1633. Percentage of Users Attended a Contest.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1633. percentage of users attended a contest.sql
+++1661. Average Time of Process per Machine.sql.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1661. average time of process per machine.sql.sql
+++1683. Invalid Tweets.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1683. invalid tweets.sql
+++1708. Largest Subarray Length K.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1708. largest subarray length k.cs
+++1777. Product's Price for Each Store.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1777. product's price for each store.sql
+++1789. Primary Department for Each Employee.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1789. primary department for each employee.sql
+++1821. Find Customers With Positive Revenue this Year.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1821. find customers with positive revenue this year.sql
+++1939. Users That Actively Request Confirmation Messages.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1939. users that actively request confirmation messages.sql
+++1978. Employees Whose Manager Left the Company.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\1978. employees whose manager left the company.sql
+++2026. Low-Quality Problems.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\2026. low-quality problems.sql
+++2072. The Winner University.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\2072. the winner university.sql
+++2229. Check if an Array Is Consecutive.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\2229. check if an array is consecutive.cs
+++2329. Product Sales Analysis V.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\2329. product sales analysis v.sql
+++2330. Valid Palindrome IV.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\2330. valid palindrome iv.cs
+++2339. All the Matches of the League.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\2339. all the matches of the league.sql
+++2356. Number of Unique Subjects Taught by Each Teacher.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\2356. number of unique subjects taught by each teacher.sql
+++243. Shortest Word Distance.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\243. shortest word distance.cs
+++266. Palindrome Permutation.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\266. palindrome permutation.cs
+++293. Flip Game.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\293. flip game.cs
+++346. Moving Average from Data Stream.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\346. moving average from data stream.cs
+++359. Logger Rate Limiter.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\359. logger rate limiter.cs
+++362. Design Hit Counter.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\362. design hit counter.cs
+++577. Employee Bonus.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\577. employee bonus.sql
+++610. Triangle Judgement.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\610. triangle judgement.sql
+++613. Shortest Distance in a Line.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\613. shortest distance in a line.sql
+++619. Biggest Single Number.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\619. biggest single number.sql
+++660. Remove 9.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\660. remove 9.cs
+++760. Find Anagram Mappings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\premium\760. find anagram mappings.cs
+++SQL
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\
+++1 Two Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1 two sum.cs
+++10. Regular Expression Matching.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\10. regular expression matching.cs
+++100. Same Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\100. same tree.cs
+++1002. Find Common Characters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1002. find common characters.cs
+++1009. Complement of Base 10 Integer.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1009. complement of base 10 integer.cs
+++101. Symmetric Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\101. symmetric tree.cs
+++1013. Partition Array Into Three Parts With Equal Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1013. partition array into three parts with equal sum.cs
+++1017. Convert to Base -2.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1017. convert to base -2.cs
+++102. Binary Tree Level Order Traversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\102. binary tree level order traversal.cs
+++1021. Remove Outermost Parentheses.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1021. remove outermost parentheses.cs
+++1022. Sum of Root To Leaf Binary Numbers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1022. sum of root to leaf binary numbers.cs
+++103. Binary Tree Zigzag Level Order Traversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\103. binary tree zigzag level order traversal.cs
+++1046. Last Stone Weight.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1046. last stone weight.cs
+++1047. Remove All Adjacent Duplicates In String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1047. remove all adjacent duplicates in string.cs
+++1051 Height Checker.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1051 height checker.cs
+++107. Binary Tree Level Order Traversal II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\107. binary tree level order traversal ii.cs
+++1071. Greatest Common Divisor of Strings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1071. greatest common divisor of strings.cs
+++1078. Occurrences After Bigram.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1078. occurrences after bigram.cs
+++108. Convert Sorted Array to Binary Search Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\108. convert sorted array to binary search tree.cs
+++109. Convert Sorted List to Binary Search Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\109. convert sorted list to binary search tree.cs
+++11 Container With Most Water.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\11 container with most water.cs
+++1103. Distribute Candies to People.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1103. distribute candies to people.cs
+++1108 Defanging an IP Address.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1108 defanging an ip address.cs
+++111. Minimum Depth of Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\111. minimum depth of binary tree.cs
+++112. Path Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\112. path sum.cs
+++1122. Relative Sort Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1122. relative sort array.cs
+++1154. Day of the Year.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1154. day of the year.cs
+++1160. Find Words That Can Be Formed by Characters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1160. find words that can be formed by characters.cs
+++1161. Maximum Level Sum of a Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1161. maximum level sum of a binary tree.cs
+++118. Pascal's Triangle.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\118. pascal's triangle.cs
+++1184. Distance Between Bus Stops.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1184. distance between bus stops.cs
+++1185. Day of the Week.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1185. day of the week.cs
+++1189. Maximum Number of Balloons.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1189. maximum number of balloons.cs
+++119. Pascal's Triangle II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\119. pascal's triangle ii.cs
+++12 Integer to Roman.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\12 integer to roman.cs
+++1200. Minimum Absolute Difference.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1200. minimum absolute difference.cs
+++1207 Unique Number of Occurrences.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1207 unique number of occurrences.cs
+++121. Best Time to Buy and Sell Stock.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\121. best time to buy and sell stock.cs
+++1217. Minimum Cost to Move Chips to The Same Position.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1217. minimum cost to move chips to the same position.cs
+++122. Best Time to Buy and Sell Stock II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\122. best time to buy and sell stock ii.cs
+++1221 Split a String in Balanced Strings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1221 split a string in balanced strings.cs
+++123. Best Time to Buy and Sell Stock III.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\123. best time to buy and sell stock iii.cs
+++1232. Check If It Is a Straight Line.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1232. check if it is a straight line.cs
+++125 Valid Palindrome.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\125 valid palindrome.cs
+++1252 Cells with Odd Values in a Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1252 cells with odd values in a matrix.cs
+++1256. Encode Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1256. encode number.cs
+++1260. Shift 2D Grid.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1260. shift 2d grid.cs
+++1266. Minimum Time Visiting All Points.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1266. minimum time visiting all points.cs
+++128. Longest Consecutive Sequence.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\128. longest consecutive sequence.cs
+++1281 Subtract the Product and Sum of Digits of an Integer.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1281 subtract the product and sum of digits of an integer.cs
+++1290 Convert Binary Number in a Linked List to Integer.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1290 convert binary number in a linked list to integer.cs
+++1295 Find Numbers with Even Number of Digits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1295 find numbers with even number of digits.cs
+++1299 Replace Elements with Greatest Element on Right Side.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1299 replace elements with greatest element on right side.cs
+++13 Roman to Integer.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\13 roman to integer.cs
+++1304 Find N Unique Integers Sum up to Zero.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1304 find n unique integers sum up to zero.cs
+++1309 Decrypt String from Alphabet to Integer Mapping.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1309 decrypt string from alphabet to integer mapping.cs
+++1313 Decompress Run-Length Encoded List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1313 decompress run-length encoded list.cs
+++1317. Convert Integer to the Sum of Two No-Zero Integers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1317. convert integer to the sum of two no-zero integers.cs
+++1323 Maximum 69 Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1323 maximum 69 number.cs
+++1332 Remove Palindromic Subsequences.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1332 remove palindromic subsequences.cs
+++1342 Number of Steps to Reduce a Number to Zero.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1342 number of steps to reduce a number to zero.cs
+++1351 Count Negative Numbers in a Sorted Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1351 count negative numbers in a sorted matrix.cs
+++1356 Sort Integers by The Number of 1 Bits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1356 sort integers by the number of 1 bits.cs
+++136 Single Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\136 single number.cs
+++1365 How Many Numbers Are Smaller Than the Current Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1365 how many numbers are smaller than the current number.cs
+++1374 Generate a String With Characters That Have Odd Counts.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1374 generate a string with characters that have odd counts.cs
+++1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1379. find a corresponding node of a binary tree in a clone of that tree.cs
+++1380. Lucky Numbers in a Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1380. lucky numbers in a matrix.cs
+++1385. Find the Distance Value Between Two Arrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1385. find the distance value between two arrays.cs
+++1389 Create Target Array in the Given Order.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1389 create target array in the given order.cs
+++1394. Find Lucky Integer in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1394. find lucky integer in an array.cs
+++1399. Count Largest Group.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1399. count largest group.cs
+++14. Longest Common Prefix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\14. longest common prefix.cs
+++1403. Minimum Subsequence in Non-Increasing Order.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1403. minimum subsequence in non-increasing order.cs
+++1408. String Matching in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1408. string matching in an array.cs
+++141  Linked List Cycle.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\141  linked list cycle.cs
+++1413. Minimum Value to Get Positive Step by Step Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1413. minimum value to get positive step by step sum.cs
+++1417. Reformat The String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1417. reformat the string.cs
+++142 Linked List Cycle II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\142 linked list cycle ii.cs
+++1422. Maximum Score After Splitting a String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1422. maximum score after splitting a string.cs
+++1423 Maximum Points You Can Obtain from Cards.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1423 maximum points you can obtain from cards.cs
+++1431 Kids With the Greatest Number of Candies.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1431 kids with the greatest number of candies.cs
+++1436 Destination City.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1436 destination city.cs
+++144. Binary Tree Preorder Traversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\144. binary tree preorder traversal.cs
+++1441. Build an Array With Stack Operations.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1441. build an array with stack operations.cs
+++1446. Consecutive Characters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1446. consecutive characters.cs
+++145. Binary Tree Postorder Traversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\145. binary tree postorder traversal.cs
+++1450 Number of Students Doing Homework at a Given Time.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1450 number of students doing homework at a given time.cs
+++1452. People Whose List of Favorite Companies Is Not a Subset of Another List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1452. people whose list of favorite companies is not a subset of another list.cs
+++1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1455. check if a word occurs as a prefix of any word in a sentence.cs
+++1460. Make Two Arrays Equal by Reversing Sub-arrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1460. make two arrays equal by reversing sub-arrays.cs
+++1464 Maximum Product of Two Elements in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1464 maximum product of two elements in an array.cs
+++1470 Shuffle the Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1470 shuffle the array.cs
+++1475 Final Prices With a Special Discount in a Shop.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1475 final prices with a special discount in a shop.cs
+++1480 Running Sum of 1d Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1480 running sum of 1d array.cs
+++1486 XOR Operation in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1486 xor operation in an array.cs
+++1491. Average Salary Excluding the Minimum and Maximum Salary.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1491. average salary excluding the minimum and maximum salary.cs
+++1496. Path Crossing.CS
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1496. path crossing.cs
+++15 Three_Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\15 three_sum.cs
+++150. Evaluate Reverse Polish Notation.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\150. evaluate reverse polish notation.cs
+++1502. Can Make Arithmetic Progression From Sequence.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1502. can make arithmetic progression from sequence.cs
+++1507. Reformat Date.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1507. reformat date.cs
+++151. Reverse Words in a String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\151. reverse words in a string.cs
+++1512 Number of Good Pairs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1512 number of good pairs.cs
+++1518. Water Bottles.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1518. water bottles.cs
+++1522. Diameter of N-Ary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1522. diameter of n-ary tree.cs
+++1523. Count Odd Numbers in an Interval Range.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1523. count odd numbers in an interval range.cs
+++1526. Minimum Number of Increments on Subarrays to Form a Target Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1526. minimum number of increments on subarrays to form a target array.cs
+++1528 Shuffle String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1528 shuffle string.cs
+++153. Find Minimum in Rotated Sorted Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\153. find minimum in rotated sorted array.cs
+++1533. Find the Index of the Large Integer.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1533. find the index of the large integer.cs
+++1534 Count Good Triplets.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1534 count good triplets.cs
+++1539. Kth Missing Positive Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1539. kth missing positive number.cs
+++154. Find Minimum in Rotated Sorted Array II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\154. find minimum in rotated sorted array ii.cs
+++1544. Make The String Great.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1544. make the string great.cs
+++155. Min Stack.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\155. min stack.cs
+++1550. Three Consecutive Odds.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1550. three consecutive odds.cs
+++1556. Thousand Separator.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1556. thousand separator.cs
+++1572 Matrix Diagonal Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1572 matrix diagonal sum.cs
+++1581 Customer Who Visited but Did Not Make Any Transactions.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1581 customer who visited but did not make any transactions.cs
+++1588 Sum of All Odd Length Subarrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1588 sum of all odd length subarrays.cs
+++1598. Crawler Log Folder.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1598. crawler log folder.cs
+++1603 Design Parking System.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1603 design parking system.cs
+++1608. Special Array With X Elements Greater Than or Equal X.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1608. special array with x elements greater than or equal x.cs
+++1614 Maximum Nesting Depth of the Parentheses.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1614 maximum nesting depth of the parentheses.cs
+++1619. Mean of Array After Removing Some Elements.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1619. mean of array after removing some elements.cs
+++162 Find Peak Element.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\162 find peak element.cs
+++1624. Largest Substring Between Two Equal Characters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1624. largest substring between two equal characters.cs
+++1636. Sort Array by Increasing Frequency.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1636. sort array by increasing frequency.cs
+++165 Compare Version Numbers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\165 compare version numbers.cs
+++1652. Defuse the Bomb.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1652. defuse the bomb.cs
+++1656 Design an Ordered Stream.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1656 design an ordered stream.cs
+++1662 Check If Two String Arrays are Equivalent.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1662 check if two string arrays are equivalent.cs
+++167. Two Sum II - Input Array Is Sorted.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\167. two sum ii - input array is sorted.cs
+++1672 Richest Customer Wealth.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1672 richest customer wealth.cs
+++1678 Goal Parser Interpretation.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1678 goal parser interpretation.cs
+++168. Excel Sheet Column Title.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\168. excel sheet column title.cs
+++1684 Count the Number of Consistent Strings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1684 count the number of consistent strings.cs
+++1688 Count of Matches in Tournament.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1688 count of matches in tournament.cs
+++1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1689 partitioning into minimum number of deci-binary numbers.cs
+++169. Majority Element.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\169. majority element.cs
+++1693 Daily Leads and Partners.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1693 daily leads and partners.cs
+++17. Letter Combinations of a Phone Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\17. letter combinations of a phone number.cs
+++1700. Number of Students Unable to Eat Lunch.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1700. number of students unable to eat lunch.cs
+++1704 Determine if String Halves Are Alike.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1704 determine if string halves are alike.cs
+++171. Excel Sheet Column Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\171. excel sheet column number.cs
+++1710. Maximum Units on a Truck.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1710. maximum units on a truck.cs
+++1716. Calculate Money in Leetcode Bank.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1716. calculate money in leetcode bank.cs
+++1720 Decode XORed Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1720 decode xored array.cs
+++1732 Find the Highest Altitude.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1732 find the highest altitude.cs
+++1741 Find Total Time Spent by Each Employee.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1741 find total time spent by each employee.cs
+++1742 Maximum Number of Balls in a Box.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1742 maximum number of balls in a box.cs
+++1748 Sum of Unique Elements.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1748 sum of unique elements.cs
+++1757 Recyclable and Low Fat Products.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1757 recyclable and low fat products.cs
+++1768 Merge Strings Alternately.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1768 merge strings alternately.cs
+++1773 Count Items Matching a Rule.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1773 count items matching a rule.cs
+++1779. Find Nearest Point That Has the Same X or Y Coordinate.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1779. find nearest point that has the same x or y coordinate.cs
+++1784. Check if Binary String Has at Most One Segment of Ones.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1784. check if binary string has at most one segment of ones.cs
+++179 Largest Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\179 largest number.cs
+++1790. Check if One String Swap Can Make Strings Equal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1790. check if one string swap can make strings equal.cs
+++1791 Find Center of Star Graph.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1791 find center of star graph.cs
+++1795 Rearrange Products Table.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1795 rearrange products table.sql
+++1800. Maximum Ascending Subarray Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1800. maximum ascending subarray sum.cs
+++1805. Number of Different Integers in a String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1805. number of different integers in a string.cs
+++1812 Determine Color of a Chessboard Square.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1812 determine color of a chessboard square.cs
+++1816 Truncate Sentence.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1816 truncate sentence.cs
+++1822. Sign of the Product of an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1822. sign of the product of an array.cs
+++1827 Minimum Operations to Make the Array Increasing.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1827 minimum operations to make the array increasing.cs
+++1832 Check if the Sentence Is Pangram.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1832 check if the sentence is pangram.cs
+++1835. Find XOR Sum of All Pairs Bitwise AND.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1835. find xor sum of all pairs bitwise and.cs
+++1837 Sum of Digits in Base K.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1837 sum of digits in base k.cs
+++1844 Replace All Digits with Characters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1844 replace all digits with characters.cs
+++1859 Sorting the Sentence.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1859 sorting the sentence.cs
+++1863 Sum of All Subset XOR Totals.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1863 sum of all subset xor totals.cs
+++1869. Longer Contiguous Segments of Ones than Zeros.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1869. longer contiguous segments of ones than zeros.cs
+++1876. Substrings of Size Three with Distinct Characters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1876. substrings of size three with distinct characters.cs
+++1880 Check if Word Equals Summation of Two Words.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1880 check if word equals summation of two words.cs
+++1886. Determine Whether Matrix Can Be Obtained By Rotation.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1886. determine whether matrix can be obtained by rotation.cs
+++189 Rotate Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\189 rotate array.cs
+++1897. Redistribute Characters to Make All Strings Equal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1897. redistribute characters to make all strings equal.cs
+++19 Remove Nth Node From End of List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\19 remove nth node from end of list.cs
+++190 Reverse Bits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\190 reverse bits.cs
+++1903. Largest Odd Number in String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1903. largest odd number in string.cs
+++1909. Remove One Element to Make the Array Strictly Increasing.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1909. remove one element to make the array strictly increasing.cs
+++191 Number of 1 Bits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\191 number of 1 bits.cs
+++1913 Maximum Product Difference Between Two Pairs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1913 maximum product difference between two pairs.cs
+++1920 Build Array from Permutation.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1920 build array from permutation.cs
+++1925. Count Square Sum Triples.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1925. count square sum triples.cs
+++1929 Concatenation of Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1929 concatenation of array.cs
+++1935. Maximum Number of Words You Can Type.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1935. maximum number of words you can type.cs
+++1941 Check if All Characters Have Equal Number of Occurrences.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1941 check if all characters have equal number of occurrences.cs
+++1945. Sum of Digits of String After Convert.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1945. sum of digits of string after convert.cs
+++1952. Three Divisors.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1952. three divisors.cs
+++1957. Delete Characters to Make Fancy String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1957. delete characters to make fancy string.cs
+++1961. Check If String Is a Prefix of Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1961. check if string is a prefix of array.cs
+++1963. Minimum Number of Swaps to Make the String Balanced.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1963. minimum number of swaps to make the string balanced.cs
+++1967 Number of Strings That Appear as Substrings in Word.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1967 number of strings that appear as substrings in word.cs
+++1974 Minimum Time to Type Word Using Special Typewriter.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1974 minimum time to type word using special typewriter.cs
+++1979. Find Greatest Common Divisor of Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1979. find greatest common divisor of array.cs
+++199. Binary Tree Right Side View.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\199. binary tree right side view.cs
+++1991. Find the Middle Index in Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\1991. find the middle index in array.cs
+++2 Add Two Numbers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2 add two numbers.cs
+++20. Valid Parentheses.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\20. valid parentheses.cs
+++2000 Reverse Prefix of Word.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2000 reverse prefix of word.cs
+++2005. Subtree Removal Game with Fibonacci Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2005. subtree removal game with fibonacci tree.cs
+++2006 Count Number of Pairs With Absolute Difference K.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2006 count number of pairs with absolute difference k.cs
+++201 Bitwise AND of Numbers Range.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\201 bitwise and of numbers range.cs
+++2011 Final Value of Variable After Performing Operations.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2011 final value of variable after performing operations.cs
+++202. Happy Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\202. happy number.cs
+++2022. Convert 1D Array Into 2D Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2022. convert 1d array into 2d array.cs
+++203. Remove Linked List Elements.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\203. remove linked list elements.cs
+++2032 Two Out of Three.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2032 two out of three.cs
+++2037 Minimum Number of Moves to Seat Everyone.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2037 minimum number of moves to seat everyone.cs
+++204. Count Primes.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\204. count primes.cs
+++205 Isomorphic Strings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\205 isomorphic strings.cs
+++2053. Kth Distinct String in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2053. kth distinct string in an array.cs
+++2057. Smallest Index With Equal Value.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2057. smallest index with equal value.cs
+++206 Reverse Linked List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\206 reverse linked list.cs
+++2068. Check Whether Two Strings are Almost Equivalent.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2068. check whether two strings are almost equivalent.cs
+++2073. Time Needed to Buy Tickets.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2073. time needed to buy tickets.cs
+++2078. Two Furthest Houses With Different Colors.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2078. two furthest houses with different colors.cs
+++208. Implement Trie (Prefix Tree).cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\208. implement trie (prefix tree).cs
+++2082. The Number of Rich Customers.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2082. the number of rich customers.sql
+++2085. Count Common Words With One Occurrence.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2085. count common words with one occurrence.cs
+++2089 Find Target Indices After Sorting Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2089 find target indices after sorting array.cs
+++21 Merge Two Sorted Lists.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\21 merge two sorted lists.cs
+++2103. Rings and Rods.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2103. rings and rods.cs
+++2108 Find First Palindromic String in the Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2108 find first palindromic string in the array.cs
+++2114 Maximum Number of Words Found in Sentences.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2114 maximum number of words found in sentences.cs
+++2119 A Number After a Double Reversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2119 a number after a double reversal.cs
+++2124. Check if All A's Appears Before All B's.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2124. check if all a's appears before all b's.cs
+++2129. Capitalize the Title.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2129. capitalize the title.cs
+++2138. Divide a String Into Groups of Size k.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2138. divide a string into groups of size k.cs
+++2144. Minimum Cost of Buying Candies With Discount.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2144. minimum cost of buying candies with discount.cs
+++2148. Count Elements With Strictly Smaller and Greater Elements.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2148. count elements with strictly smaller and greater elements.cs
+++215 Kth Largest Element in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\215 kth largest element in an array.cs
+++2154 Keep Multiplying Found Values by Two.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2154 keep multiplying found values by two.cs
+++2160 Minimum Sum of Four Digit Number After Splitting Digits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2160 minimum sum of four digit number after splitting digits.cs
+++2164. Sort Even and Odd Indices Independently.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2164. sort even and odd indices independently.cs
+++2169 Count Operations to Obtain Zero.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2169 count operations to obtain zero.cs
+++217 Contains Duplicate.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\217 contains duplicate.cs
+++2176 Count Equal and Divisible Pairs in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2176 count equal and divisible pairs in an array.cs
+++2180. Count Integers With Even Digit Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2180. count integers with even digit sum.cs
+++2181. Merge Nodes in Between Zeros.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2181. merge nodes in between zeros.cs
+++2185 Counting Words With a Given Prefix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2185 counting words with a given prefix.cs
+++219 Contains Duplicate II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\219 contains duplicate ii.cs
+++2190. Most Frequent Number Following Key In an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2190. most frequent number following key in an array.cs
+++2194. Cells in a Range on an Excel Sheet.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2194. cells in a range on an excel sheet.cs
+++2206 Divide Array Into Equal Pairs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2206 divide array into equal pairs.cs
+++2210. Count Hills and Valleys in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2210. count hills and valleys in an array.cs
+++2215. Find the Difference of Two Arrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2215. find the difference of two arrays.cs
+++2220 Minimum Bit Flips to Convert Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2220 minimum bit flips to convert number.cs
+++2221. Find Triangular Sum of an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2221. find triangular sum of an array.cs
+++2224. Minimum Number of Operations to Convert Time.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2224. minimum number of operations to convert time.cs
+++2235 Add Two Integers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2235 add two integers.cs
+++2236 Root Equals Sum of Children.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2236 root equals sum of children.cs
+++2243. Calculate Digit Sum of a String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2243. calculate digit sum of a string.cs
+++2248. Intersection of Multiple Arrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2248. intersection of multiple arrays.cs
+++225. Implement Stack using Queues.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\225. implement stack using queues.cs
+++2255 Count Prefixes of a Given String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2255 count prefixes of a given string.cs
+++226. Invert Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\226. invert binary tree.cs
+++2264. Largest 3-Same-Digit Number in String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2264. largest 3-same-digit number in string.cs
+++2269. Find the K-Beauty of a Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2269. find the k-beauty of a number.cs
+++2278 Percentage of Letter in String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2278 percentage of letter in string.cs
+++2283 Check if Number Has Equal Digit Count and Digit Value.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2283 check if number has equal digit count and digit value.cs
+++229. Majority Element II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\229. majority element ii.cs
+++2293. Min Max Game.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2293. min max game.cs
+++2299 Strong Password Checker II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2299 strong password checker ii.cs
+++230. Kth Smallest Element in a BST.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\230. kth smallest element in a bst.cs
+++2303. Calculate Amount Paid in Taxes.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2303. calculate amount paid in taxes.cs
+++2309 Greatest English Letter in Upper and Lower Case.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2309 greatest english letter in upper and lower case.cs
+++231 Power of Two.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\231 power of two.cs
+++2319. Check if Matrix Is X-Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2319. check if matrix is x-matrix.cs
+++232. Implement Queue using Stacks.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\232. implement queue using stacks.cs
+++2331. Evaluate Boolean Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2331. evaluate boolean binary tree.cs
+++2335. Minimum Amount of Time to Fill Cups.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2335. minimum amount of time to fill cups.cs
+++2336. Smallest Number in Infinite Set.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2336. smallest number in infinite set.cs
+++235. Lowest Common Ancestor of a Binary Search Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\235. lowest common ancestor of a binary search tree.cs
+++2351. First Letter to Appear Twice.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2351. first letter to appear twice.cs
+++2352. Equal Row and Column Pairs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2352. equal row and column pairs.cs
+++2353. Design a Food Rating System.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\2353. design a food rating system.cs
+++237. Delete Node in a Linked List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\237. delete node in a linked list.cs
+++242. Valid Anagram.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\242. valid anagram.cs
+++258 Add Digits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\258 add digits.cs
+++26 Remove Duplicates from Sorted Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\26 remove duplicates from sorted array.cs
+++263 Ugly Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\263 ugly number.cs
+++268 Missing Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\268 missing number.cs
+++27 Remove Element.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\27 remove element.cs
+++271. Encode and Decode Strings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\271. encode and decode strings.cs
+++278. First Bad Version.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\278. first bad version.cs
+++28. Implement strStr().cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\28. implement strstr().cs
+++283 Move Zeroes.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\283 move zeroes.cs
+++287 Find the Duplicate Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\287 find the duplicate number.cs
+++29. Divide Two Integers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\29. divide two integers.cs
+++290. Word Pattern.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\290. word pattern.cs
+++292 Nim Game.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\292 nim game.cs
+++3 Longest Substring Without Repeating Characters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\3 longest substring without repeating characters.cs
+++303 Range Sum Query - Immutable.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\303 range sum query - immutable.cs
+++32. Longest Valid Parentheses.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\32. longest valid parentheses.cs
+++326. Power of Three.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\326. power of three.cs
+++33 Search in Rotated Sorted Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\33 search in rotated sorted array.cs
+++338 Counting Bits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\338 counting bits.cs
+++34 Find First and Last Position of Element in Sorted Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\34 find first and last position of element in sorted array.cs
+++342. Power of Four.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\342. power of four.cs
+++344 Reverse String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\344 reverse string.cs
+++349. Intersection of Two Arrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\349. intersection of two arrays.cs
+++35 Search Insert Position.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\35 search insert position.cs
+++350. Intersection of Two Arrays II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\350. intersection of two arrays ii.cs
+++36. Valid Sudoku.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\36. valid sudoku.cs
+++367. Valid Perfect Square.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\367. valid perfect square.cs
+++370. Range Addition.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\370. range addition.cs
+++374. Guess Number Higher or Lower.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\374. guess number higher or lower.cs
+++378. Kth Smallest Element in a Sorted Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\378. kth smallest element in a sorted matrix.cs
+++380. Insert Delete GetRandom O(1).cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\380. insert delete getrandom o(1).cs
+++381. Insert Delete GetRandom O(1) - Duplicates allowed.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\381. insert delete getrandom o(1) - duplicates allowed.cs
+++383. Ransom Note.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\383. ransom note.cs
+++384. Shuffle an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\384. shuffle an array.cs
+++387. First Unique Character in a String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\387. first unique character in a string.cs
+++389. Find the Difference.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\389. find the difference.cs
+++392. Is Subsequence.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\392. is subsequence.cs
+++4. Median of Two Sorted Arrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\4. median of two sorted arrays.cs
+++401. Binary Watch.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\401. binary watch.cs
+++404. Sum of Left Leaves.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\404. sum of left leaves.cs
+++409. Longest Palindrome.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\409. longest palindrome.cs
+++41. First Missing Positive.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\41. first missing positive.cs
+++412. Fizz Buzz.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\412. fizz buzz.cs
+++429. N-ary Tree Level Order Traversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\429. n-ary tree level order traversal.cs
+++441. Arranging Coins.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\441. arranging coins.cs
+++442. Find All Duplicates in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\442. find all duplicates in an array.cs
+++448. Find All Numbers Disappeared in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\448. find all numbers disappeared in an array.cs
+++458. Poor Pigs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\458. poor pigs.cs
+++46. Permutations.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\46. permutations.cs
+++461 Hamming Distance.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\461 hamming distance.cs
+++462. Minimum Moves to Equal Array Elements II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\462. minimum moves to equal array elements ii.cs
+++47. Permutations II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\47. permutations ii.cs
+++476. Number Complement.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\476. number complement.cs
+++485. Max Consecutive Ones.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\485. max consecutive ones.cs
+++49 Group Anagrams.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\49 group anagrams.cs
+++492. Construct the Rectangle.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\492. construct the rectangle.cs
+++495. Teemo Attacking.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\495. teemo attacking.cs
+++496. Next Greater Element I.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\496. next greater element i.cs
+++500. Keyboard Row.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\500. keyboard row.cs
+++504. Base 7.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\504. base 7.cs
+++506. Relative Ranks.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\506. relative ranks.cs
+++509 Fibonacci Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\509 fibonacci number.cs
+++520. Detect Capital.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\520. detect capital.cs
+++521. Longest Uncommon Subsequence I.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\521. longest uncommon subsequence i.cs
+++53 Maximum Subarray.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\53 maximum subarray.cs
+++541. Reverse String II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\541. reverse string ii.cs
+++543. Diameter of Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\543. diameter of binary tree.cs
+++557 Reverse Words in a String III.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\557 reverse words in a string iii.cs
+++561 Array Partition I.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\561 array partition i.cs
+++566. Reshape the Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\566. reshape the matrix.cs
+++575. Distribute Candies.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\575. distribute candies.cs
+++58 Length of Last Word.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\58 length of last word.cs
+++589. N-ary Tree Preorder Traversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\589. n-ary tree preorder traversal.cs
+++590. N-ary Tree Postorder Traversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\590. n-ary tree postorder traversal.cs
+++598. Range Addition II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\598. range addition ii.cs
+++60. Permutation Sequence.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\60. permutation sequence.cs
+++605. Can Place Flowers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\605. can place flowers.cs
+++606. Construct String from Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\606. construct string from binary tree.cs
+++617. Merge Two Binary Trees.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\617. merge two binary trees.cs
+++62. Unique Paths.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\62. unique paths.cs
+++633. Sum of Square Numbers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\633. sum of square numbers.cs
+++637. Average of Levels in Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\637. average of levels in binary tree.cs
+++648. Replace Words.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\648. replace words.cs
+++65. Valid Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\65. valid number.cs
+++650. 2 Keys Keyboard.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\650. 2 keys keyboard.cs
+++651. 4 Keys Keyboard.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\651. 4 keys keyboard.cs
+++653. Two Sum IV - Input is a BST.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\653. two sum iv - input is a bst.cs
+++657 Robot Return to Origin.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\657 robot return to origin.cs
+++66. Plus One.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\66. plus one.cs
+++665 Non-decreasing Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\665 non-decreasing array.cs
+++67 Add Binary.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\67 add binary.cs
+++671. Second Minimum Node In a Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\671. second minimum node in a binary tree.cs
+++682 Baseball Game.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\682 baseball game.cs
+++69. Sqrt(x).cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\69. sqrt(x).cs
+++693. Binary Number with Alternating Bits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\693. binary number with alternating bits.cs
+++696. Count Binary Substrings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\696. count binary substrings.cs
+++697. Degree of an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\697. degree of an array.cs
+++7 Reverse Integer.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\7 reverse integer.cs
+++70 Climbing Stairs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\70 climbing stairs.cs
+++700. Search in a Binary Search Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\700. search in a binary search tree.cs
+++701. Insert into a Binary Search Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\701. insert into a binary search tree.cs
+++702. Search in a Sorted Array of Unknown Size.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\702. search in a sorted array of unknown size.cs
+++703. Kth Largest Element in a Stream.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\703. kth largest element in a stream.cs
+++704 Binary Search.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\704 binary search.cs
+++705. Design HashSet.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\705. design hashset.cs
+++706. Design HashMap.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\706. design hashmap.cs
+++709 To Lower Case.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\709 to lower case.cs
+++724. Find Pivot Index.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\724. find pivot index.cs
+++728 Self Dividing Numbers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\728 self dividing numbers.cs
+++729. My Calendar I.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\729. my calendar i.cs
+++731. My Calendar II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\731. my calendar ii.cs
+++732. My Calendar III.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\732. my calendar iii.cs
+++74 Search a 2D Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\74 search a 2d matrix.cs
+++744. Find Smallest Letter Greater Than Target.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\744. find smallest letter greater than target.cs
+++746. Min Cost Climbing Stairs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\746. min cost climbing stairs.cs
+++762. Prime Number of Set Bits in Binary Representation.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\762. prime number of set bits in binary representation.cs
+++766. Toeplitz Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\766. toeplitz matrix.cs
+++771 Jewels and Stones.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\771 jewels and stones.cs
+++78 Subsets.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\78 subsets.cs
+++791. Custom Sort String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\791. custom sort string.cs
+++8 String to Integer (atoi).cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\8 string to integer (atoi).cs
+++806. Number of Lines To Write String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\806. number of lines to write string.cs
+++817. Linked List Components.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\817. linked list components.cs
+++819. Most Common Word.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\819. most common word.cs
+++82. Remove Duplicates from Sorted List II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\82. remove duplicates from sorted list ii.cs
+++821. Shortest Distance to a Character.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\821. shortest distance to a character.cs
+++824. Goat Latin.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\824. goat latin.cs
+++83 Remove Duplicates from Sorted List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\83 remove duplicates from sorted list.cs
+++832 Flipping an Image.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\832 flipping an image.cs
+++852. Peak Index in a Mountain Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\852. peak index in a mountain array.cs
+++858. Mirror Reflection.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\858. mirror reflection.cs
+++867. Transpose Matrix.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\867. transpose matrix.cs
+++868. Binary Gap.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\868. binary gap.cs
+++876 Middle of the Linked List.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\876 middle of the linked list.cs
+++88 Merge Sorted Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\88 merge sorted array.cs
+++884. Uncommon Words from Two Sentences.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\884. uncommon words from two sentences.cs
+++890. Find and Replace Pattern.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\890. find and replace pattern.cs
+++896. Monotonic Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\896. monotonic array.cs
+++9 Palindrome Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\9 palindrome number.cs
+++90 Subsets II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\90 subsets ii.cs
+++905 Sort Array By Parity.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\905 sort array by parity.cs
+++908. Smallest Range I.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\908. smallest range i.cs
+++916. Word Subsets.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\916. word subsets.cs
+++917. Reverse Only Letters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\917. reverse only letters.cs
+++922. Sort Array By Parity II.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\922. sort array by parity ii.cs
+++929. Unique Email Addresses.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\929. unique email addresses.cs
+++933 Number of Recent Calls.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\933 number of recent calls.cs
+++938. Range Sum of BST.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\938. range sum of bst.cs
+++94. Binary Tree Inorder Traversal.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\94. binary tree inorder traversal.cs
+++942 DI String Match.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\942 di string match.cs
+++944. Delete Columns to Make Sorted.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\944. delete columns to make sorted.cs
+++953. Verifying an Alien Dictionary.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\953. verifying an alien dictionary.cs
+++961 N-Repeated Element in Size 2N Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\961 n-repeated element in size 2n array.cs
+++965. Univalued Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\965. univalued binary tree.cs
+++976. Largest Perimeter Triangle.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\976. largest perimeter triangle.cs
+++977 Squares of a Sorted Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\977 squares of a sorted array.cs
+++98. Validate Binary Search Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\98. validate binary search tree.cs
+++993. Cousins in Binary Tree.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\993. cousins in binary tree.cs
+++Program.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\program.cs
+++Analyzers
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:analyzers
+++Frameworks
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:frameworks
+++Packages
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:packages
+++Sdk.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\sdk\sdk.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\sdk\sdk.targets
+++Debug
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\
+++Release
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\release\
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\
+++1705
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\1705\
+++1709
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\1709\
+++Contest 804
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\contest 804\
+++2259 Remove Digit From Number to Maximize Result.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 291\2259 remove digit from number to maximize result.cs
+++2260 Minimum Consecutive Cards to Pick Up.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 291\2260 minimum consecutive cards to pick up.cs
+++2343. Query Kth Smallest Trimmed Number.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 302\2343. query kth smallest trimmed number.cs
+++2344. Minimum Deletions to Make Array Divisible.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 302\2344. minimum deletions to make array divisible.cs
+++6120. Maximum Number of Pairs in Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 302\6120. maximum number of pairs in array.cs
+++6164. Max Sum of a Pair With Equal Sum of Digits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest 302\6164. max sum of a pair with equal sum of digits.cs
+++2325. Decode the Message.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-300\2325. decode the message.cs
+++2326. Spiral Matrix IV.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-300\2326. spiral matrix iv.cs
+++6132. Make Array Zero by Subtracting Equal Amounts.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-304\6132. make array zero by subtracting equal amounts.cs
+++6133. Maximum Number of Groups Entering a Competition.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-304\6133. maximum number of groups entering a competition.cs
+++2315. Count Asterisks.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-81\2315. count asterisks.cs
+++2317 Maximum XOR After Operations.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\contest-81\2317 maximum xor after operations.cs
+++1009. Complement of Base 10 Integer.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1009. complement of base 10 integer.txt
+++1021. Remove Outermost Parentheses.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1021. remove outermost parentheses.txt
+++104. Maximum Depth of Binary Tree.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\104. maximum depth of binary tree.txt
+++1108. Defanging an IP Address.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1108. defanging an ip address.txt
+++1137. N-th Tribonacci Number.go
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1137. n-th tribonacci number.go
+++128. Longest Consecutive Sequence.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\128. longest consecutive sequence.txt
+++1413. Minimum Value to Get Positive Step by Step Sum.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1413. minimum value to get positive step by step sum.txt
+++144. Binary Tree Preorder Traversal.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\144. binary tree preorder traversal.txt
+++145. Binary Tree Postorder Traversal.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\145. binary tree postorder traversal.txt
+++1480. Running Sum of 1d Array.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1480. running sum of 1d array.txt
+++1689. Partitioning Into Minimum Number Of Deci-Binary Numbers.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1689. partitioning into minimum number of deci-binary numbers.txt
+++1694. Reformat Phone Number.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1694. reformat phone number.txt
+++1822. Sign of the Product of an Array.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\1822. sign of the product of an array.txt
+++2042. Check if Numbers Are Ascending in a Sentence.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\2042. check if numbers are ascending in a sentence.txt
+++2057. Smallest Index With Equal Value.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\2057. smallest index with equal value.txt
+++2062. Count Vowel Substrings of a String.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\2062. count vowel substrings of a string.txt
+++2138. Divide a String Into Groups of Size k.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\2138. divide a string into groups of size k.txt
+++2235. Add Two Integers.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\2235. add two integers.txt
+++226. Invert Binary Tree.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\226. invert binary tree.txt
+++231. Power of Two.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\231. power of two.txt
+++237. Delete Node in a Linked List.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\237. delete node in a linked list.txt
+++27. Remove Element.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\27. remove element.txt
+++292. Nim Game.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\292. nim game.txt
+++344. Reverse String.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\344. reverse string.txt
+++376. Wiggle Subsequence.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\376. wiggle subsequence.txt
+++4. Median of Two Sorted Arrays.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\4. median of two sorted arrays.txt
+++476. Number Complement.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\476. number complement.txt
+++509. Fibonacci Number.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\509. fibonacci number.txt
+++559. Maximum Depth of N-ary Tree.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\559. maximum depth of n-ary tree.txt
+++561. Array Partition.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\561. array partition.txt
+++589. N-ary Tree Preorder Traversal.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\589. n-ary tree preorder traversal.txt
+++70. Climbing Stairs.go
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\70. climbing stairs.go
+++705. Design HashSet.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\705. design hashset.txt
+++706. Design HashMap.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\706. design hashmap.txt
+++806. Number of Lines To Write String.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\806. number of lines to write string.txt
+++852. Peak Index in a Mountain Array.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\852. peak index in a mountain array.txt
+++908. Smallest Range I.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\908. smallest range i.txt
+++938. Range Sum of BST.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\938. range sum of bst.txt
+++94. Binary Tree Inorder Traversal.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\94. binary tree inorder traversal.txt
+++965. Univalued Binary Tree.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\go\965. univalued binary tree.txt
+++30 Days of Code
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\30 days of code\
+++Bit
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\bit\
+++C_Sharp Basic Skills Certification Test
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\c_sharp basic skills certification test\
+++Certificate
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\certificate\
+++Greedy
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\greedy\
+++Implementation
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\
+++ProjectEuler+
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\projecteuler+\
+++Recursion
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\recursion\
+++Search
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\search\
+++string algo
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\
+++Warm Up
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\warm up\
+++Week 1
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\
+++Week 2
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 2\
+++LeetCode.csproj.nuget.dgspec.json
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\leetcode.csproj.nuget.dgspec.json
+++LeetCode.csproj.nuget.g.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\leetcode.csproj.nuget.g.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\leetcode.csproj.nuget.g.props
+++LeetCode.csproj.nuget.g.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\leetcode.csproj.nuget.g.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\leetcode.csproj.nuget.g.targets
+++project.assets.json
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\project.assets.json
+++project.nuget.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\project.nuget.cache
+++project.packagespec.json
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\project.packagespec.json
+++rider.project.restore.info
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\rider.project.restore.info
+++1050. Actors and Directors Who Cooperated At Least Three Times.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1050. actors and directors who cooperated at least three times.sql
+++1082. Sales Analysis I.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1082. sales analysis i.sql
+++1083. Sales Analysis II.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1083. sales analysis ii.sql
+++1084. Sales Analysis III.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1084. sales analysis iii.sql
+++1141. User Activity for the Past 30 Days I.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1141. user activity for the past 30 days i.sql
+++1148 Article Views I.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1148 article views i.sql
+++1158. Market Analysis I.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1158. market analysis i.sql
+++1179 Reformat Department Table.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1179 reformat department table.sql
+++1294. Weather Type in Each Country.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1294. weather type in each country.sql
+++1327. List the Products Ordered in a Period.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1327. list the products ordered in a period.sql
+++1393. Capital Gain Loss.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1393. capital gain loss.sql
+++1407 Top Travellers.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1407 top travellers.sql
+++1484. Group Sold Products By The Date.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1484. group sold products by the date.sql
+++1517. Find Users With Valid E-Mails.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1517. find users with valid e-mails.sql
+++1527. Patients With a Condition.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1527. patients with a condition.sql
+++1587 Bank Account Summary II.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1587 bank account summary ii.sql
+++1607. Sellers With No Sales.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1607. sellers with no sales.sql
+++1667. Fix Names in a Table.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1667. fix names in a table.sql
+++1677. Product's Worth Over Invoices.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1677. product's worth over invoices.sql
+++1729 Find Followers Count.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1729 find followers count.sql
+++175. Combine Two Tables.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\175. combine two tables.sql
+++177. Nth Highest Salary.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\177. nth highest salary.sql
+++181. Employees Earning More Than Their Managers.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\181. employees earning more than their managers.sql
+++182. Duplicate Emails.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\182. duplicate emails.sql
+++183. Customers Who Never Order.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\183. customers who never order.sql
+++1853. Convert Date Format.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1853. convert date format.sql
+++1873 Calculate Special Bonus.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1873 calculate special bonus.sql
+++1890 The Latest Login in 2020.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1890 the latest login in 2020.sql
+++196 Delete Duplicate Emails.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\196 delete duplicate emails.sql
+++1965 Employees With Missing Information.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\1965 employees with missing information.sql
+++197 Rising Temperature.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\197 rising temperature.sql
+++2205. The Number of Users That Are Eligible for Discount.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\2205. the number of users that are eligible for discount.sql
+++2230. The Users That Are Eligible for Discount.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\2230. the users that are eligible for discount.sql
+++511 Game Play Analysis I.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\511 game play analysis i.sql
+++584 Find Customer Referee.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\584 find customer referee.sql
+++586 Customer Placing the Largest Number of Orders.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\586 customer placing the largest number of orders.sql
+++595 Big Countries.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\595 big countries.sql
+++607. Sales Person.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\607. sales person.sql
+++608. Tree Node.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\608. tree node.sql
+++620 Not Boring Movies.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\620 not boring movies.sql
+++627 Swap Salary.sql
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\sql\627 swap salary.sql
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.5\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\microsoft.netcore.app
+++System.Collections (4.3.0)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:>1657
+++Microsoft.Common.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++net6.0
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\
+++LeetCode.exe
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\leetcode.exe
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.exe
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.exe
+++LeetCode.exe.config
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\leetcode.exe.config
+++LeetCode.pdb
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\leetcode.pdb
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.pdb
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.pdb
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.pdb
+++A. Mark the Photographer.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\1705\a. mark the photographer.txt
+++C. Mark and His Unfinished Essay.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\1705\c. mark and his unfinished essay.txt
+++A - Three Doors.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\1709\a - three doors.txt
+++A. The Third Three Number Problem.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\codeforces\contest 804\a. the third three number problem.txt
+++Day 0 Hello World.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\30 days of code\day 0 hello world.cs
+++AND Product.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\bit\and product.cs
+++Flipping bits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\bit\flipping bits.cs
+++NotesStore.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\c_sharp basic skills certification test\notesstore.cs
+++Team.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\c_sharp basic skills certification test\team.cs
+++Active Traders.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\certificate\active traders.cs
+++Road.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\certificate\road.cs
+++Marc's Cakewalk.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\greedy\marc's cakewalk.cs
+++Minimum Absolute Difference in an Array.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\greedy\minimum absolute difference in an array.cs
+++Bill Division.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\bill division.cs
+++Day of the Programmer.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\day of the programmer.cs
+++Drawing Book.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\drawing book.cs
+++Extra Long Factorials.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\extra long factorials.cs
+++fibonacciModified.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\fibonaccimodified.cs
+++Find Digits.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\find digits.cs
+++Migratory Birds.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\migratory birds.cs
+++Sales by Match.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\implementation\sales by match.cs
+++168 Number Rotations.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\projecteuler+\168 number rotations.cs
+++Recursive Digit Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\recursion\recursive digit sum.cs
+++Minimum Loss.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\search\minimum loss.cs
+++Missing Numbers.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\search\missing numbers.cs
+++Alternating Characters.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\alternating characters.cs
+++Beautiful Binary String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\beautiful binary string.cs
+++caesarCipher.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\caesarcipher.cs
+++CamelCase.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\camelcase.cs
+++Funny String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\funny string.cs
+++Game of Thrones - I.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\game of thrones - i.cs
+++Gemstones.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\gemstones.cs
+++Grading Students.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\grading students.cs
+++HackerRank in a String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\hackerrank in a string.cs
+++Mars Exploration.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\mars exploration.cs
+++Pangrams.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\pangrams.cs
+++Sherlock and the Valid String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\sherlock and the valid string.cs
+++Strong Password.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\strong password.cs
+++Super Reduced String.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\super reduced string.cs
+++The Love-Letter Mystery.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\the love-letter mystery.cs
+++Two Strings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\two strings.cs
+++Weighted Uniform Strings.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\string algo\weighted uniform strings.cs
+++A Very Big Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\warm up\a very big sum.cs
+++Birthday Cake Candles.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\warm up\birthday cake candles.cs
+++Compare The Triplets.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\warm up\compare the triplets.cs
+++Diagonal Difference.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\warm up\diagonal difference.cs
+++Staircase.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\warm up\staircase.cs
+++Mock
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\mock\
+++Breaking the Records.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\breaking the records.cs
+++Divisible Sum Pairs.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\divisible sum pairs.cs
+++Mini-Max Sum.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\mini-max sum.cs
+++Plus Minus.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\plus minus.cs
+++Sparse Arrays.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\sparse arrays.cs
+++Time Conversion.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\time conversion.cs
+++Lonely Integer.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 2\lonely integer.cs
+++TempPE
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\temppe\
+++.NETFramework,Version=v4.8.AssemblyAttributes.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\.netframework,version=v4.8.assemblyattributes.cs
+++DesignTimeResolveAssemblyReferences.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\designtimeresolveassemblyreferences.cache
+++DesignTimeResolveAssemblyReferencesInput.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\designtimeresolveassemblyreferencesinput.cache
+++LeetCode.csproj.AssemblyReference.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.csproj.assemblyreference.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\leetcode.csproj.assemblyreference.cache
+++LeetCode.csproj.CoreCompileInputs.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.csproj.corecompileinputs.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.csproj.corecompileinputs.cache
+++LeetCode.csproj.FileListAbsolute.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.csproj.filelistabsolute.txt
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.csproj.filelistabsolute.txt
+++LeetCode.csproj.SuggestedBindingRedirects.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\leetcode.csproj.suggestedbindingredirects.cache
+++Microsoft.LiveUnitTesting.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.liveunittesting.props
+++Microsoft.NuGet.ImportBefore.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++ref
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\ref\
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\ref\
+++LeetCode.deps.json
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.deps.json
+++LeetCode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\refint\leetcode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\ref\leetcode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.dll
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\ref\leetcode.dll
+++LeetCode.runtimeconfig.json
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\bin\debug\net6.0\leetcode.runtimeconfig.json
+++Find the Median.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\hackerrank\week 1\mock\find the median.cs
+++refint
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\refint\
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\.netcoreapp,version=v6.0.assemblyattributes.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\.netcoreapp,version=v6.0.assemblyattributes.cs
+++apphost.exe
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\apphost.exe
+++LeetCode.AssemblyInfo.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.assemblyinfo.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\leetcode.assemblyinfo.cs
+++LeetCode.AssemblyInfoInputs.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.assemblyinfoinputs.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\leetcode.assemblyinfoinputs.cache
+++LeetCode.assets.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.assets.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\leetcode.assets.cache
+++LeetCode.csproj.BuildWithSkipAnalyzers
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.csproj.buildwithskipanalyzers
+++LeetCode.GeneratedMSBuildEditorConfig.editorconfig
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.generatedmsbuildeditorconfig.editorconfig
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\leetcode.generatedmsbuildeditorconfig.editorconfig
+++LeetCode.genruntimeconfig.cache
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.genruntimeconfig.cache
+++LeetCode.GlobalUsings.g.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\debug\net6.0\leetcode.globalusings.g.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\obj\release\net6.0\leetcode.globalusings.g.cs
+++Microsoft.NuGet.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.android)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.ios)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.maccatalyst)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.macos)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.maui)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.tvos)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk-manifests\6.0.300\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.workload.emscripten)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk-manifests\6.0.300\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.300\microsoft.net.workload.mono.toolchain)
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk-manifests\6.0.300\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++Microsoft.NET.ILLink.Tasks.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++Microsoft.LiveUnitTesting.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\microsoft.common.targets\importbefore\microsoft.liveunittesting.targets
+++LeetCode.csproj.user
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\leetcode.csproj.user
+++Microsoft.NET.props
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.QualityTools.Testing.Fakes.ImportAfter.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\microsoft.common.targets\importafter\microsoft.qualitytools.testing.fakes.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++Microsoft.Docker.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
+++Microsoft.QualityTools.Testing.Fakes.targets
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:c:\program files\microsoft visual studio\2022\enterprise\msbuild\microsoft\visualstudio\v17.0\fakes\microsoft.qualitytools.testing.fakes.targets
+++810. Chalkboard XOR Game.cs
+i:{e87f9e7c-37c2-422b-a72c-ceeefefb03c1}:f:\f\project\leetcode\leetcode\810. chalkboard xor game.cs

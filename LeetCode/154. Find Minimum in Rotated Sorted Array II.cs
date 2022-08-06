@@ -8,8 +8,8 @@ namespace LeetCode
 {
     internal class _154
     {  /// <summary>
-       /// Runtime: 208 ms, faster than 5.21% of C# online submissions for Find Minimum in Rotated Sorted Array II.
-       /// Memory Usage: 37.7 MB, less than 67.77% of C# online submissions for Find Minimum in Rotated Sorted Array II.
+       /// Runtime: 114 ms, faster than 66.81% of C# online submissions for Find Minimum in Rotated Sorted Array II.
+        /// Memory Usage: 37.8 MB, less than 68.53% of C# online submissions for Find Minimum in Rotated Sorted Array II.
        /// </summary>
        /// <param name="nums"></param>
        /// <returns></returns>

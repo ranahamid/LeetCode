@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
+using System.Text.RegularExpressions;
 
 int[][] nums = new int[][]
           {
@@ -11,15 +12,14 @@ int[][] nums = new int[][]
 
 int[][] nums2 = new int[][]
           {
-                new int[3] {1,2,3},
-                new int[3] {4,5,6},
+                new int[2] {0,1},
+                new int[2] {1,2},
           };
 
 int[][] nums1 = new int[29][]
 {
 new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new int[2] {9,9},new int[2] {21,4},new int[2] {24,2},new int[2] {12,11},new int[2] {2,5},new int[2] {24,12},new int[2] {25,7},new int[2] {7,13},new int[2] {14,9},new int[2] {23,15},new int[2] {18,17},new int[2] {22,16},new int[2] {4,14},new int[2] {14,17},new int[2] {25,11},new int[2] {12,16},new int[2] {29,3},new int[2] {22,11},new int[2] {29,2},new int[2] {24,2},new int[2] {24,15},new int[2] {7,14},new int[2] {7,3},new int[2] {7,14},new int[2] {1,3}
 };
-
 
 #region node
 
@@ -48,7 +48,6 @@ new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new i
 
 #endregion
 
- 
 var pathsMatrix = new List<List<int>>()
             {
                  new List<int>() { 0,1,0,0,0,1 },
@@ -75,59 +74,19 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "lo", "eo" };
 var resW2 = new string[]
 {
-"i","love","leetcode","apples"
+  "gin","zen","gig","msg"
 };
 
-var res1 = new int[] { 10, 3, 8, 9, 4 };
+var res1 = new int[] { 1, 2, 3 };
 var res2 = new int[] { 14, 21, 8, 35, 30, 21, 28, 19, 10, 25, 16, 23, 14, 13, 0, 3, 30, 9 };
 
 
 
 Solution solution = new Solution();
-//Console.WriteLine(solution.MirrorReflection(3, 1));
-DFS_AjacencyList df= new DFS_AjacencyList();
-df.DFSGraph(pathsAdjacency);
+Console.WriteLine(solution.StringShift("abc", nums2));
 
-public class DFS_AjacencyList
-{
-    public static List<char> Visited=new List<char>();
-    public static  List<char> result=new List<char>();
-    public void DFSGraph(List<(Char, List<Char>)> path)
-    {
-        DFS(path, 'A');
-        foreach (var item in result)
-            Console.Write(item + " ");
-    }
-    public static void DFS(List<(Char, List<Char>)> path, char start)
-    {
-        result.Add(start);
-        Visited.Add(start);
-        var childrens = path.Where(x => x.Item1 == start).Select(x => x.Item2).FirstOrDefault();
-        if (childrens != null)
-        {
-            foreach (var child in childrens)
-            {
-                if (!Visited.Contains(child))
-                {
-                    DFS(path, child);
-                }
-            }
-        }
-    }
-}
 public class Solution
 {
    
-    //https://leetcode.com/problems/random-pick-index/
-    private List<int> list;
-    //public Solution(int[] nums)
-    //{
-    //    list = new List<int>(nums);
-    //}
-
-    public int Pick(int target)
-    {
-        return 0;
-    }
 }
 
