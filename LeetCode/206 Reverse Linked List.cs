@@ -19,6 +19,17 @@ namespace LeetCode
 
     internal class Reverse_Linked_List
     {
+        public ListNode_206 ReverseList_Recursive(ListNode_206 head)
+        {
+            if (head == null || head.next == null)
+                return head;
+            var node = ReverseList(head.next); //4,5
+
+            head.next.next = head;
+            head.next = null;
+            return node;
+        }
+
         //static void Main(string[] args)
         //{
         //    ListNode_206 five = new ListNode_206(5);
@@ -51,6 +62,7 @@ namespace LeetCode
             while (head != null)
             {
                 var nextNode = head.next;
+
                 head.next = prevNode;
 
                 prevNode = head;

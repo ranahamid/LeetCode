@@ -87,14 +87,9 @@ var res2 = new int[] { 86550, 14905, 56903, 51690, 87276, 65525, 11720, 63129, 4
 
 
 
-Solution solution = new Solution();
-Console.WriteLine(solution.CountVowelPermutation(2));
-
-
-public class Solution
-{
-   
-}
+Solution solution = new Solution(); 
+Console.WriteLine(solution.ReverseList_Recursive(one));
+ 
 
 
 public static class Helper
