@@ -8,6 +8,13 @@ namespace LeetCode.Contest_305
 {
     internal class _2367
     {
+        /// <summary>
+        /// Runtime: 127 ms, faster than 100.00% of C# online submissions for Number of Arithmetic Triplets.
+        /// Memory Usage: 38.6 MB, less than 100.00% of C# online submissions for Number of Arithmetic Triplets.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="diff"></param>
+        /// <returns></returns>
         public int ArithmeticTriplets(int[] nums, int diff)
         {
             int n = 0;

@@ -115,9 +115,25 @@ public static class Helper
     {
         return (a / GCD(a, b)) * b;
     }
-    public static Dictionary<char, int> GetFrequency(string s)
+    public static Dictionary<char, int> GetFrequencyString(string s)
     {
         Dictionary<char, int> map = new Dictionary<char, int>();
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (map.ContainsKey(s[i]))
+            {
+                map[s[i]]++;
+            }
+            else
+            {
+                map[s[i]] = 1;
+            }
+        }
+        return map;
+    }
+    public static Dictionary<int, int> GetFrequencyInt(int[] s)
+    {
+        Dictionary<int, int> map = new Dictionary<int, int>();
         for (int i = 0; i < s.Length; i++)
         {
             if (map.ContainsKey(s[i]))
