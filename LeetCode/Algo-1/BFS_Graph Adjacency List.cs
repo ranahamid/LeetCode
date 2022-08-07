@@ -23,7 +23,7 @@ namespace LeetCode.Algo_1
         }
         public static List<char> BFS_Graph(List<(Char, List<Char>)> paths, char start)
         {
-            var result = new List<char>();
+            var result = new HashSet<char>();
             var queue = new Queue<char>();
             queue.Enqueue(start);
 
@@ -46,7 +46,7 @@ namespace LeetCode.Algo_1
                     }
                 }
             }
-            return result;
+            return result.ToList();
         }
     }
 }

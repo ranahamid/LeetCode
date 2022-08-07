@@ -22,8 +22,8 @@ namespace LeetCode.Algo_1
             };
             DFSGraph(pathsAdjacency);
         }
-        public static List<char> Visited = new List<char>();
-        public static List<char> result = new List<char>();
+        public static HashSet<char> Visited = new HashSet<char>();
+        public static HashSet<char> result = new HashSet<char>();
         public static void DFSGraph(List<(Char, List<Char>)> path)
         {
             DFS(path, 'A');
