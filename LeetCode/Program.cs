@@ -88,48 +88,12 @@ var res2 = new int[] { 86550, 14905, 56903, 51690, 87276, 65525, 11720, 63129, 4
 
 
 Solution solution = new Solution();
-Console.WriteLine(solution.CountBadPairs(res1));
+Console.WriteLine(solution.CountVowelPermutation(2));
 
 
 public class Solution
 {
-
-    public int ReachableNodes(int n, int[][] edges, int[] restricted)
-    {
-        List<int> Visited = new List<int>();
-        List<int> result = new List<int>();
-        DFS(edges, 0, Visited, result, restricted);
-        return result.Count();
-    }
-    public static void DFS(int[][] path, int start, List<int> Visited, List<int> result, int[] restricted)
-    {
-        result.Add(start);
-        Visited.Add(start);
-
-        var childrens = path.Where(x => x[0] == start ).Select(x => x[1]).ToList();
-
-
-        var childrens2 = path.Where(x => x[1] == start).Select(x => x[0]).ToList();
-        if(childrens2!=null)
-        childrens.AddRange(childrens2);
-
-        if (childrens != null)
-        {
-            foreach(var child in childrens)
-            {
-                if (child != 0)
-                {
-
-                    if (!Visited.Contains(child) && !restricted.Contains(child))
-                    {
-                        DFS(path, child, Visited, result, restricted);
-                    }
-
-                }
-            }
-        }
-       
-    }
+   
 }
 
 

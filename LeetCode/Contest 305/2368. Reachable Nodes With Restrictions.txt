@@ -1,0 +1,29 @@
+﻿class Solution {
+public:
+    int reachableNodes(int n, vector<vector<int>>& edges, vector<int>& restricted) {
+        unordered_set<int> rest(restricted.begin(), restricted.end());        
+        vector<int> matrix[n];
+        vector<int> visited(n, false);
+        for(auto item: edges) {
+            matrix[item[0]].push_back(item[1]);
+            matrix[item[1]].push_back(item[0]);
+        }
+        queue<int> queueStructure;
+        queueStructure.push(0);
+        visited[0]=true;
+		
+        int result = 1;        
+        while(!queueStructure.empty()){
+            int data = queueStructure.front(); queueStructure.pop(); 
+            for(auto item: matrix[data]) {
+                if(visited[item] == false && rest.count(item) == 0) {
+                    visited[item] = true;
+                    queueStructure.push(item);
+                    result++; 
+                }
+            }
+        }
+        return result;
+    }
+};
+
