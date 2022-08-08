@@ -3,11 +3,6 @@ using System.Numerics;
 using System.Text;
 using System.Text.RegularExpressions;
 
-int[][] nums = new int[][]
-          {
-                new int[2] {1,2}, new int[2]{2,3}, new int[2]{3,4},
-                    new int[2] {4,5}, new int[2]{5,6}, new int[2]{6,7},
-          };
 
 
 int[][] nums2 = new int[][]
@@ -86,34 +81,18 @@ var res2 = new int[] { 1, 3, 5, 4, 7 };
 //Console.WriteLine(solution.TaskSchedulerII("abc", nums2));
 
 
+int[][] nums = new int[][]
+          {
+                new int[2] {0,1}, new int[2]{1,2}, new int[2]{3,4},
+                    new int[2]{5,6},
+          };
 
-Solution solution = new Solution(); 
-Console.WriteLine(solution.LengthOfLIS(res2));
+Solution solution = new Solution();
+Console.WriteLine(solution.ReachableNodes(7, nums));
 
 public class Solution
 {
-    public int LengthOfLIS(int[] nums)
-    {
-        var arrList = new List<int>();
-        arrList.Add(nums[0]);
-        for(int i = 1; i < nums.Length; i++)
-        {
-            if(nums[i] > arrList.LastOrDefault())
-            {
-                arrList.Add(nums[i]);
-            }
-            else
-            {
-                int j = 0;
-                while (nums[i] > arrList[j])
-                {
-                    j++;
-                }
-                arrList[j] = nums[i];
-            }
-        } 
-        return arrList.Count;
-    }
+  
 }
 
 
