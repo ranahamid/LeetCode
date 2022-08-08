@@ -78,7 +78,7 @@ var resW2 = new string[]
 };
 
 var res1 = new int[] { 3, 9, 3 };
-var res2 = new int[] {  2, 5, 3, 7, 101, 18 };
+var res2 = new int[] { 1, 3, 5, 4, 7 };
 
 //2800978228
 
@@ -92,7 +92,28 @@ Console.WriteLine(solution.LengthOfLIS(res2));
 
 public class Solution
 {
-   
+    public int LengthOfLIS(int[] nums)
+    {
+        var arrList = new List<int>();
+        arrList.Add(nums[0]);
+        for(int i = 1; i < nums.Length; i++)
+        {
+            if(nums[i] > arrList.LastOrDefault())
+            {
+                arrList.Add(nums[i]);
+            }
+            else
+            {
+                int j = 0;
+                while (nums[i] > arrList[j])
+                {
+                    j++;
+                }
+                arrList[j] = nums[i];
+            }
+        } 
+        return arrList.Count;
+    }
 }
 
 
