@@ -37,6 +37,7 @@ namespace LeetCode.Algo_1
                 if (!visited.Contains(i))
                 {
                     counter++;
+                    //BFS
                     queue.Enqueue(i);
                     visited.Add(i);
                     while (queue.Count > 0)
