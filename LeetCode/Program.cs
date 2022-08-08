@@ -83,16 +83,28 @@ var res2 = new int[] { 1, 3, 5, 4, 7 };
 
 int[][] nums = new int[][]
           {
-                new int[2] {0,1}, new int[2]{1,2}, new int[2]{3,4},
-                    new int[2]{5,6},
+                new int[2] {1,0}, new int[2]{2,0}, new int[2]{3,2},
+                new int[2]{1,3}, new int[2]{1,3},new int[2]{4,2},
           };
 
 Solution solution = new Solution();
-Console.WriteLine(solution.ReachableNodes(7, nums));
+Console.WriteLine(solution.CanFinish(7, nums));
 
 public class Solution
 {
-  
+    public bool CanFinish(int numCourses, int[][] prerequisites)
+    {
+        Dictionary<int, HashSet<int>> set = new Dictionary<int, HashSet<int>>();
+        //adjacency matrix
+        foreach (var item in prerequisites)
+        {
+            //set.TryAdd(item[0], new HashSet<int>());
+            //set[item[0]].Add(item[1]);
+
+            set.TryAdd(item[1], new HashSet<int>());
+            set[item[1]].Add(item[0]);
+        }
+    }
 }
 
 

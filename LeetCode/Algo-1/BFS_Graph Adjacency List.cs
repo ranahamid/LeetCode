@@ -28,14 +28,15 @@ namespace LeetCode.Algo_1
             queue.Enqueue(start);
 
             var visited = new List<char>();
-            visited.Add(start);
+        
 
             while (queue.Count > 0)
             {
                 var item = queue.Dequeue();
+                visited.Add(item );
                 result.Add(item);
 
-                var neigbours = paths.Where(x => x.Item1 == item).FirstOrDefault();
+                var neigbours = paths[item];
                 for (int i = 0; i < neigbours.Item2.Count; i++)
                 {
                     var neighItem = neigbours.Item2[i];
