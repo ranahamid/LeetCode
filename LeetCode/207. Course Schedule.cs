@@ -8,6 +8,7 @@ namespace LeetCode
 {
     internal class _207
     {
+        ///cycle check
         /// <summary>
         /// Runtime: 593 ms, faster than 5.04% of C# online submissions for Course Schedule.
         /// Memory Usage: 45.9 MB, less than 7.52% of C# online submissions for Course Schedule.
