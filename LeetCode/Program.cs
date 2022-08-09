@@ -83,60 +83,17 @@ var res2 = new int[] { 1, 3, 5, 4, 7 };
 
 int[][] nums = new int[][]
           {
-                new int[2] {0,1}, 
-              //new int[2]{1,0}, new int[2]{3,1},
-              //  new int[2]{3,2}, new int[2]{1,3},
+                new int[2] {4,1}, 
+              new int[2]{2,1}, new int[2]{2,3},
+                new int[2]{5,4}, new int[2]{5,3},
+                new int[2]{5,0}, new int[2]{0,3},
           };
 Solution solution = new Solution();
-Console.WriteLine(solution.FindOrder(4, nums));
+Console.WriteLine(solution.CheckIfCanFinish(6, nums));
 
 public class Solution
 {
-    public int[] FindOrder(int numCourses, int[][] prerequisites)
-    {
-        Dictionary<int, HashSet<int>> set = new Dictionary<int, HashSet<int>>();
-        //adjacency matrix
-        foreach (var item in prerequisites)
-        {
-            set.TryAdd(item[1], new HashSet<int>());
-            set[item[1]].Add(item[0]);
-        }
-        var queue = new Queue<int>();
-        var visited = new HashSet<int>();
-        //check cycle      
-        for (int i = 0; i < numCourses; i++)
-        {
-         
-            if (set.ContainsKey(i))
-            {
-                foreach (var item in set[i])
-                {
-                    queue.Enqueue(item);
-                }
-            }
-            while (queue.Count > 0)
-            {
-                var item = queue.Dequeue();
-                if (item == i)
-                    return new int[0];
-
-                visited.Add(item);
-                if (set.ContainsKey(item))
-                {
-                    foreach (var node in set[item])
-                    {
-                        if (!visited.Contains(node))
-                        {
-                            queue.Enqueue(node);
-                            visited.Add(item);
-                        }
-                    }
-                }
-            }
-        }
-        return visited
-            .ToArray();
-    }
+    
 }
 
 
