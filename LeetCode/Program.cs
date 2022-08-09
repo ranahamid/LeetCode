@@ -69,7 +69,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "great", "acting", "skills" };
 var resW2 = new string[]
 {
-  "fine","drama","talent"
+"abcd", "bnrt", "crm", "dt"
 };
 
 var res1 = new int[] { 1, 2, 2, 4 };
@@ -92,17 +92,34 @@ int[][] nums = new int[][]
                 new int[2]{5,0}, new int[2]{0,3},
           };
 Solution solution = new Solution();
-Console.WriteLine(solution.AreSentencesSimilar(resW1, resW2, listStr));
 
+//Console.WriteLine(solution.MaxRepeating("ababc","ab"));
+Console.WriteLine(solution.MaxRepeating("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba"));
 public class Solution
 {
-  
+    
 }
 
 
 
 public static class Helper
 {
+    private static IEnumerable<int> GetDivisors(int n)
+    {
+        if (n <= 0) { yield return default; }
+
+        int iterator = (int)Math.Sqrt(n);
+
+        for (int i = 1; i <= iterator; i++)
+        {
+            if (n % i == 0)
+            {
+                yield return i;
+
+                if (i != n / i) { yield return n / i; }
+            }
+        }
+    }
     public static int[] ReverseSort(int[] nums)
     {
         Array.Sort(nums, (a, b) => b.CompareTo(a));
