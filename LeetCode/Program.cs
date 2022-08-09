@@ -72,8 +72,8 @@ var resW2 = new string[]
   "gin","zen","gig","msg"
 };
 
-var res1 = new int[] { 3, 9, 3 };
-var res2 = new int[] { 1, 3, 5, 4, 7 };
+var res1 = new int[] { 2, 2, 2 };
+var res2 = new int[] { 10, 10, 1 };
 
 //2800978228
 
@@ -89,11 +89,29 @@ int[][] nums = new int[][]
                 new int[2]{5,0}, new int[2]{0,3},
           };
 Solution solution = new Solution();
-Console.WriteLine(solution.CheckIfCanFinish(6, nums));
+Console.WriteLine(solution.MaxDistance(res1, res2));
 
 public class Solution
 {
-    
+    public int MaxDistance(int[] nums1, int[] nums2)
+    {
+        var max =0;
+        int i = 0;
+        int j = 0;
+        while(j<nums2.Length-1 && i < nums1.Length)
+        {
+            if (nums2[j+1] >= nums1[i])
+            {
+                j++;
+            }
+            else
+            {
+                i++;
+            }
+            max= Math.Max(max, j-i);
+        }
+        return max;
+    }
 }
 
 
