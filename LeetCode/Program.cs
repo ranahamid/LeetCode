@@ -72,7 +72,7 @@ var resW2 = new string[]
   "gin","zen","gig","msg"
 };
 
-var res1 = new int[] { 2, 2, 2 };
+var res1 = new int[] { 2, 4, 5, 10 };
 var res2 = new int[] { 10, 10, 1 };
 
 //2800978228
@@ -89,29 +89,11 @@ int[][] nums = new int[][]
                 new int[2]{5,0}, new int[2]{0,3},
           };
 Solution solution = new Solution();
-Console.WriteLine(solution.MaxDistance(res1, res2));
+Console.WriteLine(solution.NumFactoredBinaryTrees(res1));
 
 public class Solution
 {
-    public int MaxDistance(int[] nums1, int[] nums2)
-    {
-        var max =0;
-        int i = 0;
-        int j = 0;
-        while(j<nums2.Length-1 && i < nums1.Length)
-        {
-            if (nums2[j+1] >= nums1[i])
-            {
-                j++;
-            }
-            else
-            {
-                i++;
-            }
-            max= Math.Max(max, j-i);
-        }
-        return max;
-    }
+   
 }
 
 
