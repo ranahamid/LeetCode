@@ -66,15 +66,18 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
             };
 
 
-var resW1 = new string[] { "lo", "eo" };
+var resW1 = new string[] { "great", "acting", "skills" };
 var resW2 = new string[]
 {
-  "gin","zen","gig","msg"
+  "fine","drama","talent"
 };
 
 var res1 = new int[] { 1, 2, 2, 4 };
 var res2 = new int[] { 10, 10, 1 };
-
+var listStr = new List<IList<string>>();
+listStr.Add(new List<string> { "great", "fine" });
+listStr.Add(new List<string> { "drama", "acting" });
+listStr.Add(new List<string> { "skills", "99" });
 //2800978228
 
 //Solution solution = new Solution();
@@ -83,17 +86,17 @@ var res2 = new int[] { 10, 10, 1 };
 
 int[][] nums = new int[][]
           {
-                new int[2] {4,1}, 
+                new int[2] {4,1},
               new int[2]{2,1}, new int[2]{2,3},
                 new int[2]{5,4}, new int[2]{5,3},
                 new int[2]{5,0}, new int[2]{0,3},
           };
 Solution solution = new Solution();
-Console.WriteLine(solution.FindErrorNums(res1));
+Console.WriteLine(solution.AreSentencesSimilar(resW1, resW2, listStr));
 
 public class Solution
 {
-
+  
 }
 
 
