@@ -72,7 +72,7 @@ var resW2 = new string[]
   "gin","zen","gig","msg"
 };
 
-var res1 = new int[] { 2, 4, 5, 10 };
+var res1 = new int[] { 1, 2, 2, 4 };
 var res2 = new int[] { 10, 10, 1 };
 
 //2800978228
@@ -89,11 +89,11 @@ int[][] nums = new int[][]
                 new int[2]{5,0}, new int[2]{0,3},
           };
 Solution solution = new Solution();
-Console.WriteLine(solution.NumFactoredBinaryTrees(res1));
+Console.WriteLine(solution.FindErrorNums(res1));
 
 public class Solution
 {
-   
+  
 }
 
 
