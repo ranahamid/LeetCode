@@ -93,7 +93,7 @@ Console.WriteLine(solution.FindErrorNums(res1));
 
 public class Solution
 {
-  
+
 }
 
 
