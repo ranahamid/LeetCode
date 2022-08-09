@@ -97,7 +97,7 @@ Solution solution = new Solution();
 Console.WriteLine(solution.MaxRepeating("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba"));
 public class Solution
 {
-    
+ 
 }
 
 
