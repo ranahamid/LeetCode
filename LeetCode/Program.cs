@@ -92,11 +92,11 @@ int[][] nums = new int[][]
                 new int[2]{5,0}, new int[2]{0,3},
           };
 Solution solution = new Solution();
-Console.WriteLine(solution.AreSentencesSimilar(resW1, resW2, listStr));
+Console.WriteLine(solution.SecondHighest("sjhtz8344"));
 
 public class Solution
 {
-  
+    
 }
 
 
