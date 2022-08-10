@@ -92,12 +92,13 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 2, 0, 0 };
+var res1 = new int[] { 0, 0, 0, 0, 0, 0, 0 };
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.MaxAreaOfIsland(nums));
+solution.DuplicateZeros(res1);
+Console.WriteLine();
 public class Solution
 {
-
+    
 }
 public static class Helper
 {
