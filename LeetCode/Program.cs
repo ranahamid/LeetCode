@@ -72,7 +72,7 @@ var resW2 = new string[]
 "abcd", "bnrt", "crm", "dt"
 };
 
-var res1 = new int[] { 1, 2, 2, 4 };
+var res1 = new int[] { 1,0 };
 var res2 = new int[] { 10, 10, 1 };
 var listStr = new List<IList<string>>();
 listStr.Add(new List<string> { "great", "fine" });
@@ -94,10 +94,10 @@ int[][] nums = new int[][]
 Solution solution = new Solution();
 
 //Console.WriteLine(solution.MaxRepeating("ababc","ab"));
-Console.WriteLine(solution.MaxRepeating("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba"));
+Console.WriteLine(solution.SuperPow(2, res1));
 public class Solution
-{
- 
+{ 
+   
 }
 
 
