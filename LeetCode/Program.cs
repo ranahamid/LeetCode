@@ -76,21 +76,25 @@ var resW2 = new string[]
 var listStr = new List<IList<string>>();
 listStr.Add(new List<string> { "great", "fine" });
 listStr.Add(new List<string> { "drama", "acting" });
-listStr.Add(new List<string> { "skills", "99" }); 
+listStr.Add(new List<string> { "skills", "99" });
 
 int[][] nums = new int[][]
           {
-                new int[2] {0,0},
-                new int[2]{0,1}, new int[2]{1,2},
-                new int[2]{2,1}, 
-              //new int[2]{5,3},
-              //  new int[2]{5,0}, new int[2]{0,3},
+               new int[] {0,0,0,0,0,0,0,0},
+              //  new int[] {0,0,1,0,0,0,0,1,0,0,0,0,0},
+              //  new int[]{0,0,0,0,0,0,0,1,1,1,0,0,0},
+              //new int[]{0,1,1,0,1,0,0,0,0,0,0,0,0},
+              //  new int[]{0,1,0,0,1,1,0,0,1,0,1,0,0},
+              //new int[]{0,1,0,0,1,1,0,0,1,1,1,0,0},
+              // new int[]{0,0,0,0,0,0,0,0,0,0,1,0,0},
+              //new int[]{0,0,0,0,0,0,0,1,1,1,0,0,0},
+              //new int[]{0,0,0,0,0,0,0,1,1,0,0,0,0},
           };
 Solution solution = new Solution();
 
 var res1 = new int[] { 1, 2, 0, 0 };
-var res2 = new int[] { 10, 10, 1 }; 
-Console.WriteLine(solution.Multiply("2", "3"));
+var res2 = new int[] { 10, 10, 1 };
+Console.WriteLine(solution.MaxAreaOfIsland(nums));
 public class Solution
 {
 
