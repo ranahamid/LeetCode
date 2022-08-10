@@ -92,10 +92,10 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 0, 0, 0, 0, 0, 0, 0 };
+var res1 = new int[] {2, -3, -1, 5, -4 };
 var res2 = new int[] { 10, 10, 1 };
-solution.DuplicateZeros(res1);
-Console.WriteLine();
+
+Console.WriteLine(solution.LargestSumAfterKNegations(res1, 2));
 public class Solution
 {
     
