@@ -72,36 +72,29 @@ var resW2 = new string[]
 "abcd", "bnrt", "crm", "dt"
 };
 
-var res1 = new int[] { 1,0 };
-var res2 = new int[] { 10, 10, 1 };
+
 var listStr = new List<IList<string>>();
 listStr.Add(new List<string> { "great", "fine" });
 listStr.Add(new List<string> { "drama", "acting" });
-listStr.Add(new List<string> { "skills", "99" });
-//2800978228
-
-//Solution solution = new Solution();
-//Console.WriteLine(solution.TaskSchedulerII("abc", nums2));
-
+listStr.Add(new List<string> { "skills", "99" }); 
 
 int[][] nums = new int[][]
           {
-                new int[2] {4,1},
-              new int[2]{2,1}, new int[2]{2,3},
-                new int[2]{5,4}, new int[2]{5,3},
-                new int[2]{5,0}, new int[2]{0,3},
+                new int[2] {0,0},
+                new int[2]{0,1}, new int[2]{1,2},
+                new int[2]{2,1}, 
+              //new int[2]{5,3},
+              //  new int[2]{5,0}, new int[2]{0,3},
           };
 Solution solution = new Solution();
 
-//Console.WriteLine(solution.MaxRepeating("ababc","ab"));
-Console.WriteLine(solution.SuperPow(2, res1));
+var res1 = new int[] { 1, 2, 0, 0 };
+var res2 = new int[] { 10, 10, 1 }; 
+Console.WriteLine(solution.Multiply("2", "3"));
 public class Solution
-{ 
-   
+{
+
 }
-
-
-
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int n)
