@@ -98,7 +98,7 @@ var res2 = new int[] { 10, 10, 1 };
 Console.WriteLine(solution.LargestSumAfterKNegations(res1, 2));
 public class Solution
 {
-    
+  
 }
 public static class Helper
 {
