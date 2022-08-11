@@ -95,10 +95,10 @@ Solution solution = new Solution();
 var res1 = new int[] { 2, -3, -1, 5, -4 };
 var res2 = new int[] { 10, 10, 1 };
 
-Console.WriteLine(solution.FindAnagrams("cbaebabacd", "abc"));
+Console.WriteLine(solution.CheckInclusion("ab", "eidbaooo"));
 public class Solution
 {
-
+   
 }
 public static class Helper
 {

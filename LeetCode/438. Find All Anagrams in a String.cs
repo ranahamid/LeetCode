@@ -92,7 +92,7 @@ namespace LeetCode
         }
         #endregion
         #region TLE
-        public IList<int> FindAnagrams(string s, string p)
+        public IList<int> FindAnagrams_2(string s, string p)
         {
             var result = new List<int>();
             var pChar = p.ToCharArray();
