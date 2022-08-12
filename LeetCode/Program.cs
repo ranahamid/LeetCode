@@ -100,8 +100,7 @@ Console.WriteLine(solution.MissingNumber(res1));
 
 public class Solution
 {
-  
-  
+   
 }
 
 
