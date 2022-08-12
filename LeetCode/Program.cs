@@ -92,15 +92,15 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1,2,3 };
+var res1 = new int[] { 2, 1, 2, 1, 1, 2, 2, 1 };
 var res2 = new int[] { 10, 10, 1 };
 
-Console.WriteLine(solution.CountElements(res1));
+Console.WriteLine(solution.TransformArray(res1));
 
  
 public class Solution
 {
-    
+  
 }
 
 
