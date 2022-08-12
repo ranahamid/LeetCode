@@ -92,14 +92,19 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 2, -3, -1, 5, -4 };
+var res1 = new int[] { 15,13,12 };
 var res2 = new int[] { 10, 10, 1 };
 
-Console.WriteLine(solution.CheckInclusion("ab", "eidbaooo"));
+Console.WriteLine(solution.MissingNumber(res1));
+
+
 public class Solution
 {
-   
+  
+  
 }
+
+
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int n)

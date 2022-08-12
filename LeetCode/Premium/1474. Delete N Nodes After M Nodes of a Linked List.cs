@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Premium
 {
+    public class ListNode_1474
+    {
+        public int val;
+        public ListNode_1474 next;
+        public ListNode_1474(int val = 0, ListNode_1474 next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
     internal class _1474
     {
         /// <summary>
@@ -16,15 +26,15 @@ namespace LeetCode.Premium
         /// <param name="m"></param>
         /// <param name="n"></param>
         /// <returns></returns>
-        public ListNode DeleteNodes(ListNode head, int m, int n)
+        public ListNode_1474 DeleteNodes(ListNode_1474 head, int m, int n)
         {
-            var result = new ListNode();
+            var result = new ListNode_1474();
             var ret = result;
             while (head != null)
             {
                 for (int i = 0; i < m && head != null; i++)
                 {
-                    result.next = new ListNode(head.val);
+                    result.next = new ListNode_1474(head.val);
                     result = result.next;
 
                     head = head.next;
