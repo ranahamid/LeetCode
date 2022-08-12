@@ -95,12 +95,46 @@ Solution solution = new Solution();
 var res1 = new int[] { 15,13,12 };
 var res2 = new int[] { 10, 10, 1 };
 
-Console.WriteLine(solution.MissingNumber(res1));
+Console.WriteLine(solution.IsLongPressedName("alex", "dalex"));
 
 
 public class Solution
 {
-   
+    public bool IsLongPressedName(string name, string typed)
+    {
+        int j = 0;
+        int i = 0;
+        for ( i = 0; i < name.Length; i++)
+        {
+            if (j >= typed.Length)
+                return false;
+            if (name[i] == typed[j])
+            {
+                j++;
+                continue;
+
+            }
+            while (j < typed.Length && name[i] != typed[j])
+            {
+                if (j > 0 && typed[j - 1] == typed[j])
+                    j++;
+                else
+                    return false;
+            }
+            j++;
+        }
+        var temp = j;
+        for (int k = temp ; k< typed.Length; k++)
+        {
+            if (typed[k] == typed[k - 1])
+            {
+                j++;
+            }
+        }
+        if (j == typed.Length && i==name.Length)
+            return true;
+        return false;
+    }
 }
 
 
