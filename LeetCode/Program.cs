@@ -69,15 +69,9 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "great", "acting", "skills" };
 var resW2 = new string[]
 {
-"abcd", "bnrt", "crm", "dt"
+"bar","foo","the"
 };
-
-
-var listStr = new List<IList<string>>();
-listStr.Add(new List<string> { "great", "fine" });
-listStr.Add(new List<string> { "drama", "acting" });
-listStr.Add(new List<string> { "skills", "99" });
-
+ 
 int[][] nums = new int[][]
           {
                new int[] {0,0,0,0,0,0,0,0},
@@ -92,13 +86,14 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] {2, -3, -1, 5, -4 };
+var res1 = new int[] { 2, -3, -1, 5, -4 };
 var res2 = new int[] { 10, 10, 1 };
 
-Console.WriteLine(solution.LargestSumAfterKNegations(res1, 2));
+Console.WriteLine(solution.FindSubstring("barfoofoobarthefoobarman", resW2));
 public class Solution
 {
-    
+
+
 }
 public static class Helper
 {
