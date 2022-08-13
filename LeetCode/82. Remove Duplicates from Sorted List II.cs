@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    public class ListNode
+    public class ListNode_82
     {
         public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
+        public ListNode_82 next;
+        public ListNode_82(int val = 0, ListNode_82 next = null)
         {
             this.val = val;
             this.next = next;
@@ -24,11 +24,11 @@ namespace LeetCode
         /// </summary>
         /// <param name="head"></param>
         /// <returns></returns>
-        public ListNode DeleteDuplicates(ListNode head)
+        public ListNode_82 DeleteDuplicates(ListNode_82 head)
         {
             if (head == null)
                 return null;
-            var result = new ListNode(-1, head);
+            var result = new ListNode_82(-1, head);
             var temp = result;
              
             while (head != null)
