@@ -92,34 +92,7 @@ var res2 = new int[] { 10, 10, 1 };
 Console.WriteLine(solution.CountSpecialNumbers(1581)); //1005 for 1581
 public class Solution
 {
-    public string SmallestNumber(string pattern)
-    {
-       Stack<int> stack = new Stack<int>();
-        int num = 1;
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < pattern.Length; i++)
-        {
-            if (pattern[i] == 'D')
-            {
-                stack.Push(num);
-                num++;
-            }
-            else
-            {
-                sb.Append(num.ToString()); num++;
-                while (stack.Count > 0)
-                {
-                    sb.Append(stack.Pop());
-                }
-            }
-        }
-        stack.Push(num);
-        while(stack.Count > 0)
-        {
-            sb.Append(stack.Pop());
-        }
-        return sb.ToString();
-    }
+  
 }
 public static class Helper
 {
