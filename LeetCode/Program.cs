@@ -92,7 +92,7 @@ var res2 = new int[] { 10, 10, 1 };
 Console.WriteLine(solution.RestoreIpAddresses("25525511135")); //1005 for 1581
 public class Solution
 {
-
+    
 }
 public static class Helper
 {
