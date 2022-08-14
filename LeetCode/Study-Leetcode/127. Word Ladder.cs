@@ -74,7 +74,6 @@ namespace LeetCode.Study_Leetcode
                     foreach (var word in neighbors)
                     {
                         visited.Add(word);
-
                         if (!adjList.ContainsKey(word))
                         {
                             adjList.Add(word, new List<string>());
