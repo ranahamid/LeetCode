@@ -46,7 +46,6 @@ namespace LeetCode
             while (queue.Count > 0)
             {
                 count++;
-
                 var current = queue.Dequeue();                
                 visited.Add(current);
 
