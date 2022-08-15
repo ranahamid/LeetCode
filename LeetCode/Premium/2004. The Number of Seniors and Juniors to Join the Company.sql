@@ -70,3 +70,8 @@ group by experience
 --my sql
 --Runtime: 521 ms, faster than 63.50% of MySQL online submissions for The Number of Seniors and Juniors to Join the Company.
 --Memory Usage: 0B, less than 100.00% of MySQL online submissions for The Number of Seniors and Juniors to Join the Company.
+
+--- TOTAL 60 DAYS
+-- Problem Solved: 667
+-- RATING: 1533
+-- RANK: 20995
