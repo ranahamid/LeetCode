@@ -71,7 +71,7 @@ var resW2 = new string[]
 {
 "bar","foo","the"
 };
- 
+
 int[][] nums = new int[][]
           {
                new int[] {0,0,0,0,0,0,0,0},
@@ -90,9 +90,22 @@ var res1 = new int[] { 2, 0, 0, 2 };
 var res2 = new int[] { 10, 10, 1 };
 
 Console.WriteLine(solution.RestoreIpAddresses("25525511135")); //1005 for 1581
+
+public class TreeNode
+{
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+    {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 public class Solution
 {
-    
+   
 }
 public static class Helper
 {
