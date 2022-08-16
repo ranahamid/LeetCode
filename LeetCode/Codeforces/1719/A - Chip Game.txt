@@ -1,0 +1,13 @@
+﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    string[] tokens = Console.ReadLine().Split();
+    //Parse element 0 
+    var n = int.Parse(tokens[0]);
+    //Parse element 1
+    var m = int.Parse(tokens[1]);
+     if((n+m)%2==0)
+        Console.WriteLine("Tonya");
+     else
+        Console.WriteLine("Burenka");
+}
