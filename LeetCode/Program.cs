@@ -89,7 +89,7 @@ Solution solution = new Solution();
 var res1 = new int[] { 2, 0, 0, 2 };
 var res2 = new int[] { 10, 10, 1 };
 
-Console.WriteLine(solution.RestoreIpAddresses("25525511135")); //1005 for 1581
+Console.WriteLine(solution.CountValidWords("q-,")); //1005 for 1581
 
 public class TreeNode
 {
@@ -105,7 +105,7 @@ public class TreeNode
 }
 public class Solution
 {
-
+ 
 }
 
 public static class Helper
