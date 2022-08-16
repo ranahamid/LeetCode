@@ -1,0 +1,97 @@
+class Node{
+    constructor(value){
+        this.value = value;
+        this.next = null;
+    }
+}
+
+class SinglyLinkedList{
+    constructor(){
+        this.head = null;
+        this.tail = null;
+        this.size =0;
+    }
+    get(index){
+        if(index<0 || indcex >= this.size) return -1;
+        let counter =0;
+        let current = this.head;
+        while(counter!==index){
+            current = current.next;
+            counter++;
+        }
+        return current;
+    }
+    addAtHead(value){
+        const node = new Node(value);
+        if(!this.head){ //linklist is null 
+            this.head = node;
+            this.tail = node;
+        }else{ //head is not null 
+            node.next =this.head; //set current head at this head's next element
+            this.head = node; //set this head as this node
+        }
+        this.size++;
+        return this;
+    }
+    addAtTail(value){
+        const node = new Node(value);
+        if(!this.head){
+            this.head = node;
+            this.tail = node;
+        }else{
+            this.tail.next = node;//add at last element of current tail
+            this.tail = node; //set tail. main declaration
+        }
+        this.size++;
+        return this;
+    }
+    addAtIndex(index,value){
+        if(index<0 || index > this.size) return 'invalid index';
+        if(index===this.size) return this.addAtTail(value);
+        if(index===0) return this.addAtHead(value);
+        const node = new Node(value); // 1->2->3->null   1->5->2->3->null ===1,5
+        let prev = this.get(index-1); //1
+        let temp = prev.next;//2
+        prev.next = node;//2 is replace with 5
+        node.next = temp;//next of 5 will be 2 (temp)
+        this.size++;
+        return this;
+    }
+    deleteAtIndex(index){
+        if(index<0 || index >= this.size) return 'invalid index';
+        //return the node that we are deleting
+        if(index===0){
+            //delete head
+            let temp = this.head;
+            this.head = temp.next; //this.head.next
+            this.size --;
+            if(this.size===0){
+                this.tail = null; //no element 
+				// no need to set head. head will be null also from [temp.next]
+            }
+            return temp;
+        }
+        if(index===this.size-1){
+            //delete tail
+            let oldTail = this.tail;// 5->7->1->2->null  //2
+            let newTail = this.get(index-1); //1
+            this.tail = newTail; //1
+            newTail.next = null; //removed 2, and next is null 
+            this.size--;
+            // dont need to check if size = 0 
+            return oldTail;
+        }
+        //delete another node
+        // 1->2->3->null 
+        let prev = this.get(index-1); //remove 2=>> 1
+        let deletedNode = prev.next; //2
+        prev.next = deletedNode.next; //3 //prev.next.next
+        this.size --;
+        return deletedNode;
+    }
+}
+
+const sl = new SinglyLinkedList();
+sl.addAtHead(1);
+sl.addAtTail(2);
+sl.addAtIndex(2,3);
