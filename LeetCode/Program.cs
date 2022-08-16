@@ -86,10 +86,10 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 2, 0, 0, 2 };
+var res1 = new int[] { 1,2,3 };
 var res2 = new int[] { 10, 10, 1 };
-
-Console.WriteLine(solution.CountValidWords("q-,")); //1005 for 1581
+solution.powerSet("ABC", -1, "");
+Console.WriteLine(); //1005 for 1581
 
 public class TreeNode
 {
@@ -105,7 +105,34 @@ public class TreeNode
 }
 public class Solution
 {
- 
+   public void powerSet(string str, int index,
+                           string curr)
+    {
+        int n = str.Length;
+
+        // base case
+        if (index == n)
+        {
+            return;
+        }
+
+        // First print current subset
+        Console.WriteLine(curr);
+
+        // Try appending remaining characters
+        // to current subset
+        for (int i = index + 1; i < n; i++)
+        {
+            curr += str[i];
+            powerSet(str, i, curr);
+
+            // Once all subsets beginning with
+            // initial "curr" are printed, remove
+            // last character to consider a different
+            // prefix of subsets.
+            curr = curr.Substring(0, curr.Length - 1);
+        }
+    }
 }
 
 public static class Helper
