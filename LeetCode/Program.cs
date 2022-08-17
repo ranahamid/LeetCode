@@ -88,16 +88,8 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 1 };
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.TotalNQueens(1));
-Console.WriteLine(solution.TotalNQueens(2));
-Console.WriteLine(solution.TotalNQueens(3));
-Console.WriteLine(solution.TotalNQueens(4));
-Console.WriteLine(solution.TotalNQueens(5));
-
-Console.WriteLine(solution.TotalNQueens(6));
-Console.WriteLine(solution.TotalNQueens(7));
-Console.WriteLine(solution.TotalNQueens(8));
-Console.WriteLine(solution.TotalNQueens(9));
+Console.WriteLine(solution.TotalNQueens(10));
+Console.WriteLine(solution.TotalNQueens(15));
 public class TreeNode
 {
     public int val;
@@ -172,17 +164,10 @@ public class Solution
     }
     public int TotalNQueens(int n)
     {
-        var dic = new SortedDictionary<int, int>();
-        dic.Add(1, 1);
-        dic.Add(2, 0);
-        dic.Add(3, 0);
-        dic.Add(4, 2);
-        dic.Add(5, 10);
-        dic.Add(6, 4);
-        dic.Add(7, 40);
-        dic.Add(8, 92);
-        dic.Add(9, 352);
-        return dic[n];
+        result = new List<List<string>>();
+        var board = new int[n, n];
+        SolveNQUtil(board, n, 0);
+        return result.Count;
     }
 }
 
