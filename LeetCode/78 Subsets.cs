@@ -8,13 +8,42 @@ namespace LeetCode
 {
     internal class Subsets78
     {
+        #region recursive
+        public static List<List<int>> result = new List<List<int>>();
+        public IList<IList<int>> Subsets(int[] nums)
+        {
+            result = new List<List<int>>();
+            SubGenerate(nums, -1, new List<int>());
+            return result.Select(x => (IList<int>)x).ToList();
+        }
+        public static void SubGenerate(int[] nums, int index, List<int> set)
+        {
+            var n = nums.Count();
+            if (n == index)
+                return;
+            var data = new List<int>();
+            foreach (var item in set)
+            {
+                data.Add(item);
+            }
+            result.Add(data);
+            for (int i = index + 1; i < n; i++)
+            {
+                set.Add(nums[i]);
+                SubGenerate(nums, i, set);
+                set.RemoveAt(set.Count - 1);
+            }
+        }
+        #endregion
+        #region iterative
+
         /// <summary>
         /// Runtime: 168 ms, faster than 75.55% of C# online submissions for Subsets.
         /// Memory Usage: 41.1 MB, less than 76.56% of C# online submissions for Subsets.
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
-        public List<IList<int>> Subsets(int[] nums)
+        public List<IList<int>> Subsets_3(int[] nums)
         {
             var result = new List<List<int>>();
             result.Add(new List<int> { });
@@ -35,7 +64,7 @@ namespace LeetCode
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
-        public  List<IList<int>> Subsets_2(int[] nums)
+        public List<IList<int>> Subsets_2(int[] nums)
         {
             int[] output = new int[0];
             List<IList<int>> list = new List<IList<int>>();
@@ -59,5 +88,6 @@ namespace LeetCode
             var result = list.Select(x => (IList<int>)x).ToList();
             return result;
         }
+        #endregion
     }
 }
