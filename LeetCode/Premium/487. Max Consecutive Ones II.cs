@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.Premium
 {
     internal class _487
     {
         #region brute force
-       
+
         /// <summary>
         /// Runtime: 3833 ms, faster than 5.56% of C# online submissions for Max Consecutive Ones II.
         /// Memory Usage: 41.6 MB, less than 15.28% of C# online submissions for Max Consecutive Ones II.
@@ -17,7 +17,7 @@ namespace LeetCode
         /// <param name="nums"></param>
         /// <returns></returns>
         public int FindMaxConsecutiveOnes_BruteForce(int[] nums)
-        {           
+        {
             var max = 0;
             for (int i = 0; i < nums.Length; i++)
             {

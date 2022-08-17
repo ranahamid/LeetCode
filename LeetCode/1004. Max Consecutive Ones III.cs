@@ -8,6 +8,25 @@ namespace LeetCode
 {
     internal class _1004
     {
+        #region sliding window
+        public int LongestOnes(int[] nums, int k)
+        {
+            int left = 0, right = 0;
+            for (right = 0; right < nums.Length; right++)
+            {
+                if (nums[right] == 0)
+                {
+                    k--;
+                }
+                if (k < 0)
+                {
+                    k = k + 1 - nums[left];
+                    left++;
+                }
+            }
+            return right - left;
+        }
+        #endregion
         #region TLE
         public int LongestOnes_TLE(int[] nums, int k)
         {
