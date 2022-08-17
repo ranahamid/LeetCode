@@ -8,7 +8,7 @@ namespace LeetCode
 {
     internal class _52
     {
-
+        ///https://www.geeksforgeeks.org/printing-solutions-n-queen-problem/
         /// <summary>
         /// Runtime: 31 ms, faster than 82.26% of C# online submissions for N-Queens II.
         /// Memory Usage: 27.5 MB, less than 9.68% of C# online submissions for N-Queens II.
