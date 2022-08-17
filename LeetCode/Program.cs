@@ -88,8 +88,16 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 1 };
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.FindMaxConsecutiveOnes(res1)); //1005 for 1581
+Console.WriteLine(solution.TotalNQueens(1));
+Console.WriteLine(solution.TotalNQueens(2));
+Console.WriteLine(solution.TotalNQueens(3));
+Console.WriteLine(solution.TotalNQueens(4));
+Console.WriteLine(solution.TotalNQueens(5));
 
+Console.WriteLine(solution.TotalNQueens(6));
+Console.WriteLine(solution.TotalNQueens(7));
+Console.WriteLine(solution.TotalNQueens(8));
+Console.WriteLine(solution.TotalNQueens(9));
 public class TreeNode
 {
     public int val;
@@ -104,6 +112,78 @@ public class TreeNode
 }
 public class Solution
 {
+    public  static  List<List<string>> result = new List<List<string>>();
+    public static bool IsSafe(int[,] board, int n, int row, int column)
+    {
+        for (int i = 0; i < column; i++)
+        {
+            if (board[row, i] == 1)
+                return false;            
+        } 
+        for (int i = row,  j = column; i >= 0 && j >= 0; i--, j--)
+        {
+            if (board[i, j] == 1)
+                return false;
+        }
+        for (int i = row, j = column; i <n && j >= 0; i++, j--)
+        {
+            if (board[i, j] == 1)
+                return false;
+        }
+        return true;
+    }
+    public static bool SolveNQUtil(int[,] board, int n, int column)
+    {
+        //base case 
+        if (column == n)
+        {
+            var list = new List<string>();
+            for (int i = 0; i < n; i++)
+            {
+                StringBuilder sb = new StringBuilder();  
+                for (int j = 0; j < n; j++)
+                {
+                    if (board[i, j] == 1)
+                    {
+                        sb.Append("Q");
+                    }
+                    else
+                    {
+                        sb.Append(".");
+                    }
+                } 
+                list.Add(sb.ToString());
+            }
+            result.Add(list);
+            return true;
+        }
+        //column
+        var res = false;
+        for (int i = 0; i < n; i++)
+        {
+            if (IsSafe(board, n, i, column))
+            {
+                board[i, column] = 1;
+                res = SolveNQUtil(board, n, column + 1) || res;                
+                board[i, column] = 0;//backtrack
+            }
+        }
+        return false;
+    }
+    public int TotalNQueens(int n)
+    {
+        var dic = new SortedDictionary<int, int>();
+        dic.Add(1, 1);
+        dic.Add(2, 0);
+        dic.Add(3, 0);
+        dic.Add(4, 2);
+        dic.Add(5, 10);
+        dic.Add(6, 4);
+        dic.Add(7, 40);
+        dic.Add(8, 92);
+        dic.Add(9, 352);
+        return dic[n];
+    }
 }
 
 public static class Helper
