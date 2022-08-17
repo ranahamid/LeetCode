@@ -86,7 +86,7 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1 ,1};
+var res1 = new int[] { 1, 1 };
 var res2 = new int[] { 10, 10, 1 };
 Console.WriteLine(solution.FindMaxConsecutiveOnes(res1)); //1005 for 1581
 
@@ -104,7 +104,6 @@ public class TreeNode
 }
 public class Solution
 {
-  
 }
 
 public static class Helper
