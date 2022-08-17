@@ -86,9 +86,9 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 2, 3 };
+var res1 = new int[] {  3, 2, 1 };
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.Subsets(res1)); //1005 for 1581
+Console.WriteLine(solution.ValidMountainArray(res1)); //1005 for 1581
 
 public class TreeNode
 {
