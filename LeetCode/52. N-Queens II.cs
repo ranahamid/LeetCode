@@ -40,17 +40,21 @@ namespace LeetCode
             {
                 int currentDiagonal = row - column;
                 int anitCurrentDiagonal = row + column;
+                // If the queen is not placeable
                 if (cols.Contains(column) || diagonals.Contains(currentDiagonal) || antiDiagonals.Contains(anitCurrentDiagonal))
                 {
                     continue;
                 }
+                // "Add" the queen to the board
                 cols.Add(column);
                 diagonals.Add(currentDiagonal);
                 antiDiagonals.Add(anitCurrentDiagonal);
 
+                // Move on to the next row with the updated board state
                 board[row, column] = 1;
                 SolveNQUtil(board, n, row + 1, diagonals, antiDiagonals, cols);
-
+                // "Remove" the queen from the board since we have already
+                // explored all valid paths using the above function call
                 cols.Remove(column);
                 diagonals.Remove(currentDiagonal);
                 antiDiagonals.Remove(anitCurrentDiagonal);
@@ -59,11 +63,18 @@ namespace LeetCode
             }
             return false;
         }
-        public int TotalNQueens(int n)
+        public List<IList<string>> SolveNQueens(int n)
         {
             result = new List<List<string>>();
             var board = new int[n, n];
             SolveNQUtil(board, n, 0, new HashSet<int>(), new HashSet<int>(), new HashSet<int>());
+            return result.Select(x => (IList<string>)x).ToList();
+        }
+        public int TotalNQueens(int n)
+        {
+            result = new List<List<string>>();
+            var board = new int[n, n];
+            SolveNQUtil(board, n, row: 0, diagonals: new HashSet<int>(), antiDiagonals: new HashSet<int>(), cols: new HashSet<int>());
             return result.Count;
         }
     }

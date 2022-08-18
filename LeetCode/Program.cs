@@ -138,6 +138,7 @@ public class Solution
             {
                 continue;
             }
+
             cols.Add(column);
             diagonals.Add(currentDiagonal);
             antiDiagonals.Add(anitCurrentDiagonal);
@@ -145,10 +146,10 @@ public class Solution
             board[row, column] = 1;
             SolveNQUtil(board, n, row + 1,diagonals,antiDiagonals,cols);
 
-            cols.Remove(column);
-            diagonals.Remove(currentDiagonal);
-            antiDiagonals.Remove(anitCurrentDiagonal);
-            board[row, column] = 0;
+            //cols.Remove(column);
+            //diagonals.Remove(currentDiagonal);
+            //antiDiagonals.Remove(anitCurrentDiagonal);
+            //board[row, column] = 0;
 
         }
         return false;
@@ -164,7 +165,7 @@ public class Solution
     {
         result = new List<List<string>>();
         var board = new int[n, n];
-        SolveNQUtil(board, n, 0, new HashSet<int>(), new HashSet<int>(), new HashSet<int>());
+        SolveNQUtil(board, n, row:0, diagonals: new HashSet<int>(), antiDiagonals: new HashSet<int>(), cols:new HashSet<int>());
         return result.Count;
     }
 }
