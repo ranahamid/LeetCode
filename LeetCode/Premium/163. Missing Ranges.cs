@@ -8,6 +8,41 @@ namespace LeetCode.Premium
 {
     internal class _163
     {
+        #region solution
+        /// <summary>
+        /// Runtime: 189 ms, faster than 71.76% of C# online submissions for Missing Ranges.
+        /// Memory Usage: 41.7 MB, less than 55.88% of C# online submissions for Missing Ranges.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="lower"></param>
+        /// <param name="upper"></param>
+        /// <returns></returns>
+        public IList<string> FindMissingRanges(int[] nums, int lower, int upper)
+        {
+            var res = new List<string>();
+            var prev = lower - 1;
+            for (int i = 0; i <= nums.Length; i++)
+            {
+                var current = i < nums.Length ? nums[i] : upper + 1;
+                if (prev + 1 <= current - 1)
+                {
+                    res.Add(FormatMissingRange(prev + 1, current - 1));
+                }
+                prev = current;
+            }
+            return res;
+        }
+        public static string FormatMissingRange(int lower, int upper)
+        {
+            if (lower == upper)
+            {
+                return lower.ToString();
+            }
+            return string.Format($"{lower}->{upper}");
+        }
+        #endregion
+
+
         /// <summary>
         /// Runtime: 268 ms, faster than 18.24% of C# online submissions for Missing Ranges.
         /// Memory Usage: 41.8 MB, less than 47.65% of C# online submissions for Missing Ranges.
@@ -16,7 +51,7 @@ namespace LeetCode.Premium
         /// <param name="lower"></param>
         /// <param name="upper"></param>
         /// <returns></returns>
-        public IList<string> FindMissingRanges(int[] nums, int lower, int upper)
+        public IList<string> FindMissingRanges_1(int[] nums, int lower, int upper)
         {
             List<string> result = new List<string>();
             if (nums.Length == 0)
