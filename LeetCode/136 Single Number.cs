@@ -8,6 +8,16 @@ namespace LeetCode
 {
     internal class _136_Single_Number
     {
+        public int SingleNumber_Xor(int[] nums)
+        {
+            //We can use xor operation as it cancel out itself (i.e. only when values are different in binary representation then give output). See how xor operation works if confused.
+            var ans = nums[0];
+            for (int i = 1; i < nums.Length; i++)
+            {
+                ans = ans ^ nums[i];
+            }
+            return ans;
+        }
         public static int SingleNumber(int[] nums)
         {
             Dictionary<int, int> result = new Dictionary<int, int>();
