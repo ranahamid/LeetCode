@@ -86,9 +86,9 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 7};
+var res1 = new int[] { 0, 1, 2, 4, 5, 7 };
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.FindMissingRanges(res1,0,9));
+Console.WriteLine(solution.SummaryRanges(res1));
 public class TreeNode
 {
     public int val;
@@ -103,7 +103,15 @@ public class TreeNode
 }
 public class Solution
 {
+    /// <summary>
+    /// https://leetcode.com/problems/summary-ranges/
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns></returns>
+    public IList<string> SummaryRanges(int[] nums)
+    { 
 
+    }
 }
 
 public static class Helper
