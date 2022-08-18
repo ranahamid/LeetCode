@@ -146,10 +146,10 @@ public class Solution
             board[row, column] = 1;
             SolveNQUtil(board, n, row + 1,diagonals,antiDiagonals,cols);
 
-            //cols.Remove(column);
-            //diagonals.Remove(currentDiagonal);
-            //antiDiagonals.Remove(anitCurrentDiagonal);
-            //board[row, column] = 0;
+            cols.Remove(column);
+            diagonals.Remove(currentDiagonal);
+            antiDiagonals.Remove(anitCurrentDiagonal);
+            board[row, column] = 0;
 
         }
         return false;

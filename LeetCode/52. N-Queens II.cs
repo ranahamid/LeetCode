@@ -55,6 +55,7 @@ namespace LeetCode
                 SolveNQUtil(board, n, row + 1, diagonals, antiDiagonals, cols);
                 // "Remove" the queen from the board since we have already
                 // explored all valid paths using the above function call
+                //this is not valid selection. thats why removed thhis col,diagonals & anti diagonals
                 cols.Remove(column);
                 diagonals.Remove(currentDiagonal);
                 antiDiagonals.Remove(anitCurrentDiagonal);

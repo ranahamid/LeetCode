@@ -50,7 +50,7 @@ namespace LeetCode
 
                 board[row, column] = 1;
                 SolveNQUtil(board, n, row + 1, diagonals, antiDiagonals, cols);
-
+                //this is not valid selection. thats why removed thhis col,diagonals & anti diagonals
                 cols.Remove(column);
                 diagonals.Remove(currentDiagonal);
                 antiDiagonals.Remove(anitCurrentDiagonal);
