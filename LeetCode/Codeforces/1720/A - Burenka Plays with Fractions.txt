@@ -1,0 +1,32 @@
+﻿using System.Numerics;
+using System.Text;
+ 
+ 
+ 
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{ 
+ 
+    //Read line, and split it by whitespace into an array of strings
+    string[] tokens = Console.ReadLine().Split();
+     
+    var a = int.Parse(tokens[0]);
+    //Parse element 1
+    var b = long.Parse(tokens[1]);
+    var c= long.Parse(tokens[2]);
+    var d = long.Parse(tokens[3]);
+ 
+    if (a * d == b * c)
+        Console.WriteLine("0");
+    else
+    {
+        long p1 = a * d;
+        long p2 = b * c;
+        if (p2!=0 && p1%p2==0)
+            Console.WriteLine("1");
+        else if(p1!=0 && p2%p1==0)
+            Console.WriteLine("1");
+        else
+            Console.WriteLine("2");
+    }
+}
