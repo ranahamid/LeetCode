@@ -86,9 +86,9 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 3, 3, 3, 3, 5, 5, 5, 2, 2, 7 };
+var res1 = new int[] { 7};
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.ConfusingNumber(1011));
+Console.WriteLine(solution.FindMissingRanges(res1,0,9));
 public class TreeNode
 {
     public int val;
@@ -103,7 +103,7 @@ public class TreeNode
 }
 public class Solution
 {
-
+    
 }
 
 public static class Helper
