@@ -88,7 +88,7 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 3, 3, 3, 3, 5, 5, 5, 2, 2, 7 };
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.SolveNQueens(4)); 
+Console.WriteLine(solution.GetSum(5,7)); 
 public class TreeNode
 {
     public int val;
@@ -102,72 +102,8 @@ public class TreeNode
     }
 }
 public class Solution
-{    
-    public  static  List<List<string>> result = new List<List<string>>();    
-    public static bool SolveNQUtil(int[,] board, int n, int row, HashSet<int>diagonals,  HashSet<int>antiDiagonals,  HashSet<int>cols)
-    {
-        //base case 
-        if (row == n)
-        {
-            var list = new List<string>();
-            for (int i = 0; i < n; i++)
-            {
-                StringBuilder sb = new StringBuilder();  
-                for (int j = 0; j < n; j++)
-                {
-                    if (board[i, j] == 1)
-                    {
-                        sb.Append("Q");
-                    }
-                    else
-                    {
-                        sb.Append(".");
-                    }
-                } 
-                list.Add(sb.ToString());
-            }
-            result.Add(list);
-            return true;
-        }
-        //column 
-        for (int column = 0; column < n; column++)
-        {
-            int currentDiagonal = row - column;
-            int anitCurrentDiagonal=row+column;
-            if(cols.Contains(column)|| diagonals.Contains(currentDiagonal)|| antiDiagonals.Contains(anitCurrentDiagonal))
-            {
-                continue;
-            }
-
-            cols.Add(column);
-            diagonals.Add(currentDiagonal);
-            antiDiagonals.Add(anitCurrentDiagonal);
-
-            board[row, column] = 1;
-            SolveNQUtil(board, n, row + 1,diagonals,antiDiagonals,cols);
-
-            cols.Remove(column);
-            diagonals.Remove(currentDiagonal);
-            antiDiagonals.Remove(anitCurrentDiagonal);
-            board[row, column] = 0;
-
-        }
-        return false;
-    }
-    public List<IList<string>> SolveNQueens(int n)
-    {
-        result = new List<List<string>>();
-        var board = new int[n, n];
-        SolveNQUtil(board, n, 0, new HashSet<int>(), new HashSet<int>(), new HashSet<int>());
-        return result.Select(x => (IList<string>)x).ToList();
-    }
-    public int TotalNQueens(int n)
-    {
-        result = new List<List<string>>();
-        var board = new int[n, n];
-        SolveNQUtil(board, n, row:0, diagonals: new HashSet<int>(), antiDiagonals: new HashSet<int>(), cols:new HashSet<int>());
-        return result.Count;
-    }
+{
+   
 }
 
 public static class Helper
