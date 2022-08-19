@@ -88,7 +88,7 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 2, 3, 4, 4,5, 6 };
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.MinRemoveToMakeValid("lee(t(c)o)de)"));
+Console.WriteLine(solution.CharacterReplacement("ABAB",2));
 public class TreeNode
 {
     public int val;
@@ -103,7 +103,7 @@ public class TreeNode
 }
 public class Solution
 {
-   
+ 
 }
 
 public static class Helper
