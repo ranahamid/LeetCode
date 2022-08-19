@@ -86,9 +86,9 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 2, 3, 4, 4,5, 6 };
+var res1 = new int[] { 2, 3, 1, 1, 4 };
 var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.CharacterReplacement("ABAB",2));
+Console.WriteLine(solution.Jump(res1));
 public class TreeNode
 {
     public int val;
@@ -103,7 +103,7 @@ public class TreeNode
 }
 public class Solution
 {
- 
+   
 }
 
 public static class Helper
