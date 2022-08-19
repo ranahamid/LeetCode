@@ -9,8 +9,8 @@ namespace LeetCode
     internal class _134
     {
         /// <summary>
-        /// Runtime: 196 ms, faster than 94.59% of C# online submissions for Gas Station.
-        /// Memory Usage: 51.2 MB, less than 6.19% of C# online submissions for Gas Station.
+        /// Runtime: 183 ms, faster than 98.71% of C# online submissions for Gas Station.
+        /// Memory Usage: 51.1 MB, less than 7.99% of C# online submissions for Gas Station.
         /// </summary>
         /// <param name="gas"></param>
         /// <param name="cost"></param>
