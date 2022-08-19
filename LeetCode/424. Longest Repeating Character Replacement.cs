@@ -28,7 +28,7 @@ namespace LeetCode
                 maxFreuency = Math.Max(maxFreuency, frequency[s[right] - 'A']);
                 window = right - left + 1;
                 if (window - maxFreuency > k)
-                {
+                { 
                     frequency[s[left] - 'A']--;
                     left++;
                 }
