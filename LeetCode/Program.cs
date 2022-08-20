@@ -82,35 +82,12 @@ int[][] nums = new int[][]
 Solution solution = new Solution();
 
 var res1 = new int[] { };
-var res2 = new int[] { 10, 10, 1 };
-Console.WriteLine(solution.MinRefuelStops(100, 10, nums));
+var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
+Console.WriteLine(solution.CanSeePersonsCount(res2));
 
 public class Solution
 {
-    public int MinRefuelStops(int target, int tank, int[][] stations)
-    {
-        int result = 0, prev = 0;
-        var queue = new PriorityQueue<int, int>();        
-        for (int i = 0; i <= stations.Length; i++)
-        {
-            int location = i<stations.Length? stations[i][0]:target;
-            int capacity = i < stations.Length ? stations[i][1]: 0;
-            tank = tank - (location - prev);
-            while (queue.Count > 0 && tank < 0)
-            {
-                result++; 
-                tank += queue.Dequeue();
-            }
-            if (tank < 0)
-                return -1;
-            if(i < stations.Length)
-            {
-                queue.Enqueue(capacity, -capacity);
-                prev = location;
-            }         
-        } 
-        return result;
-    }
+ 
 }
 
 public static class Helper
