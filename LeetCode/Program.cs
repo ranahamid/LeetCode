@@ -82,52 +82,25 @@ Solution solution = new Solution();
 
 var res1 = new int[] { };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.ShiftingLetters("dztz", nums)); //20
+//Console.WriteLine(solution.D("dztz", nums)); //20
+Solution.D();
 
 public class Solution
 {
-    public string ShiftingLetters(string s, int[][] shifts)
+    public static void  D()
     {
-       
-        var forward = new int[s.Length ];
-        var backward = new int[s.Length];
-        for (int i = 0; i < shifts.Length; i++)
-        { 
-            for (int j = shifts[i][0]; j <= shifts[i][1]; j++)
-            {
-                if (shifts[i][2] == 1)
-                {
-                    forward[j] =( forward[j]+1)%26;
-                }
-                else
-                {
-                    backward[j]= (backward[j]+1)%26;
-                }
-            }
-        }
-        StringBuilder sb = new StringBuilder(s);
-        for (int i = 0; i < forward.Length; i++)
+        int intTemp = Convert.ToInt32(Console.ReadLine());
+        string[] tokens = Console.ReadLine().Split();
+        var arr = new List<int>();
+        for (int index = 0; index < intTemp; index++)
         {
-            if(forward[i] >= backward[i])
-            {
-                forward[i] -= backward[i]; 
-                if (forward[i] > 0)
-                {
-                    var replaceChar = (sb[i] - 97 + forward[i] + 26 * 100) % 26;
-                    sb[i] = (char)(replaceChar + 97);
-                }
-            }
-            else
-            {
-                backward[i] -= forward[i]; 
-                if (backward[i] > 0)
-                {
-                    var replaceChar = (sb[i] - 97 - backward[i] + 26 * 100) % 26;
-                    sb[i] = (char)(replaceChar + 97);
-                }
-            }
-        } 
-        return sb.ToString();
+            arr.Add( int.Parse(tokens[index]));
+        }
+        var source = arr.LastOrDefault();
+        var digit = source % 10;
+        if (digit == 0)
+            Console.WriteLine("Yes");
+        Console.WriteLine("No"); 
     }
 }
 
