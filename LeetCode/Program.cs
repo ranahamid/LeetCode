@@ -74,20 +74,19 @@ var resW2 = new string[]
 
 int[][] nums = new int[][]
           {
-               new int[] {10,60},
-              new int[] {20,30},
-              new int[] {30,30},
-              new int[] {60,40},
+               new int[] {0,0,0},
+              new int[] {1,1,1},
+              //new int[] {0,2,1}, 
           };
 Solution solution = new Solution();
 
 var res1 = new int[] { };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.CanSeePersonsCount(res2));
+Console.WriteLine(solution.ShiftingLetters("dztz", nums)); //20
 
 public class Solution
 {
- 
+   
 }
 
 public static class Helper
