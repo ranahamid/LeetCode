@@ -84,12 +84,11 @@ Solution solution = new Solution();
 
 var res1 = new int[] { };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.LargestPalindromic("00000")); //20
+Console.WriteLine(solution.MovesToStamp("abc", "ababc")); //20
  
 
 public class Solution
-{
-  
+{ 
 }
 
 public static class Helper
