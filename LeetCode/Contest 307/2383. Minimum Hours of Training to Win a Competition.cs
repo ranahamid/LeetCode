@@ -8,6 +8,15 @@ namespace LeetCode.Contest_307
 {
     internal class _2383
     {
+        /// <summary>
+        /// Runtime: 105 ms, faster than 100.00% of C# online submissions for Minimum Hours of Training to Win a Competition.
+        /// Memory Usage: 37.8 MB, less than 100.00% of C# online submissions for Minimum Hours of Training to Win a Competition.
+        /// </summary>
+        /// <param name="initialEnergy"></param>
+        /// <param name="initialExperience"></param>
+        /// <param name="energy"></param>
+        /// <param name="experience"></param>
+        /// <returns></returns>
         public int MinNumberOfHours(int initialEnergy, int initialExperience, int[] energy, int[] experience)
         {
             var result = 0;

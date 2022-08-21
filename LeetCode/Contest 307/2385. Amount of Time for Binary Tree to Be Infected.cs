@@ -8,6 +8,14 @@ namespace LeetCode.Contest_307
 {
     internal class _2385
     {
+        /// <summary>
+        /// Runtime: 404 ms, faster than 100.00% of C# online submissions for Amount of Time for Binary Tree to Be Infected.
+        /// Memory Usage: 85 MB, less than 100.00% of C# online submissions for Amount of Time for Binary Tree to Be Infected.
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="num"></param>
+        /// <param name="answerSet"></param>
+        /// <returns></returns>
         public static int FindBurningAmount(TreeNode root, int num, Dictionary<int, HashSet<int>> answerSet)
         {
             if (root != null)

@@ -20,6 +20,7 @@
     <Compile Remove="387. First Unique Character in a String.cs" />
     <Compile Remove="506. Relative Ranks.cs" />
     <Compile Remove="650. 2 Keys Keyboard.cs" />
+    <Compile Remove="Contest 307\2384. Largest Palindromic Number.cs" />
     <Compile Remove="Premium\1271. Hexspeak.cs" />
   </ItemGroup>
 
@@ -34,6 +35,7 @@
     <None Include="387. First Unique Character in a String.cs" />
     <None Include="506. Relative Ranks.cs" />
     <None Include="650. 2 Keys Keyboard.cs" />
+    <None Include="Contest 307\2384. Largest Palindromic Number.cs" />
     <None Include="Premium\1271. Hexspeak.cs" />
   </ItemGroup>
 
