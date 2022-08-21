@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using LeetCode;
+using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Runtime.Intrinsics;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -82,26 +84,113 @@ Solution solution = new Solution();
 
 var res1 = new int[] { };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-//Console.WriteLine(solution.D("dztz", nums)); //20
-Solution.D();
+Console.WriteLine(solution.LargestPalindromic("00000")); //20
+ 
 
 public class Solution
 {
-    public static void  D()
+    public string LargestPalindromic(string num)
     {
-        int intTemp = Convert.ToInt32(Console.ReadLine());
-        string[] tokens = Console.ReadLine().Split();
-        var arr = new List<int>();
-        for (int index = 0; index < intTemp; index++)
+        var answer = new int[10];
+        for (int i = 0; i < num.Length; i++)
         {
-            arr.Add( int.Parse(tokens[index]));
+            int index = num[i] - '0';
+            answer[index] += 1;
         }
-        var source = arr.LastOrDefault();
-        var digit = source % 10;
-        if (digit == 0)
-            Console.WriteLine("Yes");
-        Console.WriteLine("No"); 
-    }
+        string result = "";
+        for (int i = 9; i >= 0; i--)
+        {
+            if (answer[i] != 0)
+            {
+                if (answer[i] > 1)
+                {
+                    if (answer[i] % 2 == 0)
+                    {
+                        int x = answer[i] / 2;
+                        char y =(char)('0' + i);
+                        while (x-->0)
+                        {
+                            result += y;
+                        }
+                        answer[i] = 0;
+                    }
+                    else
+                    {
+                        int x = answer[i] - 1;
+                        answer[i] = 1;
+                        x /= 2;
+                        char y = (char)('0' + i);
+                        while (x-->0)
+                        {
+                            result += y;
+                        }
+                    }
+                }
+            }
+        }
+        bool isAdded = false;
+        for (int i = 9; i >= 0; i--)
+        {
+            char y = (char)('0' + i);
+            if (answer[i] == 1)
+            {
+                result += y;
+                isAdded = true;
+                break;
+            }
+        }
+        string temp;
+        if (isAdded == false)
+        {
+            temp = result;
+            var rev = new string(temp.Reverse().ToArray());
+            result = result + rev;
+        }
+        else
+        {
+            temp = result;
+            //temp.pop_back();
+            var s=temp.Substring(0, temp.Length - 1);
+            var rev = new string(s.Reverse().ToArray());
+            result = result + rev;
+        }
+        int count = 0;
+        for (int i = 0; i < result.Length; i++)
+        {
+            if (result[i] == '0')
+            {
+                count++;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        if (count > 0)
+        {
+            int te = count;
+            while (te-->0)
+            {
+                result = result.Substring(0, result.Length-1); 
+            }
+               
+            te = count;
+            if(result.Length > 0)
+            result= result.Substring(count,result.Length-count);
+            //result.erase(0, count);
+            //StringBuilder sb = new StringBuilder();
+            //var n = result.Length;
+            //for (int k=count;k<n; k++)
+            //{
+            //    sb.Append(result[k]);
+            //}            
+            //result = sb.ToString();
+        }
+        if (result.Length == 0) 
+            return "0";
+        return result;
+    } 
 }
 
 public static class Helper
@@ -112,13 +201,13 @@ public static class Helper
 
         int iterator = (int)Math.Sqrt(n);
 
-        for (int i = 1; i <= iterator; i++)
+        for (int index = 1; index <= iterator; index++)
         {
-            if (n % i == 0)
+            if (n % index == 0)
             {
-                yield return i;
+                yield return index;
 
-                if (i != n / i) { yield return n / i; }
+                if (index != n / index) { yield return n / index; }
             }
         }
     }
@@ -146,15 +235,15 @@ public static class Helper
     public static Dictionary<char, int> GetFrequencyString(string s)
     {
         Dictionary<char, int> map = new Dictionary<char, int>();
-        for (int i = 0; i < s.Length; i++)
+        for (int index = 0; index < s.Length; index++)
         {
-            if (map.ContainsKey(s[i]))
+            if (map.ContainsKey(s[index]))
             {
-                map[s[i]]++;
+                map[s[index]]++;
             }
             else
             {
-                map[s[i]] = 1;
+                map[s[index]] = 1;
             }
         }
         return map;
@@ -162,15 +251,15 @@ public static class Helper
     public static Dictionary<int, int> GetFrequencyInt(int[] s)
     {
         Dictionary<int, int> map = new Dictionary<int, int>();
-        for (int i = 0; i < s.Length; i++)
+        for (int index = 0; index < s.Length; index++)
         {
-            if (map.ContainsKey(s[i]))
+            if (map.ContainsKey(s[index]))
             {
-                map[s[i]]++;
+                map[s[index]]++;
             }
             else
             {
-                map[s[i]] = 1;
+                map[s[index]] = 1;
             }
         }
         return map;
