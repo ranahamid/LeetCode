@@ -1,6 +1,7 @@
 ﻿using LeetCode;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Numerics;
 using System.Runtime.Intrinsics;
 using System.Text;
@@ -84,25 +85,19 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 0 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.Rob(res1)); //20
+Console.WriteLine(solution.ValidIPAddress("2001:db8:85a3:0::8a2E:0370:7334")); //20
 
 public class Solution
 {
-    public int[] RobHelper(TreeNode root)
-    {
-        if (root == null)
-            return new int[] { 0, 0 };
-        var left = RobHelper(root.left);
-        var right = RobHelper(root.right);
-
-        var rob = root.val + left[1] + right[1];
-        var notRob = Math.Max(left[0], left[1]) + Math.Max(right[0], right[1]);
-        return new int[] { rob, notRob };
-    }
-    public int Rob(TreeNode root)
-    {
-        int[] answer = RobHelper(root);
-        return Math.Max(answer[0], answer[1]);
+    public string ValidIPAddress(string queryIP)
+    { 
+        Regex validateIPv4Regex = new Regex(@"^([1-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$");
+        if (validateIPv4Regex.IsMatch(queryIP))
+            return "IPv4";
+        Regex validateEmailRegex = new Regex(@"^(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}$");
+        if (validateEmailRegex.IsMatch(queryIP.ToUpper()))
+            return "IPv6";
+        return "Neither";
     }
 }
 

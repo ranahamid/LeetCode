@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    public class Codec
+    public class Codec_271
     {
         char separator = (char)257; //outside ASCII range
         // Encodes a list of strings to a single string.
