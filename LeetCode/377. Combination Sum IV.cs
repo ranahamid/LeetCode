@@ -8,6 +8,23 @@ namespace LeetCode
 {
     internal class _377
     {
+        public int CombinationSum4(int[] nums, int target)
+        {
+            int[] dp = new int[target + 1];
+            dp[0] = 1;
+            for (int i = 0; i < target; i++)
+            {
+                foreach (var n in nums)
+                {
+                    var sum = i + n;
+                    if (sum <= target)
+                    {
+                        dp[sum] += dp[i];
+                    }
+                }
+            }
+            return dp[target];
+        }
         #region top down
 
         /// <summary>
@@ -17,7 +34,7 @@ namespace LeetCode
         /// <param name="nums"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        public int CombinationSum4(int[] nums, int target)
+        public int CombinationSum4_Top(int[] nums, int target)
         {
             Dictionary<int, int> dict = new Dictionary<int, int>();
             return Combination(nums, dict, target);
