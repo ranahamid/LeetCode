@@ -86,10 +86,9 @@ var res1 = new int[] { 1, 2, 3 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
 Console.WriteLine(solution.CombinationSum4(res1,4)); //20
 
-
 public class Solution
 {
-  
+   
 }
 
 public static class Helper
