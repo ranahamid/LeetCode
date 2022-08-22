@@ -82,13 +82,28 @@ int[][] nums = new int[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 2, 3 };
+var res1 = new int[] { 0 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.CombinationSum4(res1,4)); //20
+Console.WriteLine(solution.Rob(res1)); //20
 
 public class Solution
 {
-   
+    public int[] RobHelper(TreeNode root)
+    {
+        if (root == null)
+            return new int[] { 0, 0 };
+        var left = RobHelper(root.left);
+        var right = RobHelper(root.right);
+
+        var rob = root.val + left[1] + right[1];
+        var notRob = Math.Max(left[0], left[1]) + Math.Max(right[0], right[1]);
+        return new int[] { rob, notRob };
+    }
+    public int Rob(TreeNode root)
+    {
+        int[] answer = RobHelper(root);
+        return Math.Max(answer[0], answer[1]);
+    }
 }
 
 public static class Helper
