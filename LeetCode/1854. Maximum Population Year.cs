@@ -9,8 +9,8 @@ namespace LeetCode
     internal class _1854
     {
         /// <summary>
-        /// Runtime: 142 ms, faster than 33.33% of C# online submissions for Maximum Population Year.
-        /// Memory Usage: 37.6 MB, less than 38.10% of C# online submissions for Maximum Population Year.
+        /// Runtime: 122 ms, faster than 59.52% of C# online submissions for Maximum Population Year.
+       /// Memory Usage: 37.4 MB, less than 59.52% of C# online submissions for Maximum Population Year.
         /// </summary>
         /// <param name="logs"></param>
         /// <returns></returns>
