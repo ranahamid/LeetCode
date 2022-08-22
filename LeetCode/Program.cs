@@ -85,10 +85,34 @@ Solution solution = new Solution();
 var res1 = new int[] { };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
 Console.WriteLine(solution.MovesToStamp("abc", "ababc")); //20
- 
+
 
 public class Solution
-{ 
+{
+    public static int result = 0;
+
+    public static void Backtrack(int[] nums, int target)
+    {
+        if (target == 0)
+        { 
+            result++;
+            return;
+        }
+        else if (target < 0)
+        {
+            return;
+        }
+        for (int i = 0; i < nums.Length; i++)
+        { 
+            Backtrack(nums, target - nums[i]); 
+        }
+    }
+    public int CombinationSum4(int[] nums, int target)
+    {
+        result = 0;
+        Backtrack(nums, target);
+        return result; 
+    }
 }
 
 public static class Helper

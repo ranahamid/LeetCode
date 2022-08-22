@@ -8,6 +8,12 @@ namespace LeetCode
 {
     internal class _136_Single_Number
     {
+        /// <summary>
+        /// Runtime: 149 ms, faster than 60.31% of C# online submissions for Single Number.
+        /// Memory Usage: 40.1 MB, less than 60.54% of C# online submissions for Single Number.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public int SingleNumber_Xor(int[] nums)
         {
             //We can use xor operation as it cancel out itself (i.e. only when values are different in binary representation then give output). See how xor operation works if confused.

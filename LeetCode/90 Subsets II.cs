@@ -66,7 +66,6 @@ namespace LeetCode
                 var result = string.Join(",", names.ToArray());
                 return result;
             }
-
             return "";
         }
 
