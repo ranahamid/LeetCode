@@ -72,7 +72,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "great", "acting", "skills" };
 var resW2 = new string[]
 {
-"bar","foo","the"
+"abcd", "aacd"
 };
 
 int[][] nums = new int[][]
@@ -85,11 +85,11 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 0 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.ValidIPAddress("2001:db8:85a3:0::8a2E:0370:7334")); //20
+Console.WriteLine(solution.DifferByOne(resW2)); //20
 
 public class Solution
 {
-   
+
 }
 
 public static class Helper
