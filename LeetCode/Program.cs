@@ -89,16 +89,7 @@ Console.WriteLine(solution.ValidIPAddress("2001:db8:85a3:0::8a2E:0370:7334")); /
 
 public class Solution
 {
-    public string ValidIPAddress(string queryIP)
-    { 
-        Regex validateIPv4Regex = new Regex(@"^([1-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$");
-        if (validateIPv4Regex.IsMatch(queryIP))
-            return "IPv4";
-        Regex validateEmailRegex = new Regex(@"^(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}$");
-        if (validateEmailRegex.IsMatch(queryIP.ToUpper()))
-            return "IPv6";
-        return "Neither";
-    }
+   
 }
 
 public static class Helper
@@ -195,6 +186,14 @@ public static class Helper
         return digits;
     }
 }
+   public class ListNode {
+       public int val;
+       public ListNode next;
+       public ListNode(int val=0, ListNode next=null) {
+           this.val = val;
+           this.next = next;
+       }
+   }
 public class TreeNode
 {
     public int val;
