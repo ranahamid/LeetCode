@@ -89,8 +89,25 @@ Console.WriteLine(solution.DifferByOne(resW2)); //20
 
 public class Solution
 {
-   
-
+    public int ProjectionArea(int[][] grid)
+    {
+        int counter = 0;
+        int maxCol = 0, maxRow = 0;
+        for(int i = 0; i < grid.Length; i++)
+        {
+            for(int j = 0; j < grid.Length; j++)
+            {
+                if (grid[i][j] > 0)
+                    counter++;
+                Console.WriteLine("Counter:" + counter);
+                maxRow = Math.Max(maxRow, grid[i][j]);
+                maxCol = Math.Max(maxCol, grid[j][i]);                
+            }
+            Console.WriteLine("maxCol:" + maxCol+ ", maxRow:"+maxRow);
+            counter += maxCol + maxRow;
+        }
+        return counter;
+    }
 }
 
 public static class Helper
