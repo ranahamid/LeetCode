@@ -89,24 +89,26 @@ Console.WriteLine(solution.DifferByOne(resW2)); //20
 
 public class Solution
 {
-    public int ProjectionArea(int[][] grid)
+    public IList<int> MostVisited(int n, int[] rounds)
     {
-        int counter = 0;
-        int maxCol = 0, maxRow = 0;
-        for(int i = 0; i < grid.Length; i++)
+        var result = new List<int>();
+        for(int i= rounds[0]; i <= rounds[rounds.Length-1]; i++)
         {
-            for(int j = 0; j < grid.Length; j++)
-            {
-                if (grid[i][j] > 0)
-                    counter++;
-                Console.WriteLine("Counter:" + counter);
-                maxRow = Math.Max(maxRow, grid[i][j]);
-                maxCol = Math.Max(maxCol, grid[j][i]);                
-            }
-            Console.WriteLine("maxCol:" + maxCol+ ", maxRow:"+maxRow);
-            counter += maxCol + maxRow;
+            result.Add(i);
         }
-        return counter;
+        if (result.Count > 0)
+            return result;
+        var set = new SortedSet<int>();
+       
+        for (int i = 1; i <= rounds[rounds.Length-1]; i++)
+        {
+            set.Add(i);
+        }
+        for (int i = rounds[0]; i <= n; i++)
+        {
+            result.Add(i);
+        }
+        return set.ToList();
     }
 }
 
