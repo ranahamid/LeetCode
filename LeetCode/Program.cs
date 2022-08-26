@@ -100,7 +100,7 @@ public class Solution
         var temp = new StringBuilder();
         for (int i = 0; i < inputString.Length; i++)
         {
-            if (inputString[i] != '(')
+            if (inputString[i] == '(')
             {
                 isPar = true;
                 temp.Append(inputString[i]);
