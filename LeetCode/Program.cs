@@ -77,14 +77,14 @@ var resW2 = new string[]
 
 char[][] nums = new char[][]
           {
-               new char[] {'A','0'}, 
+               new char[] {'A','0'},
           };
 Solution solution = new Solution();
 
 var res1 = new int[] { 1, 3, 2, 1 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.solution(res1)); //20
- 
+Console.WriteLine(solution.solution("(bar)")); //20
+
 
 public class Solution
 {
@@ -93,17 +93,38 @@ public class Solution
     /// </summary>
     /// <param name="inputString"></param>
     /// <returns></returns>
-    string solution(string inputString)
+  public  string solution(string inputString)
     {
         StringBuilder sb = new StringBuilder();
         var isPar = false;
+        var temp = new StringBuilder();
         for (int i = 0; i < inputString.Length; i++)
         {
-            if (!isPar && inputString[i] != '(')
+            if (inputString[i] != '(')
             {
-
+                isPar = true;
+                temp.Append(inputString[i]);
+                continue;
+            }
+            if (isPar)
+            {
+                if (inputString[i] == ')')
+                {
+                    sb.Append(temp);
+                    temp = new StringBuilder();
+                    isPar = false;
+                }
+                else
+                {
+                    temp.Append(inputString[i]);
+                }
+            }
+            else
+            {
+                sb.Append(inputString[i]);
             }
         }
+        return sb.ToString();
     }
 
 }
@@ -202,14 +223,16 @@ public static class Helper
         return digits;
     }
 }
-   public class ListNode {
-       public int val;
-       public ListNode next;
-       public ListNode(int val=0, ListNode next=null) {
-           this.val = val;
-           this.next = next;
-       }
-   }
+public class ListNode
+{
+    public int val;
+    public ListNode next;
+    public ListNode(int val = 0, ListNode next = null)
+    {
+        this.val = val;
+        this.next = next;
+    }
+}
 public class TreeNode
 {
     public int val;
