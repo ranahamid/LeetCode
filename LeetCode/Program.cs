@@ -81,42 +81,31 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 2, 1, 3, 5, 3, 2 };
+var res1 = new int[] { 1, 3, 2, 1 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.solution(9872383, 12,23,15)); //20
+Console.WriteLine(solution.solution(res1)); //20
  
 
 public class Solution
 {
-
-    public int solution(int n, int a, int b, int k)
+    /// <summary>
+    /// https://app.codesignal.com/arcade/intro/level-3/9DgaPsE2a7M6M2Hu6
+    /// </summary>
+    /// <param name="inputString"></param>
+    /// <returns></returns>
+    string solution(string inputString)
     {
-         
-        if (n == 2147483647 && a==0)
-            return 0;
-        if (n == 9872383 && a == 12)
-            return 62463;
-
-        var nB = Convert.ToString(n, 2);
-        var kB = Convert.ToString(k, 2);
-        var counter = kB.Length-1;
-        var cont = b - a;
-        var max= Math.Max(nB.Length, kB.Length);
-        max = Math.Max(max, b);
-        
-        nB=nB.PadLeft(max+1, '0');
-        var sb = new StringBuilder(nB);
-
-        for (int i = nB.Length - a-1; i >= 0; i--)
+        StringBuilder sb = new StringBuilder();
+        var isPar = false;
+        for (int i = 0; i < inputString.Length; i++)
         {
-            sb[i] = kB[counter--];
-            if (counter < 0 || cont<0)
-                break;
-            cont--;
+            if (!isPar && inputString[i] != '(')
+            {
+
+            }
         }
-        int output = Convert.ToInt32(sb.ToString(),2);
-        return output;
-    } 
+    }
+
 }
 
 public static class Helper
