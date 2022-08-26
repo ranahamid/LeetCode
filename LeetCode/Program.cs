@@ -85,31 +85,11 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 0 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.DifferByOne(resW2)); //20
+Console.WriteLine(solution.ReorderedPowerOf2(1521)); //20
 
 public class Solution
 {
-    public IList<int> MostVisited(int n, int[] rounds)
-    {
-        var result = new List<int>();
-        for(int i= rounds[0]; i <= rounds[rounds.Length-1]; i++)
-        {
-            result.Add(i);
-        }
-        if (result.Count > 0)
-            return result;
-        var set = new SortedSet<int>();
-       
-        for (int i = 1; i <= rounds[rounds.Length-1]; i++)
-        {
-            set.Add(i);
-        }
-        for (int i = rounds[0]; i <= n; i++)
-        {
-            result.Add(i);
-        }
-        return set.ToList();
-    }
+  
 }
 
 public static class Helper
