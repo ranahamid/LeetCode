@@ -89,7 +89,7 @@ Console.WriteLine(solution.ReorderedPowerOf2(1521)); //20
 
 public class Solution
 {
-  
+   
 }
 
 public static class Helper
