@@ -1,6 +1,7 @@
 ﻿using LeetCode;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Numerics;
 using System.Runtime.Intrinsics;
@@ -83,49 +84,12 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 3, 2, 1 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.solution("(bar)")); //20
+Console.WriteLine(solution.solution("foo(bar(baz))blim")); //20
 
 
 public class Solution
 {
-    /// <summary>
-    /// https://app.codesignal.com/arcade/intro/level-3/9DgaPsE2a7M6M2Hu6
-    /// </summary>
-    /// <param name="inputString"></param>
-    /// <returns></returns>
-  public  string solution(string inputString)
-    {
-        StringBuilder sb = new StringBuilder();
-        var isPar = false;
-        var temp = new StringBuilder();
-        for (int i = 0; i < inputString.Length; i++)
-        {
-            if (inputString[i] == '(')
-            {
-                isPar = true;
-                //temp.Append(inputString[i]);
-                continue;
-            }
-            if (isPar)
-            {
-                if (inputString[i] == ')')
-                {
-                    sb.Append(temp);
-                    temp = new StringBuilder();
-                    isPar = false;
-                }
-                else
-                {
-                    temp.Append(inputString[i]);
-                }
-            }
-            else
-            {
-                sb.Append(inputString[i]);
-            }
-        }
-        return sb.ToString();
-    }
+  
 
 }
 
