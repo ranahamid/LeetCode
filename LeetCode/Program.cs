@@ -103,7 +103,7 @@ public class Solution
             if (inputString[i] == '(')
             {
                 isPar = true;
-                temp.Append(inputString[i]);
+                //temp.Append(inputString[i]);
                 continue;
             }
             if (isPar)
