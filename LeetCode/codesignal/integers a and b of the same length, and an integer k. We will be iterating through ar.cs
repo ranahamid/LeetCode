@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Contest_84
 {
-    internal class CalculateSum
+    internal class CalculateSum2
     {
        
 	    int solution(int[] a, int[] b, int k) {

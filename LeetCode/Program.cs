@@ -72,24 +72,35 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "great", "acting", "skills" };
 var resW2 = new string[]
 {
-"abcd", "aacd"
+"AA", "AA", "AA"
 };
 
-int[][] nums = new int[][]
+char[][] nums = new char[][]
           {
-               new int[] {0,0,0},
-              new int[] {1,1,1},
-              //new int[] {0,2,1}, 
+               new char[] {'A','0'}, 
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 0 };
+var res1 = new int[] { 2, 1, 3, 5, 3, 2 };
 var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.ReorderedPowerOf2(1521)); //20
+//Console.WriteLine(solution.solution(1024,1,6,17)); //20
+Console.WriteLine(solution.GetVal()); //20
 
 public class Solution
 {
-   
+    
+   //public  int solution(int n, int a, int b, int k)
+   // {
+
+   //     var nB = Convert.ToString(n, 2);
+   //     var kB = Convert.ToString(k, 2);
+   //     var counter = 0;
+   //     for(int i=nB.Length-a;i>= b; i--)
+   //     {
+
+   //     }
+   // }
+
 }
 
 public static class Helper
