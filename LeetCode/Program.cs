@@ -93,15 +93,15 @@ public class Solution
     {
         var max = int.MinValue;
         int rows = matrix.Length;
-        int cols= matrix[0].Length;
-        int[] sum=new int[rows];
+        int cols = matrix[0].Length;
+        int[] sum = new int[rows];
 
-        for(int left=0; left< cols; left++)
+        for (int left = 0; left < cols; left++)
         {
             Array.Clear(sum, 0, rows);
-            for(int right = left; right < cols; right++)
+            for (int right = left; right < cols; right++)
             {
-                for(int i = 0; i < rows; i++)
+                for (int i = 0; i < rows; i++)
                 {
                     sum[i] += matrix[i][right];
                 }
@@ -109,12 +109,12 @@ public class Solution
                 for (int i = 0; i < rows; i++)
                 {
                     int total = 0;
-                    for(int j = i; j < rows; j++)
+                    for (int j = i; j < rows; j++)
                     {
                         total += sum[j];
                         if (total == k)
                             return k;
-                        if(total>max && total <= k)
+                        if (total > max && total <= k)
                             max = total;
                     }
                 }

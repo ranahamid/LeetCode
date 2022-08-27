@@ -1,0 +1,15 @@
+﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    HashSet<char> set = new HashSet<char>();
+    //Read line, and split it by whitespace into an array of strings
+    string tokens = Console.ReadLine();
+    foreach (var ch in tokens)
+        set.Add(ch);
+    tokens = Console.ReadLine();
+    foreach (var ch in tokens)
+        set.Add(ch);
+
+    Console.WriteLine(set.Count - 1);
+}
+
