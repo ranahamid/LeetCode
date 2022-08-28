@@ -73,7 +73,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "great", "acting", "skills" };
 var resW2 = new string[]
 {
-"AA", "AA", "AA"
+"G","P","GP","GG"
 };
 
 char[][] nums = new char[][]
@@ -81,47 +81,17 @@ char[][] nums = new char[][]
                new char[] {'A','0'},
           };
 Solution solution = new Solution();
+ 
+var res1 = new int[] { 2, 4, 3 };
+var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
+Console.WriteLine(solution.RemoveStars("leet**cod*e")); //20
 
-var res1 = new int[] { 1, 3, 2, 1 };
-var res2 = new int[] { 10, 6, 8, 5, 11, 9 };
-Console.WriteLine(solution.solution("foo(bar(baz))blim")); //20
+
 
 
 public class Solution
 {
-    public int MaxSumSubmatrix(int[][] matrix, int k)
-    {
-        var max = int.MinValue;
-        int rows = matrix.Length;
-        int cols = matrix[0].Length;
-        int[] sum = new int[rows];
-
-        for (int left = 0; left < cols; left++)
-        {
-            Array.Clear(sum, 0, rows);
-            for (int right = left; right < cols; right++)
-            {
-                for (int i = 0; i < rows; i++)
-                {
-                    sum[i] += matrix[i][right];
-                }
-
-                for (int i = 0; i < rows; i++)
-                {
-                    int total = 0;
-                    for (int j = i; j < rows; j++)
-                    {
-                        total += sum[j];
-                        if (total == k)
-                            return k;
-                        if (total > max && total <= k)
-                            max = total;
-                    }
-                }
-            }
-        }
-        return max;
-    }
+ 
 }
 
 public static class Helper
