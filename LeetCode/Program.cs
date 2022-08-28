@@ -84,7 +84,7 @@ Solution solution = new Solution();
  
 var res1 = new int[] { 2, 4, 3 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.RemoveStars("leet**cod*e")); //20
+Console.WriteLine(solution.LicenseKeyFormatting("5F3Z-2e-9-w",4)); //20
 
 
 
