@@ -8,6 +8,12 @@ namespace LeetCode
 {
     internal class _1329
     {
+        /// <summary>
+        /// Runtime: 142 ms, faster than 100.00% of C# online submissions for Sort the Matrix Diagonally.
+        /// Memory Usage: 46.6 MB, less than 6.58% of C# online submissions for Sort the Matrix Diagonally.
+        /// </summary>
+        /// <param name="mat"></param>
+        /// <returns></returns>
         public int[][] DiagonalSort(int[][] mat)
         {
 
@@ -15,21 +21,19 @@ namespace LeetCode
             for (int row = 0; row < mat.Length; row++)
             {
                 for (int column = 0; column < mat[0].Length; column++)
-                {
-                    var val = row - column;
-                    if (!dic.ContainsKey(val))
+                { 
+                    if (!dic.ContainsKey(row - column))
                     {
-                        dic[val] = new PriorityQueue<int, int>();
+                        dic[row - column] = new PriorityQueue<int, int>();
                     }
-                    dic[val].Enqueue(mat[row][column], mat[row][column]);
+                    dic[row - column].Enqueue(mat[row][column], mat[row][column]);
                 }
             }
             for (int row = 0; row < mat.Length; row++)
             {
                 for (int column = 0; column < mat[0].Length; column++)
-                {
-                    var val = row - column;
-                    mat[row][column] = dic[val].Dequeue();
+                { 
+                    mat[row][column] = dic[row - column].Dequeue();
                 }
             }
             return mat;
