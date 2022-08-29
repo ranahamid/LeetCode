@@ -1,7 +1,9 @@
 ﻿using LeetCode;
+using LeetCode.HackerRank.Certificate;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Common;
 using System.Net;
 using System.Numerics;
 using System.Runtime.Intrinsics;
@@ -81,34 +83,18 @@ char[][] nums = new char[][]
                new char[] {'A','0'},
           };
 Solution solution = new Solution();
- 
+
 var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.FindMaxAverage(res1,4)); //20
+Console.WriteLine(solution.FindMaxAverage(res1, 4)); //20
 
 
 
 
 public class Solution
 {
-    public double FindMaxAverage(int[] nums, int k)
-    {
-        var res = new List<double>();
-        double sum = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            sum += nums[i];
-            if (i >= k)
-            {
-                sum -= nums[i - k];
-            }
-            if (i >= k - 1)
-            {
-                res.Add(sum);
-            }
-        }
-        return res.Max() / k;
-    }
+   
+
 }
 
 public static class Helper
