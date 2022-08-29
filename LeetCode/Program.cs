@@ -93,8 +93,7 @@ Console.WriteLine(solution.FindMaxAverage(res1, 4)); //20
 
 public class Solution
 {
-   
-
+       
 }
 
 public static class Helper
