@@ -91,10 +91,7 @@ Console.WriteLine(solution.RearrangeCharacters("ilovecodingonleetcode", "code"))
 
 
 
-public class Solution
-{
  
-}
 
 public static class Helper
 {
