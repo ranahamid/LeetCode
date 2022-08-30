@@ -84,40 +84,30 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
+var res1 = new int[] { 40, 10, 20, 30 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.ShortestCompletingWord("1s3 456", resW2)); //20
+Console.WriteLine(solution.ArrayRankTransform(res1)); //20
 
 
 public class Solution
 {
-    public int FindBlackPixel(char[][] mat, int target)
+    public int[] ArrayRankTransform(int[] arr)
     {
-        var row = new int[mat.Length];
-        var column = new int[mat[0].Length];
-        for (int i = 0; i < mat.Length; i++)
+        var data = (int[])arr.Clone();
+        Array.Sort(data);
+        var set = new HashSet<int>(data);
+        var dic = new SortedDictionary<int, int>();
+        var counter = 1;
+        foreach (var item in set)
+        { 
+           dic.Add(item, counter++);         
+        }     
+        var res = new int[arr.Length];
+        for(int i = 0; i < arr.Length; i++)
         {
-            for (int j = 0; j < mat[i].Length; j++)
-            {
-                if (mat[i][j] == 'B')
-                {
-                    row[i]++;
-                    column[j]++;
-                }
-            }
+            res[i]=dic[arr[i]];
         }
-        var counter = 0;
-        for (int i = 0; i < mat.Length; i++)
-        {
-            for (int j = 0; j < mat[i].Length; j++)
-            {
-                if (mat[i][j] == 'B' && row[i] == target && column[j] == target)
-                {
-                    counter++;
-                }
-            }
-        }
-        return counter;
+        return res;
     }
 }
 
