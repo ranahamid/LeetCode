@@ -91,7 +91,7 @@ Console.WriteLine(solution.ShortestCompletingWord("1s3 456", resW2)); //20
 
 public class Solution
 {
- 
+   
 }
 
 
