@@ -91,24 +91,7 @@ Console.WriteLine(solution.ArrayRankTransform(res1)); //20
 
 public class Solution
 {
-    public int[] ArrayRankTransform(int[] arr)
-    {
-        var data = (int[])arr.Clone();
-        Array.Sort(data);
-        var set = new HashSet<int>(data);
-        var dic = new SortedDictionary<int, int>();
-        var counter = 1;
-        foreach (var item in set)
-        { 
-           dic.Add(item, counter++);         
-        }     
-        var res = new int[arr.Length];
-        for(int i = 0; i < arr.Length; i++)
-        {
-            res[i]=dic[arr[i]];
-        }
-        return res;
-    }
+   
 }
 
 
