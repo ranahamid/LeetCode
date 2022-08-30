@@ -90,7 +90,35 @@ Console.WriteLine(solution.ShortestCompletingWord("1s3 456", resW2)); //20
 
 
 public class Solution
-{ 
+{
+    public int FindBlackPixel(char[][] mat, int target)
+    {
+        var row = new int[mat.Length];
+        var column = new int[mat[0].Length];
+        for (int i = 0; i < mat.Length; i++)
+        {
+            for (int j = 0; j < mat[i].Length; j++)
+            {
+                if (mat[i][j] == 'B')
+                {
+                    row[i]++;
+                    column[j]++;
+                }
+            }
+        }
+        var counter = 0;
+        for (int i = 0; i < mat.Length; i++)
+        {
+            for (int j = 0; j < mat[i].Length; j++)
+            {
+                if (mat[i][j] == 'B' && row[i] == target && column[j] == target)
+                {
+                    counter++;
+                }
+            }
+        }
+        return counter;
+    }
 }
 
 
