@@ -89,9 +89,12 @@ var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
 Console.WriteLine(solution.RearrangeCharacters("ilovecodingonleetcode", "code")); //20
 
 
+public class Solution
+{
+     
+}
 
 
- 
 
 public static class Helper
 {
