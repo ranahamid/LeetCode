@@ -75,7 +75,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "great", "acting", "skills" };
 var resW2 = new string[]
 {
-"G","P","GP","GG"
+"looks", "pest", "stew", "show"
 };
 
 char[][] nums = new char[][]
@@ -86,12 +86,12 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.RearrangeCharacters("ilovecodingonleetcode", "code")); //20
+Console.WriteLine(solution.ShortestCompletingWord("1s3 456", resW2)); //20
 
 
 public class Solution
 {
-   
+ 
 }
 
 
