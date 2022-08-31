@@ -8,6 +8,12 @@ namespace LeetCode
 {
     internal class _1736
     {
+        /// <summary>
+        /// Runtime: 116 ms, faster than 45.00% of C# online submissions for Latest Time by Replacing Hidden Digits.
+        /// Memory Usage: 36 MB, less than 50.00% of C# online submissions for Latest Time by Replacing Hidden Digits.
+        /// </summary>
+        /// <param name="time"></param>
+        /// <returns></returns>
         public string MaximumTime(string time)
         {
             var sb = new StringBuilder(time); var isOnePass = false;
