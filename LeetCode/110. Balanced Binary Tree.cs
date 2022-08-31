@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    public class TreeNode_110
+    {
+        public int val;
+        public TreeNode_110 left;
+        public TreeNode_110 right;
+        public TreeNode_110(int val = 0, TreeNode_110 left = null, TreeNode_110 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     internal class _110
     {
         /// <summary>
@@ -14,14 +26,14 @@ namespace LeetCode
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>
-        public int Height(TreeNode root)
+        public int Height(TreeNode_110 root)
         {
             if (root == null)
                 return -1;
             else
                 return 1 + Math.Max(Height(root.left), Height(root.right));
         }
-        public bool IsBalanced(TreeNode root)
+        public bool IsBalanced(TreeNode_110 root)
         {
             if (root == null)
                 return true;
