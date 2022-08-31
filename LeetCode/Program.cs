@@ -13,8 +13,12 @@ using System.Text.RegularExpressions;
 
 int[][] nums2 = new int[][]
           {
-                new int[2] {0,1},
-                new int[2] {1,2},
+                new int[] {1,2,2,3,5 },
+                new int[] {3,2,3,4,4},
+
+                new int[] {2,4,5,3,1},
+                new int[] {6,7,1,4,5},
+                new int[] {5,1,1,2,4},
           };
 
 int[][] nums1 = new int[29][]
@@ -51,7 +55,7 @@ new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new i
 
 var pathsMatrix = new List<List<int>>()
             {
-                 new List<int>() { 0,1,0,0,0,1 },
+                 new List<int>() { 1,2,2,3,5 },
                  new List<int>() { 1,0,1,0,0,1},
                  new List<int>() { 0,1,0,1,1,0 },
 
@@ -86,12 +90,69 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.ShortestCompletingWord("1s3 456", resW2)); //20
+Console.WriteLine(solution.PacificAtlantic(nums2)); //20
 
 
 public class Solution
 {
- 
+    public IList<IList<int>> PacificAtlantic(int[][] heights)
+    {
+        var result = new List<IList<int>>();
+        var row = heights.Length;
+        var column = heights[0].Length;
+        if (row == 0 || column == 0)
+            return result;
+        var directions = new List<List<int>>(); 
+        directions.Add(new List<int> { 0, 1 }); directions.Add(new List<int> { 1, 0 }); directions.Add(new List<int> { 0, -1 }); directions.Add(new List<int> { -1, 0});
+        var pacificQueue=new Queue<int[]>();
+        var atlanticQueue = new Queue<int[]>();
+        for(int i = 0; i < row; i++)
+        {
+            pacificQueue.Enqueue(new int[] { i, 0 });
+            atlanticQueue.Enqueue(new int[] { i, column-1 });
+        }
+        for (int i = 0; i < column; i++)
+        {
+            pacificQueue.Enqueue(new int[] { 0,i });
+            atlanticQueue.Enqueue(new int[] {  row - 1,i });
+        }
+        bool[,] pacific = BFS(heights, row, column, directions, pacificQueue);
+        bool[,] atlantic = BFS(heights, row, column, directions, atlanticQueue);
+     
+        for(int i= 0; i < row; i++)
+        {
+           
+            for(int j = 0; j < column; j++)
+            {
+                if (pacific[i,j] && atlantic[i,j])
+                    result.Add(new List<int>() { i ,j});
+            }
+        }
+        return result;
+    }
+    public bool[,] BFS(int[][] heights, int row, int column, List<List<int>> directions, Queue<int[]> oceanQueue)
+    {
+        bool[,] reachable = new bool[row, column];
+        while(oceanQueue.Count > 0)
+        {
+            var cell = oceanQueue.Dequeue();
+            reachable[cell[0], cell[1]] = true;
+            foreach(var item in directions)
+            {
+                var newRow = cell[0] + item[0];
+                var newColumn = cell[1] + item[1];
+
+                if (newRow < 0 || newRow >= row || newColumn < 0 || newColumn >= column)
+                    continue;
+                if (reachable[newRow, newColumn])
+                    continue;
+                if (heights[newRow][newColumn] < heights[cell[0]][cell[1]])
+                    continue;
+                oceanQueue.Enqueue(new int[] { newRow, newColumn });
+            }
+        }
+        return reachable;
+    }
 }
 
 
