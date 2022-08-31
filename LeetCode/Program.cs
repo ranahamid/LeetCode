@@ -91,19 +91,12 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.ReorderSpaces("a")); //20
+Console.WriteLine(solution.MaximumTime("2?:?0")); //20
 
 
 public class Solution
 {
-    public string ReorderSpaces(string text)
-    {
-        var words= text.Split(' ',StringSplitOptions.RemoveEmptyEntries);
-        var spaces = text.Count(char.IsWhiteSpace);
-        var gap = words.Length == 1 ? 0 : spaces / (words.Length - 1);
-        var result = string.Join(new string(' ', gap),words) + new string(' ', spaces - gap * (words.Length - 1));         
-        return result;
-    }
+    
 }
 public static class Helper
 {
