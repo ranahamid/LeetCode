@@ -91,17 +91,13 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.PacificAtlantic(100)); //20
+Console.WriteLine(solution.IsDecomposable("66666666666677722")); //20
 
 
 public class Solution
 {
-    
+   
 }
-
-
-
-
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int n)
