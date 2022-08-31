@@ -91,12 +91,12 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.PacificAtlantic(nums2)); //20
+Console.WriteLine(solution.PacificAtlantic(100)); //20
 
 
 public class Solution
 {
-
+    
 }
 
 
@@ -107,15 +107,12 @@ public static class Helper
     private static IEnumerable<int> GetDivisors(int n)
     {
         if (n <= 0) { yield return default; }
-
         int iterator = (int)Math.Sqrt(n);
-
         for (int index = 1; index <= iterator; index++)
         {
             if (n % index == 0)
             {
                 yield return index;
-
                 if (index != n / index) { yield return n / index; }
             }
         }
