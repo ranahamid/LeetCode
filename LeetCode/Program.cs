@@ -96,7 +96,14 @@ Console.WriteLine(solution.ReorderSpaces("a")); //20
 
 public class Solution
 {
-  
+    public string ReorderSpaces(string text)
+    {
+        var words= text.Split(' ',StringSplitOptions.RemoveEmptyEntries);
+        var spaces = text.Count(char.IsWhiteSpace);
+        var gap = words.Length == 1 ? 0 : spaces / (words.Length - 1);
+        var result = string.Join(new string(' ', gap),words) + new string(' ', spaces - gap * (words.Length - 1));         
+        return result;
+    }
 }
 public static class Helper
 {
