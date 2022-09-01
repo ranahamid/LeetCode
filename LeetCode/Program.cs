@@ -96,7 +96,7 @@ Console.WriteLine(solution.MaximumTime("2?:?0")); //20
 
 public class Solution
 {
-    
+   
 }
 public static class Helper
 {
