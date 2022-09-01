@@ -9,8 +9,8 @@ namespace LeetCode
     internal class _2125
     {
         /// <summary>
-        /// Runtime: 155 ms, faster than 74.55% of C# online submissions for Number of Laser Beams in a Bank.
-       /// Memory Usage: 58.7 MB, less than 5.45% of C# online submissions for Number of Laser Beams in a Bank.
+        /// Runtime: 149 ms, faster than 81.82% of C# online submissions for Number of Laser Beams in a Bank.
+        /// Memory Usage: 54 MB, less than 5.45% of C# online submissions for Number of Laser Beams in a Bank.
         /// </summary>
         /// <param name="bank"></param>
         /// <returns></returns>
