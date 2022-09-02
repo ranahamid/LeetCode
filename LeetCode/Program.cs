@@ -89,11 +89,17 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
+var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7};
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.ValidWordAbbreviation("hi", "1")); //20
+Console.WriteLine(); //20
+solution.Rotate(res1, 15);
+class Solution
+{
+    public int FirstMissingPositive(int[] nums)
+    {
 
-
+    }
+}
 
 public static class Helper
 {
