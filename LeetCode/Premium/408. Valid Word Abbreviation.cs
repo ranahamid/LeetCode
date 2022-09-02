@@ -8,12 +8,20 @@ namespace LeetCode.Premium
 {
     internal class _408
     {
+        /// <summary>
+        /// Runtime: 97 ms, faster than 53.12% of C# online submissions for Valid Word Abbreviation.
+        /// Memory Usage: 37.5 MB, less than 65.62% of C# online submissions for Valid Word Abbreviation.
+        /// </summary>
+        /// <param name="word"></param>
+        /// <param name="abbr"></param>
+        /// <returns></returns>
         public bool ValidWordAbbreviation(string word, string abbr)
         {
             int i = 0;
             int j = 0;
-            var length = word.Length;
-            while (i < length && j < abbr.Length)
+            var wordLength = word.Length;
+            var abLength = abbr.Length;
+            while (i < wordLength && j < abLength)
             {
                 var num = 0;
                 if (char.IsDigit(abbr[j]))
@@ -22,15 +30,15 @@ namespace LeetCode.Premium
                     {
                         return false;
                     }
-                    while (j < abbr.Length && char.IsDigit(abbr[j]))
+                    while (j < abLength && char.IsDigit(abbr[j]))
                     {
                         num = num * 10 + Int32.Parse(abbr[j].ToString());
                         j++;
                     }
                     i += num;
-                    if (i > length)
+                    if (i > wordLength)
                         return false;
-                    if (j > abbr.Length)
+                    if (j > abLength)
                         return false;
                 }
                 else
@@ -46,9 +54,9 @@ namespace LeetCode.Premium
                     }
                 }
             }
-            if (j != abbr.Length)
+            if (j != abLength)
                 return false;
-            if (i != length)
+            if (i != wordLength)
                 return false;
             return true;
         }

@@ -95,51 +95,7 @@ Console.WriteLine(solution.ValidWordAbbreviation("hi", "1")); //20
 
 public class Solution
 {
-    public bool ValidWordAbbreviation(string word, string abbr)
-    {
-        int i=0;
-        int j = 0;
-        var length = word.Length;
-        var abLength = abbr.Length;
-        while (i < length && j < abLength)
-        {
-            var num = 0;
-            if (char.IsDigit(abbr[j]))
-            {
-                if (abbr[j]=='0')
-                {
-                    return false;
-                }
-                while (j< abLength &&  char.IsDigit(abbr[j]))
-                {
-                    num = num*10+Int32.Parse(abbr[j].ToString()) ;
-                    j++;
-                }
-                i += num;
-                if (i > length)
-                    return false;
-                if (j > abLength)
-                    return false;
-            }
-            else
-            {
-                if (word[i] == abbr[j])
-                {
-                    i++;
-                    j++;
-                }
-                else
-                {
-                    return false; 
-                }
-            }
-        }
-        if (j != abLength)
-            return false;
-        if (i != length)
-            return false;
-        return true;
-    }
+  
 }
 
 public static class Helper
@@ -156,6 +112,7 @@ public static class Helper
                 if (index != n / index) { yield return n / index; }
             }
         }
+         
     }
     public static int[] ReverseSort(int[] nums)
     {
