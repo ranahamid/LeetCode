@@ -93,10 +93,7 @@ var res1 = new int[] { 1, 12, -5, -6, 50, 3 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
 Console.WriteLine(solution.ValidWordAbbreviation("hi", "1")); //20
 
-public class Solution
-{
-  
-}
+
 
 public static class Helper
 {
@@ -112,7 +109,7 @@ public static class Helper
                 if (index != n / index) { yield return n / index; }
             }
         }
-         
+
     }
     public static int[] ReverseSort(int[] nums)
     {
