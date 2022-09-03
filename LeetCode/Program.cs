@@ -8,18 +8,21 @@ using System.Data.Common;
 using System.Net;
 using System.Numerics;
 using System.Runtime.Intrinsics;
+using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Text.RegularExpressions;
 
+using System.Xml.Linq;
+using System.Security.Principal;
+using Newtonsoft.Json;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {1,2,2,3,5 },
-                new int[] {3,2,3,4,4},
+                new int[] {0,4 },
+                new int[] {3,5},
 
-                new int[] {2,4,5,3,1},
-                new int[] {6,7,1,4,5},
-                new int[] {5,1,1,2,4},
+                    new int[] {2,6},
+
           };
 
 int[][] nums1 = new int[29][]
@@ -80,7 +83,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "great", "acting", "skills" };
 var resW2 = new string[]
 {
-"looks", "pest", "stew", "show"
+"withdraw 2 10", "transfer 5 1 20", "deposit 5 20", "transfer 3 4 15"
 };
 
 char[][] nums = new char[][]
@@ -89,13 +92,56 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+var res1 = new int[] { 10, 100, 20, 50, 30 };
 var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(); //20
-solution.Rotate(res1, 15);
+Console.WriteLine(solution.solution(10, nums2, 2)); //20
+
 class Solution
 {
-    
+    public int[][] solution(int blockCount, int[][] writes, int threshold)
+    {
+        var result = new List<int[]> { };
+        if (writes.Count() == 0)
+            return result.ToArray();
+        var dic = new SortedDictionary<int, int>();
+        foreach (var item in writes)
+        {
+            for (int i = item[0]; i <= item[1]; i++)
+            {
+                if (dic.ContainsKey(i))
+                {
+                    dic[i]++;
+                }
+                else
+                {
+                    dic[i] = 1;
+                }
+            }
+        }
+        var ans = new List<int>();
+        foreach (var item in dic)
+        {
+            if (item.Value >= threshold)
+                ans.Add(item.Key);
+        }
+        var start = ans[0];
+        var end = ans[0];
+        for (int i = 1; i < ans.Count; i++)
+        {
+            if (end + 1 == ans[i])
+            {
+                end = ans[i]; 
+            }
+            else
+            {
+                result.Add(new int[] { start, end });
+                start = ans[i];
+                end = ans[i];
+            }
+        }
+        result.Add(new int[] { start, end });
+        return result.ToArray();
+    }
 }
 
 public static class Helper
