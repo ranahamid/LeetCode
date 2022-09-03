@@ -92,56 +92,13 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 10, 100, 20, 50, 30 };
-var res2 = new int[] { 331244, 273144, 118983, 118252, 305688, 718089, 665450 };
-Console.WriteLine(solution.solution(10, nums2, 2)); //20
+var res1 = new int[] { 11,12,19 };
+var res2 = new int[] { 10,8,7 };
+Console.WriteLine(solution.MaximumRobots(res1, res2, 19)); //20
 
 class Solution
 {
-    public int[][] solution(int blockCount, int[][] writes, int threshold)
-    {
-        var result = new List<int[]> { };
-        if (writes.Count() == 0)
-            return result.ToArray();
-        var dic = new SortedDictionary<int, int>();
-        foreach (var item in writes)
-        {
-            for (int i = item[0]; i <= item[1]; i++)
-            {
-                if (dic.ContainsKey(i))
-                {
-                    dic[i]++;
-                }
-                else
-                {
-                    dic[i] = 1;
-                }
-            }
-        }
-        var ans = new List<int>();
-        foreach (var item in dic)
-        {
-            if (item.Value >= threshold)
-                ans.Add(item.Key);
-        }
-        var start = ans[0];
-        var end = ans[0];
-        for (int i = 1; i < ans.Count; i++)
-        {
-            if (end + 1 == ans[i])
-            {
-                end = ans[i]; 
-            }
-            else
-            {
-                result.Add(new int[] { start, end });
-                start = ans[i];
-                end = ans[i];
-            }
-        }
-        result.Add(new int[] { start, end });
-        return result.ToArray();
-    }
+
 }
 
 public static class Helper
@@ -215,14 +172,14 @@ public static class Helper
     }
     public static int GetDigitSum(int source)
     {
-        var total = 0;
+        var sum = 0;
         while (source > 0)
         {
             var digit = source % 10;
-            total += digit * digit;
+            sum += digit * digit;
             source = source / 10;
         }
-        return total;
+        return sum;
     }
     public static List<int> GetDigits(int source)
     {
