@@ -94,9 +94,91 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 3, 1, 5, 11, 13 };
 var res2 = new int[] { 10, 8, 7 };
-Console.WriteLine(solution.LongestNiceSubarray(res1)); //20
+//Console.WriteLine(solution.LongestNiceSubarray(res1)); //20
 
- 
+
+public class Solution
+{
+    public class Triplet
+    {
+        public int Column { get; set; }
+        public int Row { get; set; }
+        public int Value { get; set; }
+
+    }
+    public IList<IList<int>> VerticalTraversal(TreeNode root)
+    {
+        var result = new List<IList<int>>();
+        if (root == null)
+            return result;
+        var queue = new Queue<(TreeNode node, int row, int column)>();
+        //var dic = new SortedDictionary<int, List<int>>();
+        var nodeList = new List<Triplet>();
+        //BFS
+        int row = 0, column = 0;
+        queue.Enqueue((root, row, column));
+        while (queue.Count > 0)
+        {
+            var item = queue.Dequeue();
+            root = item.node;
+            row = item.row;
+            column = item.column;
+
+            if (root != null)
+            {
+                nodeList.Add(new Triplet
+                {
+                    Column = column,
+                    Row = row,
+                    Value = root.val,
+                });
+                queue.Enqueue((root.left, row + 1, column - 1));
+                queue.Enqueue((root.right, row + 1, column + 1));
+            }
+        }
+        //sort the list 
+
+        //nodeList.Sort((t1, t2) =>
+        //{
+        //    if (t1.Column == t2.Column)
+        //    {
+        //        if (t1.Row == t2.Row)
+        //            return t1.Value - t2.Value;
+        //        else
+        //            return t1.Row - t2.Row;
+        //    }
+        //    else
+        //        return t1.Column - t2.Column;             
+        //});
+        nodeList = nodeList.OrderBy(x => x.Column).ThenBy(x => x.Row).ThenBy(x => x.Value).ToList();
+        // step 3). extract the values, partitioned by the column index.
+        var currColumnIndex = nodeList.FirstOrDefault()?.Column;
+        List<int> currColumn = new List<int>();
+
+        foreach(var triplet in nodeList)
+        {
+            var col = triplet.Column;
+            var val = triplet.Value;
+
+            if(col == currColumnIndex)
+            {
+                currColumn.Add(val);
+            }
+            else
+            {
+                result.Add(currColumn);
+                
+                currColumnIndex = col ;
+                currColumn = new List<int>();
+                currColumn.Add(val);
+            }
+        }
+        result.Add(currColumn);
+
+        return result;
+    }
+}
+
 
 public static class Helper
 {
