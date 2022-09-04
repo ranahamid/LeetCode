@@ -92,27 +92,24 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 11,12,19 };
-var res2 = new int[] { 10,8,7 };
-Console.WriteLine(solution.MaximumRobots(res1, res2, 19)); //20
+var res1 = new int[] { 3, 1, 5, 11, 13 };
+var res2 = new int[] { 10, 8, 7 };
+Console.WriteLine(solution.LongestNiceSubarray(res1)); //20
 
-class Solution
-{
-
-}
+ 
 
 public static class Helper
 {
-    private static IEnumerable<int> GetDivisors(int n)
+    private static IEnumerable<int> GetDivisors(int number)
     {
-        if (n <= 0) { yield return default; }
-        int iterator = (int)Math.Sqrt(n);
+        if (number <= 0) { yield return default; }
+        int iterator = (int)Math.Sqrt(number);
         for (int index = 1; index <= iterator; index++)
         {
-            if (n % index == 0)
+            if (number % index == 0)
             {
                 yield return index;
-                if (index != n / index) { yield return n / index; }
+                if (index != number / index) { yield return number / index; }
             }
         }
 
