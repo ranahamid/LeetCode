@@ -30,7 +30,9 @@ namespace LeetCode
         {
             if (root == null)
                 return;
-            DFS(root.left);
+            //left
+            DFS(root.left); 
+            //value
             if (last != null)
             {
                 last.right = root;
@@ -42,6 +44,7 @@ namespace LeetCode
             }
             last = root;
 
+            //right
             DFS(root.right);
         }
     }
