@@ -26,10 +26,10 @@ namespace LeetCode
                 dic[item] = counter++;
             }
 
-            var node = MakeTree(inorder, preorder, dic, 0, preorder.Length - 1);
+            var node = MakeTree( preorder, dic, 0, preorder.Length - 1);
             return node;
         }
-        public TreeNode MakeTree(int[] inorder, int[] preorder, Dictionary<int, int> dic, int start, int end)
+        public TreeNode MakeTree( int[] preorder, Dictionary<int, int> dic, int start, int end)
         {
             // if there is no elements to construct subtrees
             if (start > end)
@@ -41,8 +41,8 @@ namespace LeetCode
             int index = dic[rootVal];
 
             pre_idx++;
-            root.left = MakeTree(inorder, preorder, dic, start, index - 1);
-            root.right = MakeTree(inorder, preorder, dic, index + 1, end);
+            root.left = MakeTree( preorder, dic, start, index - 1);
+            root.right = MakeTree( preorder, dic, index + 1, end);
             return root;
         }
     }
