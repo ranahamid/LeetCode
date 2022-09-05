@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,8 +44,11 @@ namespace LeetCode
             int index = dic[rootVal];
 
             post_idx--;
-            root.right = MakeTree(postorder, dic, index + 1, end, ref post_idx);
+            //The intuition behind it is that since postorder: LEFT → RIGHT → ROOT, so when we go in reverse order,
+            //we must construct the tree in the order of: ROOT → RIGHT → LEFT
 
+            //post order sequence is left --> right-- > root.So since here we are building it backward, it should go from root-- > right-- > left
+            root.right = MakeTree(postorder, dic, index + 1, end, ref post_idx);
             root.left = MakeTree(postorder, dic, start, index - 1, ref post_idx);
 
             return root;
