@@ -15,6 +15,7 @@ using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using System.Security.Principal;
 using Newtonsoft.Json;
+using System.ComponentModel;
 
 int[][] nums2 = new int[][]
           {
@@ -92,49 +93,14 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 3, 1, 5, 11, 13 };
+var res1 = new int[] { 8, 5, 1, 7, 10, 12 };
 var res2 = new int[] { 10, 8, 7 };
-//Console.WriteLine(solution.LongestNiceSubarray(res1)); //20
+ Console.WriteLine(solution.BstFromPreorder(res1)); //20
 
 
 public class Solution
 {
-    public int MaxSum { get; set; } = Int32.MinValue;
-    public int LargestBSTSubtree(TreeNode root)
-    {
-        DFS(root);
-        return MaxSum < 0 ? 0 : MaxSum;
-    }
-    public NodeInfo DFS(TreeNode root)
-    {
-        if (root == null)
-            return new NodeInfo(sum: 0, isBst: true, minValue: null, maxValue: null);
-        var left = DFS(root.left);
-        var right = DFS(root.right);
-        var isValid = false;
-        int sum = 1 + left.Sum + right.Sum;
-
-        if (left.IsBst && right.IsBst && (left.MaxValue==null || root.val> left.MaxValue.val) && (right.MinValue==null || root.val<right.MinValue.val))
-        {
-            isValid = true;
-            MaxSum = Math.Max(MaxSum, sum);
-        }        
-        return new NodeInfo(sum: sum, isBst: isValid, minValue:left.MinValue??root, maxValue:    right.MaxValue??root);
-    }
-    public class NodeInfo
-    {
-        public int Sum;
-        public bool IsBst;
-        public TreeNode MaxValue;
-        public TreeNode MinValue;
-        public NodeInfo(int sum, bool isBst,  TreeNode minValue, TreeNode maxValue)
-        {
-            Sum = sum;
-            IsBst = isBst;
-            MinValue = minValue;
-            MaxValue = maxValue;          
-        }
-    }
+  
 }
 
 
