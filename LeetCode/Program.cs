@@ -93,14 +93,15 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 8, 5, 1, 7, 10, 12 };
-var res2 = new int[] { 10, 8, 7 };
- Console.WriteLine(solution.BstFromPreorder(res1)); //20
+var res1 = new int[] { 9, 3, 15, 20, 7 };
+var res2 = new int[] { 9, 15, 7, 20, 3 };
+ Console.WriteLine(solution.BuildTree(res1, res2)); //20
 
 
 public class Solution
 {
-  
+    
+   
 }
 
 
