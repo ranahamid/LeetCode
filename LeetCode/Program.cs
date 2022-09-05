@@ -95,11 +95,12 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 9, 3, 15, 20, 7 };
 var res2 = new int[] { 9, 15, 7, 20, 3 };
- Console.WriteLine(solution.BuildTree(res1, res2)); //20
+//Console.WriteLine(solution.TreeToDoublyList(20)); //20
 
 
 public class Solution
-{ 
+{
+    
 }
 
 
@@ -215,5 +216,27 @@ public class TreeNode
         this.val = val;
         this.left = left;
         this.right = right;
+    }
+}
+public class Node
+{
+    public int val;
+    public Node left;
+    public Node right;
+
+    public Node() { }
+
+    public Node(int _val)
+    {
+        val = _val;
+        left = null;
+        right = null;
+    }
+
+    public Node(int _val, Node _left, Node _right)
+    {
+        val = _val;
+        left = _left;
+        right = _right;
     }
 }
