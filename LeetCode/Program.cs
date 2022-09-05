@@ -99,9 +99,7 @@ var res2 = new int[] { 9, 15, 7, 20, 3 };
 
 
 public class Solution
-{
-    
-   
+{ 
 }
 
 
