@@ -94,20 +94,18 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 9, 3, 15, 20, 7 };
+var res1 = new int[] { 5, 2, 1, 3, 6 };
 var res2 = new int[] { 9, 15, 7, 20, 3 };
-//Console.WriteLine(solution.TreeToDoublyList(20)); //20
+ Console.WriteLine(solution.VerifyPreorder(res1)); //20
 
 
 public class Solution
-{
-    
-}
-
-public class BSTIterator
-{
+{ 
   
 }
+
+
+
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
