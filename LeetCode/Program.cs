@@ -16,6 +16,7 @@ using System.Xml.Linq;
 using System.Security.Principal;
 using Newtonsoft.Json;
 using System.ComponentModel;
+using System;
 
 int[][] nums2 = new int[][]
           {
@@ -103,7 +104,10 @@ public class Solution
     
 }
 
-
+public class BSTIterator
+{
+  
+}
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
