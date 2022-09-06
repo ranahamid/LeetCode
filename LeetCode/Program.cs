@@ -16,6 +16,7 @@ using System.Xml.Linq;
 using System.Security.Principal;
 using Newtonsoft.Json;
 using System.ComponentModel;
+using LeetCode.Premium;
 
 int[][] nums2 = new int[][]
           {
@@ -95,13 +96,21 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 9, 3, 15, 20, 7 };
 var res2 = new int[] { 9, 15, 7, 20, 3 };
- Console.WriteLine(); //20
 
-solution.BuildOnes(5);
-public class Solution
-{
-   
-}
+
+#region Tree
+TreeNode t5 = new TreeNode(1);
+TreeNode t4 = new TreeNode(2);
+TreeNode t3 = new TreeNode(4);
+TreeNode t2 = new TreeNode(6, t4, t5);
+TreeNode t1 = new TreeNode(9, t2, t3);
+#endregion
+
+Console.WriteLine(solution.EqualToDescendants(t1)); //20
+
+
+
+
 
 
 public static class Helper
