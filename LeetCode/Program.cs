@@ -100,8 +100,21 @@ var res2 = new int[] { 9, 15, 7, 20, 3 };
 
 public class Solution
 {
-    
-   
+    public TreeNode RemoveLeafNodes(TreeNode root, int target)
+    {
+        if (root == null)
+            return null;
+      
+
+        if (root.left!=null && root.left.val == target)
+            root.left= null;
+        if (root.right != null && root.right.val == target)
+            root.right = null;
+
+        root.left = RemoveLeafNodes(root.left, target);
+        root.right = RemoveLeafNodes(root.right, target);
+        return root;
+    }
 }
 
 
