@@ -95,26 +95,12 @@ Solution solution = new Solution();
 
 var res1 = new int[] { 9, 3, 15, 20, 7 };
 var res2 = new int[] { 9, 15, 7, 20, 3 };
- Console.WriteLine(solution.BuildTree(res1, res2)); //20
+ Console.WriteLine(); //20
 
-
+solution.BuildOnes(5);
 public class Solution
 {
-    public TreeNode RemoveLeafNodes(TreeNode root, int target)
-    {
-        if (root == null)
-            return null;
-      
-
-        if (root.left!=null && root.left.val == target)
-            root.left= null;
-        if (root.right != null && root.right.val == target)
-            root.right = null;
-
-        root.left = RemoveLeafNodes(root.left, target);
-        root.right = RemoveLeafNodes(root.right, target);
-        return root;
-    }
+   
 }
 
 
@@ -230,5 +216,27 @@ public class TreeNode
         this.val = val;
         this.left = left;
         this.right = right;
+    }
+}
+public class Node
+{
+    public int val;
+    public Node left;
+    public Node right;
+
+    public Node() { }
+
+    public Node(int _val)
+    {
+        val = _val;
+        left = null;
+        right = null;
+    }
+
+    public Node(int _val, Node _left, Node _right)
+    {
+        val = _val;
+        left = _left;
+        right = _right;
     }
 }
