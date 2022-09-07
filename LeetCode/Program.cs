@@ -107,40 +107,26 @@ TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
 Console.WriteLine(solution.SumNumbers(t1)); //20
-
-
 public class Solution
-{ 
-    int sum = 0;
-    public int SumNumbers(TreeNode root)
+{
+    int maxSum = Int32.MinValue;
+    public int MaxPathSum(TreeNode root)
     {
-        Traverse(root, new int[1000]);
-        return sum;
+        FindMaxPathSum(root);
+        return maxSum;
     }
-    public void Traverse(TreeNode root, int[] tempList, int lenght = 0)
+    public int FindMaxPathSum(TreeNode root)
     {
         if (root == null)
-        {
-            return;
-        }
-        tempList[lenght] = root.val;
-        lenght++;
-        if (root.left == null && root.right == null)
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (var item in tempList.Take(lenght))
-            {
-                sb.Append(item);
-            }
-            sum += Int32.Parse(sb.ToString());
-        }
-        else
-        {
-            Traverse(root.left, tempList, lenght);
-            Traverse(root.right, tempList, lenght);
-        }
+            return 0;
+        var left = Math.Max(FindMaxPathSum(root.left), 0);
+        var right = Math.Max(FindMaxPathSum(root.right), 0);
+        var currentSum = root.val + left + right;
+        maxSum=Math.Max(currentSum,maxSum);
+        return root.val + Math.Max(left, right);        
     }
 }
+
 
 
 
