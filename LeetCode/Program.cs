@@ -106,10 +106,10 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.SumNumbers(t1)); //20
+Console.WriteLine(solution.SubarraySum(t1)); //20
 public class Solution
 {
-     
+ 
 }
 
 
