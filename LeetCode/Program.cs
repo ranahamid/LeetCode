@@ -109,22 +109,7 @@ TreeNode t1 = new TreeNode(9, t2, t3);
 Console.WriteLine(solution.SumNumbers(t1)); //20
 public class Solution
 {
-    int maxSum = Int32.MinValue;
-    public int MaxPathSum(TreeNode root)
-    {
-        FindMaxPathSum(root);
-        return maxSum;
-    }
-    public int FindMaxPathSum(TreeNode root)
-    {
-        if (root == null)
-            return 0;
-        var left = Math.Max(FindMaxPathSum(root.left), 0);
-        var right = Math.Max(FindMaxPathSum(root.right), 0);
-        var currentSum = root.val + left + right;
-        maxSum=Math.Max(currentSum,maxSum);
-        return root.val + Math.Max(left, right);        
-    }
+     
 }
 
 
