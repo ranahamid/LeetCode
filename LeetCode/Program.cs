@@ -106,10 +106,41 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.EqualToDescendants(t1)); //20
+Console.WriteLine(solution.SumNumbers(t1)); //20
 
 
-
+public class Solution
+{ 
+    int sum = 0;
+    public int SumNumbers(TreeNode root)
+    {
+        Traverse(root, new int[1000]);
+        return sum;
+    }
+    public void Traverse(TreeNode root, int[] tempList, int lenght = 0)
+    {
+        if (root == null)
+        {
+            return;
+        }
+        tempList[lenght] = root.val;
+        lenght++;
+        if (root.left == null && root.right == null)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in tempList.Take(lenght))
+            {
+                sb.Append(item);
+            }
+            sum += Int32.Parse(sb.ToString());
+        }
+        else
+        {
+            Traverse(root.left, tempList, lenght);
+            Traverse(root.right, tempList, lenght);
+        }
+    }
+}
 
 
 
@@ -225,27 +256,5 @@ public class TreeNode
         this.val = val;
         this.left = left;
         this.right = right;
-    }
-}
-public class Node
-{
-    public int val;
-    public Node left;
-    public Node right;
-
-    public Node() { }
-
-    public Node(int _val)
-    {
-        val = _val;
-        left = null;
-        right = null;
-    }
-
-    public Node(int _val, Node _left, Node _right)
-    {
-        val = _val;
-        left = _left;
-        right = _right;
     }
 }
