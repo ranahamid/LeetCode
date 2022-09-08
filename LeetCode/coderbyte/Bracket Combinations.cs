@@ -4,20 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.coderbyte
 {
-    internal class _22
+    internal class Bracket_Combinations
     {
-        /// <summary>
-        /// Runtime: 224 ms, faster than 26.66% of C# online submissions for Generate Parentheses.
-        /// Memory Usage: 44.1 MB, less than 90.40% of C# online submissions for Generate Parentheses.
-        /// </summary>
         public static List<string> result = new List<string>();
-        public IList<string> GenerateParenthesis(int n)
+        public static int BracketCombinations(int n)
         {
+            // code goes here  
             result = new List<string>();
             Generate(new StringBuilder(), 0, 0, n);
-            return result ;
+            return result.Count();
         }
         public static void Generate(StringBuilder current, int open, int close, int max)
         {

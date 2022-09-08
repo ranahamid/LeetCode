@@ -1,0 +1,19 @@
+﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    int n = Convert.ToInt32(Console.ReadLine());
+    string[] tokens = Console.ReadLine().Split();
+    
+    var max = Int32.MinValue;
+    var result = 0;
+    for (int i = 0; i < n; i++)
+    {
+        var num = Convert.ToInt32(tokens[i]);
+        if (num >= max)
+        {
+            max = num;
+            result = i + 1;
+        }
+    } 
+    Console.WriteLine(result);
+}

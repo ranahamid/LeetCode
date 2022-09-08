@@ -16,7 +16,7 @@ using System.Xml.Linq;
 using System.Security.Principal;
 using Newtonsoft.Json;
 using System.ComponentModel;
-using LeetCode.Premium;
+ 
 
 int[][] nums2 = new int[][]
           {
@@ -109,7 +109,7 @@ TreeNode t1 = new TreeNode(9, t2, t3);
 Console.WriteLine(solution.SubarraySum(t1)); //20
 public class Solution
 {
-   
+
 }
 public class BSTIterator
 {
@@ -137,11 +137,11 @@ public class BSTIterator
     public bool HasNext()
     {
         return index + 1 < sortedNumbers.Count();
-    } 
+    }
 
     public bool HasPrev()
     {
-        return index - 1>=0 &&  index - 1 < sortedNumbers.Count();
+        return index - 1 >= 0 && index - 1 < sortedNumbers.Count();
     }
 
     public int Prev()
