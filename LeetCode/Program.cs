@@ -112,9 +112,52 @@ Console.WriteLine(solution.TupleSameProduct(res1)); //20
 
 public class Solution
 {
-    
-}
+    public bool Search(int[] nums, int target)
+    {
+        var start = 0;
+        var end = nums.Length - 1;
+        while (start <= end)
+        {
+            while(start<end && nums[start] == nums[start+1])
+                start++;
+            while (start < end && nums[end] == nums[end - 1])
+                end--;
 
+
+            var mid = (end + start) / 2;
+            if (nums[mid] == target)
+                return true;
+            ///left part is sorted
+            if (nums[start] <= nums[mid])
+            {
+                if (target >= nums[start] && target < nums[mid])
+                {
+                    //left part 
+                    end = mid - 1;
+                }
+                else
+                {
+                    //right partt
+                    start = mid + 1;
+                }
+            }
+            else
+            {
+                if (target > nums[mid] && target <= nums[end])
+                {
+
+                    start = mid + 1;
+                }
+                else
+                {
+                    end = mid - 1;
+                }
+            }
+
+        }
+        return false ;
+    }
+}
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
