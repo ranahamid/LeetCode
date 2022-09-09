@@ -113,7 +113,17 @@ Console.WriteLine(solution.TupleSameProduct(res1)); //20
 
 public class Solution
 {
-   
+    public bool SearchNode(TreeNode root, int destValue, StringBuilder sb)
+    {
+        if (root.val == destValue)
+            return true;
+        else if (root.left != null && SearchNode(root.left, destValue, sb))
+            sb.Append("L");
+        else if (root.right != null && SearchNode(root.right, destValue, sb))
+            sb.Append("R");
+        return sb.Length > 0;
+    }
+    
 }
 
 
