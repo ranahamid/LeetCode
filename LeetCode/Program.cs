@@ -16,14 +16,14 @@ using System.Xml.Linq;
 using System.Security.Principal;
 using Newtonsoft.Json;
 using System.ComponentModel;
- 
+
 
 int[][] nums2 = new int[][]
           {
-                new int[] {0,4 },
-                new int[] {3,5},
+                new int[] {1,1,3 },
+                new int[] {4,3,4},
 
-                    new int[] {2,6},
+                    new int[] {5,6,7},
 
           };
 
@@ -106,11 +106,8 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.SubarraySum(t1)); //20
-public class Solution
-{
-
-}
+Console.WriteLine(solution.NumberOfWeakCharacters(nums2)); //20
+ 
 public class BSTIterator
 {
     List<int> sortedNumbers = new List<int>();
