@@ -16,7 +16,7 @@ using System.Xml.Linq;
 using System.Security.Principal;
 using Newtonsoft.Json;
 using System.ComponentModel;
-
+using System.Xml.XPath;
 
 int[][] nums2 = new int[][]
           {
@@ -82,20 +82,21 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
             };
 
 
-var resW1 = new string[] { "great", "acting", "skills" };
+var resW1 = new string[] { "oa", "oaa" };
 var resW2 = new string[]
 {
 "withdraw 2 10", "transfer 5 1 20", "deposit 5 20", "transfer 3 4 15"
 };
 char[][] nums = new char[][]
           {
-               new char[] {'A','B','C','E'},
-               new char[] {'S','F','C','S'},
-               new char[] {'A','D','E','E'},
+               new char[] {'o','a','b','n'},
+               new char[] {'o','t','a','e'},
+               new char[] {'a','h','k','r'},
+               new char[] {'a','f','l','v'},
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 9, 3, 15, 20, 7 };
+var res1 = new int[] { 2, 3, 4, 6 };
 var res2 = new int[] { 9, 15, 7, 20, 3 };
 
 
@@ -107,11 +108,11 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.Exist(nums, "ABCCED")); //20
+Console.WriteLine(solution.TupleSameProduct(res1)); //20
 
 public class Solution
 {
-   
+    
 }
 
 public static class Helper
