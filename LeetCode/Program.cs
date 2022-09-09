@@ -87,10 +87,11 @@ var resW2 = new string[]
 {
 "withdraw 2 10", "transfer 5 1 20", "deposit 5 20", "transfer 3 4 15"
 };
-
 char[][] nums = new char[][]
           {
-               new char[] {'A','0'},
+               new char[] {'A','B','C','E'},
+               new char[] {'S','F','C','S'},
+               new char[] {'A','D','E','E'},
           };
 Solution solution = new Solution();
 
@@ -106,49 +107,12 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.NumberOfWeakCharacters(nums2)); //20
- 
-public class BSTIterator
+Console.WriteLine(solution.Exist(nums, "ABCCED")); //20
+
+public class Solution
 {
-    List<int> sortedNumbers = new List<int>();
-    int index;
-    public BSTIterator(TreeNode root)
-    {
-        List<int> sortedNumbers = new List<int>();
-        index = -1;
-        InOrder(root);
-    }
-    public void InOrder(TreeNode root)
-    {
-        if (root == null)
-            return;
-        InOrder(root.left);
-        sortedNumbers.Add(root.val);
-        InOrder(root.right);
-    }
-
-    public int Next()
-    {
-        return sortedNumbers[++index];
-    }
-    public bool HasNext()
-    {
-        return index + 1 < sortedNumbers.Count();
-    }
-
-    public bool HasPrev()
-    {
-        return index - 1 >= 0 && index - 1 < sortedNumbers.Count();
-    }
-
-    public int Prev()
-    {
-        return sortedNumbers[--index];
-    }
+   
 }
-
-
-
 
 public static class Helper
 {
