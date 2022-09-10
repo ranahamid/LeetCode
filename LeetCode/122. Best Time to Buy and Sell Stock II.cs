@@ -20,7 +20,7 @@ namespace LeetCode
             {
                 var diff = prices[i] - prices[i - 1];
                 if (diff > 0)
-                    max += prices[i] - prices[i - 1];
+                    max += diff;
             }
             return max;
         }

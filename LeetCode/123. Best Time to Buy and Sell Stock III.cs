@@ -8,7 +8,24 @@ namespace LeetCode
 {
     class _123
     {
-        public static int MaxProfit(int[] prices)
+        public int MaxProfit(int[] prices, int k = 2)
+        {
+            var buy = new int[k + 1];
+            var sell = new int[k + 1];
+            for (int i = 0; i <= k; i++)
+                buy[i] = Int32.MaxValue;
+            foreach (var p in prices)
+            {
+                for (int i = 1; i <= k; i++)
+                {
+                    buy[i] = Math.Min(buy[i], p - sell[i - 1]);
+                    sell[i] = Math.Max(sell[i], p - buy[i]);
+                }
+            }
+            return sell[k];
+        }
+
+        public static int MaxProfit_1(int[] prices)
         {
             var max = 0;
             var t2profit = 0;
