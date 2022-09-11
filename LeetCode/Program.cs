@@ -27,7 +27,7 @@ int[][] nums2 = new int[][]
                     new int[] {5,6,7},
 
           };
- 
+
 #region node
 
 //ListNode eig = new ListNode(3);
@@ -92,7 +92,7 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 4, 7,5, 15 };
+var res1 = new int[] { 1, 9, 8, 7, 19 };
 var res2 = new int[] { 9, 15, 7, 20, 3 };
 
 
@@ -104,12 +104,12 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.LengthOfLIS(res1, 1)); //20
+Console.WriteLine(solution.CountDistinct(res1, 1, 6)); //20
 
 
 public class Solution
 {
-   
+ 
 }
 
 
