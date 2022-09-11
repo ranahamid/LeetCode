@@ -27,12 +27,7 @@ int[][] nums2 = new int[][]
                     new int[] {5,6,7},
 
           };
-
-int[][] nums1 = new int[29][]
-{
-new int[2] {22,19},new int[2] {16,17},new int[2] {10,7},new int[2] {27,16},new int[2] {9,9},new int[2] {21,4},new int[2] {24,2},new int[2] {12,11},new int[2] {2,5},new int[2] {24,12},new int[2] {25,7},new int[2] {7,13},new int[2] {14,9},new int[2] {23,15},new int[2] {18,17},new int[2] {22,16},new int[2] {4,14},new int[2] {14,17},new int[2] {25,11},new int[2] {12,16},new int[2] {29,3},new int[2] {22,11},new int[2] {29,2},new int[2] {24,2},new int[2] {24,15},new int[2] {7,14},new int[2] {7,3},new int[2] {7,14},new int[2] {1,3}
-};
-
+ 
 #region node
 
 //ListNode eig = new ListNode(3);
@@ -114,31 +109,7 @@ Console.WriteLine(solution.LengthOfLIS(res1, 1)); //20
 
 public class Solution
 {
-    public int MaxPerformance(int n, int[] speed, int[] efficiency, int k)
-    {
-        var BigMod = (int)Math.Pow(10, 9) + 7;
-        var candidates = new List<List<int>>();
-        for (int i = 0; i < n; i++)
-        {
-            candidates.Add(new List<int> { efficiency[i], speed[i] });
-        }
-        candidates = candidates.OrderByDescending(x => x[0]).ToList();
-        var pq = new PriorityQueue<int, int>();
-        long currentSum = 0;
-        long result = 0;
-        for (int i = 0; i < candidates.Count; i++)
-        {
-            if (pq.Count == k)
-            {
-                var num = pq.Dequeue();
-                currentSum -= num;
-            }
-            pq.Enqueue(candidates[i][1], candidates[i][1]);
-            currentSum += candidates[i][1];
-            result = Math.Max(result, currentSum * candidates[i][0]);
-        }
-        return (int)(result % BigMod);
-    }
+   
 }
 
 
