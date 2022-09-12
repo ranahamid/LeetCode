@@ -104,12 +104,12 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.CountDistinct(res1, 1, 6)); //20
+Console.WriteLine(solution.LargestMerge("cabaa", "bcaaa")); //20
 
 
 public class Solution
 {
- 
+   
 }
 
 
