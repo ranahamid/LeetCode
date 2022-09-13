@@ -22,9 +22,8 @@ using System.Runtime.Intrinsics.Arm;
 int[][] nums2 = new int[][]
           {
                 new int[] {1,1,3 },
-                new int[] {4,3,4},
-
-                    new int[] {5,6,7},
+                new int[] {4,3,4}, 
+                new int[] {5,6,7},
 
           };
 
@@ -104,12 +103,12 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.LargestMerge("cabaa", "bcaaa")); //20
+Console.WriteLine(solution.SortString("ddaaaabbbbcccc")); //20
 
 
 public class Solution
 {
-
+  
 }
 
 
