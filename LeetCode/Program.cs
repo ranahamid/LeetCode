@@ -109,9 +109,9 @@ Console.WriteLine(solution.FindLHS(res1)); //20
 
 public class Solution
 {
-  
-}
+   
 
+}
 
 public static class Helper
 {
