@@ -91,7 +91,7 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 9, 8, 7, 19 };
+var res1 = new int[] { 1, 2,2,1 };
 var res2 = new int[] { 9, 15, 7, 20, 3 };
 
 
@@ -103,13 +103,13 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.MinOperations("10010100")); //20
+Console.WriteLine(solution.FindLHS(res1)); //20
 
 
 
 public class Solution
 {
-   
+  
 }
 
 
