@@ -103,13 +103,16 @@ TreeNode t2 = new TreeNode(6, t4, t5);
 TreeNode t1 = new TreeNode(9, t2, t3);
 #endregion
 
-Console.WriteLine(solution.SortString("ddaaaabbbbcccc")); //20
+Console.WriteLine(solution.MinOperations("10010100")); //20
+
 
 
 public class Solution
 {
-  
+   
 }
+
+
 
 
 public static class Helper
