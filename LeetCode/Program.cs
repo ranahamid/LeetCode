@@ -109,30 +109,23 @@ Console.WriteLine(solution.PseudoPalindromicPaths(t1)); //20
 
 
 
-public class Solution
+public class Solution : Reader4
 { 
-    int answer = 0;
-    public int PseudoPalindromicPaths(TreeNode root)
+    public int Read(char[] buf, int n)
     {
-        PreOrder(root, 0);
-        return answer;
-    }
- 
-    public void PreOrder(TreeNode root, int path)
-    {
-        if (root == null)
-            return;
-        var doub = 1 << root.val;
-        path = path ^ (doub);
-
-
-        if (root.left==  null && root.right==null)
-        {  
-            if ((path & (path - 1)) ==0)
-                answer++;
+        int copyCharNum = 0, readChars = 4;
+        char[] chars = new char[4];
+        while (readChars == 4 && copyCharNum < n)
+        {
+            readChars = Read4(chars);
+            for (int i = 0; i < readChars; i++)
+            {
+                if (copyCharNum == n)
+                    return n;
+                buf[copyCharNum++] = chars[i];
+            }
         }
-        PreOrder(root.left, path);
-        PreOrder(root.right, path); 
+        return copyCharNum;
     }
 }
 
