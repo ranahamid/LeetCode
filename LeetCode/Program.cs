@@ -18,11 +18,12 @@ using Newtonsoft.Json;
 using System.ComponentModel;
 using System.Xml.XPath;
 using System.Runtime.Intrinsics.Arm;
+using System.IO;
 
 int[][] nums2 = new int[][]
           {
                 new int[] {1,1,3 },
-                new int[] {4,3,4}, 
+                new int[] {4,3,4},
                 new int[] {5,6,7},
 
           };
@@ -91,26 +92,47 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 2,2,1 };
+var res1 = new int[] { 1, 2, 2, 1 };
 var res2 = new int[] { 9, 15, 7, 20, 3 };
 
 
 #region Tree
+TreeNode t6 = new TreeNode(1);
 TreeNode t5 = new TreeNode(1);
-TreeNode t4 = new TreeNode(2);
-TreeNode t3 = new TreeNode(4);
-TreeNode t2 = new TreeNode(6, t4, t5);
-TreeNode t1 = new TreeNode(9, t2, t3);
+TreeNode t4 = new TreeNode(3);
+TreeNode t3 = new TreeNode(1, null, t6);
+TreeNode t2 = new TreeNode(3, t4, t5);
+TreeNode t1 = new TreeNode(2, t2, t3);
 #endregion
 
-Console.WriteLine(solution.FindLHS(res1)); //20
+Console.WriteLine(solution.PseudoPalindromicPaths(t1)); //20
 
 
 
 public class Solution
-{
-   
+{ 
+    int answer = 0;
+    public int PseudoPalindromicPaths(TreeNode root)
+    {
+        PreOrder(root, 0);
+        return answer;
+    }
+ 
+    public void PreOrder(TreeNode root, int path)
+    {
+        if (root == null)
+            return;
+        path = path ^ (1 << root.val);
 
+
+        if (root.left==  null && root.right==null)
+        {  
+            if ((path & (path - 1)) ==0)
+                answer++;
+        }
+        PreOrder(root.left, path);
+        PreOrder(root.right, path); 
+    }
 }
 
 public static class Helper
