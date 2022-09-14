@@ -122,7 +122,8 @@ public class Solution
     {
         if (root == null)
             return;
-        path = path ^ (1 << root.val);
+        var doub = 1 << root.val;
+        path = path ^ (doub);
 
 
         if (root.left==  null && root.right==null)
