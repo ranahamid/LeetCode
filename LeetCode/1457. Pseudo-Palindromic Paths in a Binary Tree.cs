@@ -8,6 +8,10 @@ namespace LeetCode
 {
     internal class _1457
     {
+        /// <summary>
+        /// Runtime: 325 ms, faster than 100.00% of C# online submissions for Pseudo-Palindromic Paths in a Binary Tree.
+        /// Memory Usage: 66.6 MB, less than 33.33% of C# online submissions for Pseudo-Palindromic Paths in a Binary Tree.
+        /// </summary>
         int answer = 0;
         public int PseudoPalindromicPaths(TreeNode root)
         {
@@ -19,9 +23,7 @@ namespace LeetCode
         {
             if (root == null)
                 return;
-            path = path ^ (1 << root.val);
-
-
+            path = path ^ (1 << root.val); 
             if (root.left == null && root.right == null)
             {
                 if ((path & (path - 1)) == 0)
@@ -29,7 +31,42 @@ namespace LeetCode
             }
             PreOrder(root.left, path);
             PreOrder(root.right, path);
+        }
+        #region Method 1
+        /// <summary>
+        /// Runtime: 373 ms, faster than 100.00% of C# online submissions for Pseudo-Palindromic Paths in a Binary Tree.
+        /// Memory Usage: 67.3 MB, less than 33.33% of C# online submissions for Pseudo-Palindromic Paths in a Binary Tree.
+        /// </summary>
+        int res = 0;
+        Dictionary<int, int> dic = new Dictionary<int, int>();
+        public int PseudoPalindromicPaths_1(TreeNode root)
+        {
+            VisitPreOrder(root);
+            return res;
+        }
+
+        public void VisitPreOrder(TreeNode root)
+        {
+            if (root == null)
+                return;
+            dic.TryAdd(root.val, 0);
+            dic[root.val]++;
+            if (root.left == null && root.right == null)
+            {
+                var noOfOdd = 0;
+                foreach (var it in dic)
+                {
+                    if (it.Value % 2 == 1)
+                        noOfOdd++;
+                }
+                if (noOfOdd <= 1)
+                    res++;
+            }
+            VisitPreOrder(root.left);
+            VisitPreOrder(root.right); 
+            dic[root.val]--; 
         } 
+        #endregion
         #region TLE & Accepted
         int result = 0;
         public int PseudoPalindromicPaths_TLE3(TreeNode root)
