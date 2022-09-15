@@ -109,24 +109,9 @@ Console.WriteLine(solution.PseudoPalindromicPaths(t1)); //20
 
 
 
-public class Solution : Reader4
-{ 
-    public int Read(char[] buf, int n)
-    {
-        int copyCharNum = 0, readChars = 4;
-        char[] chars = new char[4];
-        while (readChars == 4 && copyCharNum < n)
-        {
-            readChars = Read4(chars);
-            for (int i = 0; i < readChars; i++)
-            {
-                if (copyCharNum == n)
-                    return n;
-                buf[copyCharNum++] = chars[i];
-            }
-        }
-        return copyCharNum;
-    }
+public class Solution
+{
+    
 }
 
 public static class Helper
