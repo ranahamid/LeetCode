@@ -92,8 +92,8 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 2, 2, 1 };
-var res2 = new int[] { 9, 15, 7, 20, 3 };
+var res1 = new int[] { 1, 6, 9, 5 };
+var res2 = new int[] { 5, 2, 3, 10 };
 
 
 #region Tree
@@ -105,28 +105,13 @@ TreeNode t2 = new TreeNode(3, t4, t5);
 TreeNode t1 = new TreeNode(2, t2, t3);
 #endregion
 
-Console.WriteLine(solution.PseudoPalindromicPaths(t1)); //20
+Console.WriteLine(solution.MinimumCosts(res1, res2,8)); //20
 
 
 
-public class Solution : Reader4
-{ 
-    public int Read(char[] buf, int n)
-    {
-        int copyCharNum = 0, readChars = 4;
-        char[] chars = new char[4];
-        while (readChars == 4 && copyCharNum < n)
-        {
-            readChars = Read4(chars);
-            for (int i = 0; i < readChars; i++)
-            {
-                if (copyCharNum == n)
-                    return n;
-                buf[copyCharNum++] = chars[i];
-            }
-        }
-        return copyCharNum;
-    }
+public class Solution
+{
+
 }
 
 public static class Helper
