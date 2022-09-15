@@ -105,8 +105,7 @@ TreeNode t2 = new TreeNode(3, t4, t5);
 TreeNode t1 = new TreeNode(2, t2, t3);
 #endregion
 
-Console.WriteLine(solution.MinimumCosts(res1, res2,8)); //20
-
+//Console.WriteLine(solution.MinimumCosts(res1, res2,8)); //20
 
 
 public class Solution
