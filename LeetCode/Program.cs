@@ -108,9 +108,26 @@ TreeNode t1 = new TreeNode(2, t2, t3);
 //Console.WriteLine(solution.MinimumCosts(res1, res2,8)); //20
 
 
-public class Solution
-{
 
+
+public class Solution
+{ 
+    public int MaximumScore(int[] nums, int[] multipliers)
+    {
+        var mem = new int[multipliers.Length + 1, multipliers.Length + 1];
+        int n = nums.Length;
+        var m = multipliers.Length;
+        for (int op = m - 1; op >= 0; op--)
+        {
+            for (int left = op; left >= 0; left--)
+            {
+                int l = multipliers[op] * nums[left] + mem[op + 1, left + 1];
+                int r = multipliers[op] * nums[n - 1 - (op - left)] + mem[op + 1, left];
+                mem[op, left] = Math.Max(l, r);
+            }
+        }
+        return mem[0, 0];
+    }
 }
 
 public static class Helper
