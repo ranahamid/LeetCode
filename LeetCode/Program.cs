@@ -19,13 +19,17 @@ using System.ComponentModel;
 using System.Xml.XPath;
 using System.Runtime.Intrinsics.Arm;
 using System.IO;
+using System.Diagnostics.Metrics;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {1,1,3 },
-                new int[] {4,3,4},
-                new int[] {5,6,7},
+                new int[] {7,2},
+                new int[] {0,10},
+                new int[] {5,0},
 
+                     new int[] {4,1},
+                          new int[] {5,8},
+                               new int[] {5,9},
           };
 
 #region node
@@ -81,7 +85,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "oa", "oaa" };
 var resW2 = new string[]
 {
-"withdraw 2 10", "transfer 5 1 20", "deposit 5 20", "transfer 3 4 15"
+"abcd","dcba","lls","s","sssll"
 };
 char[][] nums = new char[][]
           {
@@ -92,8 +96,8 @@ char[][] nums = new char[][]
           };
 Solution solution = new Solution();
 
-var res1 = new int[] { 1, 2, 2, 1 };
-var res2 = new int[] { 9, 15, 7, 20, 3 };
+var res1 = new int[] { 1, 0, 2, 1, 3 };
+var res2 = new int[] { 8, 2, 5, 8 };
 
 
 #region Tree
@@ -105,13 +109,12 @@ TreeNode t2 = new TreeNode(3, t4, t5);
 TreeNode t1 = new TreeNode(2, t2, t3);
 #endregion
 
-Console.WriteLine(solution.PseudoPalindromicPaths(t1)); //20
+Console.WriteLine(solution.SmallestSubarrays(res1)); //20
 
 
 
 public class Solution
-{
-    
+{ 
 }
 
 public static class Helper
