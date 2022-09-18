@@ -112,57 +112,24 @@ Console.WriteLine(solution.SumPrefixScores(resW2)); //20
 
 public class Solution
 {
-    public class TrieNode
+    public TreeNode ReverseOddLevels(TreeNode root)
     {
-        public TrieNode[] children;
-        public bool isSuccess;
-        public int prefixCount = 0;
-        public TrieNode()
+        Visit(root.left, root.right, 0);
+        return root;
+    }
+   public void Visit(TreeNode root1, TreeNode root2, int level)
+    {
+        if(root1==null && root2 == null)
         {
-            children = new TrieNode[26];
-            isSuccess = false;
+            return;
         }
-    }
-    TrieNode root = new TrieNode();
-    public int[] SumPrefixScores(string[] words)
-    {
-        var result = new int[words.Length];
-        var index = 0;
-        root = new TrieNode();
-        foreach (var word in words)
-            Insert(word); 
-        foreach (String word in words)
-        { 
-            result[index++] = CountPrefix(word);
-        }
-        return result;
-    }
-    public void Insert(String word)
-    {
-        TrieNode trieNode = root;
-        for (int i = 0; i < word.Length; i++)
-        { 
-            if (trieNode.children[word[i] - 97] == null)
-                trieNode.children[word[i] - 97] = new TrieNode();
-
-            trieNode = trieNode.children[word[i] - 97];
-            trieNode.prefixCount++;
-        }
-        trieNode.isSuccess = true;
-    }
-    public int CountPrefix(String prefix)
-    {
-        TrieNode trieNode = root;
-        int counterSum = 0;
-        for (int i = 0; i < prefix.Length; i++)
+        if (level % 2 == 1)
         {
-            if (trieNode.children[prefix[i] - 97] == null)
-                break;
-            trieNode = trieNode.children[prefix[i] - 97];
-            counterSum += trieNode.prefixCount;
+            (root1.val, root2.val) = (root2.val, root1.val);
         }
-        return counterSum;
-    } 
+        Visit(root1.left, root2.right, level + 1);
+        Visit(root2.left, root1.right, level + 1);
+    }
 }
 
 public static class Helper
