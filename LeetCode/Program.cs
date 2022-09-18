@@ -20,6 +20,9 @@ using System.Xml.XPath;
 using System.Runtime.Intrinsics.Arm;
 using System.IO;
 using System.Diagnostics.Metrics;
+using System;
+using System.Reflection;
+using LeetCode.NOT_SUBMITTED;
 
 int[][] nums2 = new int[][]
           {
@@ -58,7 +61,14 @@ int[][] nums2 = new int[][]
 //ListNode list1 = new ListNode(3, two);
 
 #endregion
-
+#region Tree
+TreeNode t6 = new TreeNode(1);
+TreeNode t5 = new TreeNode(1);
+TreeNode t4 = new TreeNode(3);
+TreeNode t3 = new TreeNode(1, null, t6);
+TreeNode t2 = new TreeNode(3, t4, t5);
+TreeNode t1 = new TreeNode(2, t2, t3);
+#endregion
 var pathsMatrix = new List<List<int>>()
             {
                  new List<int>() { 1,2,2,3,5 },
@@ -85,36 +95,74 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "oa", "oaa" };
 var resW2 = new string[]
 {
-"abcd","dcba","lls","s","sssll"
+"abc","ab","bc","b"
 };
 char[][] nums = new char[][]
           {
                new char[] {'o','a','b','n'},
-               new char[] {'o','t','a','e'},
-               new char[] {'a','h','k','r'},
-               new char[] {'a','f','l','v'},
+               new char[] {'a','h','k'},
+
           };
 Solution solution = new Solution();
 
 var res1 = new int[] { 1, 0, 2, 1, 3 };
 var res2 = new int[] { 8, 2, 5, 8 };
 
-
-#region Tree
-TreeNode t6 = new TreeNode(1);
-TreeNode t5 = new TreeNode(1);
-TreeNode t4 = new TreeNode(3);
-TreeNode t3 = new TreeNode(1, null, t6);
-TreeNode t2 = new TreeNode(3, t4, t5);
-TreeNode t1 = new TreeNode(2, t2, t3);
-#endregion
-
-Console.WriteLine(solution.SmallestSubarrays(res1)); //20
-
-
+Console.WriteLine(solution.SumPrefixScores(resW2)); //20
 
 public class Solution
-{ 
+{
+    public class TrieNode
+    {
+        public TrieNode[] children;
+        public bool isSuccess;
+        public int prefixCount = 0;
+        public TrieNode()
+        {
+            children = new TrieNode[26];
+            isSuccess = false;
+        }
+    }
+    TrieNode root = new TrieNode();
+    public int[] SumPrefixScores(string[] words)
+    {
+        var result = new int[words.Length];
+        var index = 0;
+        root = new TrieNode();
+        foreach (var word in words)
+            Insert(word); 
+        foreach (String word in words)
+        { 
+            result[index++] = CountPrefix(word);
+        }
+        return result;
+    }
+    public void Insert(String word)
+    {
+        TrieNode trieNode = root;
+        for (int i = 0; i < word.Length; i++)
+        { 
+            if (trieNode.children[word[i] - 97] == null)
+                trieNode.children[word[i] - 97] = new TrieNode();
+
+            trieNode = trieNode.children[word[i] - 97];
+            trieNode.prefixCount++;
+        }
+        trieNode.isSuccess = true;
+    }
+    public int CountPrefix(String prefix)
+    {
+        TrieNode trieNode = root;
+        int counterSum = 0;
+        for (int i = 0; i < prefix.Length; i++)
+        {
+            if (trieNode.children[prefix[i] - 97] == null)
+                break;
+            trieNode = trieNode.children[prefix[i] - 97];
+            counterSum += trieNode.prefixCount;
+        }
+        return counterSum;
+    } 
 }
 
 public static class Helper
@@ -123,12 +171,12 @@ public static class Helper
     {
         if (number <= 0) { yield return default; }
         int iterator = (int)Math.Sqrt(number);
-        for (int index = 1; index <= iterator; index++)
+        for (int sum = 1; sum <= iterator; sum++)
         {
-            if (number % index == 0)
+            if (number % sum == 0)
             {
-                yield return index;
-                if (index != number / index) { yield return number / index; }
+                yield return sum;
+                if (sum != number / sum) { yield return number / sum; }
             }
         }
 
@@ -154,34 +202,34 @@ public static class Helper
     {
         return (a / GCD(a, b)) * b;
     }
-    public static Dictionary<char, int> GetFrequencyString(string s)
+    public static Dictionary<char, int> GetFrequencyString(string sentence)
     {
         Dictionary<char, int> map = new Dictionary<char, int>();
-        for (int index = 0; index < s.Length; index++)
+        for (int sum = 0; sum < sentence.Length; sum++)
         {
-            if (map.ContainsKey(s[index]))
+            if (map.ContainsKey(sentence[sum]))
             {
-                map[s[index]]++;
+                map[sentence[sum]]++;
             }
             else
             {
-                map[s[index]] = 1;
+                map[sentence[sum]] = 1;
             }
         }
         return map;
     }
-    public static Dictionary<int, int> GetFrequencyInt(int[] s)
+    public static Dictionary<int, int> GetFrequencyInt(int[] sentence)
     {
         Dictionary<int, int> map = new Dictionary<int, int>();
-        for (int index = 0; index < s.Length; index++)
+        for (int sum = 0; sum < sentence.Length; sum++)
         {
-            if (map.ContainsKey(s[index]))
+            if (map.ContainsKey(sentence[sum]))
             {
-                map[s[index]]++;
+                map[sentence[sum]]++;
             }
             else
             {
-                map[s[index]] = 1;
+                map[sentence[sum]] = 1;
             }
         }
         return map;
