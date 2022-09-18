@@ -110,10 +110,59 @@ var res2 = new int[] { 8, 2, 5, 8 };
 
 Console.WriteLine(solution.SumPrefixScores(resW2)); //20
 
-public class Solution
+
+public class StockPrice
 {
+    PriorityQueue<(int, int), int> maxHeap = new PriorityQueue<(int, int), int>();
+    PriorityQueue<(int, int), int> minHeap = new PriorityQueue<(int, int), int>();
+    Dictionary<int, int> map = new Dictionary<int, int>();
+    int latestTime = 0;
+    public StockPrice()
+    {
+        latestTime = 0;
+    }
+
+    public void Update(int timestamp, int price)
+    {
+        latestTime = Math.Max(latestTime, timestamp);
+        if (map.ContainsKey(timestamp))
+            map[timestamp] = price;
+        else
+            map.Add(timestamp, price);
+
+        maxHeap.Enqueue((price, timestamp), -price);
+        minHeap.Enqueue((price, timestamp), price);
+    }
+
+    public int Current()
+    {
+        return map[latestTime];
+    }
+
+    public int Maximum()
+    {
+        var items = maxHeap.Peek();
+        while (map[items.Item2] != items.Item1)
+        {
+              maxHeap.Dequeue();
+            items = maxHeap.Peek();
+        }
+        // items = maxHeap.Peek();
+        return items.Item1;
+    }
+
+    public int Minimum()
+    {
+        var items = minHeap.Peek();
+        while (map[items.Item2] != items.Item1)
+        {
+            minHeap.Dequeue();
+            items = minHeap.Peek();
+        }
+        //items = minHeap.Peek();
+        return items.Item1;
+    }
 }
- 
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)

@@ -55,5 +55,28 @@ namespace LeetCode
             }
             return minHeap.Peek().Item2;
         }
+        #region anothr
+        public int Maximum_1()
+        {
+            var items = maxHeap.Peek();
+            while (map[items.Item2] != items.Item1)
+            {
+                maxHeap.Dequeue();
+                items = maxHeap.Peek();
+            }
+            return items.Item1;
+        }
+
+        public int Minimum_1()
+        {
+            var items = minHeap.Peek();
+            while (map[items.Item2] != items.Item1)
+            {
+                minHeap.Dequeue();
+                items = minHeap.Peek();
+            }
+            return items.Item1;
+        }
+        #endregion
     }
 }
