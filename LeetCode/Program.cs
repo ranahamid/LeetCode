@@ -95,7 +95,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "oa", "oaa" };
 var resW2 = new string[]
 {
-"abc","ab","bc","b"
+"root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"
 };
 char[][] nums = new char[][]
           {
@@ -108,61 +108,41 @@ Solution solution = new Solution();
 var res1 = new int[] { 1, 0, 2, 1, 3 };
 var res2 = new int[] { 8, 2, 5, 8 };
 
-Console.WriteLine(solution.SumPrefixScores(resW2)); //20
+Console.WriteLine(solution.FindDuplicate(resW2)); //20
 
-
-public class StockPrice
+public class Solution
 {
-    PriorityQueue<(int, int), int> maxHeap = new PriorityQueue<(int, int), int>();
-    PriorityQueue<(int, int), int> minHeap = new PriorityQueue<(int, int), int>();
-    Dictionary<int, int> map = new Dictionary<int, int>();
-    int latestTime = 0;
-    public StockPrice()
+    public IList<IList<string>> FindDuplicate(string[] paths)
     {
-        latestTime = 0;
-    }
-
-    public void Update(int timestamp, int price)
-    {
-        latestTime = Math.Max(latestTime, timestamp);
-        if (map.ContainsKey(timestamp))
-            map[timestamp] = price;
-        else
-            map.Add(timestamp, price);
-
-        maxHeap.Enqueue((price, timestamp), -price);
-        minHeap.Enqueue((price, timestamp), price);
-    }
-
-    public int Current()
-    {
-        return map[latestTime];
-    }
-
-    public int Maximum()
-    {
-        var items = maxHeap.Peek();
-        while (map[items.Item2] != items.Item1)
+        var dic= new Dictionary<string, List<string>>();
+     
+        foreach (var path in paths)
         {
-              maxHeap.Dequeue();
-            items = maxHeap.Peek();
-        }
-        // items = maxHeap.Peek();
-        return items.Item1;
-    }
+            var allWords=path.Split(' ');
+            var directory=allWords[0];
+            for(int i = 1; i < allWords.Length; i++)
+            {
+                var word=allWords[i];
+                var parts = word.Split("(");
+                var fileName = parts[0];
 
-    public int Minimum()
-    {
-        var items = minHeap.Peek();
-        while (map[items.Item2] != items.Item1)
-        {
-            minHeap.Dequeue();
-            items = minHeap.Peek();
+                var first= parts[1].IndexOf('(');
+                var last= parts[1].LastIndexOf(')');
+                var content = parts[1].Substring(first + 1, last - first - 1);
+
+                var fullPath= directory+ "/" + fileName;
+                dic.TryAdd(content, new List<string>());
+                dic[content].Add(fullPath);
+            }
         }
-        //items = minHeap.Peek();
-        return items.Item1;
+        
+        var values= dic.Where(x=> x.Value.Count()>1).Select(x=>x.Value).ToList();
+        var result = values.Select(x => (IList<string>)x).ToList();
+        return result;
     }
 }
+
+
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
