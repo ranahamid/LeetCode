@@ -112,33 +112,21 @@ Console.WriteLine(solution.FindDuplicate(resW2)); //20
 
 public class Solution
 {
-    public IList<IList<string>> FindDuplicate(string[] paths)
+    public ListNode ReverseList(ListNode head)
     {
-        var dic= new Dictionary<string, List<string>>();
-     
-        foreach (var path in paths)
+        if (head == null)
+            return null;
+        ListNode prev =null;
+        var current = head;
+        while(current != null)
         {
-            var allWords=path.Split(' ');
-            var directory=allWords[0];
-            for(int i = 1; i < allWords.Length; i++)
-            {
-                var word=allWords[i];
-                var parts = word.Split("(");
-                var fileName = parts[0];
+            var nextNode = current.next;
+            current.next = prev;
 
-                var first= parts[1].IndexOf('(');
-                var last= parts[1].LastIndexOf(')');
-                var content = parts[1].Substring(first + 1, last - first - 1);
-
-                var fullPath= directory+ "/" + fileName;
-                dic.TryAdd(content, new List<string>());
-                dic[content].Add(fullPath);
-            }
+            prev= current;
+            current= nextNode;
         }
-        
-        var values= dic.Where(x=> x.Value.Count()>1).Select(x=>x.Value).ToList();
-        var result = values.Select(x => (IList<string>)x).ToList();
-        return result;
+        return prev;
     }
 }
 

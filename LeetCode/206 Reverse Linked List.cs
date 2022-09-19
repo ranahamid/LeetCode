@@ -39,6 +39,13 @@ namespace LeetCode
         //    ListNode_206 one = new ListNode_206(1, two);
         //    Console.WriteLine(ReverseList(one));
         //}
+
+        /// <summary>
+        /// Runtime: 84 ms, faster than 97.04% of C# online submissions for Reverse Linked List.
+        /// Memory Usage: 39 MB, less than 9.12% of C# online submissions for Reverse Linked List.
+        /// </summary>
+        /// <param name="head"></param>
+        /// <returns></returns>
         public static ListNode_206 ReverseList(ListNode_206 head)
         {
             if (head == null)
@@ -62,7 +69,6 @@ namespace LeetCode
             while (head != null)
             {
                 var nextNode = head.next;
-
                 head.next = prevNode;
 
                 prevNode = head;
