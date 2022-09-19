@@ -1,38 +1,13 @@
-﻿using LeetCode;
-using LeetCode.Algo_1;
-using LeetCode.HackerRank.Certificate;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Data.Common;
-using System.Net;
-using System.Numerics;
-using System.Runtime.Intrinsics;
-using System.Runtime.Serialization.Json;
-using System.Text;
-using System.Text.RegularExpressions;
-
-using System.Xml.Linq;
-using System.Security.Principal;
-using Newtonsoft.Json;
-using System.ComponentModel;
-using System.Xml.XPath;
-using System.Runtime.Intrinsics.Arm;
-using System.IO;
-using System.Diagnostics.Metrics;
-using System;
-using System.Reflection;
-using LeetCode.NOT_SUBMITTED;
+﻿using System.Numerics;
 
 int[][] nums2 = new int[][]
           {
                 new int[] {7,2},
                 new int[] {0,10},
                 new int[] {5,0},
-
-                     new int[] {4,1},
-                          new int[] {5,8},
-                               new int[] {5,9},
+                new int[] {4,1},
+                new int[] {5,8},
+                new int[] {5,9},
           };
 
 #region node
@@ -108,27 +83,7 @@ Solution solution = new Solution();
 var res1 = new int[] { 1, 0, 2, 1, 3 };
 var res2 = new int[] { 8, 2, 5, 8 };
 
-Console.WriteLine(solution.FindDuplicate(resW2)); //20
 
-public class Solution
-{
-    public ListNode ReverseList(ListNode head)
-    {
-        if (head == null)
-            return null;
-        ListNode prev =null;
-        var current = head;
-        while(current != null)
-        {
-            var nextNode = current.next;
-            current.next = prev;
-
-            prev= current;
-            current= nextNode;
-        }
-        return prev;
-    }
-}
 
 
 public static class Helper
