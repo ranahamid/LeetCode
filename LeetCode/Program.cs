@@ -78,12 +78,36 @@ char[][] nums = new char[][]
                new char[] {'a','h','k'},
 
           };
+
+var res1 = new int[] { 1, 2, 3, 2, 1 };
+var res2 = new int[] { 3, 2, 1, 4, 7 };
+
 Solution solution = new Solution();
-
-var res1 = new int[] { 1, 0, 2, 1, 3 };
-var res2 = new int[] { 8, 2, 5, 8 };
-
-
+Console.WriteLine(solution.FindLength(res1, res2));
+public class Solution
+{
+    public int FindLength(int[] nums1, int[] nums2)
+    {
+        var max = 0; 
+        var dp=new int[nums1.Length + 1,nums2.Length+ 1];
+        for(int i = nums1.Length - 1; i >= 0; i--)
+        {
+            for(int j = nums2.Length - 1; j >= 0; j--)
+            {
+                if(nums1[i] == nums2[j])
+                {
+                    dp[i, j] = dp[i + 1, j + 1] + 1;
+                    if (dp[i, j] > max)
+                    { 
+                        max = dp[i, j];
+                    }
+                }
+             
+            }
+        }
+        return max;
+    }
+}
 
 
 public static class Helper
