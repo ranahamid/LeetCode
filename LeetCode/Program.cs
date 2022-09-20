@@ -79,14 +79,15 @@ char[][] nums = new char[][]
 
           };
 
-var res1 = new int[] { 1, 2, 3, 2, 1 };
+var res1 = new int[] { 1, 0, 0, 1, 0, 1 };
 var res2 = new int[] { 3, 2, 1, 4, 7 };
 
 Solution solution = new Solution();
-Console.WriteLine(solution.LongestNiceSubstring("aA"));
+Console.WriteLine(solution.KLengthApart(res1, 2));
 public class Solution
 {
- 
+  
+
 }
 
 public static class Helper
