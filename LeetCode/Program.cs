@@ -82,8 +82,14 @@ char[][] nums = new char[][]
 var res1 = new int[] { 1, 0, 0, 1, 0, 1 };
 var res2 = new int[] { 3, 2, 1, 4, 7 };
 
+//var letters = new string[] { "A", "B", "C", "D", "E" };
+//var numbers = new int[] { 1, 2, 3 };
+//var output = letters.Zip(numbers,(l,n)=> l+n);
+//foreach(var item in output)
+//    Console.WriteLine(item);
+
 Solution solution = new Solution();
-Console.WriteLine(solution.SurfaceArea(nums2));
+//Console.WriteLine(solution.SurfaceArea(nums2));
 public class Solution
 {
   
