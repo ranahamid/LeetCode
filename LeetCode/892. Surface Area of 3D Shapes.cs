@@ -9,8 +9,8 @@ namespace LeetCode
     internal class _892
     {
         /// <summary>
-        /// Runtime: 183 ms, faster than 27.27% of C# online submissions for Surface Area of 3D Shapes.
-        /// Memory Usage: 38.1 MB, less than 90.91% of C# online submissions for Surface Area of 3D Shapes.
+        /// Runtime: 84 ms, faster than 100.00% of C# online submissions for Surface Area of 3D Shapes.
+        /// Memory Usage: 39.7 MB, less than 45.45% of C# online submissions for Surface Area of 3D Shapes.
         /// </summary>
         /// <param name="grid"></param>
         /// <returns></returns>
