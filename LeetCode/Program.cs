@@ -2,12 +2,12 @@
 
 int[][] nums2 = new int[][]
           {
-                new int[] {7,2},
-                new int[] {0,10},
-                new int[] {5,0},
-                new int[] {4,1},
-                new int[] {5,8},
-                new int[] {5,9},
+                new int[] {1,2},
+                new int[] {3,4},
+                //new int[] {5,0},
+                //new int[] {4,1},
+                //new int[] {5,8},
+                //new int[] {5,9},
           };
 
 #region node
@@ -83,11 +83,10 @@ var res1 = new int[] { 1, 0, 0, 1, 0, 1 };
 var res2 = new int[] { 3, 2, 1, 4, 7 };
 
 Solution solution = new Solution();
-Console.WriteLine(solution.KLengthApart(res1, 2));
+Console.WriteLine(solution.SurfaceArea(nums2));
 public class Solution
 {
   
-
 }
 
 public static class Helper
