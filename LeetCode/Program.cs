@@ -1,9 +1,13 @@
-﻿using System.Numerics;
+﻿using System.Diagnostics.Metrics;
+using System.Numerics;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {1,2},
-                new int[] {3,4},
+                new int[] {1,0},
+                new int[] {-3,1},
+
+                new int[] {-4,0},
+                new int[] {2,3},
                 //new int[] {5,0},
                 //new int[] {4,1},
                 //new int[] {5,8},
@@ -79,7 +83,7 @@ char[][] nums = new char[][]
 
           };
 
-var res1 = new int[] { 1, 0, 0, 1, 0, 1 };
+var res1 = new int[] { 1, 2, 3, 4 };
 var res2 = new int[] { 3, 2, 1, 4, 7 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
@@ -89,10 +93,10 @@ var res2 = new int[] { 3, 2, 1, 4, 7 };
 //    Console.WriteLine(item);
 
 Solution solution = new Solution();
-//Console.WriteLine(solution.SurfaceArea(nums2));
+Console.WriteLine(solution.SumEvenAfterQueries(res1, nums2));
 public class Solution
 {
-  
+   
 }
 
 public static class Helper
