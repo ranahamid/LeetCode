@@ -16,6 +16,7 @@ namespace LeetCode
         /// <returns></returns>
         public int ConcatenatedBinary(int n)
         {
+            //https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/discuss/2612407/C%2B%2B-or-Diagram-or-Related-Problems
             long result = 0;
             long BIGMOD = (long)Math.Pow(10, 9) + 7;
             for (int i = 1; i <= n; i++)
