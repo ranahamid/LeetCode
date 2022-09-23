@@ -8,7 +8,34 @@ namespace LeetCode
 {
     internal class _1680
     {
+        /// <summary>
+        /// Runtime: 246 ms, faster than 50.00% of C# online submissions for Concatenation of Consecutive Binary Numbers.
+        /// Memory Usage: 26.3 MB, less than 50.00% of C# online submissions for Concatenation of Consecutive Binary Numbers.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public int ConcatenatedBinary(int n)
+        {
+            long result = 0;
+            long BIGMOD = (long)Math.Pow(10, 9) + 7;
+            for (int i = 1; i <= n; i++)
+            {
+                var length = NumberOfBits(i);
+                result = ((result << length) % BIGMOD + i);
+            }
+            return (int)result;
+        }
+        public int NumberOfBits(int n)
+        {
+            return (int)Math.Log(n, 2) + 1;
+        }
+        /// <summary>
+        /// Runtime: 3419 ms, faster than 33.33% of C# online submissions for Concatenation of Consecutive Binary Numbers.
+        ///  Memory Usage: 28.3 MB, less than 50.00% of C# online submissions for Concatenation of Consecutive Binary Numbers.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public int ConcatenatedBinary_1(int n)
         {
             var result = 0;
             var BIGMOD = Math.Pow(10, 9) + 7;
