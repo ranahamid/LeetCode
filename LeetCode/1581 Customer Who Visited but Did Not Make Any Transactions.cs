@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 namespace LeetCode
 {
     internal class _1581_Customer_Who_Visited_but_Did_Not_Make_Any_Transactions
-    {
-
-
+    { 
         //		GO
         //		/****** Object:  Table [dbo].[Transactions]    Script Date: 06/21/2022 22:50:30 ******/
         //		SET ANSI_NULLS ON
