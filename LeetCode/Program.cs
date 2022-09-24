@@ -96,21 +96,7 @@ Solution solution = new Solution();
 Console.WriteLine(solution.ConcatenatedBinary(1));
 public class Solution
 {
-    public int ConcatenatedBinary(int n)
-    {
-        long result = 0;
-        long BIGMOD = (long)Math.Pow(10, 9) + 7;
-        for (int i = 1; i <= n; i++)
-        {
-            var length = NumberOfBits(i); 
-            result=((result<<length)%BIGMOD+i)% BIGMOD;
-        }
-        return (int) result;
-    }
-    public int NumberOfBits(int n)
-    {
-        return (int)Math.Log(2,n) + 1;
-    }
+   
 }
 public static class Helper
 {
