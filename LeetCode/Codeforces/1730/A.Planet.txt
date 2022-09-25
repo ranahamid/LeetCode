@@ -1,0 +1,28 @@
+﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{ 
+    string[] tokens = Console.ReadLine().Split();
+    
+    int n= int.Parse(tokens[0]);
+    //Parse element 1
+   int c= int.Parse(tokens[1]);
+    List<int> list = new List<int>();
+    tokens = Console.ReadLine().Split();
+    for (int i = 0; i < n; i++)
+        list.Add(int.Parse(tokens[i]));
+    var dic = new Dictionary<int, int>();
+    foreach(var item in list)
+    {
+        dic.TryAdd(item, 0);
+        dic[item]++;
+    }
+    int sum = 0;
+    foreach(var item in dic)
+    {
+        var freq = item.Value;
+        if (freq > c)
+            freq = c;
+        sum += freq;
+    }
+    Console.WriteLine(sum);
+}

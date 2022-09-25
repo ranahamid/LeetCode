@@ -1,0 +1,29 @@
+﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    string s = Console.ReadLine(); 
+    s = new string(s.Reverse().ToArray());
+    
+    char max =(char) 57;
+    int[] arr=new int[10] ;
+    foreach (char ch in s)
+    {
+        if (ch > max)
+        {
+            if (ch != '9')
+                arr[ch + 1 - '0' ]++;
+            else
+                arr[10 - 1]++; 
+        }
+        else
+        {
+            max = ch;
+            arr[ch - '0']++;
+        }
+    }
+
+    for (int ch = 0; ch < 10; ch++)
+        for (int j = 0; j < arr[ch]; j++)
+            Console.Write(ch);
+    Console.WriteLine();
+}
