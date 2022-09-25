@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Premium
 {
+    /// <summary>
+    /// DAY - 100
+    /// 887 total solved
+    /// </summary>
     internal class _1272
     {
         /// <summary>

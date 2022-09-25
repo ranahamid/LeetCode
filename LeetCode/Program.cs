@@ -94,10 +94,9 @@ var res2 = new int[] { 3, 2, 1, 4, 7 };
 
 Solution solution = new Solution();
 Console.WriteLine(solution.ConcatenatedBinary(1));
-public class Solution
-{
-    
-}
+
+
+
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
