@@ -1,0 +1,29 @@
+﻿
+
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    int n= Convert.ToInt32(Console.ReadLine());
+    var x= new List<int>();
+    var t = new List<int>();
+    string[] tokens = Console.ReadLine().Split();
+    for (int i = 0; i < n; i++)
+        x.Add(int.Parse(tokens[i]));
+    tokens = Console.ReadLine().Split();
+    for (int i = 0; i < n; i++)
+        t.Add(int.Parse(tokens[i]));
+
+    var x1 = new List<int>();
+    var x2 = new List<int>();
+    for(int i = 0; i < n; i++)
+    {
+        x1 .Add(x[i] - t[i]);
+    }
+    for (int i = 0; i < n; i++)
+    {
+        x2.Add(x[i] + t[i]);
+    }
+    double sum = (x1.Min() + x2.Max()) / 2.0;
+
+    Console.WriteLine(sum);
+}

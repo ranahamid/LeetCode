@@ -92,10 +92,7 @@ var res2 = new int[] { 3, 2, 1, 4, 7 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 
-
-
-
-
+ 
 
 public static class Helper
 {
