@@ -84,18 +84,19 @@ char[][] nums = new char[][]
 
           };
 
-var res1 = new int[] { 1, 2, 3, 4 };
-var res2 = new int[] { 3, 2, 1, 4, 7 };
+var res1 = new int[] { 1, 2, 3 };
+var res2 = new int[] { 0,1,2 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
 //var output = letters.Zip(numbers,(l,n)=> l+n);
 //foreach(var item in output)
 //    Console.WriteLine(item);
-
+Solution s = new Solution();
+Console.WriteLine(s.KillProcess(res1, res2, 1));
 public class Solution
 {
-  
+   
 }
 
 public static class Helper
