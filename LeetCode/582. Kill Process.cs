@@ -26,13 +26,8 @@ namespace LeetCode
                 dic[ppid[i]].Add(pid[i]);
             }
             var result = new List<int>();
-            result.Add(kill);
-            if (dic.ContainsKey(kill))
-            {
-                var values = dic[kill];
-                foreach (var item in values)
-                    stack.Push(item);
-            }
+
+            stack.Push(kill);
 
             while (stack.Count > 0)
             {
