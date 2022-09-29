@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics.Metrics;
 using System.Numerics;
+using System.Text;
 
 int[][] nums2 = new int[][]
           {
@@ -92,7 +93,10 @@ var res2 = new int[] { 3, 2, 1, 4, 7 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 
- 
+public class Solution
+{
+  
+}
 
 public static class Helper
 {
