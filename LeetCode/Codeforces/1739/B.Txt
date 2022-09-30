@@ -2,15 +2,15 @@
 for (int index = 0; index < intTemp; index++)
 {
     int n = Convert.ToInt32(Console.ReadLine());
-    int[] d = Array.ConvertAll(Console.ReadLine().Split(), s => int.Parse(s));
-    int[] a = new int[n];
+    var d = Array.ConvertAll(Console.ReadLine().Split(), s => long.Parse(s));
+    var a = new long[n];
     a[0] = d[0];
     var isMulti = false;
     for (int i = 1; i < n; i++)
     {
         var aI = d[i] + a[i - 1];
         var aIMinus =  a[i - 1]- d[i];
-
+ 
         if (aIMinus > 0 && aI > 0 && aI!= aIMinus)
         {
             isMulti = true;
@@ -27,5 +27,8 @@ for (int index = 0; index < intTemp; index++)
             Console.Write(item + " "); 
         }
         Console.WriteLine();
-    } 
+    }
+ 
+ 
 }
+ 
