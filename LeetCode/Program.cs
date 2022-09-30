@@ -94,11 +94,11 @@ var res2 = new int[] { 0, 1, 2 };
 //    Console.WriteLine(item);
 //Solution s = new Solution();
 //Console.WriteLine(s.KillProcess(res1, res2, 1));
-//public class Solution
-//{ 
-//}
-
-
+ 
+public class Solution
+{
+  
+}
 
 public static class Helper
 {
