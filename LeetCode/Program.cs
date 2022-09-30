@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Text;
+using static LeetCode._985;
 
 int[][] nums2 = new int[][]
           {
@@ -95,10 +96,6 @@ var res2 = new int[] { 0, 1, 2 };
 //Solution s = new Solution();
 //Console.WriteLine(s.KillProcess(res1, res2, 1));
  
-public class Solution
-{
-  
-}
 
 public static class Helper
 {
