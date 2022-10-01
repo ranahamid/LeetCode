@@ -1,7 +1,6 @@
-﻿using System.Diagnostics.Metrics;
-using System.Numerics;
-using System.Text;
-using static LeetCode._985;
+﻿
+
+using System.Collections;
 
 int[][] nums2 = new int[][]
           {
@@ -78,24 +77,19 @@ var resW2 = new string[]
 {
 "root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"
 };
-char[][] nums = new char[][]
-          {
-               new char[] {'o','a','b','n'},
-               new char[] {'a','h','k'},
 
-          };
 
-var res1 = new int[] { 1, 2, 3 };
-var res2 = new int[] { 0, 1, 2 };
+var res1 = new int[] { 3, 2, 5 };
+var res2 = new int[] { 2, 2, 1 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
-//var output = letters.Zip(numbers,(l,n)=> l+n);
+//var output = letters.Zip(numbers,(l,length1)=> l+length1);
 //foreach(var item in output)
 //    Console.WriteLine(item);
-//Solution s = new Solution();
-//Console.WriteLine(s.KillProcess(res1, res2, 1));
- 
+Solution s = new Solution();
+Console.WriteLine(s.NumberOfPairs(res1, res2, 1)); //2 1 2 1
+
 
 public static class Helper
 {
