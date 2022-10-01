@@ -1,12 +1,13 @@
-﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+﻿
+int intTemp = Convert.ToInt32(Console.ReadLine());
 for (int index = 0; index < intTemp; index++)
 {
     int n = Convert.ToInt32(Console.ReadLine());
     n = n / 2-1;
- 
+
     int[][] result = new int[][]
           { 
- 
+
         new int[] { 1,0,1},
 new int[] { 3,2,1},
 new int[] { 12,7,1},
@@ -38,7 +39,6 @@ new int[] { 741221694,874398972,1},
 new int[] { 297907370,545598131,1},
 new int[] { 341102826,248150916,1}
     };
- 
+
     Console.WriteLine(result[n][0] + " " + result[n][1]+" "+ result[n][2]);
 }
- 

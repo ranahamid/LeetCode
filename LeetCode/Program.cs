@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Text;
+using static LeetCode._985;
 
 int[][] nums2 = new int[][]
           {
@@ -85,19 +86,16 @@ char[][] nums = new char[][]
           };
 
 var res1 = new int[] { 1, 2, 3 };
-var res2 = new int[] { 0,1,2 };
+var res2 = new int[] { 0, 1, 2 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
 //var output = letters.Zip(numbers,(l,n)=> l+n);
 //foreach(var item in output)
 //    Console.WriteLine(item);
-Solution s = new Solution();
-Console.WriteLine(s.NumDecodings("226"));
-public class Solution
-{
-    
-}
+//Solution s = new Solution();
+//Console.WriteLine(s.KillProcess(res1, res2, 1));
+ 
 
 public static class Helper
 {

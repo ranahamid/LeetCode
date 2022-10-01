@@ -2,10 +2,10 @@
 for (int index = 0; index < intTemp; index++)
 {
     var list = Console.ReadLine().Split().Select(int.Parse).ToList();
- 
- 
+
+
     list[0] = list[0] / 2 + 1;
     list[1] = list[1] / 2 + 1;
- 
+
     Console.WriteLine(list[0] + " " + list[1]);
 }
