@@ -93,10 +93,10 @@ var res2 = new int[] { 0,1,2 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 Solution s = new Solution();
-Console.WriteLine(s.KillProcess(res1, res2, 1));
+Console.WriteLine(s.NumDecodings("226"));
 public class Solution
 {
-   
+    
 }
 
 public static class Helper
