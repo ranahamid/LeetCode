@@ -1,6 +1,7 @@
 ﻿
 
 using System.Collections;
+using System.Runtime.Intrinsics.Arm;
 using System.Text;
 
 int[][] nums2 = new int[][]
@@ -92,7 +93,7 @@ Solution s = new Solution();
 Console.WriteLine(s.MinimizeXor(3,5)); 
 public class Solution
 {
-    
+
 }
 
 public static class Helper
