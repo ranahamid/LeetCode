@@ -82,23 +82,23 @@ var resW2 = new string[]
 };
 
 
-var res1 = new int[] { 3, 2, 5 };
-var res2 = new int[] { 2, 2, 1 };
+var res1 = new int[] { 2, 3, 4, 5 };
+var res2 = new int[] { 2, 1, 3, 4 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
 //var output = letters.Zip(numbers,(l,length1)=> l+length1);
 //foreach(var item in output)
 //    Console.WriteLine(item);
-//Solution s = new Solution();
-//Console.WriteLine(s.MinimizeXor(3,5)); 
-//public class Solution
-//{
+Solution s = new Solution();
+Console.WriteLine(s.BadSensor(res1, res2)); 
 
-//}
+public class Solution
+{
+    
+}
 
 
- 
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
