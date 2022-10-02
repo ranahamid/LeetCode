@@ -3,6 +3,7 @@
 using System.Collections;
 using System.Runtime.Intrinsics.Arm;
 using System.Text;
+using static LeetCode._985;
 
 int[][] nums2 = new int[][]
           {
@@ -89,13 +90,15 @@ var res2 = new int[] { 2, 2, 1 };
 //var output = letters.Zip(numbers,(l,length1)=> l+length1);
 //foreach(var item in output)
 //    Console.WriteLine(item);
-Solution s = new Solution();
-Console.WriteLine(s.MinimizeXor(3,5)); 
-public class Solution
-{
+//Solution s = new Solution();
+//Console.WriteLine(s.MinimizeXor(3,5)); 
+//public class Solution
+//{
 
-}
+//}
 
+
+ 
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
