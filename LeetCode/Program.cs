@@ -92,30 +92,7 @@ Solution s = new Solution();
 Console.WriteLine(s.MinimizeXor(3,5)); 
 public class Solution
 {
-    public int MinimizeXor(int num1, int num2)
-    {
-        int setBits = Convert.ToString(num2, 2).Where(x => x == '1').Count();
-        Console.WriteLine(setBits);
-        int result = 0;
-        for (int i = 31; i >= 0 && setBits > 0; i--)
-        {
-            if ((num1 & (1 << i)) > 0)
-            {
-                result |= (1 << i);
-                setBits--;
-            }
-           
-        }
-        for (int i = 0; i <= 31 && setBits > 0; i++)
-        {
-            if ((num1 & (1 << i)) == 0)
-            {
-                result = result | (1 << i);
-                setBits--;
-            }
-        }
-        return result;
-    }
+    
 }
 
 public static class Helper
