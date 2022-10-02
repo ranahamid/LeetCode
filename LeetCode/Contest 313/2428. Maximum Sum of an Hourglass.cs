@@ -8,6 +8,11 @@ namespace LeetCode.Contest_313
 {
     internal class _2428
     {
+        /// <summary>
+        /// Runtime 150 ms Beats 100%
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <returns></returns>
         public int MaxSum(int[][] grid)
         {
             var m = grid.Length;
@@ -17,7 +22,8 @@ namespace LeetCode.Contest_313
             {
                 for (int j = 0; j < n - 2; j++)
                 {
-                    var currentSum = grid[i][j] + grid[i][j + 1] + grid[i][j + 2] + grid[i + 1][j + 1] +
+                    var currentSum = grid[i][j] + grid[i][j + 1] + grid[i][j + 2]
+                        + grid[i + 1][j + 1] +
                         grid[i + 2][j] + grid[i + 2][j + 1] + grid[i + 2][j + 2];
                     max = Math.Max(max, currentSum);
                 }

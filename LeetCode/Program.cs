@@ -89,61 +89,32 @@ var res2 = new int[] { 2, 2, 1 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 Solution s = new Solution();
-Console.WriteLine(s.DeleteString("abcabcdabc"));
-Console.WriteLine(s.DeleteString("aaabaab")); //abcabcdd
-Console.WriteLine(s.DeleteString("aaaaa")); //abcabcdd
+Console.WriteLine(s.MinimizeXor(3,5)); 
 public class Solution
 {
-    public int DeleteString(string s)
+    public int MinimizeXor(int num1, int num2)
     {
-        var first = new StringBuilder();
-        var second = new StringBuilder();
-        var maxCount = 0;
-        for (int i = 0; i < s.Length; i++)
+        int setBits = Convert.ToString(num2, 2).Where(x => x == '1').Count();
+        Console.WriteLine(setBits);
+        int result = 0;
+        for (int i = 31; i >= 0 && setBits > 0; i--)
         {
-            var ch = s[i];
-            if (first.Length == 0)
+            if ((num1 & (1 << i)) > 0)
             {
-                first.Append(ch);
-                continue;
+                result |= (1 << i);
+                setBits--;
             }
-            if (second.Length == 0)
-            {
-                second.Append(ch);
-                continue;
-            }
-            if (first.Equals(second))
-            {
-                maxCount++;
-                i = i - first.Length-1;
-                first = new StringBuilder();
-                second = new StringBuilder();
-            }
-            else
-            {
-                if (first.Length == second.Length)
-                {   
-                    var st = second.ToString();
-                    var f = st.Substring(0, 1);
-                    var ss = st.Substring(1);
-
-                    first = first.Append(f);
-                    second = new StringBuilder(ss);
-                    second.Append(ch);
-                }
-                else if (first.Length > second.Length)
-                {
-                    second.Append(ch);
-                }
-
-            }
-
+           
         }
-        if (first.Equals(second))
+        for (int i = 0; i <= 31 && setBits > 0; i++)
         {
-            maxCount++; 
+            if ((num1 & (1 << i)) == 0)
+            {
+                result = result | (1 << i);
+                setBits--;
+            }
         }
-        return maxCount+1;
+        return result;
     }
 }
 

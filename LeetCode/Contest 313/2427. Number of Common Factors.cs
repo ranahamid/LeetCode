@@ -8,8 +8,27 @@ namespace LeetCode.Contest_313
 {
     internal class _2427
     {
-        static Dictionary<int, int> ma = new Dictionary<int, int>();
+        /// <summary>
+        /// Runtime 37 ms Beats 100%
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public int CommonFactors(int a, int b)
+        {
+            var max = Math.Max(a, b);
+            var counter = 0;
+            for (int i = 1; i <= max; i++)
+            {
+                if (a % i == 0 && b % i == 0)
+                    counter++;
+            }
+            return counter;
+        }
+        #region GFG
+        
+        static Dictionary<int, int> ma = new Dictionary<int, int>();
+        public int CommonFactors_1(int a, int b)
         {
             ma = new Dictionary<int,
                                                int>();
@@ -51,5 +70,6 @@ namespace LeetCode.Contest_313
             if (a > 1)
                 ma.Add(a, 1);
         }
+        #endregion
     }
 }
