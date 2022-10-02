@@ -1,6 +1,7 @@
 ﻿
 
 using System.Collections;
+using System.Text;
 
 int[][] nums2 = new int[][]
           {
@@ -88,8 +89,63 @@ var res2 = new int[] { 2, 2, 1 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 Solution s = new Solution();
-Console.WriteLine(s.NumberOfPairs(res1, res2, 1)); //2 1 2 1
+Console.WriteLine(s.DeleteString("abcabcdabc"));
+Console.WriteLine(s.DeleteString("aaabaab")); //abcabcdd
+Console.WriteLine(s.DeleteString("aaaaa")); //abcabcdd
+public class Solution
+{
+    public int DeleteString(string s)
+    {
+        var first = new StringBuilder();
+        var second = new StringBuilder();
+        var maxCount = 0;
+        for (int i = 0; i < s.Length; i++)
+        {
+            var ch = s[i];
+            if (first.Length == 0)
+            {
+                first.Append(ch);
+                continue;
+            }
+            if (second.Length == 0)
+            {
+                second.Append(ch);
+                continue;
+            }
+            if (first.Equals(second))
+            {
+                maxCount++;
+                i = i - first.Length-1;
+                first = new StringBuilder();
+                second = new StringBuilder();
+            }
+            else
+            {
+                if (first.Length == second.Length)
+                {   
+                    var st = second.ToString();
+                    var f = st.Substring(0, 1);
+                    var ss = st.Substring(1);
 
+                    first = first.Append(f);
+                    second = new StringBuilder(ss);
+                    second.Append(ch);
+                }
+                else if (first.Length > second.Length)
+                {
+                    second.Append(ch);
+                }
+
+            }
+
+        }
+        if (first.Equals(second))
+        {
+            maxCount++; 
+        }
+        return maxCount+1;
+    }
+}
 
 public static class Helper
 {
