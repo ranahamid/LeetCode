@@ -1,9 +1,6 @@
-﻿
-
-using System.Collections;
+﻿using System.Collections;
 using System.Runtime.Intrinsics.Arm;
-using System.Text;
-using static LeetCode._985;
+using System.Text; 
 
 int[][] nums2 = new int[][]
           {
