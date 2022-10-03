@@ -83,7 +83,7 @@ var resW2 = new string[]
 
 
 var res1 = new int[] { 2, 3, 4, 5 };
-var res2 = new int[] { 2, 1, 3, 4 };
+var res2 = new int[] { 1, 2, 3, 4, 5 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
@@ -91,11 +91,11 @@ var res2 = new int[] { 2, 1, 3, 4 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 Solution s = new Solution();
-Console.WriteLine(s.BadSensor(res1, res2)); 
+Console.WriteLine(s.MinCost("abaac", res2));
 
 public class Solution
 {
-    
+  
 }
 
 
