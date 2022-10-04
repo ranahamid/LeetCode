@@ -80,7 +80,7 @@ var resW2 = new string[]
 
 
 var res1 = new int[] { 2, 3, 4, 5 };
-var res2 = new int[] { 1, 2, 3, 4, 5 };
+var res2 = new int[] { 60,60,60 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
@@ -88,11 +88,25 @@ var res2 = new int[] { 1, 2, 3, 4, 5 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 Solution s = new Solution();
-Console.WriteLine(s.MinCost("abaac", res2));
+Console.WriteLine(s.NumPairsDivisibleBy60( res2));
 
 public class Solution
 {
-  
+    public int NumPairsDivisibleBy60(int[] time)
+    {
+        var reminder = new int[61];
+        var counter = 0;
+        for (int i = 0; i < time.Length; i++)
+        {
+            //if (time[i] % 60 == 0)
+            //    counter += reminder[0];
+            //else
+                counter += reminder[60 - time[i] % 60];
+
+            reminder[time[i] % 60]++;
+        }
+        return counter;
+    }
 }
 
 
