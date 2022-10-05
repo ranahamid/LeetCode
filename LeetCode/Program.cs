@@ -92,21 +92,7 @@ Console.WriteLine(s.NumPairsDivisibleBy60( res2));
 
 public class Solution
 {
-    public int NumPairsDivisibleBy60(int[] time)
-    {
-        var reminder = new int[61];
-        var counter = 0;
-        for (int i = 0; i < time.Length; i++)
-        {
-            //if (time[i] % 60 == 0)
-            //    counter += reminder[0];
-            //else
-                counter += reminder[60 - time[i] % 60];
-
-            reminder[time[i] % 60]++;
-        }
-        return counter;
-    }
+  
 }
 
 
