@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Runtime.Intrinsics.Arm;
-using System.Text; 
+using System.Text;
 
 int[][] nums2 = new int[][]
           {
@@ -80,7 +80,7 @@ var resW2 = new string[]
 
 
 var res1 = new int[] { 2, 3, 4, 5 };
-var res2 = new int[] { 60,60,60 };
+var res2 = new int[] { 60, 60, 60 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
@@ -88,24 +88,24 @@ var res2 = new int[] { 60,60,60 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 Solution s = new Solution();
-Console.WriteLine(s.NumPairsDivisibleBy60( res2));
-
+Console.WriteLine();
+s.PrintTriangle(8);
 public class Solution
 {
-    public int NumPairsDivisibleBy60(int[] time)
+    public void PrintTriangle(int lenght)
     {
-        var reminder = new int[61];
-        var counter = 0;
-        for (int i = 0; i < time.Length; i++)
+        for(int n = 1; n <= lenght; n++)
         {
-            //if (time[i] % 60 == 0)
-            //    counter += reminder[0];
-            //else
-                counter += reminder[60 - time[i] % 60];
-
-            reminder[time[i] % 60]++;
+            for (int r = 1; r <= lenght - n + 1; r++)
+                Console.Write(" ");
+            int value = 1;
+            for(int r=1; r <= n; r++)
+            {
+                Console.Write(value+" ");
+                value = value * (n - r) / r;
+            }
+            Console.WriteLine();
         }
-        return counter;
     }
 }
 
