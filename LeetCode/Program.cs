@@ -90,24 +90,7 @@ var res2 = new int[] { 60, 60, 60 };
 Solution s = new Solution();
 Console.WriteLine();
 s.PrintTriangle(8);
-public class Solution
-{
-    public void PrintTriangle(int lenght)
-    {
-        for(int n = 1; n <= lenght; n++)
-        {
-            for (int r = 1; r <= lenght - n + 1; r++)
-                Console.Write(" ");
-            int value = 1;
-            for(int r=1; r <= n; r++)
-            {
-                Console.Write(value+" ");
-                value = value * (n - r) / r;
-            }
-            Console.WriteLine();
-        }
-    }
-}
+ 
 
 
 public static class Helper

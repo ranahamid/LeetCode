@@ -8,7 +8,29 @@ namespace LeetCode
 {
     internal class _118
     {
+        public IList<IList<int>> Generate_2(int lenght)
+        {
+            var triangle = new List<IList<int>>();
+            for (int n = 1; n <= lenght; n++)
+            {
+                for (int r = 1; r <= lenght - n + 1; r++)
+                    Console.Write(" ");
+                int value = 1;
+                var row = new List<int>();
+                for (int r = 1; r <= n; r++)
+                {
+                    row.Add(value);
+                    Console.Write(value + " ");
+                    value = value * (n - r) / r;
+                }
+                triangle.Add(row);
+                Console.WriteLine();
+            }
+            return triangle;
+        }
+
         /// <summary>
+        /// Dynamic
         /// Runtime: 126 ms, faster than 62.82% of C# online submissions for Pascal's Triangle.
         /// Memory Usage: 35.1 MB, less than 49.71% of C# online submissions for Pascal's Triangle.
         /// </summary>
