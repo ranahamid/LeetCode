@@ -91,14 +91,12 @@ var res2 = new int[] { 60, 60, 60 };
 //    Console.WriteLine(item);
 Solution s = new Solution();
 
-Console.WriteLine(s.Generate(5));
-
+Console.WriteLine(s.LongestCommonSubsequence("abc", "def"));
 
 public class Solution
 {
-    
-}
 
+}
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)

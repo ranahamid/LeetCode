@@ -1,0 +1,139 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LeetCode.Premium
+{
+       #region method 2
+    public abstract class Node
+    {
+        public abstract int evaluate();
+        // define your fields here
+    };
+
+    public class TreeNodeVal : Node
+    {
+        public int Result { get; set; }
+
+        public override int evaluate()
+        {
+            return Result;
+        }
+        public TreeNodeVal(int result)
+        {
+            Result = result;
+        }
+    }
+    /**
+     * This is the TreeBuilder class.
+     * You can treat it as the driver code that takes the postinfix input 
+     * and returns the expression tree represnting it as a Node.
+     */
+
+    public class TreeBuilder
+    {
+        public Node buildTree(string[] postfix)
+        {
+            var stack = new Stack<int>();
+            foreach (var word in postfix)
+            {
+                if (Int32.TryParse(word, out int val))
+                {
+                    stack.Push(val);
+                }
+                else
+                {
+                    var right = stack.Pop();
+                    var left = stack.Pop();
+
+                    if (word == "+")
+                        stack.Push(left + right);
+                    else if (word == "-")
+                        stack.Push(left - right);
+                    else if (word == "*")
+                        stack.Push(left * right);
+                    else if (word == "/")
+                        stack.Push(left / right);
+                }
+            }
+            return new TreeNodeVal(stack.Pop());
+        }
+    }
+
+    #endregion
+    #region method 1
+    public abstract class Node
+    {
+        public abstract int evaluate();
+        // define your fields here
+    };
+
+    public class TreeNodeVal : Node
+    {
+        public string Value { get; set; }
+        public TreeNodeVal Left { get; set; }
+        public TreeNodeVal Right { get; set; }
+        public TreeNodeVal(string value = "", TreeNodeVal left = null, TreeNodeVal right = null)
+        {
+            Value = value;
+            Left = left;
+            Right = right;
+        }
+
+        public override int evaluate()
+        {
+            return DFS(this);
+        }
+        public int DFS(TreeNodeVal node)
+        {
+            if (node.Left == null && node.Right == null)
+                return Int32.Parse(node.Value);
+            var left = DFS(node.Left);
+            var right = DFS(node.Right);
+            int result = 0;
+            if (node.Value == "+")
+                result = left + right;
+            if (node.Value == "-")
+                result = left - right;
+            if (node.Value == "*")
+                result = left * right;
+            if (node.Value == "/")
+                result = left / right;
+            return result;
+
+        }
+    }
+    /**
+     * This is the TreeBuilder class.
+     * You can treat it as the driver code that takes the postinfix input 
+     * and returns the expression tree represnting it as a Node.
+     */
+
+    public class TreeBuilder
+    {
+        public Node buildTree(string[] postfix)
+        {
+            var stack = new Stack<TreeNodeVal>();
+            foreach (var word in postfix)
+            {
+                if (Int32.TryParse(word, out int val))
+                {
+                    var node = new TreeNodeVal() { Value = word };
+                    stack.Push(node);
+                }
+                else
+                {
+                    var right = stack.Pop();
+                    var left = stack.Pop();
+
+                    var node = new TreeNodeVal() { Value = word, Left = left, Right = right };
+                    stack.Push(node);
+                }
+            }
+            return stack.Pop();
+        }
+    }
+    #endregion
+}
