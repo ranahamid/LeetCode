@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using LeetCode;
+using System.Collections;
+using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
 using System.Text;
 
@@ -88,10 +90,14 @@ var res2 = new int[] { 60, 60, 60 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 Solution s = new Solution();
-Console.WriteLine();
-s.PrintTriangle(8);
- 
 
+Console.WriteLine(s.Generate(5));
+
+
+public class Solution
+{
+    
+}
 
 public static class Helper
 {

@@ -8,8 +8,20 @@ using System.Threading.Tasks;
 namespace LeetCode
 {
     internal class Rotate_Array
-    {
-        public static void Rotate(int[] nums, int k)
+    {    /// <summary>
+         /// Runtime 194 ms Beats 87.35% Memory 57.2 MB Beats 6.45%
+         /// </summary>
+         /// <param name="nums"></param>
+         /// <param name="k"></param>
+        public void Rotate(int[] nums, int k)
+        {
+            k = k % nums.Length;
+            Array.Reverse(nums);
+            Array.Reverse(nums, 0, k);
+            Array.Reverse(nums, k, nums.Length - k);
+        }
+
+        public static void Rotate_2(int[] nums, int k)
         {
             k = k % nums.Length;
             reverse(nums, 0, nums.Length - 1);// reverse all
@@ -31,7 +43,7 @@ namespace LeetCode
             }
 
         }
-        public static void Rotate_2(int[] nums, int k)
+        public static void Rotate_1(int[] nums, int k)
         {
             //Runtime: 333 ms, faster than 7.31% of C# online submissions for Rotate Array.
             k = k % nums.Length;
