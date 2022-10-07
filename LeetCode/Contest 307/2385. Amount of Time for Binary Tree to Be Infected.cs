@@ -5,20 +5,69 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCode.Contest_307
-{public class TreeNode_307
 {
-    public int val;
-    public TreeNode_307 left;
-    public TreeNode_307 right;
-    public TreeNode_307(int val = 0, TreeNode_307 left = null, TreeNode_307 right = null)
+    public class TreeNode_307
     {
-        this.val = val;
-        this.left = left;
-        this.right = right;
+        public int val;
+        public TreeNode_307 left;
+        public TreeNode_307 right;
+        public TreeNode_307(int val = 0, TreeNode_307 left = null, TreeNode_307 right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
-}
     internal class _2385
     {
+        #region interview prep
+        Dictionary<int, List<int>> graph = new Dictionary<int, List<int>>();
+        bool[] visited = new bool[100001];
+        int ans = -1;
+        void MakeGraph(TreeNode root)
+        {
+            if (root == null)
+                return;
+            var list = new List<TreeNode> { root.left, root.right };
+            foreach (var item in list)
+            {
+                if (item != null)
+                {
+                    graph.TryAdd(item.val, new List<int>());
+                    graph.TryAdd(root.val, new List<int>());
+
+                    graph[item.val].Add(root.val);
+                    graph[root.val].Add(item.val);
+                }
+                MakeGraph(item);
+            }
+        }
+        public int AmountOfTime(TreeNode root, int start)
+        {
+            MakeGraph(root);
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(start);
+            while (queue.Count > 0)
+            {
+                int lenght = queue.Count;
+                for (int i = 0; i < lenght; i++)
+                {
+                    var current = queue.Dequeue();
+                    visited[current] = true;
+                    if (graph.ContainsKey(current))
+                        foreach (var item in graph[current])
+                        {
+                            if (!visited[item])
+                            {
+                                queue.Enqueue(item);
+                            }
+                        }
+                }
+                ans++;
+            }
+            return ans;
+        }
+        #endregion
         /// <summary>
         /// Runtime: 404 ms, faster than 100.00% of C# online submissions for Amount of Time for Binary Tree to Be Infected.
         /// Memory Usage: 85 MB, less than 100.00% of C# online submissions for Amount of Time for Binary Tree to Be Infected.
