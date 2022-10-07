@@ -77,7 +77,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "oa", "oaa" };
 var resW2 = new string[]
 {
-"root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"
+"This", "is", "an", "example", "of", "text", "justification."
 };
 
 
@@ -91,11 +91,54 @@ var res2 = new int[] { 60, 60, 60 };
 //    Console.WriteLine(item);
 Solution s = new Solution();
 
-Console.WriteLine(s.LongestCommonSubsequence("abc", "def"));
+Console.WriteLine(s.FullJustify(resW2, 16));
 
 public class Solution
 {
-  
+    public IList<string> FullJustify(string[] words, int maxWidth)
+    {
+        int last = words.Length;
+        int numberOfLetters = 0;
+        var result = new List<string>();
+        var current =new List<StringBuilder>();
+        int index = 1;
+        foreach (var word in words)
+        {
+            if (numberOfLetters + current.Count + word.Length > maxWidth)
+            {
+                var length= maxWidth- numberOfLetters;
+                for(int i = 0; i < length; i++)
+                {
+                    if (current.Count == 1)
+                    {
+                        current[0].Append(" ");
+                    }
+                    else
+                    {
+                        current[i % (current.Count - 1)].Append(" ");
+                    }
+                }
+                var sentence = string.Join("", current);
+                result.Add(sentence);
+                numberOfLetters = 0;
+                current = new List<StringBuilder>();
+            }
+            current.Add(new StringBuilder(word));
+            numberOfLetters += word.Length;
+            if (index == last)
+            {
+                var final = string.Join(" ", current);
+                var spaces = maxWidth - final.Length;
+                for(int i = 0; i < spaces; i++)
+                {
+                    final += " ";
+                }                
+                result.Add(final);
+            }
+            index++;
+        }
+        return result;
+    }
 }
 public static class Helper
 {
