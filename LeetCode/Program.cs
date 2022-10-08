@@ -95,7 +95,7 @@ Console.WriteLine(s.AmountOfTime(t1, 3));
 
 public class Solution
 {
-    
+   
 }
 public static class Helper
 {
