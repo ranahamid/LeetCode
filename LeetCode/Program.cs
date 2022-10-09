@@ -83,7 +83,7 @@ var resW2 = new string[]
 };
 
 
-var res1 = new int[] { 2, 3, 4, 5 };
+var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
 var res2 = new int[] { 60, 60, 60 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
@@ -93,9 +93,9 @@ var res2 = new int[] { 60, 60, 60 };
 //    Console.WriteLine(item);
 Solution s = new Solution();
 
-Console.WriteLine(s.HardestWorker(118, nums2));
-
  
+
+
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)

@@ -8,12 +8,47 @@ namespace LeetCode
 {
     internal class _151
     {
+        public string ReverseWords_11(string s)
+        {
+            var left = 0;
+            var right = s.Length - 1;
+            while (left < right && s[left] == ' ')
+            {
+                left++;
+            }
+            while (left < right && s[right] == ' ')
+            {
+                right--;
+            }
+            var stack = new Stack<string>();
+            var word = new StringBuilder();
+            for (var i = left; i <= right; i++)
+            {
+                if (word.Length > 0 && s[i] == ' ')
+                {
+                    stack.Push(word.ToString());
+                    word = new StringBuilder();
+                }
+                else if (s[i] != ' ')
+                {
+                    word.Append(s[i]);
+                }
+            }
+            stack.Push(word.ToString());
+            var result = new List<string>();
+            int counter = stack.Count;
+            for (int i = 0; i < counter; i++)
+            {
+                result.Add(stack.Pop());
+            }
+            return string.Join(" ", result);
+        }
         /// <summary>
         /// Runtime 141 ms Beats 34.59% Memory 37.8 MB Beats 38.36%
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public string ReverseWords(string s)
+        public string ReverseWords_10(string s)
         {
             int left = 0;
             int right = s.Length - 1;

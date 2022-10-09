@@ -8,6 +8,45 @@ namespace LeetCode
 {
     internal class _394
     {
+        public string DecodeString_3(string s)
+        {
+            var stack = new Stack<string>();
+            foreach (var ch in s)
+            {
+                if (ch == ']')
+                {
+                    var word = "";
+                    while (stack.Peek() != "[")
+                    {
+                        word = word + stack.Pop();
+                    }
+                    stack.Pop();//'['
+                    var revNum = "";
+                    while (stack.Count > 0 && char.IsDigit(stack.Peek()[0]))
+                    {
+                        revNum = stack.Pop() + revNum;
+                    }
+                    if (Int32.TryParse(revNum, out int rev))
+                    {
+                        for (int i = 0; i < rev; i++)
+                        {
+                            stack.Push(word);
+                        }
+                    }
+                }
+                else
+                {
+                    stack.Push(ch.ToString());
+                }
+            }
+            int counter = stack.Count;
+            var sb = new StringBuilder();
+            for (int i = 0; i < counter; i++)
+            {
+                sb.Append(stack.Pop());
+            }
+            return new string(sb.ToString().Reverse().ToArray());
+        }
         /// <summary>
         /// Runtime 78 ms Beats 97.73% Memory 36.6 MB Beats 19.51%
         /// </summary>

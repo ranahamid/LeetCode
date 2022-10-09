@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Premium
 {
-       #region method 2
+
+  #region method 2
     public abstract class Node
     {
         public abstract int evaluate();

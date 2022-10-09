@@ -8,12 +8,31 @@ using System.Threading.Tasks;
 namespace LeetCode
 {
     internal class Rotate_Array
-    {    /// <summary>
-         /// Runtime 194 ms Beats 87.35% Memory 57.2 MB Beats 6.45%
-         /// </summary>
-         /// <param name="nums"></param>
-         /// <param name="k"></param>
+    {
+        #region Interview
         public void Rotate(int[] nums, int k)
+        {
+            k = k % nums.Length;
+            Reverse(nums, 0, nums.Length - 1);
+            Reverse(nums, 0, k - 1);
+            Reverse(nums, k, nums.Length - 1);
+        } 
+        public static void Reverse(int[] nums, int index, int last)
+        {
+            while (index < last)
+            {
+                (nums[index], nums[last]) = (nums[last], nums[index]);
+                index++;
+                last--;
+            }
+        }
+        #endregion
+        /// <summary>
+        /// Runtime 194 ms Beats 87.35% Memory 57.2 MB Beats 6.45%
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="k"></param>
+        public void Rotate_4(int[] nums, int k)
         {
             k = k % nums.Length;
             Array.Reverse(nums);

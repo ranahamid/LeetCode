@@ -9,7 +9,56 @@ namespace LeetCode
 {
     internal class _468
     {
+        #region day 
+        public string ValidIPAddress_1(string queryIP)
+        {
+            if (queryIP.Where(x => x == '.').Count() == 3)
+                return ValidateIp4(queryIP);
 
+            if (queryIP.Where(x => x == ':').Count() == 7)
+                return ValidateIp6(queryIP);
+            return "Neither";
+        }
+        public static string ValidateIp4(string queryIP)
+        {
+            var words = queryIP.Split(".");
+            foreach (var word in words)
+            {
+                if (word.Length == 0 || word.Length > 3)
+                    return "Neither";
+                if (word.Length != 1 && word[0] == '0')
+                    return "Neither";
+                foreach (var ch in word)
+                {
+                    if (!char.IsDigit(ch))
+                        return "Neither";
+                }
+                if (Int32.TryParse(word, out int ip))
+                {
+                    if (ip < 0 || ip > 255)
+                        return "Neither";
+                }
+            }
+            return "IPv4";
+        }
+        public static string ValidateIp6(string queryIP)
+        {
+            var words = queryIP.Split(":");
+            var hex = "0123456789ABCDEFabcdef";
+            foreach (var word in words)
+            {
+                if (word.Length == 0 || word.Length > 4)
+                    return "Neither";
+                foreach (var ch in word)
+                {
+                    if (!hex.Contains(ch))
+                        return "Neither";
+                }
+
+            }
+            return "IPv6";
+        }
+        #endregion
         #region divide & con
         public string ValidIPAddress(string queryIP)
         {
