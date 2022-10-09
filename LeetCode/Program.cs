@@ -79,7 +79,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "oa", "oaa" };
 var resW2 = new string[]
 {
-"This", "is", "an", "example", "of", "text", "justification."
+"What","must","be","acknowledgment","shall","be"
 };
 
 
@@ -93,8 +93,11 @@ var res2 = new int[] { 60, 60, 60 };
 //    Console.WriteLine(item);
 Solution s = new Solution();
 
- 
-
+Console.WriteLine(s.FullJustify(resW2,16));
+public class Solution
+{
+    
+}
 
 public static class Helper
 {
