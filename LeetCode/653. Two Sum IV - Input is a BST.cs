@@ -21,6 +21,32 @@ namespace LeetCode
     internal class _653
     {
         /// <summary>
+        /// Runtime: 171 ms, faster than 67.65% of C# online submissions for Two Sum IV - Input is a BST.
+        ///Memory Usage: 42 MB, less than 68.01% of C# online submissions for Two Sum IV - Input is a BST.
+        /// </summary>
+        #region recursive
+        HashSet<int> set = new HashSet<int>();
+        bool result = false;
+        public bool FindTarget(TreeNode root, int k)
+        {
+            set = new HashSet<int>();
+            return Target(root, k);
+        }
+
+        public bool Target(TreeNode root, int k)
+        {
+            if (result)
+                return true;
+            if (root == null)
+                return false;
+            if (set.Contains(k - root.val))
+                return true;
+            else
+                set.Add(root.val);
+            return Target(root.left, k) || Target(root.right, k);
+        }
+        #endregion
+        /// <summary>
         /// set
         /// Runtime: 164 ms, faster than 71.51% of C# online submissions for Two Sum IV - Input is a BST.
         /// Memory Usage: 41.8 MB, less than 89.74% of C# online submissions for Two Sum IV - Input is a BST.
@@ -28,7 +54,7 @@ namespace LeetCode
         /// <param name="root"></param>
         /// <param name="k"></param>
         /// <returns></returns>
-        public static bool FindTarget(TreeNode_653 root, int k)
+        public static bool FindTarget_iterative(TreeNode_653 root, int k)
         {
             if (root == null)
                 return false;

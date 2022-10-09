@@ -1,4 +1,5 @@
 ﻿using LeetCode;
+using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
@@ -7,11 +8,11 @@ using static LeetCode._985;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {1,0},
-                new int[] {-3,1},
+                new int[] {5,4},
+                new int[] {17,24},
 
-                new int[] {-4,0},
-                new int[] {2,3},
+                new int[] {6,3},
+                new int[] {43,77},
                 //new int[] {5,0},
                 //new int[] {4,1},
                 //new int[] {5,8},
@@ -92,12 +93,9 @@ var res2 = new int[] { 60, 60, 60 };
 //    Console.WriteLine(item);
 Solution s = new Solution();
 
-Console.WriteLine(s.AmountOfTime(t1, 3));
+Console.WriteLine(s.HardestWorker(118, nums2));
 
-public class Solution
-{
-   
-}
+ 
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
