@@ -8,6 +8,11 @@ namespace LeetCode
 {
     internal class _1328
     {
+        /// <summary>
+        /// Runtime 102 ms Beats 69.23% Memory 35.5 MB Beats 61.54%
+        /// </summary>
+        /// <param name="palindrome"></param>
+        /// <returns></returns>
         public string BreakPalindrome(string palindrome)
         {
             if (palindrome.Length == 1)
