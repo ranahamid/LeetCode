@@ -108,7 +108,10 @@ Solution s = new Solution();
 //    }
 //    Console.WriteLine();
 //}
-
+public class Solution
+{
+   
+}
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
