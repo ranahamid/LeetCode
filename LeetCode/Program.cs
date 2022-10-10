@@ -95,7 +95,19 @@ Solution s = new Solution();
 
 //Console.WriteLine(s.FullJustify(resW2,16));
 
- 
+//var len = 10;
+//for(int n = 1; n <= len; n++)
+//{
+//    for (int r = 1; r <= len - n + 1; r++)
+//        Console.Write(" ");
+//    var value = 1;
+//    for(int r = 1; r <= n; r++)
+//    {
+//        Console.Write(value + " ");
+//        value = value * (n - r) / r;
+//    }
+//    Console.WriteLine();
+//}
 
 public static class Helper
 {
