@@ -1,5 +1,6 @@
 ﻿using LeetCode;
 using LeetCode.Algo_1;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -110,6 +111,11 @@ Solution s = new Solution();
 //    }
 //    Console.WriteLine();
 //}
+
+DirectoryInfo place = new DirectoryInfo(@"C:\");
+var files= place.GetFiles();
+foreach (var item in files)
+    Console.WriteLine(item);
 
 
 /**
