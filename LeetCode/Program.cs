@@ -108,10 +108,17 @@ Solution s = new Solution();
 //    }
 //    Console.WriteLine();
 //}
-public class Solution
-{
-   
-}
+
+
+/**
+ * Your MaxStack object will be instantiated and called as such:
+ * MaxStack obj = new MaxStack();
+ * obj.Push(x);
+ * int param_2 = obj.Pop();
+ * int param_3 = obj.Top();
+ * int param_4 = obj.PeekMax();
+ * int param_5 = obj.PopMax();
+ */
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
