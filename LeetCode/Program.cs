@@ -112,12 +112,8 @@ Solution s = new Solution();
 //    Console.WriteLine();
 //}
 
-DirectoryInfo place = new DirectoryInfo(@"C:\");
-var files= place.GetFiles();
-foreach (var item in files)
-    Console.WriteLine(item);
 
-
+ 
 /**
  * Your MaxStack object will be instantiated and called as such:
  * MaxStack obj = new MaxStack();
