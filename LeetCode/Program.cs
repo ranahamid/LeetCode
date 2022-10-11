@@ -1,6 +1,8 @@
 ﻿using LeetCode;
+using LeetCode.Algo_1;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
 using System.Text;
