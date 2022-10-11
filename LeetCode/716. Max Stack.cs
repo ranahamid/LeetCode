@@ -6,6 +6,77 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    #region Interview
+    public class MaxStack
+    {
+        class Element
+        {
+            public int Value { get; set; }
+            public int Time { get; set; }
+            public bool IsDeleted { get; set; }
+        }
+        Stack<Element> stack;
+        int time;
+        PriorityQueue<Element, Element> queue;
+        public MaxStack()
+        {
+            stack = new Stack<Element>();
+            time = 0;
+            queue = new PriorityQueue<Element, Element>(comparer: Comparer<Element>.Create((x, y) =>
+            {
+                if (x.Value == y.Value)
+                    return y.Time.CompareTo(x.Time);
+                return y.Value.CompareTo(x.Value);
+            }));
+        }
+
+        public void Push(int x)
+        {
+            var element = new Element
+            {
+                Value = x,
+                Time = time++,
+                IsDeleted = false
+            };
+            stack.Push(element);
+            queue.Enqueue(element, element);
+        }
+
+        public int Pop()
+        {
+            while (stack.Peek().IsDeleted)
+                stack.Pop();
+            var result = stack.Pop();
+            result.IsDeleted = true;
+            return result.Value;
+        }
+
+        public int Top()
+        {
+            while (stack.Peek().IsDeleted)
+                stack.Pop();
+            var result = stack.Peek();
+            return result.Value;
+        }
+
+        public int PeekMax()
+        {
+            while (queue.Peek().IsDeleted)
+                queue.Dequeue();
+            var result = queue.Peek();
+            return result.Value;
+        }
+
+        public int PopMax()
+        {
+            while (queue.Peek().IsDeleted)
+                queue.Dequeue();
+            var result = queue.Dequeue();
+            result.IsDeleted = true;
+            return result.Value;
+        }
+    }
+    #endregion
     public class MaxStack_LinkedList
     {
 
