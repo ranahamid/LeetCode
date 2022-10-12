@@ -14,17 +14,13 @@ namespace LeetCode
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
-        public static int LargestPerimeter(int[] nums)
+        public int LargestPerimeter(int[] nums)
         {
-            Array.Sort(nums);
-            nums = nums.Reverse().ToArray();
-
+            Array.Sort(nums, (a, b) => b.CompareTo(a));
             for (int i = 0; i < nums.Length - 2; i++)
             {
-                if (nums[i + 2] + nums[i + 1] > nums[i])
-                {
-                    return nums[i] + nums[i + 1] + nums[i + 2];
-                }
+                if (nums[i + 0] < nums[i + 1] + nums[i + 2])
+                    return nums[i + 0] + nums[i + 1] + nums[i + 2];
             }
             return 0;
         }
