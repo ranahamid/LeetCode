@@ -1,10 +1,10 @@
-﻿ 
+﻿
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
-using System.Text; 
+using System.Text;
 
 int[][] nums2 = new int[][]
           {
@@ -84,7 +84,7 @@ var resW2 = new string[]
 
 
 var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-var res2 = new int[] { 60, 60, 60 };
+var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
@@ -92,25 +92,13 @@ var res2 = new int[] { 60, 60, 60 };
 //foreach(var item in output)
 //    Console.WriteLine(item);
 Solution s = new Solution();
+s.DailyTemperatures(res2);
+Console.WriteLine();
+public class Solution
+{
+    
+}
 
-//Console.WriteLine(s.FullJustify(resW2,16));
-
-//var len = 10;
-//for(int n = 1; n <= len; n++)
-//{
-//    for (int r = 1; r <= len - n + 1; r++)
-//        Console.Write(" ");
-//    var value = 1;
-//    for(int r = 1; r <= n; r++)
-//    {
-//        Console.Write(value + " ");
-//        value = value * (n - r) / r;
-//    }
-//    Console.WriteLine();
-//}
-
-
- 
 /**
  * Your MaxStack object will be instantiated and called as such:
  * MaxStack obj = new MaxStack();
