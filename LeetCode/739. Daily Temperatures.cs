@@ -9,7 +9,7 @@ namespace LeetCode
     internal class _739
     {
         /// <summary>
-        /// Runtime 610 ms Beats 44.31% Memory 49.5 MB Beats 80.58%
+        /// Runtime 314 ms Beats 97.27% Memory 57.6 MB Beats 6.10%
         /// </summary>
         /// <param name="temperatures"></param>
         /// <returns></returns>
