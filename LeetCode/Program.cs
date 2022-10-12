@@ -1,13 +1,10 @@
-﻿using LeetCode;
-using LeetCode.Algo_1;
-using Newtonsoft.Json.Linq;
+﻿ 
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
-using System.Text;
-using static LeetCode._985;
+using System.Text; 
 
 int[][] nums2 = new int[][]
           {
