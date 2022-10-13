@@ -1,12 +1,5 @@
-﻿using LeetCode;
-using LeetCode.Algo_1;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Runtime.Intrinsics.Arm;
-using System.Text;
-using static LeetCode._985;
+﻿
+
 
 int[][] nums2 = new int[][]
           {
@@ -93,7 +86,7 @@ var res2 = new int[] { 60, 60, 60 };
 //var output = letters.Zip(numbers,(l,length1)=> l+length1);
 //foreach(var item in output)
 //    Console.WriteLine(item);
-Solution s = new Solution();
+//Solution s = new Solution();
 
 //Console.WriteLine(s.FullJustify(resW2,16));
 
@@ -110,9 +103,63 @@ Solution s = new Solution();
 //    }
 //    Console.WriteLine();
 //}
-public class Solution
+
+
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
 {
-   
+    int n = Convert.ToInt32(Console.ReadLine());
+    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
+    var tmp=new List<int>();
+
+    for (int i = 0; i < n; i++)
+    {
+
+        tmp[arr[i]].Add(i);
+
+    }
+
+    int cl = -1;
+
+    for (int j = 1; j <= n; j++)
+    {
+
+        if (tmp[j].)
+        {
+
+            bool flagIs= false;
+
+            int cal = 0;
+
+            for (int l = 1; l <= n; l++)
+            {
+
+                if (tmp[l].size() && __gcd(j, l) == 1)
+                {
+
+                    flagIs= true;
+
+                    int lst = tmp[j][tmp[j].size() - 1] + 1;
+
+                    int lst2 = tmp[j][tmp[j].size() - 1] + 1;
+
+                    cal = max(cal, lst + lst2);
+
+                }
+
+            }
+
+            if (flagIs)
+            {
+
+                cl = Math.Max(cal, cl);
+
+            }
+
+        }
+
+    } 
+    Console.WriteLine(cl);
 }
 public static class Helper
 {
