@@ -1,5 +1,10 @@
 ﻿
-
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Runtime.Intrinsics.Arm;
+using System.Text;
 
 int[][] nums2 = new int[][]
           {
@@ -79,88 +84,48 @@ var resW2 = new string[]
 
 
 var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-var res2 = new int[] { 60, 60, 60 };
+var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
 //var letters = new string[] { "A", "B", "C", "D", "E" };
 //var numbers = new int[] { 1, 2, 3 };
 //var output = letters.Zip(numbers,(l,length1)=> l+length1);
 //foreach(var item in output)
 //    Console.WriteLine(item);
-//Solution s = new Solution();
-
-//Console.WriteLine(s.FullJustify(resW2,16));
-
-//var len = 10;
-//for(int n = 1; n <= len; n++)
-//{
-//    for (int r = 1; r <= len - n + 1; r++)
-//        Console.Write(" ");
-//    var value = 1;
-//    for(int r = 1; r <= n; r++)
-//    {
-//        Console.Write(value + " ");
-//        value = value * (n - r) / r;
-//    }
-//    Console.WriteLine();
-//}
-
-
-int intTemp = Convert.ToInt32(Console.ReadLine());
-for (int index = 0; index < intTemp; index++)
+Solution s = new Solution();
+s.DailyTemperatures(res2);
+Console.WriteLine();
+public class StockSpanner
 {
-    int n = Convert.ToInt32(Console.ReadLine());
-    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
-    var tmp=new List<int>();
-
-    for (int i = 0; i < n; i++)
+    Stack<(int, int)> stack;
+    public StockSpanner()
     {
-
-        tmp[arr[i]].Add(i);
-
+        stack = new Stack<(int, int)>();
     }
 
-    int cl = -1;
-
-    for (int j = 1; j <= n; j++)
+    public int Next(int price)
     {
-
-        if (tmp[j].l)
+        int result = 1;
+        while(stack.Count>0 && stack.Peek().Item1 <= price)
         {
-
-            bool flagIs= false;
-
-            int cal = 0;
-
-            for (int l = 1; l <= n; l++)
-            {
-
-                if (tmp[l].size() && __gcd(j, l) == 1)
-                {
-
-                    flagIs= true;
-
-                    int lst = tmp[j][tmp[j].size() - 1] + 1;
-
-                    int lst2 = tmp[j][tmp[j].size() - 1] + 1;
-
-                    cal = max(cal, lst + lst2);
-
-                }
-
-            }
-
-            if (flagIs)
-            {
-
-                cl = Math.Max(cal, cl);
-
-            }
-
+            var item=stack.Pop();
+            result +=item.Item2 ;
+            
         }
-
-    } 
-    Console.WriteLine(cl);
+        stack.Push((price, result));
+        return result;
+    }
 }
+
+
+/**
+ * Your MaxStack object will be instantiated and called as such:
+ * MaxStack obj = new MaxStack();
+ * obj.Push(x);
+ * int param_2 = obj.Pop();
+ * int param_3 = obj.Top();
+ * int param_4 = obj.PeekMax();
+ * int param_5 = obj.PopMax();
+ */
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)

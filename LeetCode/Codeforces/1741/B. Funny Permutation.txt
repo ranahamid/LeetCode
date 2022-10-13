@@ -1,0 +1,23 @@
+﻿ 
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    int n = Convert.ToInt32(Console.ReadLine());
+    if (n == 3)
+        Console.Write(-1);
+    else if (n % 2 == 1)
+    {
+        for (int i = n; i > n / 2 + 1; i--)
+        {
+            Console.Write(i + " ");
+        }
+        for (int i = 1; i <= n / 2 + 1; i++)
+            Console.Write(i + " ");
+    }
+    else
+    {
+        for (int i = n; i >= 1; i--)
+            Console.Write(i + " ");
+    }
+    Console.WriteLine();
+}
