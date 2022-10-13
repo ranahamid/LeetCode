@@ -91,7 +91,7 @@ var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 //var output = letters.Zip(numbers,(l,length1)=> l+length1);
 //foreach(var item in output)
 //    Console.WriteLine(item);
- 
+
 
 /**
  * Your MaxStack object will be instantiated and called as such:
@@ -102,6 +102,9 @@ var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
  * int param_4 = obj.PeekMax();
  * int param_5 = obj.PopMax();
  */
+
+
+
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)

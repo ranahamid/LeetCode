@@ -1,0 +1,16 @@
+﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    var data = new List<string>();
+    string emptyLine = Console.ReadLine();
+
+    for (int i = 0; i < 8; i++)
+        data.Add(Console.ReadLine());
+    var answer = "B";
+    foreach (var item in data)
+    {
+        if (item == "RRRRRRRR")
+            answer = "R";
+    }
+    Console.WriteLine(answer);
+}
