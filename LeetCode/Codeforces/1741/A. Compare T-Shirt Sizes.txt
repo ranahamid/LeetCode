@@ -1,0 +1,52 @@
+﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    var sizes = Console.ReadLine().Split();
+    var first = sizes[0];
+    var sec = sizes[1];
+    if (first == sec)
+    {
+        Console.WriteLine("=");
+    }
+    else
+    {
+        if (first[first.Length - 1] != sec[sec.Length - 1])
+        {
+            if (first[first.Length - 1] == 'L')
+                Console.WriteLine(">");
+            else if (first[first.Length - 1] == 'M')
+            {
+                if (sec[sec.Length - 1] == 'L')
+                    Console.WriteLine("<");
+                else
+                    Console.WriteLine(">");
+            }
+            else
+            {
+                Console.WriteLine("<");
+            }
+        }
+        else
+        {
+            if(first[first.Length - 1]=='S')
+            {
+                var firstLen = first.Length;
+                var secLen=sec.Length;
+                if(firstLen > secLen)
+                    Console.WriteLine("<");
+                else
+                    Console.WriteLine(">");
+            }
+            else if (first[first.Length - 1] == 'L')
+            {
+                var firstLen = first.Length;
+                var secLen = sec.Length;
+                if (firstLen > secLen)
+                    Console.WriteLine(">");
+                else
+                    Console.WriteLine("<");
+            }
+        }
+    }
+}
+ 

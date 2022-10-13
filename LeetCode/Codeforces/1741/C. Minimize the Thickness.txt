@@ -1,0 +1,67 @@
+﻿﻿
+
+static IEnumerable<int> GetDivisors(int number)
+{
+    if (number <= 0) { yield return default; }
+    int iterator = (int)Math.Sqrt(number);
+    for (int sum = 1; sum <= iterator; sum++)
+    {
+        if (number % sum == 0)
+        {
+            yield return sum;
+            if (sum != number / sum) { yield return number / sum; }
+        }
+    }
+}
+
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    int n = Convert.ToInt32(Console.ReadLine());
+    int[] a = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
+    int sum = a.Sum();
+     
+    var div = GetDivisors(sum);
+
+    int ans = n;
+
+    if (div.Count() <= 2)
+    {
+        Console.WriteLine(n); 
+    }
+    else
+    {
+        foreach (var x in div)
+        {
+            int total = 0;
+            int thick = 0;
+            int req = sum / x;
+            bool flag = false;            
+            int maxElement = 0;
+            for (int i = 0; i < n; ++i)
+            {
+                thick++;
+                total += a[i];
+
+                if (total == req)
+                {
+                    total = 0;
+                    maxElement = Math.Max(thick, maxElement);                    
+                    thick = 0;
+                }
+                else if (total > req)
+                {
+                    flag = true;
+                    break;
+                }
+            } 
+            if (!flag)
+            {
+                ans = Math.Min(ans, maxElement);
+            } 
+        }
+        Console.WriteLine(ans);
+    } 
+}
+
+
