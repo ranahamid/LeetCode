@@ -124,7 +124,7 @@ for (int index = 0; index < intTemp; index++)
     for (int j = 1; j <= n; j++)
     {
 
-        if (tmp[j].)
+        if (tmp[j].l)
         {
 
             bool flagIs= false;
