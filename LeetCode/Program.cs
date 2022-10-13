@@ -91,31 +91,7 @@ var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 //var output = letters.Zip(numbers,(l,length1)=> l+length1);
 //foreach(var item in output)
 //    Console.WriteLine(item);
-Solution s = new Solution();
-s.DailyTemperatures(res2);
-Console.WriteLine();
-public class StockSpanner
-{
-    Stack<(int, int)> stack;
-    public StockSpanner()
-    {
-        stack = new Stack<(int, int)>();
-    }
-
-    public int Next(int price)
-    {
-        int result = 1;
-        while(stack.Count>0 && stack.Peek().Item1 <= price)
-        {
-            var item=stack.Pop();
-            result +=item.Item2 ;
-            
-        }
-        stack.Push((price, result));
-        return result;
-    }
-}
-
+ 
 
 /**
  * Your MaxStack object will be instantiated and called as such:
