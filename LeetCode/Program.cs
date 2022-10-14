@@ -101,10 +101,7 @@ public class ZeroEvenOdd
     public bool printEven = true;
     public bool printZero = false;
     public int counter = 1;
-
-    private int lastOdd;
-    private int lastEven;
-
+     
     public ZeroEvenOdd(int n)
     {
         this.n = n;
@@ -141,8 +138,10 @@ public class ZeroEvenOdd
     }
     public void Odd(Action<int> printNumber)
     {
-        while (counter <= n)
+        while (counter <= n )
         {
+            if (counter > n)
+                break;
             while (printOdd)
                 System.Threading.Thread.Sleep(1);
 
@@ -157,6 +156,8 @@ public class ZeroEvenOdd
     {
         while (counter <= n)
         {
+            if (counter > n)
+                break;
             while (printEven)
                 System.Threading.Thread.Sleep(1);
 
