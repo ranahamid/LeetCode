@@ -103,39 +103,7 @@ var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
  * int param_5 = obj.PopMax();
  */
 
-public class Solution
-{
-    public int NumTeams(int[] rating)
-    {
-        int counter = 0;
-        var len = rating.Length;
-        int[] dp = new int[len];
-        for(int i = 0; i < len; i++)
-        { 
-            for(int j = i; j >=0; j--)
-            {
-                if (rating[i] > rating[j])
-                {
-                    dp[i]++;
-                    counter += dp[j];
-                }
-            }
-        }
-        dp = new int[len];
-        for (int i = 0; i < len; i++)
-        {
-            for (int j = i; j >= 0; j--)
-            {
-                if (rating[i] < rating[j])
-                {
-                    dp[i]++;
-                    counter += dp[j];
-                }
-            }
-        }
-        return counter;
-    }
-}
+ 
 
 public static class Helper
 {
