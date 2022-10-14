@@ -92,6 +92,9 @@ public class Solution
 {
     
 }
+
+
+
 /**
  * Your MaxStack object will be instantiated and called as such:
  * MaxStack obj = new MaxStack();
