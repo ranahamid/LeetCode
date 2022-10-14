@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
 using System.Text;
@@ -91,7 +92,75 @@ Solution s = new Solution();
 s.Check(res1);
 
 
- 
+
+
+public class ZeroEvenOdd
+{
+    private int n;
+    public bool printOdd = false;
+    public bool printEven = true;
+    public bool printZero = false;
+    public int counter = 1;
+
+    private int lastOdd;
+    private int lastEven;
+
+    public ZeroEvenOdd(int n)
+    {
+        this.n = n;
+        counter = 1;
+        printZero = false;
+        printEven = true;
+        printOdd = true;
+
+
+    }
+
+    // printNumber(x) outputs "x", where x is an integer.
+    public void Zero(Action<int> printNumber)
+    {
+        while (counter <= n)
+        {
+            while (printZero) //true
+                System.Threading.Thread.Sleep(1);
+
+            printNumber(0);
+            printZero = !printZero;//true
+            if (counter % 2 == 0)
+                printEven = false;
+            else
+                printOdd = false;
+        }
+    }
+    public void Odd(Action<int> printNumber)
+    {
+        while (counter <= n)
+        {
+            while (printOdd)
+                System.Threading.Thread.Sleep(1);
+
+            printNumber(counter);
+            counter++;
+            printZero = !printZero;
+            printOdd = !printOdd;//false 
+        }
+
+    }
+    public void Even(Action<int> printNumber)
+    {
+        while (counter <= n)
+        {
+            while (printEven)
+                System.Threading.Thread.Sleep(1);
+
+            printNumber(counter);
+            counter++;
+            printZero = !printZero;
+            printEven = !printEven;
+        }
+    }
+}
+
 
 
 
