@@ -83,22 +83,15 @@ var resW2 = new string[]
 };
 
 
-var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+var res1 = new int[] { 3, 4, 5, 1, 2 };
 var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
-//var letters = new string[] { "A", "B", "C", "D", "E" };
-//var numbers = new int[] { 1, 2, 3 };
-//var output = letters.Zip(numbers,(l,length1)=> l+length1);
-//foreach(var item in output)
-//    Console.WriteLine(item);
+Solution s = new Solution();
+s.Check(res1);
 public class Solution
 {
-    public bool RepeatedSubstringPattern(string s)
-    {
-        return ((s + s).Substring(1, (s.Length * 2) - 2).Contains(s));           
-    }
+    
 }
-
 /**
  * Your MaxStack object will be instantiated and called as such:
  * MaxStack obj = new MaxStack();
