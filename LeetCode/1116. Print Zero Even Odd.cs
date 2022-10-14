@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-
+    /// <summary>
+    /// Runtime 151 ms Beats 68.6% Memory 38.1 MB Beats 70.83%
+    /// </summary>
     public class ZeroEvenOdd
     {
         private int n;
