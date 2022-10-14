@@ -111,9 +111,7 @@ public class ZeroEvenOdd
         counter = 1;
         printZero = false;
         printEven = true;
-        printOdd = true;
-
-
+        printOdd = true; 
     }
 
     // printNumber(x) outputs "x", where x is an integer.
@@ -126,10 +124,19 @@ public class ZeroEvenOdd
 
             printNumber(0);
             printZero = !printZero;//true
-            if (counter % 2 == 0)
-                printEven = false;
+            if((counter <= n))
+            {
+
+                if (counter % 2 == 0)
+                    printEven = false;
+                else
+                    printOdd = false;
+            }
             else
-                printOdd = false;
+            {
+                printEven = true;
+                printOdd = true;
+            }
         }
     }
     public void Odd(Action<int> printNumber)
