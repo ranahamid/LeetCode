@@ -101,9 +101,7 @@ var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
  * int param_3 = obj.Top();
  * int param_4 = obj.PeekMax();
  * int param_5 = obj.PopMax();
- */
-
- 
+ */ 
 
 public static class Helper
 {
