@@ -1,5 +1,5 @@
-﻿using System.Threading;
-
+﻿using System.Threading.Tasks;
+ 
 
 
 //int[][] nums2 = new int[][]
@@ -84,10 +84,7 @@ var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
 //Solution s = new Solution();
 //s.Check(res1);
-
-
-
-
+ 
 
 
 
