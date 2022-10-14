@@ -1,18 +1,19 @@
-﻿
+﻿using System.Threading;
 
 
-int[][] nums2 = new int[][]
-          {
-                new int[] {5,4},
-                new int[] {17,24},
 
-                new int[] {6,3},
-                new int[] {43,77},
-                //new int[] {5,0},
-                //new int[] {4,1},
-                //new int[] {5,8},
-                //new int[] {5,9},
-          };
+//int[][] nums2 = new int[][]
+//          {
+//                new int[] {5,4},
+//                new int[] {17,24},
+
+//                new int[] {6,3},
+//                new int[] {43,77},
+//                //new int[] {5,0},
+//                //new int[] {4,1},
+//                //new int[] {5,8},
+//                //new int[] {5,9},
+//          };
 
 #region node
 
@@ -81,12 +82,10 @@ var resW2 = new string[]
 var res1 = new int[] { 3, 4, 5, 1, 2 };
 var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
-Solution s = new Solution();
-s.Check(res1);
+//Solution s = new Solution();
+//s.Check(res1);
 
 
-
-using System.Threading;
 
 
 
