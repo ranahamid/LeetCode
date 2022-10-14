@@ -124,7 +124,7 @@ public class ZeroEvenOdd
 
             printNumber(0);
             printZero = !printZero;//true
-            if((counter <= n))
+            if(counter <= n)
             {
 
                 if (counter % 2 == 0)
