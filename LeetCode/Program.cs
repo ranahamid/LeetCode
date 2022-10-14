@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
 using System.Text;
 
+
 int[][] nums2 = new int[][]
           {
                 new int[] {5,4},
@@ -88,10 +89,9 @@ var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
 Solution s = new Solution();
 s.Check(res1);
-public class Solution
-{
-    
-}
+
+
+ 
 
 
 
