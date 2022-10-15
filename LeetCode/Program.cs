@@ -81,11 +81,7 @@ var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
 var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
 
-public class Solution
-{
-   
-}
-
+ 
 
 
 /**
