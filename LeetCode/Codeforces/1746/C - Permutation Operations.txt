@@ -1,0 +1,32 @@
+﻿
+ 
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+ 
+    int n = Convert.ToInt32(Console.ReadLine());
+    
+    var a = Console.ReadLine().Split().Select(int.Parse).ToList();
+ 
+    List<int> ans = new List<int>();
+    int op = 1;
+    for(int i = 1; i < n; i++)
+    {
+        if (a[i] < a[i - 1])
+        {
+            int diff = a[i - 1] - a[i];
+            while (diff > 0)
+            {
+                diff -= op;
+                op++;
+                ans.Add(i + 1);
+            }
+        }
+    }
+    while (ans.Count < n)
+        ans.Add(1);
+    foreach (var item in ans)
+        Console.Write(item + " ");
+    Console.WriteLine(); 
+}
+ 

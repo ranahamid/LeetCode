@@ -1,21 +1,17 @@
-﻿using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿ 
 
+int[][] nums2 = new int[][]
+          {
+                new int[] {5,4},
+                new int[] {17,24},
 
-
-//int[][] nums2 = new int[][]
-//          {
-//                new int[] {5,4},
-//                new int[] {17,24},
-
-//                new int[] {6,3},
-//                new int[] {43,77},
-//                //new int[] {5,0},
-//                //new int[] {4,1},
-//                //new int[] {5,8},
-//                //new int[] {5,9},
-//          };
+                new int[] {6,3},
+                new int[] {43,77},
+                //new int[] {5,0},
+                //new int[] {4,1},
+                //new int[] {5,8},
+                //new int[] {5,9},
+          };
 
 #region node
 
@@ -81,36 +77,16 @@ var resW2 = new string[]
 };
 
 
-var res1 = new int[] { 3, 4, 5, 1, 2 };
+var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
 var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
-
-Solution s = new Solution();
-s.SimilarRGB("#09f166");
 
 
 public class Solution
 {
-    public string SimilarRGB(string color)
-    {
-        StringBuilder sb = new StringBuilder();
-        sb.Append("#");
-        for (int i = 1; i < color.Length; i = i + 2)
-        {
-            var temp = color[i].ToString() + color[i + 1].ToString();
-            var result = GetSimilarColor(temp);
-            sb.Append(result);
-        }
-        return sb.ToString();
-    }
-    public string GetSimilarColor(string colorCode)
-    {
-        var value = Convert.ToInt32(colorCode, 16);
-        int ans =(int) Math.Round((decimal)(value / 17.0));
-        var hex = Convert.ToString(ans, 16);
-        return hex+hex;
-    }
    
 }
+
+
 
 /**
  * Your MaxStack object will be instantiated and called as such:
@@ -128,12 +104,12 @@ public static class Helper
     {
         if (number <= 0) { yield return default; }
         int iterator = (int)Math.Sqrt(number);
-        for (int sum = 1; sum <= iterator; sum++)
+        for (int answer = 1; answer <= iterator; answer++)
         {
-            if (number % sum == 0)
+            if (number % answer == 0)
             {
-                yield return sum;
-                if (sum != number / sum) { yield return number / sum; }
+                yield return answer;
+                if (answer != number / answer) { yield return number / answer; }
             }
         }
 
@@ -162,15 +138,15 @@ public static class Helper
     public static Dictionary<char, int> GetFrequencyString(string sentence)
     {
         Dictionary<char, int> map = new Dictionary<char, int>();
-        for (int sum = 0; sum < sentence.Length; sum++)
+        for (int answer = 0; answer < sentence.Length; answer++)
         {
-            if (map.ContainsKey(sentence[sum]))
+            if (map.ContainsKey(sentence[answer]))
             {
-                map[sentence[sum]]++;
+                map[sentence[answer]]++;
             }
             else
             {
-                map[sentence[sum]] = 1;
+                map[sentence[answer]] = 1;
             }
         }
         return map;
@@ -178,29 +154,29 @@ public static class Helper
     public static Dictionary<int, int> GetFrequencyInt(int[] sentence)
     {
         Dictionary<int, int> map = new Dictionary<int, int>();
-        for (int sum = 0; sum < sentence.Length; sum++)
+        for (int answer = 0; answer < sentence.Length; answer++)
         {
-            if (map.ContainsKey(sentence[sum]))
+            if (map.ContainsKey(sentence[answer]))
             {
-                map[sentence[sum]]++;
+                map[sentence[answer]]++;
             }
             else
             {
-                map[sentence[sum]] = 1;
+                map[sentence[answer]] = 1;
             }
         }
         return map;
     }
     public static int GetDigitSum(int source)
     {
-        var sum = 0;
+        var answer = 0;
         while (source > 0)
         {
             var digit = source % 10;
-            sum += digit * digit;
+            answer += digit * digit;
             source = source / 10;
         }
-        return sum;
+        return answer;
     }
     public static List<int> GetDigits(int source)
     {
