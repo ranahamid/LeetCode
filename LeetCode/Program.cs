@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 
@@ -83,39 +84,32 @@ var resW2 = new string[]
 var res1 = new int[] { 3, 4, 5, 1, 2 };
 var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
-//Solution s = new Solution();
-//s.Check(res1);
+Solution s = new Solution();
+s.SimilarRGB("#09f166");
 
-class HtmlParser
+
+public class Solution
 {
-    public List<String> GetUrls(String url) { }
-}
-class Solution
-{
-    public IList<string> Crawl(string startUrl, HtmlParser htmlParser)
+    public string SimilarRGB(string color)
     {
-        var visited = new HashSet<string>();
-        var tasks = new HashSet<Task<IList<string>>>();
-        tasks.Add(Task.Run(() => htmlParser.GetUrls(startUrl)));
-        visited.Add(startUrl);
-        var url = new Uri(startUrl);
-        while (tasks.Count > 0)
+        StringBuilder sb = new StringBuilder();
+        sb.Append("#");
+        for (int i = 1; i < color.Length; i = i + 2)
         {
-            var completedTask = Task.WhenAny(tasks).Result;
-            tasks.Remove(completedTask);
-            foreach(var nextUrl in completedTask.Result)
-            {
-                if (!visited.Contains(nextUrl) && nextUrl.Contains($"http://{url.Host}"))
-                {
-                    visited.Add(nextUrl);
-                    tasks.Add(Task.Run(() => htmlParser.GetUrls(nextUrl)));
-                }
-            }
-
+            var temp = color[i].ToString() + color[i + 1].ToString();
+            var result = GetSimilarColor(temp);
+            sb.Append(result);
         }
-
-        return visited.ToList();
+        return sb.ToString();
     }
+    public string GetSimilarColor(string colorCode)
+    {
+        var value = Convert.ToInt32(colorCode, 16);
+        int ans =(int) Math.Round((decimal)(value / 17.0));
+        var hex = Convert.ToString(ans, 16);
+        return hex+hex;
+    }
+   
 }
 
 /**
