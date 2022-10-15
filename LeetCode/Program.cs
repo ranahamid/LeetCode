@@ -1,5 +1,6 @@
-﻿using System.Threading.Tasks;
- 
+﻿using System.Linq;
+using System.Threading.Tasks;
+
 
 
 //int[][] nums2 = new int[][]
@@ -84,9 +85,38 @@ var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
 
 //Solution s = new Solution();
 //s.Check(res1);
- 
 
+class HtmlParser
+{
+    public List<String> GetUrls(String url) { }
+}
+class Solution
+{
+    public IList<string> Crawl(string startUrl, HtmlParser htmlParser)
+    {
+        var visited = new HashSet<string>();
+        var tasks = new HashSet<Task<IList<string>>>();
+        tasks.Add(Task.Run(() => htmlParser.GetUrls(startUrl)));
+        visited.Add(startUrl);
+        var url = new Uri(startUrl);
+        while (tasks.Count > 0)
+        {
+            var completedTask = Task.WhenAny(tasks).Result;
+            tasks.Remove(completedTask);
+            foreach(var nextUrl in completedTask.Result)
+            {
+                if (!visited.Contains(nextUrl) && nextUrl.Contains($"http://{url.Host}"))
+                {
+                    visited.Add(nextUrl);
+                    tasks.Add(Task.Run(() => htmlParser.GetUrls(nextUrl)));
+                }
+            }
 
+        }
+
+        return visited.ToList();
+    }
+}
 
 /**
  * Your MaxStack object will be instantiated and called as such:

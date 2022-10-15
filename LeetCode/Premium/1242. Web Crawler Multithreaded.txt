@@ -7,7 +7,7 @@
  *     public List<String> GetUrls(String url) {}
  * }
  */
-
+  //Runtime 594 ms Beats 62.7% Memory 50.7 MB Beats 96.55%
 class Solution
 {
     public IList<string> Crawl(string startUrl, HtmlParser htmlParser)
