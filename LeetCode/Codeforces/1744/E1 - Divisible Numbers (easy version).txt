@@ -1,0 +1,33 @@
+﻿//TLE
+
+
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+
+    int[] xx = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
+    int a = xx[0];
+    int b = xx[1];
+    int c = xx[2];
+    int d = xx[3];
+
+    int x = -1, y = -1;
+    for (long i = a + 1; i <= c; i++)
+    {
+        var isFound = false;
+        for (long j = b + 1; j <= d; j++)
+        {
+            if ((i * j) % (a * b) == 0)
+            {
+                x = (int)i;
+                y = (int)j;
+                isFound = true;
+                break;
+            }
+           
+        }
+        if (isFound)
+            break;
+    }
+    Console.WriteLine(x + " " + y);
+}

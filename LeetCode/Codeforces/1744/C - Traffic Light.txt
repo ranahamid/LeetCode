@@ -1,0 +1,51 @@
+﻿
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    var line = Console.ReadLine().Split();
+    var n=Int32.Parse(line[0]);
+    var current= char.Parse(line[1]);
+    var word = Console.ReadLine();
+ 
+    var sb = new StringBuilder();
+    int i;
+    for ( i=0;i<word.Length;i++)
+    {
+        sb.Append(word[i]);
+        if (word[i] == 'g')
+        {
+            break;
+        }
+    }
+    word = word + sb;
+ 
+    int start = 0;
+   
+    for(i = 0; i < word.Length; i++)
+    {
+        if (word[i]==current)
+        {
+            break;
+        }
+    }
+    var max = 0;
+ 
+    for ( i = 0; i < word.Length; i++)
+    {
+        if (word[i] == current)
+        {
+            for (int j = i; j < word.Length; j++)
+            {
+                if (word[j] == 'g')
+                {
+                    max = Math.Max(max, j - i);
+                    i = j;
+                    break;
+                }
+            }
+        }
+    }
+     
+    Console.WriteLine(max);
+}
+ 

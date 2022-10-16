@@ -1,0 +1,32 @@
+﻿
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    int n = Convert.ToInt32(Console.ReadLine());
+    int[] x = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);     
+    var word = Console.ReadLine();
+ 
+    var dic = new Dictionary<int, char>();
+    var isTrue = true;
+    int counter = 0;
+    foreach (var item in x)
+    {
+        if(dic.ContainsKey(item))
+        {
+            if (dic[item] != word[counter])
+            {
+                isTrue = false;
+                break;
+            }
+        }
+        else
+        {
+            dic.Add(item, word[counter]);
+        }
+        counter++;
+    }
+    if (isTrue)
+        Console.WriteLine("YES");
+    else
+        Console.WriteLine("NO");
+}

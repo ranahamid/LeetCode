@@ -1,0 +1,54 @@
+﻿
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+ 
+    int[] x = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
+    int n = x[0];
+    int q = x[1];
+    long[] a = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt64);
+    long ans = 0;
+ 
+    long oddCount = 0;
+    long evenCount = 0;
+    for (int j = 0; j < n; j++)
+    {
+        if (a[j] % 2 == 0)
+        {
+            evenCount++;
+        }
+        else
+        {
+            oddCount++;
+        }
+        ans += a[j];
+    }
+ 
+    for (int i = 0; i < q; i++)
+    {
+        var query= Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
+        if (query[0] == 0)
+        {
+            ans += query[1]* evenCount;
+            if (query[1] % 2 != 0)
+            {
+                oddCount += evenCount;
+                evenCount = 0;
+            }
+        }
+        else if (query[0] == 1)
+        {
+            ans += query[1] * oddCount;
+            if (query[1] % 2 != 0)
+            {
+                evenCount += oddCount; 
+                oddCount = 0;
+            }
+        }
+        Console.WriteLine(ans);
+    }
+ 
+        //sum
+        
+      
+    }

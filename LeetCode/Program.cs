@@ -1,10 +1,6 @@
 ﻿
 
-using System.Collections.Generic;
-using System.Linq;
 using System.Numerics;
-using System.Runtime.Intrinsics;
-using System.Runtime.Intrinsics.Arm;
 
 int[][] nums2 = new int[][]
           {
@@ -86,24 +82,7 @@ var resW2 = new string[]
 var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
 var res2 = new int[] { 6, 5, 4, 3, 2, 1 };
 
-Solution s = new Solution();
-Console.WriteLine(s.MinDifficulty(res2, 2));
-
-
-public class Solution
-{
  
-}
-
-/**
- * Your MaxStack object will be instantiated and called as such:
- * MaxStack obj = new MaxStack();
- * obj.Push(x);
- * int param_2 = obj.Pop();
- * int param_3 = obj.Top();
- * int param_4 = obj.PeekMax();
- * int param_5 = obj.PopMax();
- */
 
 public static class Helper
 {
