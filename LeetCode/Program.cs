@@ -1,4 +1,10 @@
-﻿ 
+﻿
+
+using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.Intrinsics;
+using System.Runtime.Intrinsics.Arm;
 
 int[][] nums2 = new int[][]
           {
@@ -78,11 +84,12 @@ var resW2 = new string[]
 
 
 var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
-var res2 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
+var res2 = new int[] { 35054, 398719, 945315, 945315, 820417, 945315, 35054, 945315, 171832, 945315, 35054, 109750, 790964, 441974, 552913 };
 
+Solution s = new Solution();
+Console.WriteLine(s.CountSubarrays(res2, 35054, 945315));
 
  
-
 
 /**
  * Your MaxStack object will be instantiated and called as such:
