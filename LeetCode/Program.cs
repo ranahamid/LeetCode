@@ -1,4 +1,44 @@
-﻿ 
+﻿//0111
+
+using System.Text;
+
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    int n = Convert.ToInt32(Console.ReadLine());
+    var word = Console.ReadLine();
+    var sb= new StringBuilder(word);
+    int[] x = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
+    var max = 0;
+    if (sb[0] == '1')
+        max = x[0];
+    for(int i = 1; i < sb.Length; i++)
+    {
+        if (sb[i] == '1' )
+        {
+            if(sb[i - 1] == '0')
+            {
+                if (x[i - 1] > x[i])
+                {
+                    max += x[i - 1];
+                    sb[i] = '0';
+                    sb[i - 1] = '1';
+                }
+                else
+                {
+                    max += x[i];
+                }
+            }
+            else
+            {
+                max += x[i];
+            } 
+        }
+        
+        
+    }
+    Console.WriteLine(max);
+}
 
 int[][] nums2 = new int[][]
           {
@@ -79,7 +119,7 @@ var resW2 = new string[]
 
 var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
 var res2 = new int[] { 6, 5, 4, 3, 2, 1 };
- 
+
 
 
 
