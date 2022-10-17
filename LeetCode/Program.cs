@@ -81,8 +81,23 @@ var resW2 = new string[]
 
 var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
 var res2 = new int[] { 6, 5, 4, 3, 2, 1 };
+public class Solution
+{
+    public int LongestWPI(int[] hours)
+    {
+        int max = 0, current = 0;
+        foreach(var n in hours)
+        {
+            if (n > 8)
+                current++;
+            else
+                current = 0;
+            max = Math.Max(max, current);
+        }
+        return max;
+    }
+}
 
- 
 
 public static class Helper
 {
