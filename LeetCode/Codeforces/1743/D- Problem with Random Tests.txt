@@ -1,0 +1,77 @@
+﻿
+using System.Text;
+ 
+for (int index = 0; index <= 0; index++)
+{
+    int n = Convert.ToInt32(Console.ReadLine());
+    var word = Console.ReadLine();
+    int answer = 1;
+    var result = new StringBuilder();
+    var isTrue = false;
+    for(int i=0; i < n; i++)
+    {
+        if (word[i]=='1'|| isTrue)
+        {
+            isTrue = true;
+            result.Append( word[i]);
+        }
+    }
+    if (result.Length == 0)
+    {
+        Console.WriteLine(0);
+    }
+    else
+    {
+        word = result.ToString();
+        n = word.Length;
+        result = new StringBuilder();
+        int left, right;
+        int x = 0, y = 0;
+        for(int i = 2; i < n + 1; i++)
+        {
+             y = n - i + 1;
+             x = n - answer + 1;
+           
+            for(int j = Math.Min(x, y); j < n + 1; j++)
+            {
+                if (word[j - 1] == '0')
+                {
+                    if (j >= y)
+                    {
+                        right = word[j - y] == '1' ? 1 : 0;
+                    }
+                    else
+                    {
+                        right = 0;
+                    } 
+                    if (j >= x)
+                    {
+                         left = word[j - x] == '1'?1:0;
+                    }
+                    else
+                    {
+                        left = 0;
+                    }
+                   
+                    if (left < right)
+                        answer = i;
+                    if (left != right)
+                        break;
+                }
+            }
+        }
+        for (int i = 1; i < n + 1; i++)
+        {
+            if ((i >= n - answer + 1 && word[i - n + answer - 1] == '1') || ((word[i - 1]) - 48) == 1)
+            {
+                result .Append("1") ;
+            }
+            else
+            {
+                result.Append("0");
+            }
+        }
+        Console.WriteLine(result);
+    } 
+}
+ 

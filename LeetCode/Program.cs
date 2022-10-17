@@ -1,44 +1,10 @@
 ﻿//0111
 
-using System.Text;
 
-int intTemp = Convert.ToInt32(Console.ReadLine());
-for (int index = 0; index < intTemp; index++)
-{
-    int n = Convert.ToInt32(Console.ReadLine());
-    var word = Console.ReadLine();
-    var sb= new StringBuilder(word);
-    int[] x = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
-    var max = 0;
-    if (sb[0] == '1')
-        max = x[0];
-    for(int i = 1; i < sb.Length; i++)
-    {
-        if (sb[i] == '1' )
-        {
-            if(sb[i - 1] == '0')
-            {
-                if (x[i - 1] > x[i])
-                {
-                    max += x[i - 1];
-                    sb[i] = '0';
-                    sb[i - 1] = '1';
-                }
-                else
-                {
-                    max += x[i];
-                }
-            }
-            else
-            {
-                max += x[i];
-            } 
-        }
-        
-        
-    }
-    Console.WriteLine(max);
-}
+//int intTemp = Convert.ToInt32(Console.ReadLine());
+
+
+ 
 
 int[][] nums2 = new int[][]
           {
@@ -143,24 +109,24 @@ public static class Helper
     }
     public static int[] ReverseSort(int[] nums)
     {
-        Array.Sort(nums, (a, b) => b.CompareTo(a));
+        Array.Sort(nums, (left, right) => right.CompareTo(left));
         return nums;
     }
-    public static int GCD(int a, int b)
+    public static int GCD(int left, int right)
     {
-        if (b > a)
+        if (right > left)
         {
-            return GCD(b, a);
+            return GCD(right, left);
         }
-        if (b == 0)
+        if (right == 0)
         {
-            return a;
+            return left;
         }
-        return GCD(b, a % b);
+        return GCD(right, left % right);
     }
-    public static int LCM(int a, int b)
+    public static int LCM(int left, int right)
     {
-        return (a / GCD(a, b)) * b;
+        return (left / GCD(left, right)) * right;
     }
     public static Dictionary<char, int> GetFrequencyString(string sentence)
     {
