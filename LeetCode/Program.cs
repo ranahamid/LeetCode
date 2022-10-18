@@ -4,15 +4,15 @@
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
 
- 
+
 
 int[][] nums2 = new int[][]
           {
-                new int[] {5,4},
-                new int[] {17,24},
+                new int[] {1,3},
+                new int[] {2,6},
 
-                new int[] {6,3},
-                new int[] {43,77},
+                new int[] {8,10},
+                new int[] {15,18},
                 //new int[] {5,0},
                 //new int[] {4,1},
                 //new int[] {5,8},
@@ -85,8 +85,35 @@ var resW2 = new string[]
 
 var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
 var res2 = new int[] { 6, 5, 4, 3, 2, 1 };
+Solution s = new Solution();
+Console.WriteLine(s.Merge(nums2));
+public class Solution
+{
+    public int[][] Merge(int[][] intervals)
+    {
+        intervals = intervals.OrderBy(x => x[0]).ToArray();
+        var result = new List<int[]>();
+        var min = intervals[0][0];
+        var max = intervals[0][1];
 
-
+        for (int i = 1; i < intervals.Length; i++)
+        {
+            if (intervals[i][0] <= max)
+            {
+                if (intervals[i][1] > max)
+                    max = intervals[i][1];
+            }
+            else
+            {
+                result.Add(new int[] { min, max });
+                min = intervals[i][0];
+                max = intervals[i][1];
+            }
+        }
+        result.Add(new int[] { min, max });
+        return result.ToArray();
+    }
+}
 
 
 
