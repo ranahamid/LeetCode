@@ -1,6 +1,25 @@
 ﻿//0111
 
 
+var a = new int[] { 5,2,7,4,9};
+int k = 5;
+int max = 0;
+int counter = 0;
+for (int i = 1; i <= a.Max(); i++)
+{
+    counter = 0;
+    for (int j = 0; j < a.Length; j++)
+    {
+        if (j >= i)
+            counter += j / i;
+        if (counter >= k)
+        {
+            max = Math.Max(max, i);
+        }
+    }
+}
+return max;
+
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
 IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
