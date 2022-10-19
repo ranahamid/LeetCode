@@ -29,26 +29,21 @@ namespace LeetCode
         /// <returns></returns>
         public IList<string> TopKFrequent(string[] words, int k)
         {
-            SortedDictionary<string, int> dic = new SortedDictionary<string, int>();
+            var dic = new Dictionary<string, int>();
             foreach (var item in words)
             {
-                if (dic.ContainsKey(item))
-                {
-                    dic[item]++;
-                }
-                else
-                {
-                    dic[item] = 1;
-                }
+                dic.TryAdd(item, 0);
+                dic[item]++;
             }
-            var data = dic.OrderByDescending(x => x.Value).ThenBy(x => x.Key).ToList();
-            List<string> result = new List<string>();
-            for (int i = 0; i < k; i++)
-            {
-                result.Add(data[i].Key);
-            }
-            return result;
 
+            var result = dic.OrderByDescending(x => x.Value).ThenBy(x => x.Key).Take(k).ToDictionary(x => x.Key, x => x.Value);
+
+            var answer = new List<string>();
+            foreach (var item in result)
+            {
+                answer.Add(item.Key);
+            }
+            return answer;
         }
     }
 }
