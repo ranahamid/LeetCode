@@ -1,12 +1,6 @@
-﻿int intTemp = Convert.ToInt32(Console.ReadLine());
-for (int index = 0; index < intTemp; index++)
-{
-    int n = Convert.ToInt32(Console.ReadLine());
-    var a = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt64);
-     
-    Console.WriteLine($"{result}"); 
-}
+﻿ 
 
+ 
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
