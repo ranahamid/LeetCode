@@ -1,29 +1,16 @@
-﻿//0111
-
-
-var a = new int[] { 5,2,7,4,9};
-int k = 5;
-int max = 0;
-int counter = 0;
-for (int i = 1; i <= a.Max(); i++)
+﻿int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
 {
-    counter = 0;
-    for (int j = 0; j < a.Length; j++)
-    {
-        if (j >= i)
-            counter += j / i;
-        if (counter >= k)
-        {
-            max = Math.Max(max, i);
-        }
-    }
+    int n = Convert.ToInt32(Console.ReadLine());
+    var a = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt64);
+     
+    Console.WriteLine($"{result}"); 
 }
-return max;
 
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
-IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
-Console.WriteLine(strList.Aggregate((s1,s2)=> s1+", "+s2));
+//IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
+//Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 
 int[][] nums2 = new int[][]
@@ -105,35 +92,8 @@ var resW2 = new string[]
 
 var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
 var res2 = new int[] { 6, 5, 4, 3, 2, 1 };
-Solution s = new Solution();
-Console.WriteLine(s.Merge(nums2));
-public class Solution
-{
-    public int[][] Merge(int[][] intervals)
-    {
-        intervals = intervals.OrderBy(x => x[0]).ToArray();
-        var result = new List<int[]>();
-        var min = intervals[0][0];
-        var max = intervals[0][1];
-
-        for (int i = 1; i < intervals.Length; i++)
-        {
-            if (intervals[i][0] <= max)
-            {
-                if (intervals[i][1] > max)
-                    max = intervals[i][1];
-            }
-            else
-            {
-                result.Add(new int[] { min, max });
-                min = intervals[i][0];
-                max = intervals[i][1];
-            }
-        }
-        result.Add(new int[] { min, max });
-        return result.ToArray();
-    }
-}
+//Solution s = new Solution();
+//Console.WriteLine(s.Merge(nums2));
 
 
 
