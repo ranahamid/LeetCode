@@ -1,6 +1,5 @@
-﻿ 
+﻿
 
- 
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
@@ -86,9 +85,13 @@ var resW2 = new string[]
 
 var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
 var res2 = new int[] { 6, 5, 4, 3, 2, 1 };
-//Solution s = new Solution();
-//Console.WriteLine(s.Merge(nums2));
+Solution s = new Solution();
+Console.WriteLine(s.MinWindow("a", "aa"));
 
+public class Solution
+{
+   
+}
 
 
 
