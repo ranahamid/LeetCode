@@ -1,5 +1,4 @@
-﻿ 
- 
+﻿
 
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
@@ -84,12 +83,16 @@ var resW2 = new string[]
 };
 
 
-var res1 = new int[] { 1, 3, 5, 2 };
-var res2 = new int[] { 2, 3, 1, 14 };
-//Solution s = new Solution();
-//Console.WriteLine(s.MinCost(res1, res2));
+var res1 = new int[] { 2, 2, 2, 2, 2 };
+var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
+Solution s = new Solution();
+Console.WriteLine(s.MinCost(res1, res2));
+public class Solution
+{
+    
+}
 
 
 
