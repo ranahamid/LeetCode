@@ -1,5 +1,4 @@
-﻿
- 
+﻿ 
  
 
 //int intTemp = Convert.ToInt32(Console.ReadLine());
