@@ -6,6 +6,8 @@
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 
+using System.Formats.Asn1;
+
 int[][] nums2 = new int[][]
           {
                 new int[] {1,3},
@@ -76,22 +78,20 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
             };
 
 
-var resW1 = new string[] { "oa", "oaa" };
+var resW1 = new string[] { "02:00", "03:00" };
 var resW2 = new string[]
 {
-"What","must","be","acknowledgment","shall","be"
+"01:15","02:00"
 };
 
 
-var res1 = new int[] { 13, 13, 20, 0, 8, 9, 9 };
-var res2 = new int[] { 6, 5, 4, 3, 2, 1 };
+var res1 = new int[] { 1,3,5,2 };
+var res2 = new int[] {2,3,1,14 };
 Solution s = new Solution();
-Console.WriteLine(s.MinWindow("a", "aa"));
+Console.WriteLine(s.MinCost(res1, res2));
+ 
 
-public class Solution
-{
-   
-}
+
 
 
 
