@@ -1,7 +1,4 @@
 ﻿
-
-using static LeetCode._985;
-
 int intTemp = Convert.ToInt32(Console.ReadLine());
 for (int index = 0; index < intTemp; index++)
 {
@@ -16,9 +13,7 @@ for (int index = 0; index < intTemp; index++)
 
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
-
-
-using System.Formats.Asn1;
+ 
 
 int[][] nums2 = new int[][]
           {
