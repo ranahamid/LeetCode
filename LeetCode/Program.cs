@@ -1,5 +1,17 @@
 ﻿
 
+using static LeetCode._985;
+
+int intTemp = Convert.ToInt32(Console.ReadLine());
+for (int index = 0; index < intTemp; index++)
+{
+    int n = Convert.ToInt32(Console.ReadLine());
+    int[] x = Array.ConvertAll(Console.ReadLine().Split(), Convert.ToInt32);
+    int[] a = Array.ConvertAll(Console.ReadLine().Split(), s => int.Parse(s));
+    var list = Console.ReadLine().Split().Select(int.Parse).ToList();
+    Console.WriteLine($"{result}");
+}
+
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
@@ -87,8 +99,8 @@ var resW2 = new string[]
 
 var res1 = new int[] { 1,3,5,2 };
 var res2 = new int[] {2,3,1,14 };
-Solution s = new Solution();
-Console.WriteLine(s.MinCost(res1, res2));
+//Solution s = new Solution();
+//Console.WriteLine(s.MinCost(res1, res2));
  
 
 
