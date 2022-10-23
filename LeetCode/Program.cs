@@ -7,6 +7,7 @@
 
 
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 using System.Xml.Linq;
 
 int[][] nums2 = new int[][]
@@ -91,9 +92,12 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-Console.WriteLine(s.Calculate("3+2*2"));
+Console.WriteLine(s.SimplifyPath("/home/"));
 
- 
+public class Solution
+{
+  
+}
 
 
 
