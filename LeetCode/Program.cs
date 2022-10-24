@@ -4,11 +4,7 @@
 
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
-
-
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-using System.Xml.Linq;
+ 
 
 int[][] nums2 = new int[][]
           {
