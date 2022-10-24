@@ -90,24 +90,6 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 Solution s = new Solution();
 Console.WriteLine(s.GroupStrings(resW2));
 
-public class Solution
-{
-    public int[] FindBuildings(int[] heights)
-    {
-        var max = -1;
-        var result=new List<int>();
-        for(int i = heights.Length - 1; i >= 0; i--)
-        {
-            if(heights[i] >= max)
-            {
-                result.Add(i);
-            }
-            max = Math.Max(max, heights[i]);            
-        }
-        result.Sort();
-        return result.ToArray();
-    }
-}
 
 
 public static class Helper
