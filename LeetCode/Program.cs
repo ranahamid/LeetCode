@@ -4,7 +4,7 @@
 
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
- 
+
 
 int[][] nums2 = new int[][]
           {
@@ -88,9 +88,12 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-Console.WriteLine(s.GroupStrings(resW2));
+//Console.WriteLine(s.KClosest("()))(("));
 
-
+public class Solution
+{
+    
+}
 
 public static class Helper
 {
