@@ -83,7 +83,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "02:00", "03:00" };
 var resW2 = new string[]
 {
-"01:15","02:00"
+"cha","r","act","ers"
 };
 
 
@@ -92,11 +92,11 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-Console.WriteLine(s.SimplifyPath("/home/"));
+Console.WriteLine(s.MaxLength(resW2));
 
 public class Solution
 {
-  
+ 
 }
 
 
