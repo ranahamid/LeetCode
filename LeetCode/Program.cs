@@ -6,6 +6,8 @@
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 
+using System.Text;
+
 int[][] nums2 = new int[][]
           {
                 new int[] {1,3},
@@ -88,11 +90,11 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-//Console.WriteLine(s.KClosest("()))(("));
+Console.WriteLine(s.MaximumSwap(1993));
 
 public class Solution
 {
- 
+   
 }
 
 public static class Helper
