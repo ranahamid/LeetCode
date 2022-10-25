@@ -8,6 +8,12 @@ namespace LeetCode
 {
     internal class _636
     {
+        /// <summary>
+        /// Runtime 269 ms Beats 51.61% Memory 46 MB Beats 85.48%
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="logs"></param>
+        /// <returns></returns>
         public int[] ExclusiveTime(int n, IList<string> logs)
         {
             int start = 0;
