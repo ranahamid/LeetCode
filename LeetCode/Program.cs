@@ -6,10 +6,6 @@
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-using System.Xml.Linq;
-
 int[][] nums2 = new int[][]
           {
                 new int[] {1,3},
@@ -83,7 +79,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "02:00", "03:00" };
 var resW2 = new string[]
 {
-"cha","r","act","ers"
+"abc","bcd","acef","xyz","az","ba","a","z"
 };
 
 
@@ -92,7 +88,8 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-Console.WriteLine(s.MaxLength(resW2));
+//Console.WriteLine(s.KClosest("()))(("));
+
 public class Solution
 {
     
