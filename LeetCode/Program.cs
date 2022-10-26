@@ -90,7 +90,7 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-Console.WriteLine(s.MaximumSwap(1993));
+//Console.WriteLine(s.MaximumSwap(1993));
 
 public class Solution
 {
