@@ -90,13 +90,12 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-Console.WriteLine(s.MinMoves(res1));
+Console.WriteLine(s.LongestDiverseString(1, 1, 7));
 
 public class Solution
 {
- 
+    
 }
-
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
