@@ -19,9 +19,9 @@ namespace LeetCode
             {
                 dic[roads[i][0]].Add(roads[i][1]);
                 dic[roads[i][1]].Add(roads[i][0]);
-
             }
             int max = 0;
+            //loop all the possible pairs, if the two node are connected, minus 1
             for (int i = 0; i < n; i++)
             {
                 for (int j = i + 1; j < n; j++)
