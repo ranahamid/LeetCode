@@ -20,7 +20,8 @@ namespace LeetCode
             for (int i = s.Length - 1; i >= 1; i--)
             {
                 if (s[i] - '0' + reminder == 1) // s.charAt(i) + carry could have (0, 1, or 2) values; 0, 2 means its even, 1 means ODD
-                { // so if odd, we first need to ADD 1 (1st step) and then DIVIDE BY 2 (2nd step); so basically there are 2 steps involved
+                { 
+                    // so if odd, we first need to ADD 1 (1st step) and then DIVIDE BY 2 (2nd step); so basically there are 2 steps involved
                     steps += 2;// as discussed, we have 2 steps involved when number is ODD
                     reminder = 1; // to handle ODD, we use carry for next number
                 }
