@@ -28,16 +28,6 @@ namespace LeetCode
                 return most + LongestDiverseString(a, b, c - 1, lastTwoChars[1] + most);
             return String.Empty;
         }
-        public string? getMost(int a, int b, int c, string restriction)
-        {
-            if (restriction == "a")
-                return getMost(0, b, c);
-            if (restriction == "b")
-                return getMost(a, 0, c);
-            if (restriction == "c")
-                return getMost(a, b, 0);
-            return getMost(a, b, c);
-        }
         public string GetRestrictions(string lastTwoChars)
         {
             if (lastTwoChars == "aa")
@@ -48,6 +38,17 @@ namespace LeetCode
                 return "c";
             return String.Empty;
         }
+        public string? getMost(int a, int b, int c, string restriction)
+        {
+            if (restriction == "a")
+                return getMost(0, b, c);
+            if (restriction == "b")
+                return getMost(a, 0, c);
+            if (restriction == "c")
+                return getMost(a, b, 0);
+            return getMost(a, b, c);
+        }
+      
         public string getMost(int a, int b, int c)
         {
             if (a > 0 && a >= b && a >= c)
