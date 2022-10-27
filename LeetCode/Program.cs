@@ -85,16 +85,16 @@ var resW2 = new string[]
 };
 
 
-var res1 = new int[] { 2, 2, 2, 2, 2 };
+var res1 = new int[] { 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-//Console.WriteLine(s.MaximumSwap(1993));
+Console.WriteLine(s.MinMoves(res1));
 
 public class Solution
 {
-   
+ 
 }
 
 public static class Helper
