@@ -18,46 +18,33 @@ namespace LeetCode
         /// <returns></returns>
         public string LongestDiverseString(int a, int b, int c, string lastTwoChars = "  ")
         {
-            string restriction = GetRestrictions(lastTwoChars);
-            var most = getMost(a, b, c, restriction);
-            if (most == "a")
-                return most + LongestDiverseString(a - 1, b, c, lastTwoChars[1] + most);
-            if (most == "b")
-                return most + LongestDiverseString(a, b - 1, c, lastTwoChars[1] + most);
-            if (most == "c")
-                return most + LongestDiverseString(a, b, c - 1, lastTwoChars[1] + most);
+            var restrictions = GetRestrictions(lastTwoChars);
+            var mostChar = GetMost(a, b, c, restrictions);
+            if (mostChar == "a") return mostChar + LongestDiverseString(a - 1, b, c, lastTwoChars[1] + mostChar);
+            if (mostChar == "b") return mostChar + LongestDiverseString(a, b - 1, c, lastTwoChars[1] + mostChar);
+            if (mostChar == "c") return mostChar + LongestDiverseString(a, b, c - 1, lastTwoChars[1] + mostChar);
             return String.Empty;
         }
-        public string GetRestrictions(string lastTwoChars)
+        public static string GetRestrictions(string lastTwoChars)
         {
-            if (lastTwoChars == "aa")
-                return "a";
-            if (lastTwoChars == "bb")
-                return "b";
-            if (lastTwoChars == "cc")
-                return "c";
-            return String.Empty;
+            if (lastTwoChars == "aa") return "a";
+            if (lastTwoChars == "bb") return "b";
+            if (lastTwoChars == "cc") return "c";
+            return string.Empty;
         }
-        public string? getMost(int a, int b, int c, string restriction)
+        public static string GetMost(int a, int b, int c, string restrictions)
         {
-            if (restriction == "a")
-                return getMost(0, b, c);
-            if (restriction == "b")
-                return getMost(a, 0, c);
-            if (restriction == "c")
-                return getMost(a, b, 0);
-            return getMost(a, b, c);
+            if (restrictions == "a") return GetMost(0, b, c);
+            if (restrictions == "b") return GetMost(a, 0, c);
+            if (restrictions == "c") return GetMost(a, b, 0);
+            return GetMost(a, b, c);
         }
-      
-        public string getMost(int a, int b, int c)
+        public static string GetMost(int a, int b, int c)
         {
-            if (a > 0 && a >= b && a >= c)
-                return "a";
-            if (b > 0 && b >= a && b >= c)
-                return "b";
-            if (c > 0)
-                return "c";
-            return String.Empty;
+            if (a > 0 && a >= b && a >= c) return "a";
+            if (b > 0 && b >= c && b >= c) return "b";
+            if (c > 0) return "c";
+            return string.Empty;
         }
     }
 }
