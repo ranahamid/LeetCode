@@ -89,31 +89,39 @@ var res1 = new int[] { 2, 2, 2, 2, 2 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
-Solution s = new Solution();
+MedianFinder s = new MedianFinder();
+s.AddNum(41);
+s.AddNum(35);
 //Console.WriteLine(s.MaximumSwap(1993));
 
 public class MedianFinder
 {
-    List<int> numbers;
-    int length;
+    PriorityQueue<int, int> low;
+    PriorityQueue<int, int> high;
     public MedianFinder()
     {
-        length = 0;
-        numbers = new List<int>();
-    }
-
+        low = new PriorityQueue<int, int>();
+        high = new PriorityQueue<int, int>();
+    } 
     public void AddNum(int num)
     {
-        numbers.Add(num);
-        length++;
+        low.Enqueue(num, num);
+        var lowVal=low.Dequeue();
+        high.Enqueue(lowVal, -lowVal);
+
+        if (low.Count < high.Count)
+        {
+            var highVal=high.Dequeue();
+            low.Enqueue(highVal,highVal);
+        }
     }
 
     public double FindMedian()
     {
-        numbers.Sort();
-        if (length % 2 == 1)
-            return numbers[length / 2];//0,1,2
-        return (double) (numbers[length / 2 - 1] + numbers[length / 2]) / 2.0;//1,2
+        if (low.Count > high.Count)
+            return low.Peek();
+        else
+            return (low.Peek() + high.Peek()) / 2.0;
     }
 }
 
