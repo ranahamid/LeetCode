@@ -90,31 +90,11 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 Solution s = new Solution();
 Console.WriteLine(s.SuggestedProducts(resW2, "mouse"));
-public class SORTracker
+
+public class Solution
 {
-    int counter;
-    SortedList<string, string> sortedList;
-    public SORTracker()
-    {
-        counter = 0;
-        sortedList = new SortedList<string, string>();
-    }
-
-    public void Add(string name, int score)
-    {
-        var key = Int32.MaxValue - score;
-        var keyVal = key + name;
-        sortedList.Add(keyVal, name);
-    }
-
-    public string Get()
-    { 
-        var value= sortedList.Values[counter];
-        counter++;
-        return value;
-    }
+    
 }
-
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
