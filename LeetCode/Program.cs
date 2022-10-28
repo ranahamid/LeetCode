@@ -10,11 +10,10 @@ using System.Text;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {1,3},
-                new int[] {2,6},
-
-                new int[] {8,10},
-                new int[] {15,18},
+                new int[] {1,0,0,0,1},
+                new int[] {0,0,0,0,0},
+                new int[] {0,0,1,0,0},
+                //new int[] {15,18},
                 //new int[] {5,0},
                 //new int[] {4,1},
                 //new int[] {5,8},
@@ -89,41 +88,49 @@ var res1 = new int[] { 2, 2, 2, 2, 2 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
-MedianFinder s = new MedianFinder();
-s.AddNum(41);
-s.AddNum(35);
+//MedianFinder s = new MedianFinder();
+//s.AddNum(41);
+//s.AddNum(35);
 //Console.WriteLine(s.MaximumSwap(1993));
 
-public class MedianFinder
+Solution s = new Solution();
+Console.Write(s.MinTotalDistance(nums2));
+
+public class Solution
 {
-    PriorityQueue<int, int> low;
-    PriorityQueue<int, int> high;
-    public MedianFinder()
-    {
-        low = new PriorityQueue<int, int>();
-        high = new PriorityQueue<int, int>();
-    } 
-    public void AddNum(int num)
-    {
-        low.Enqueue(num, num);
-        var lowVal=low.Dequeue();
-        high.Enqueue(lowVal, -lowVal);
-
-        if (low.Count < high.Count)
-        {
-            var highVal=high.Dequeue();
-            low.Enqueue(highVal,highVal);
-        }
-    }
-
-    public double FindMedian()
-    {
-        if (low.Count > high.Count)
-            return low.Peek();
-        else
-            return (low.Peek() + high.Peek()) / 2.0;
-    }
+    
 }
+
+//public class MedianFinder
+//{
+//    PriorityQueue<int, int> low;
+//    PriorityQueue<int, int> high;
+//    public MedianFinder()
+//    {
+//        low = new PriorityQueue<int, int>();
+//        high = new PriorityQueue<int, int>();
+//    } 
+//    public void AddNum(int num)
+//    {
+//        low.Enqueue(num, num);
+//        var lowVal=low.Dequeue();
+//        high.Enqueue(lowVal, -lowVal);
+
+//        if (low.Count < high.Count)
+//        {
+//            var highVal=high.Dequeue();
+//            low.Enqueue(highVal,highVal);
+//        }
+//    }
+
+//    public double FindMedian()
+//    {
+//        if (low.Count > high.Count)
+//            return low.Peek();
+//        else
+//            return (low.Peek() + high.Peek()) / 2.0;
+//    }
+//}
 
 public static class Helper
 {
