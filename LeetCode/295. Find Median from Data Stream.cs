@@ -13,7 +13,7 @@ namespace LeetCode
         {
             List<int> numbers;
             int length;
-            public MedianFinder()
+            public MedianFinder_TLE()
             {
                 length = 0;
                 numbers = new List<int>();
