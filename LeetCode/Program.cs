@@ -101,36 +101,7 @@ public class Solution
     
 }
 
-//public class MedianFinder
-//{
-//    PriorityQueue<int, int> low;
-//    PriorityQueue<int, int> high;
-//    public MedianFinder()
-//    {
-//        low = new PriorityQueue<int, int>();
-//        high = new PriorityQueue<int, int>();
-//    } 
-//    public void AddNum(int num)
-//    {
-//        low.Enqueue(num, num);
-//        var lowVal=low.Dequeue();
-//        high.Enqueue(lowVal, -lowVal);
 
-//        if (low.Count < high.Count)
-//        {
-//            var highVal=high.Dequeue();
-//            low.Enqueue(highVal,highVal);
-//        }
-//    }
-
-//    public double FindMedian()
-//    {
-//        if (low.Count > high.Count)
-//            return low.Peek();
-//        else
-//            return (low.Peek() + high.Peek()) / 2.0;
-//    }
-//}
 
 public static class Helper
 {
