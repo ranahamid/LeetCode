@@ -17,8 +17,8 @@ namespace LeetCode
             {
                 // A max-heap to store the smaller half of the input numbers
                 // A min-heap to store the larger half of the input numbers
-                low = new PriorityQueue<int, int>();
-                high = new PriorityQueue<int, int>();
+                low = new PriorityQueue<int, int>(); //A max-heap low to store the smaller half of the numbers
+                high = new PriorityQueue<int, int>();//A min-heap high to store the larger half of the numbers
             }
             public void AddNum(int num)
             {
