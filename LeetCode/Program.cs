@@ -92,9 +92,29 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 Solution s = new Solution();
 //Console.WriteLine(s.MaximumSwap(1993));
 
-public class Solution
+public class MedianFinder
 {
-   
+    List<int> numbers;
+    int length;
+    public MedianFinder()
+    {
+        length = 0;
+        numbers = new List<int>();
+    }
+
+    public void AddNum(int num)
+    {
+        numbers.Add(num);
+        length++;
+    }
+
+    public double FindMedian()
+    {
+        numbers.Sort();
+        if (length % 2 == 1)
+            return numbers[length / 2];//0,1,2
+        return (double) (numbers[length / 2 - 1] + numbers[length / 2]) / 2.0;//1,2
+    }
 }
 
 public static class Helper
