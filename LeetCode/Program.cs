@@ -93,15 +93,45 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 //s.AddNum(35);
 //Console.WriteLine(s.MaximumSwap(1993));
 
-Solution s = new Solution();
-Console.Write(s.MinTotalDistance(nums2));
+MedianFinder s = new MedianFinder();
+s.AddNum(41);
+s.AddNum(35);
 
-public class Solution
+s.AddNum(62);
+s.AddNum(4);
+
+
+s.AddNum(97);
+s.AddNum(108);
+public class MedianFinder
 {
-    
+    PriorityQueue<int, int> low;
+    PriorityQueue<int, int> high;
+    public MedianFinder()
+    {
+        low = new PriorityQueue<int, int>();
+        high = new PriorityQueue<int, int>();
+    }
+    public void AddNum(int num)
+    {
+        low.Enqueue(num, num);
+        var lowVal = low.Dequeue();
+        high.Enqueue(lowVal, -lowVal);
+        if (low.Count < high.Count)
+        {
+            var highVal = high.Dequeue();
+            low.Enqueue(highVal, highVal);
+        }
+    }
+
+    public double FindMedian()
+    {
+        if (low.Count > high.Count)
+            return low.Peek();
+        else
+            return (low.Peek() + high.Peek()) / 2.0;
+    }
 }
-
-
 
 public static class Helper
 {
