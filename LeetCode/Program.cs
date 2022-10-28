@@ -80,7 +80,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "02:00", "03:00" };
 var resW2 = new string[]
 {
-"abc","bcd","acef","xyz","az","ba","a","z"
+"mobile","mouse","moneypot","monitor","mousepad"
 };
 
 
@@ -89,8 +89,11 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-Console.WriteLine(s.MinimumSwaps(res1));
- 
+Console.WriteLine(s.SuggestedProducts(resW2, "mouse"));
+public class Solution
+{
+    
+}
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)

@@ -35,6 +35,7 @@
     <None Include="387. First Unique Character in a String.cs" />
     <None Include="506. Relative Ranks.cs" />
     <None Include="650. 2 Keys Keyboard.cs" />
+    <None Include="E:\E\Project\Home\LeetCode\LeetCode\.editorconfig" />
     <None Include="Leet\Contest 307\2384. Largest Palindromic Number.cs" />
     <None Include="Premium\1271. Hexspeak.cs" />
   </ItemGroup>
@@ -42,6 +43,10 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="E:\E\Project\Home\LeetCode\LeetCode\.editorconfig" />
   </ItemGroup>
 
 </Project>
