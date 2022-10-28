@@ -90,11 +90,7 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 Solution s = new Solution();
 Console.WriteLine(s.MinimumSwaps(res1));
-public class Solution
-{
-   
-}
-
+ 
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
