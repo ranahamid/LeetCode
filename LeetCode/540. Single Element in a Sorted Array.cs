@@ -35,5 +35,20 @@ namespace LeetCode
             }
             return nums[low];
         }
+        /// <summary>
+        /// O(n)
+        /// Runtime 195 ms Beats 49.51% Memory 43.1 MB Beats 48.54%
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public int SingleNonDuplicate_BruteForce(int[] nums)
+        {
+            for (int i = 0; i < nums.Length - 1; i = i + 2)
+            {
+                if (nums[i] != nums[i + 1])
+                    return nums[i];
+            }
+            return nums[nums.Length - 1];
+        }
     }
 }
