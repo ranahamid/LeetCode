@@ -89,36 +89,19 @@ var res1 = new int[] { 5,3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
-Solution s = new Solution();
-Console.WriteLine(s.SuggestedProducts(resW2, "mouse"));
-
+//Solution s = new Solution();
+//Console.WriteLine(s.SuggestedProducts(resW2, "mouse"));
 public class Solution
 {
-    class Flower
+    public bool CheckIfPangram(string sentence)
     {
-        public int GrowTime { get; set; }
-        public int PlantTime { get; set; }
-    }
-    public int EarliestFullBloom(int[] plantTime, int[] growTime)
-    {
-        var result = new List<Flower>();
-        for(int i = 0; i < growTime.Length; i++)
-        {
-            result.Add(new Flower
-            {
-                GrowTime= growTime[i],
-                PlantTime = plantTime[i],
-            });
-        }
-        result = result.OrderByDescending(x => x.GrowTime).ToList();
-        var total = 0;
-        var current = 0;
-        foreach(var item in result)
-        {
-            current += item.PlantTime;
-            total = Math.Max(total, current + item.GrowTime );        
-        }
-        return total;
+        var status = new bool[26];
+        foreach (var ch in sentence)
+            status[ch - 'a'] = true;
+        foreach (var item in status)
+            if (!item)
+                return false;
+        return true;
     }
 }
 public static class Helper
