@@ -85,7 +85,7 @@ var resW2 = new string[]
 };
 
 
-var res1 = new int[] { 5,3 };
+var res1 = new int[] { 5, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
@@ -93,16 +93,7 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 //Console.WriteLine(s.SuggestedProducts(resW2, "mouse"));
 public class Solution
 {
-    public bool CheckIfPangram(string sentence)
-    {
-        var status = new bool[26];
-        foreach (var ch in sentence)
-            status[ch - 'a'] = true;
-        foreach (var item in status)
-            if (!item)
-                return false;
-        return true;
-    }
+  
 }
 public static class Helper
 {
