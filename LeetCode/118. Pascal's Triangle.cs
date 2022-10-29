@@ -9,6 +9,31 @@ namespace LeetCode
     internal class _118
     {
         /// <summary>
+        /// Runtime 164 ms Beats 48.71% Memory 35 MB Beats 48.71%
+        /// </summary>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public IList<IList<int>> Generate_3(int length)
+        {
+            List<IList<int>> result = new List<IList<int>>();
+            for (int n = 1; n <= length; n++)
+            {
+                var current = new List<int>();
+                for (int r = 1; r <= length - n + 1; r++)
+                    Console.Write(" ");
+                int value = 1;
+                for (int r = 1; r <= n; r++)
+                {
+                    Console.Write(value + " ");
+                    current.Add(value);
+                    value = value * (n - r) / r;
+                }
+                Console.WriteLine();
+                result.Add(current);
+            }
+            return result;
+        }
+        /// <summary>
         /// Runtime 156 ms Beats 49.32% Memory 34.8 MB Beats 87.78%
         /// </summary>
         /// <param name="numRows"></param>
@@ -82,7 +107,7 @@ namespace LeetCode
         /// Runtime: 126 ms, faster than 62.82% of C# online submissions for Pascal's Triangle.
         /// Memory Usage: 35.1 MB, less than 49.71% of C# online submissions for Pascal's Triangle.
         /// </summary>
-        public IList<IList<int>> Generate_3(int numRows)
+        public IList<IList<int>> Generate_53(int numRows)
         {
             var triangle = new List<IList<int>>();
             triangle.Add(new List<int> { 1 });

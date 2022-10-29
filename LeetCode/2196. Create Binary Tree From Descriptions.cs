@@ -9,6 +9,32 @@ namespace LeetCode
     internal class _2196
     {
         /// <summary>
+        /// Runtime 1071 ms Beats 26.41% Memory 49.7 MB Beats 28.30
+        /// </summary>
+        /// <param name="descriptions"></param>
+        /// <returns></returns>
+        public TreeNode CreateBinaryTree_10(int[][] descriptions)
+        {
+            var dic = new Dictionary<int, TreeNode>();
+            foreach (var item in descriptions)
+            {
+                dic.TryAdd(item[0], new TreeNode(item[0]));
+                dic.TryAdd(item[1], new TreeNode(item[1]));
+            }
+            foreach (var item in descriptions)
+            {
+                if (item[2] == 1)
+                    dic[item[0]].left = dic[item[1]];
+                else
+                    dic[item[0]].right = dic[item[1]];
+            }
+
+            var parents = descriptions.Select(x => x[0]).ToHashSet();
+            var childs = descriptions.Select(x => x[1]).ToHashSet();
+            var root = parents.Where(x => !childs.Contains(x)).FirstOrDefault();
+            return dic[root];
+        }
+        /// <summary>
         /// Runtime 742 ms Beats 70.21% Memory 49.6 MB Beats 36.17%
         /// </summary>
         /// <param name="descriptions"></param>

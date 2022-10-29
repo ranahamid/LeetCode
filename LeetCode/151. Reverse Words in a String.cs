@@ -8,6 +8,13 @@ namespace LeetCode
 {
     internal class _151
     {
+        public string ReverseWords_12(string s)
+        {
+            var sb = new List<string>();
+            foreach (var item in s.Split(' ', options: StringSplitOptions.RemoveEmptyEntries).Reverse())
+                sb.Add(item);
+            return String.Join(' ', sb);
+        }
         public string ReverseWords_11(string s)
         {
             var left = 0;

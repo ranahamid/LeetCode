@@ -89,20 +89,8 @@ var res1 = new int[] { 5, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
-//Solution s = new Solution();
-//Console.WriteLine(s.SuggestedProducts(resW2, "mouse"));
-public class Solution
-{
-    public int SingleNonDuplicate(int[] nums)
-    {
-        for(int i = 0; i < nums.Length - 1; i = i + 2)
-        {
-            if (nums[i]!= nums[i+1])
-                return nums[i];
-        }
-        return nums[nums.Length - 1];
-    }
-}
+ 
+
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
