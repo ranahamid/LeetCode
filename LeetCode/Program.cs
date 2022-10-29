@@ -6,6 +6,7 @@
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 
+using System.Runtime.CompilerServices;
 using System.Text;
 
 int[][] nums2 = new int[][]
@@ -93,7 +94,32 @@ Console.WriteLine(s.SuggestedProducts(resW2, "mouse"));
 
 public class Solution
 {
-    
+    class Flower
+    {
+        public int GrowTime { get; set; }
+        public int PlantTime { get; set; }
+    }
+    public int EarliestFullBloom(int[] plantTime, int[] growTime)
+    {
+        var result = new List<Flower>();
+        for(int i = 0; i < growTime.Length; i++)
+        {
+            result.Add(new Flower
+            {
+                GrowTime= growTime[i],
+                PlantTime = plantTime[i],
+            });
+        }
+        result = result.OrderByDescending(x => x.GrowTime).ToList();
+        var total = 0;
+        var current = 0;
+        foreach(var item in result)
+        {
+            current += item.PlantTime;
+            total = Math.Max(total, current + item.GrowTime );        
+        }
+        return total;
+    }
 }
 public static class Helper
 {
