@@ -14,8 +14,8 @@ namespace LeetCode
             long baseDigit = 1;
             while (GetDigitSum(n) > target)
             {
-                n = n / 10 + 1;
-                baseDigit *= 10;
+                n = n / 10 + 1; //19= 2= > 0+1=1
+                baseDigit *= 10; // 1*10=10 => 10*10=100
             }
             return n * baseDigit - m;
         }
