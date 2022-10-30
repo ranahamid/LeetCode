@@ -92,59 +92,7 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 Solution s = new Solution();
 Console.WriteLine(s.MakeIntegerBeautiful(467, 6));
 
-public class Solution
-{
-    public int ShortestPath(int[][] grid, int k)
-    {
-        var minHeap = new PriorityQueue<NodePath, int>();
-        var rows = grid.Length;
-        var column = grid[0].Length;
-        minHeap.Enqueue(new NodePath { Row= rows - 1 , Column=column-1,Weight=-1, Obstacle=k, Steps=0}, -1);
-        var visited = new Dictionary<string, int>();
-        int[][] directions = new int[][]
-          {
-
-                new int[] {1,0},
-                new int[] {-1,0},
-                new int[] {0,1},
-                new int[] {0,-1},
-          };
-        while (minHeap.Count > 0)
-        {
-            var node = minHeap.Dequeue();
-            if (node.Obstacle >= node.Row + node.Column - 1)
-                return node.Steps + node.Row + node.Column;
-            foreach (var direction in directions)
-            {
-                var newRow = node.Row + direction[0];
-                var newCol = node.Column + direction[1];
-                if (newRow < 0 || newCol < 0 || newRow >= rows || newCol >= column)
-                    continue;
-                var newObstacles = grid[newRow][newCol] == 1 ? node.Obstacle - 1 : node.Obstacle;
-                if (newObstacles < 0)
-                    continue;
-                var newWeight = newRow + newCol + node.Steps + 1;
-                var neextNode = new NodePath { Row = newRow, Column = newCol, Weight = newWeight, Obstacle = newObstacles, Steps = node.Steps + 1 };
-                var id = $"{newRow}{newCol}";
-                if(!visited.ContainsKey(id)|| newObstacles> visited[id])
-                {
-                    visited[id] = newObstacles;
-                    minHeap.Enqueue(neextNode, newWeight);
-                }
-            }
-        }
-        return -1;
-    }
-    public class NodePath
-    {
-        public int Row { get; set; }
-        public int Column { get; set; }
-        public int Weight { get; set; }
-        public int Obstacle { get; set; }
-        public int Steps { get; set; }
-    }
-}
-
+ 
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
