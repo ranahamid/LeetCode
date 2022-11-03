@@ -86,11 +86,14 @@ var resW2 = new string[]
 };
 
 
+
+
+
 var res1 = new int[] { 5, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
-Solution s = new Solution();
-Console.WriteLine(s.MakeIntegerBeautiful(467, 6));
+//Solution s = new Solution();
+//Console.WriteLine(s.MakeIntegerBeautiful(467, 6));
 
  
 public static class Helper
