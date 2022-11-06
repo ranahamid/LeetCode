@@ -94,8 +94,7 @@ Solution s = new Solution();
 Console.WriteLine(s.ReorderLogFiles(resW2));
 public class Solution
 {
-
-  
+    
 }
 public static class Helper
 {
