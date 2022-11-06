@@ -82,7 +82,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 var resW1 = new string[] { "02:00", "03:00" };
 var resW2 = new string[]
 {
-"mobile","mouse","moneypot","monitor","mousepad"
+"a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo","a2 act car"
 };
 
 
@@ -91,32 +91,12 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 
 Solution s = new Solution();
-Console.WriteLine(s.PartitionArray(res1, 0));
+Console.WriteLine(s.ReorderLogFiles(resW2));
 public class Solution
 {
-    public int PartitionArray(int[] nums, int k)
-    {
-        Array.Sort(nums);
-        var counter = 0;
-        var i = 0;
-        while (i < nums.Length)
-        {
-            var start = nums[i];
-            for (; i < nums.Length; i++)
-            { 
-                if (nums[i] > start + k)
-                { 
-                    break;                   
-                }
-            }
-            counter++;
-        }
-        return counter;
-    }
+
+  
 }
-
-
-
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
@@ -192,7 +172,7 @@ public static class Helper
         while (source > 0)
         {
             var digit = source % 10;
-            answer += digit ;
+            answer += digit;
             source = source / 10;
         }
         return answer;
