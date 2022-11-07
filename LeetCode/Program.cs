@@ -6,9 +6,7 @@
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 
-using LeetCode;
-using System.Runtime.CompilerServices;
-using System.Text;
+
 
 int[][] nums2 = new int[][]
           {
