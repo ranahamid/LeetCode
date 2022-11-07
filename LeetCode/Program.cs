@@ -89,9 +89,22 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 public class Solution
 {
-   
+    public int SmallestCommonElement(int[][] mat)
+    {
+        var n = mat.Length;
+        var m = mat[0].Length;
+        var result = new int[100001];
+        for (int j = 0; j < m; j++)
+            for (int i = 0; i < n; i++)
+            {
+                var number = mat[i][j];
+                result[number]++;
+                if (result[number] == n)
+                    return number;
+            }
+        return -1;
+    }
 }
-
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
