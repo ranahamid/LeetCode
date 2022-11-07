@@ -8,6 +8,24 @@ namespace LeetCode
 {
     internal class _1323_Maximum_69_Number
     {
+        /// <summary>
+        /// string
+        /// Runtime 44 ms Beats 39.65% Memory 24.9 MB Beats 98.22%
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public int Maximum69Number_s(int num)
+        {
+            var nums = new StringBuilder(num.ToString());
+            for (int i = 0; i < nums.Length; i++)
+                if (nums[i] == '6')
+                {
+                    nums[i] = '9';
+                    break;
+                }
+            return Int32.Parse(nums.ToString());
+
+        }
 
         /// <summary>
         /// Runtime: 48 ms, faster than 7.14% of C# online submissions for Maximum 69 Number.
