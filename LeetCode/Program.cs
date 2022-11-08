@@ -79,7 +79,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 
 var resW1 = new string[] 
 {
-    "a", "bcd", "e"
+"23:59","00:00"
 };
 var resW2 = new char[]
 {
@@ -91,11 +91,11 @@ var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 Solution s = new Solution();
-Console.Write(s.WordsTyping(resW1, 3, 6));
+Console.Write(s.FindMinDifference(resW1));
 
 public class Solution
 {
-   
+
 }
 public static class Helper
 {
