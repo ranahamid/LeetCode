@@ -87,6 +87,12 @@ var resW2 = new string[]
 var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
+string v1 = "Ind";
+string v2 = v1.Insert(2, "i");
+string v3 = v2.Insert(4, "o");
+for(int i=0;i<v3.Length;i++)
+    Console.Write(v3[i]);
+
 public class Solution
 {
     public int SmallestCommonElement(int[][] mat)
