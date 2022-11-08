@@ -78,38 +78,21 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 
 
 var resW1 = new string[] { "02:00", "03:00" };
-var resW2 = new string[]
+var resW2 = new char[]
 {
-"a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo","a2 act car"
+'t','h','e',' ','s','k','y',' ','i','s',' ','b','l','u','e'
 };
 
 
 var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
-string v1 = "Ind";
-string v2 = v1.Insert(2, "i");
-string v3 = v2.Insert(4, "o");
-for(int i=0;i<v3.Length;i++)
-    Console.Write(v3[i]);
+Solution s = new Solution();
+s.ReverseWords(resW2);
 
 public class Solution
 {
-    public int SmallestCommonElement(int[][] mat)
-    {
-        var n = mat.Length;
-        var m = mat[0].Length;
-        var result = new int[100001];
-        for (int j = 0; j < m; j++)
-            for (int i = 0; i < n; i++)
-            {
-                var number = mat[i][j];
-                result[number]++;
-                if (result[number] == n)
-                    return number;
-            }
-        return -1;
-    }
+   
 }
 public static class Helper
 {
