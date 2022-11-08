@@ -77,7 +77,10 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
             };
 
 
-var resW1 = new string[] { "02:00", "03:00" };
+var resW1 = new string[] 
+{
+    "a", "bcd", "e"
+};
 var resW2 = new char[]
 {
 't','h','e',' ','s','k','y',' ','i','s',' ','b','l','u','e'
@@ -88,7 +91,7 @@ var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 Solution s = new Solution();
-s.ReverseWords(resW2);
+Console.Write(s.WordsTyping(resW1, 3, 6));
 
 public class Solution
 {
