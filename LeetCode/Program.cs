@@ -90,13 +90,8 @@ var resW2 = new char[]
 var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
-Solution s = new Solution();
-Console.Write(s.FindMinDifference(resW1));
 
-public class Solution
-{
 
-}
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
