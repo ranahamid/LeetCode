@@ -18,7 +18,7 @@ namespace LeetCode
         {
             return nums[index] - nums[0] - index;
         }
-        public int MissingElement(int[] nums, int k)
+        public int MissingElement_1(int[] nums, int k)
         {
             var n = nums.Length;
             if (k > Missing(nums, n - 1))
@@ -35,5 +35,20 @@ namespace LeetCode
             }
             return nums[left - 1] + k - Missing(nums, left - 1);
         }
+
+
+        #region O(n)
+        public int MissingElement(int[] nums, int k)
+        {
+            var n = nums.Length;
+            if (k > Missing(nums, n - 1))
+                return nums[n - 1] + k - Missing(nums, n - 1);
+
+            int index = 1;
+            while (k> Missing(nums, index) )
+                index++;
+            return nums[index - 1] + k - Missing(nums, index - 1);
+        }
+        #endregion
     }
 }
