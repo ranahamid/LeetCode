@@ -29,12 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="112. Path Sum.cs" />
-    <None Include="121. Best Time to Buy and Sell Stock.cs" />
-    <None Include="123. Best Time to Buy and Sell Stock III.cs" />
-    <None Include="387. First Unique Character in a String.cs" />
-    <None Include="506. Relative Ranks.cs" />
-    <None Include="650. 2 Keys Keyboard.cs" />
+    <None Include="Z\112. Path Sum.cs" />
+    <None Include="Z\121. Best Time to Buy and Sell Stock.cs" />
+    <None Include="Z\123. Best Time to Buy and Sell Stock III.cs" />
+    <None Include="Z\387. First Unique Character in a String.cs" />
+    <None Include="Z\506. Relative Ranks.cs" />
+    <None Include="Z\650. 2 Keys Keyboard.cs" />
     <None Include="E:\E\Project\Home\LeetCode\LeetCode\.editorconfig" />
     <None Include="Leet\Contest 307\2384. Largest Palindromic Number.cs" />
     <None Include="Premium\1271. Hexspeak.cs" />
