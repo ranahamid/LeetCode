@@ -90,7 +90,41 @@ var resW2 = new char[]
 var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
- 
+public class RLEIterator
+{
+    int index;
+    int[] A;
+
+    public RLEIterator(int[] encoding)
+    {
+        A = encoding;
+        index = 0;
+    }
+
+    public int Next(int n)
+    {
+        while (index < A.Length && n > A[index])
+        {
+            A[index] -= n;
+            n -= A[index];
+        }
+        if (index >= A.Length)
+        {
+            return -1;
+        }
+
+        A[index] -= n;
+
+        return A[index + 1];
+    }
+}
+
+
+/**
+ * Your RLEIterator object will be instantiated and called as such:
+ * RLEIterator obj = new RLEIterator(encoding);
+ * int param_1 = obj.Next(n);
+ */
 
 
 public static class Helper
