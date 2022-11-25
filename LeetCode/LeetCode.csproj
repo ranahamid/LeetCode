@@ -8,12 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="NOT SUBMITTED\**" />
-    <EmbeddedResource Remove="NOT SUBMITTED\**" />
-    <None Remove="NOT SUBMITTED\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="112. Path Sum.cs" />
     <Compile Remove="121. Best Time to Buy and Sell Stock.cs" />
     <Compile Remove="123. Best Time to Buy and Sell Stock III.cs" />
