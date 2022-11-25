@@ -77,7 +77,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
             };
 
 
-var resW1 = new string[] 
+var resW1 = new string[]
 {
 "23:59","00:00"
 };
@@ -90,33 +90,18 @@ var resW2 = new char[]
 var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
-public class RLEIterator
+public class Solution
 {
-    int index;
-    int[] A;
-
-    public RLEIterator(int[] encoding)
+    public bool Fit(string x, string d)
     {
-        A = encoding;
-        index = 0;
+        int counter = 0;
+        for (int i = 0; i < x.Length; i++)
+            if (x[i] != d[i])
+                if (++counter > 2)
+                    return false;
+        return true;
     }
-
-    public int Next(int n)
-    {
-        while (index < A.Length && n > A[index])
-        {
-            A[index] -= n;
-            n -= A[index];
-        }
-        if (index >= A.Length)
-        {
-            return -1;
-        }
-
-        A[index] -= n;
-
-        return A[index + 1];
-    }
+   
 }
 
 
