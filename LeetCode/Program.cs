@@ -8,6 +8,8 @@
 
 
 
+using LeetCode.Z;
+
 int[][] nums2 = new int[][]
           {
                 new int[] {1,0,0,0,1},
@@ -92,16 +94,37 @@ var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 public class Solution
 {
-    public bool Fit(string x, string d)
+    public int DeepestLeavesSum(TreeNode root)
     {
-        int counter = 0;
-        for (int i = 0; i < x.Length; i++)
-            if (x[i] != d[i])
-                if (++counter > 2)
-                    return false;
-        return true;
+        var result = new List<IList<int>>();
+        if (root == null)
+            return 0;
+        Queue<TreeNode> queue = new Queue<TreeNode>();
+        queue.Enqueue(root);
+        var currentVal = new List<int>();
+        while (queue.Count > 0)
+        {
+            var count = 0;
+            var queueLen = queue.Count();
+            currentVal = new List<int>();
+            while (count < queueLen)
+            {
+
+                TreeNode node = queue.Dequeue();
+                currentVal.Add(node.val);
+                if (node.left != null)
+                {
+                    queue.Enqueue(node.left);
+                }
+                if (node.right != null)
+                {
+                    queue.Enqueue(node.right);
+                }
+                count++;
+            } 
+        }
+        return currentVal.Sum();
     }
-   
 }
 
 
