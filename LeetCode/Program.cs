@@ -8,6 +8,7 @@
 
 
 
+using LeetCode.Premium;
 using LeetCode.Z;
 
 int[][] nums2 = new int[][]
@@ -92,38 +93,97 @@ var resW2 = new char[]
 var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
+Solution s = new Solution();
+Console.WriteLine(s.AppendCharacters("abcde","a"));
 public class Solution
 {
-    public int DeepestLeavesSum(TreeNode root)
-    {
-        var result = new List<IList<int>>();
-        if (root == null)
-            return 0;
-        Queue<TreeNode> queue = new Queue<TreeNode>();
-        queue.Enqueue(root);
-        var currentVal = new List<int>();
-        while (queue.Count > 0)
+    public int AppendCharacters(string s, string t)
+    {         
+        int i = 0;
+        foreach(var ch in s)
         {
-            var count = 0;
-            var queueLen = queue.Count();
-            currentVal = new List<int>();
-            while (count < queueLen)
+            if (ch == t[i])
+                i++;
+            if (t.Length == i)
+                break;
+        }
+        return t.Length - i;
+    }
+    public void DeleteNode(ListNode node)
+    {
+        node.val = node.next.val;
+        node.next = node.next.next; 
+    }
+    public ListNode RemoveNodes(ListNode head)
+    {
+        var list = new List<int>();
+        var headRef = head;
+        while(headRef != null)
+        {
+            list.Add(headRef.val);
+            headRef = headRef.next;
+        }
+        var result = new List<int>();
+        result.Add(list[list.Count - 1]);
+        
+        for(int i = list.Count-2; i >=0; i--)
+        {
+            if (list[i] >= result.LastOrDefault())
             {
-
-                TreeNode node = queue.Dequeue();
-                currentVal.Add(node.val);
-                if (node.left != null)
-                {
-                    queue.Enqueue(node.left);
-                }
-                if (node.right != null)
-                {
-                    queue.Enqueue(node.right);
-                }
-                count++;
+                result.Add(list[i]);
+            }
+        }
+       
+        result.Reverse();
+        Console.WriteLine(String.Join(",", result));
+        headRef = head;
+        int counter = 0;
+        while (headRef != null)
+        {
+            if (result[counter] != headRef.val)
+            {
+                headRef.val = headRef.next.val;
+                headRef.next = headRef.next.next; 
+                Console.WriteLine("Deleted: " + headRef.val);
+            }
+            else
+            {
+                Console.WriteLine("Non Deleted: " + headRef.val);
+                counter++;
+            }
+            headRef = headRef.next;
+        }
+        return head;
+    }
+    public int PivotInteger(int n)
+    {
+        int low = 1;
+        int high = n;
+        if (low == high)
+            return low;
+        int lowInd = 2;
+        int highInd = n - 1;
+        while(lowInd < highInd)
+        {
+            if (low < high)
+            {
+                low += lowInd;
+                lowInd++;
+            }
+            else 
+            {
+                high += highInd;
+                highInd--;
             } 
         }
-        return currentVal.Sum();
+        if (lowInd == highInd)
+        {
+            low += lowInd;
+            high += highInd;
+            if (low == high)
+                return lowInd;
+        } 
+        return -1;
     }
 }
 
