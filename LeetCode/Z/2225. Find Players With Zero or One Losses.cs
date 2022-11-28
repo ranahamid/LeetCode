@@ -27,8 +27,7 @@ namespace LeetCode.Z
             foreach (var n in arr)
             {
                 if (dic.ContainsKey(n))
-                {
-
+                { 
                     if (dic[n] == 1)
                         one.Add(n);
                 }
@@ -36,7 +35,6 @@ namespace LeetCode.Z
                 {
                     zero.Add(n);
                 }
-
             }
             var result = new List<IList<int>>();
             result.Add(zero);
