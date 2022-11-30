@@ -43,4 +43,8 @@
     <EditorConfigFiles Remove="E:\E\Project\Home\LeetCode\LeetCode\.editorconfig" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Not Submitted\" />
+  </ItemGroup>
+
 </Project>
