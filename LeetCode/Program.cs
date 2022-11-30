@@ -8,6 +8,9 @@
 
 
 
+using LeetCode.Premium;
+using LeetCode.Z;
+
 int[][] nums2 = new int[][]
           {
                 new int[] {1,0,0,0,1},
@@ -90,18 +93,98 @@ var resW2 = new char[]
 var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
+Solution s = new Solution();
+Console.WriteLine(s.AppendCharacters("abcde","a"));
 public class Solution
 {
-    public bool Fit(string x, string d)
-    {
-        int counter = 0;
-        for (int i = 0; i < x.Length; i++)
-            if (x[i] != d[i])
-                if (++counter > 2)
-                    return false;
-        return true;
+    public int AppendCharacters(string s, string t)
+    {         
+        int i = 0;
+        foreach(var ch in s)
+        {
+            if (ch == t[i])
+                i++;
+            if (t.Length == i)
+                break;
+        }
+        return t.Length - i;
     }
-   
+    public void DeleteNode(ListNode node)
+    {
+        node.val = node.next.val;
+        node.next = node.next.next; 
+    }
+    public ListNode RemoveNodes(ListNode head)
+    {
+        var list = new List<int>();
+        var headRef = head;
+        while(headRef != null)
+        {
+            list.Add(headRef.val);
+            headRef = headRef.next;
+        }
+        var result = new List<int>();
+        result.Add(list[list.Count - 1]);
+        
+        for(int i = list.Count-2; i >=0; i--)
+        {
+            if (list[i] >= result.LastOrDefault())
+            {
+                result.Add(list[i]);
+            }
+        }
+       
+        result.Reverse();
+        Console.WriteLine(String.Join(",", result));
+        headRef = head;
+        int counter = 0;
+        while (headRef != null)
+        {
+            if (result[counter] != headRef.val)
+            {
+                headRef.val = headRef.next.val;
+                headRef.next = headRef.next.next; 
+                Console.WriteLine("Deleted: " + headRef.val);
+            }
+            else
+            {
+                Console.WriteLine("Non Deleted: " + headRef.val);
+                counter++;
+            }
+            headRef = headRef.next;
+        }
+        return head;
+    }
+    public int PivotInteger(int n)
+    {
+        int low = 1;
+        int high = n;
+        if (low == high)
+            return low;
+        int lowInd = 2;
+        int highInd = n - 1;
+        while(lowInd < highInd)
+        {
+            if (low < high)
+            {
+                low += lowInd;
+                lowInd++;
+            }
+            else 
+            {
+                high += highInd;
+                highInd--;
+            } 
+        }
+        if (lowInd == highInd)
+        {
+            low += lowInd;
+            high += highInd;
+            if (low == high)
+                return lowInd;
+        } 
+        return -1;
+    }
 }
 
 
