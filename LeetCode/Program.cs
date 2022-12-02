@@ -94,106 +94,11 @@ var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 Solution s = new Solution();
-Console.WriteLine(s.AppendCharacters("abcde","a"));
+Console.WriteLine(s.NumberToWords(1234567));
 public class Solution
 {
-    public int AppendCharacters(string s, string t)
-    {         
-        int i = 0;
-        foreach(var ch in s)
-        {
-            if (ch == t[i])
-                i++;
-            if (t.Length == i)
-                break;
-        }
-        return t.Length - i;
-    }
-    public void DeleteNode(ListNode node)
-    {
-        node.val = node.next.val;
-        node.next = node.next.next; 
-    }
-    public ListNode RemoveNodes(ListNode head)
-    {
-        var list = new List<int>();
-        var headRef = head;
-        while(headRef != null)
-        {
-            list.Add(headRef.val);
-            headRef = headRef.next;
-        }
-        var result = new List<int>();
-        result.Add(list[list.Count - 1]);
-        
-        for(int i = list.Count-2; i >=0; i--)
-        {
-            if (list[i] >= result.LastOrDefault())
-            {
-                result.Add(list[i]);
-            }
-        }
-       
-        result.Reverse();
-        Console.WriteLine(String.Join(",", result));
-        headRef = head;
-        int counter = 0;
-        while (headRef != null)
-        {
-            if (result[counter] != headRef.val)
-            {
-                headRef.val = headRef.next.val;
-                headRef.next = headRef.next.next; 
-                Console.WriteLine("Deleted: " + headRef.val);
-            }
-            else
-            {
-                Console.WriteLine("Non Deleted: " + headRef.val);
-                counter++;
-            }
-            headRef = headRef.next;
-        }
-        return head;
-    }
-    public int PivotInteger(int n)
-    {
-        int low = 1;
-        int high = n;
-        if (low == high)
-            return low;
-        int lowInd = 2;
-        int highInd = n - 1;
-        while(lowInd < highInd)
-        {
-            if (low < high)
-            {
-                low += lowInd;
-                lowInd++;
-            }
-            else 
-            {
-                high += highInd;
-                highInd--;
-            } 
-        }
-        if (lowInd == highInd)
-        {
-            low += lowInd;
-            high += highInd;
-            if (low == high)
-                return lowInd;
-        } 
-        return -1;
-    }
+
 }
-
-
-/**
- * Your RLEIterator object will be instantiated and called as such:
- * RLEIterator obj = new RLEIterator(encoding);
- * int param_1 = obj.Next(n);
- */
-
 
 public static class Helper
 {
