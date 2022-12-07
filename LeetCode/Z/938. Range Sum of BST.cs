@@ -3,7 +3,24 @@ using System.Linq;
 
 namespace LeetCode.Z
 {
-
+    public class Solution_938
+    {
+        int sum = 0;
+        public int RangeSumBST(TreeNode root, int low, int high)
+        {
+            Sum(root, low, high);
+            return sum;
+        }
+        public void Sum(TreeNode root, int low, int high)
+        {
+            if (root == null)
+                return;
+            if (root.val >= low && root.val <= high)
+                sum += root.val;
+            Sum(root.left, low, high);
+            Sum(root.right, low, high);
+        }
+    }
     public class TreeNode_938
     {
         public int val;
@@ -21,9 +38,7 @@ namespace LeetCode.Z
     /// Memory Usage: 46.7 MB, less than 99.79% of C# online submissions for Range Sum of BST.
     /// </summary>
     public class _938__Range_Sum_of_BST
-    {
-
-
+    { 
         public int RangeSumBST(TreeNode_938 root, int low, int high)
         {
 
