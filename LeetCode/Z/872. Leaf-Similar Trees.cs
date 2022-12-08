@@ -8,38 +8,30 @@ namespace LeetCode.Z
 {
     internal class _872
     {
-        /// <summary>
-        /// Runtime: 157 ms, faster than 44.04% of C# online submissions for Leaf-Similar Trees.
-        /// Memory Usage: 39 MB, less than 66.06% of C# online submissions for Leaf-Similar Trees.
+        /// <summary> 
+        /// Runtime 96 ms Beats 96.88% Memory 40.8 MB Beats 5.21%
         /// </summary>
         /// <param name="root1"></param>
         /// <param name="root2"></param>
         /// <returns></returns>
         public bool LeafSimilar(TreeNode root1, TreeNode root2)
         {
-            var res1 = new List<int>();
-            var res2 = new List<int>();
-            DFS(root1, res1);
-            DFS(root2, res2);
-            if (res1.Count != res2.Count)
-                return false;
-            for (int i = 0; i < res1.Count; i++)
-            {
-                if (res1[i] != res2[i])
-                    return false;
-            }
-            return true;
+            var list1 = DFS(root1, new List<int>());
+            var list2 = DFS(root2, new List<int>());
+            Console.WriteLine(String.Join(",", list1));
+            Console.WriteLine(String.Join(",", list2));
+
+            return list1.SequenceEqual(list2);
         }
-        public void DFS(TreeNode root, List<int> resultLeaf)
+        public List<int> DFS(TreeNode root, List<int> sequence)
         {
-            if (root == null)
-                return;
             if (root.left == null && root.right == null)
-                resultLeaf.Add(root.val);
+                sequence.Add(root.val);
             if (root.left != null)
-                DFS(root.left, resultLeaf);
+                DFS(root.left, sequence);
             if (root.right != null)
-                DFS(root.right, resultLeaf);
+                DFS(root.right, sequence);
+            return sequence;
         }
     }
 }
