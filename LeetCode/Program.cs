@@ -8,14 +8,16 @@
 
 
 
+using LeetCode.codesignal;
 using LeetCode.Premium;
 using LeetCode.Z;
+using System.ComponentModel;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {1,0,0,0,1},
-                new int[] {0,0,0,0,0},
-                new int[] {0,0,1,0,0},
+                new int[] {0,1 },
+                new int[] {1,2},
+                new int[] {3,4},
                 //new int[] {15,18},
                 //new int[] {5,0},
                 //new int[] {4,1},
@@ -94,10 +96,10 @@ var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 4, 2, 8, 1, 3 };
 
 Solution s = new Solution();
-Console.WriteLine(s.NumberToWords(1234567));
+Console.WriteLine(s.CountComponents(5, nums2));
 public class Solution
 {
-
+    
 }
 
 public static class Helper
