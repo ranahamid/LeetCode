@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Not Submitted\**" />
+    <EmbeddedResource Remove="Not Submitted\**" />
+    <None Remove="Not Submitted\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="112. Path Sum.cs" />
     <Compile Remove="121. Best Time to Buy and Sell Stock.cs" />
     <Compile Remove="123. Best Time to Buy and Sell Stock III.cs" />
@@ -43,10 +49,6 @@
 
   <ItemGroup>
     <EditorConfigFiles Remove="E:\E\Project\Home\LeetCode\LeetCode\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Not Submitted\" />
   </ItemGroup>
 
 </Project>
