@@ -15,8 +15,8 @@ using System.ComponentModel;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {1,2 },
-                //new int[] {1,2},
+                new int[] {1,2,4 },
+                new int[] {3,3,1},
                 //new int[] {3,4},
                 //new int[] {15,18},
                 //new int[] {5,0},
@@ -96,23 +96,26 @@ var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 2, 1, 3, 3 };
 
 Solution s = new Solution();
-Console.WriteLine(s.FindJudge(2, nums2));
+Console.WriteLine(s.DeleteGreatestValue( nums2));
 public class Solution
 {
-    public int FindJudge(int n, int[][] trust)
+    public int DeleteGreatestValue(int[][] grid)
     {
-        var person=new HashSet<int>();
-        foreach(var item in trust)
+        int sum = 0;
+        var result = new List<List<int>>();
+        foreach (var item in grid)
         {
-            //person.Remove(item[0]);
-            person.Add(item[1]);
+            int[] unsortedArray2 = new int[item.Length];
+            item.CopyTo(unsortedArray2, 0);
+            Array.Sort(unsortedArray2, (left, right) => right.CompareTo(left));
+            result.Add(unsortedArray2.ToList());
         }
-        if (person.Count == n - 1)
+        foreach(var item in result)
         {
-            var list = Enumerable.Range(1, n);
-            return list.Except(person).FirstOrDefault();
-        }
-        return -1;
+
+        } 
+
+        return sum;
     }
 }
 
