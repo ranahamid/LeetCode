@@ -15,9 +15,9 @@ using System.ComponentModel;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {0,1 },
-                new int[] {1,2},
-                new int[] {3,4},
+                new int[] {1,2 },
+                //new int[] {1,2},
+                //new int[] {3,4},
                 //new int[] {15,18},
                 //new int[] {5,0},
                 //new int[] {4,1},
@@ -96,10 +96,24 @@ var res1 = new int[] { 0, 1, 2, 3 };
 var res2 = new int[] { 2, 1, 3, 3 };
 
 Solution s = new Solution();
-Console.WriteLine(s.MaxSubsequence(res2, 2));
+Console.WriteLine(s.FindJudge(2, nums2));
 public class Solution
 {
-   
+    public int FindJudge(int n, int[][] trust)
+    {
+        var person=new HashSet<int>();
+        foreach(var item in trust)
+        {
+            //person.Remove(item[0]);
+            person.Add(item[1]);
+        }
+        if (person.Count == n - 1)
+        {
+            var list = Enumerable.Range(1, n);
+            return list.Except(person).FirstOrDefault();
+        }
+        return -1;
+    }
 }
 
 public static class Helper
