@@ -99,24 +99,7 @@ Solution s = new Solution();
 Console.WriteLine(s.DeleteGreatestValue( nums2));
 public class Solution
 {
-    public int DeleteGreatestValue(int[][] grid)
-    {
-        int sum = 0;
-        var result = new List<List<int>>();
-        foreach (var item in grid)
-        {
-            int[] unsortedArray2 = new int[item.Length];
-            item.CopyTo(unsortedArray2, 0);
-            Array.Sort(unsortedArray2, (left, right) => right.CompareTo(left));
-            result.Add(unsortedArray2.ToList());
-        }
-        foreach(var item in result)
-        {
-
-        } 
-
-        return sum;
-    }
+   
 }
 
 public static class Helper
