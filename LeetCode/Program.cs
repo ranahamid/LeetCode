@@ -12,6 +12,7 @@ using LeetCode.codesignal;
 using LeetCode.Premium;
 using LeetCode.Z;
 using System.ComponentModel;
+using System.Text;
 
 int[][] nums2 = new int[][]
           {
@@ -97,11 +98,7 @@ var res2 = new int[] { 2, 1, 3, 3 };
 
 Solution s = new Solution();
 Console.WriteLine(s.DeleteGreatestValue( nums2));
-public class Solution
-{
-   
-}
-
+ 
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
