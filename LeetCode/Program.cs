@@ -16,9 +16,9 @@ using System.Text;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {1,2,4 },
-                new int[] {3,3,1},
-                //new int[] {3,4},
+                new int[] {78},
+                new int[] {4,64},
+                new int[] {91},
                 //new int[] {15,18},
                 //new int[] {5,0},
                 //new int[] {4,1},
@@ -93,38 +93,16 @@ var resW2 = new char[]
 };
 
 
-var res1 = new int[] { 0, 1, 2, 3 };
+var res1 = new int[] { 91, 4, 64, 78 };
 var res2 = new int[] { 2, 1, 3, 3 };
 
 Solution s = new Solution();
-Console.WriteLine(s.SimilarPairs(resW1));
+Console.WriteLine(s.CanFormArray(res1, nums2));
 
 public class Solution
 {
-    public int SimilarPairs(string[] words)
-    {
-        Dictionary <string,int> dic=new Dictionary<string, int>();
-        foreach(var word in words)
-        {
-            var st = GetFrequency(word);
-            dic.TryAdd(st, 0);
-            dic[st]++;
-        }
-        var length = dic.Values.Sum() - dic.Count;
-        return length;
-    }
-    public string GetFrequency(string word)
-    {
-        var sb = new HashSet<char>();
-        foreach (var ch in word)
-        {
-            sb.Add(ch);
-        }
-        var ar = sb.ToArray();
-        Array.Sort(ar);
-        var st = new string(ar);
-        return st;
-    }
+    
+
 }
 
 public static class Helper
