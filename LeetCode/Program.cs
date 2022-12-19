@@ -12,13 +12,23 @@ using LeetCode.codesignal;
 using LeetCode.Premium;
 using LeetCode.Z;
 using System.ComponentModel;
+using System.IO;
 using System.Text;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {78},
-                new int[] {4,64},
-                new int[] {91},
+                new int[] {4,3},
+                new int[] {1,4},
+                new int[] {4,8},
+
+                 new int[] {1,7},
+                new int[] {6,4},
+                new int[] {4,2},
+
+                 new int[] {7,4},
+                new int[] {4,0},
+                new int[] {0,9},
+                new int[] {5,4},
                 //new int[] {15,18},
                 //new int[] {5,0},
                 //new int[] {4,1},
@@ -97,14 +107,44 @@ var res1 = new int[] { 91, 4, 64, 78 };
 var res2 = new int[] { 2, 1, 3, 3 };
 
 Solution s = new Solution();
-Console.WriteLine(s.CanFormArray(res1, nums2));
+Console.WriteLine(s.ValidPath(10, nums2,1,0));
 
 public class Solution
 {
     
+    public bool ValidPath(int n, int[][] edges, int source, int destination)
+    {
+        var visited = new bool[n];
+        var dic = new Dictionary<int, List<int>>();
+        foreach (var item in edges)
+        { 
+            dic.TryAdd(item[0], new List<int>());
+            dic.TryAdd(item[1], new List<int>());
+            dic[item[0]].Add(item[1]);
+            dic[item[1]].Add(item[0]);
+        }
+        return DFS(dic, visited, source, destination); 
+    }
 
+    public   bool DFS(Dictionary<int,  List<int>> path, bool[] visited, int start,int destination)
+    {
+        if (start == destination)
+        { 
+            return true;
+        }
+        if (!visited[start])
+        {
+            visited[start] = true;  
+                foreach (var child in path[start])
+                { 
+                        if (DFS(path, visited, child, destination))
+                            return true; 
+                }
+           
+        } 
+        return false;
+    }  
 }
-
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
