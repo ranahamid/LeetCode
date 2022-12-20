@@ -26,12 +26,8 @@ namespace LeetCode.Algo_1
             while (stack.Count > 0)
             {
                 var current = stack.Pop();
-                result.Add(current);
-
-                var childrens = path.Where(x => x.Item1 == current).Select(x => x.Item2).FirstOrDefault();
-                if (childrens != null)
-                {
-                    foreach (var child in childrens)
+                result.Add(current); 
+                    foreach (var child in path[current].Item2)
                     {
                         if (!Visited.Contains(child))
                         {
@@ -39,7 +35,7 @@ namespace LeetCode.Algo_1
                             Visited.Add(child);
                         }
                     }
-                }
+             
             }
         } 
     }

@@ -107,42 +107,37 @@ var res1 = new int[] { 91, 4, 64, 78 };
 var res2 = new int[] { 2, 1, 3, 3 };
 
 Solution s = new Solution();
-Console.WriteLine(s.ValidPath(10, nums2,1,0));
+//Console.WriteLine(s.ValidPath(10, nums2,1,0));
 
 public class Solution
 {
-    
-    public bool ValidPath(int n, int[][] edges, int source, int destination)
+    public bool CanVisitAllRooms(IList<IList<int>> rooms)
     {
+        var n = rooms.Count; 
         var visited = new bool[n];
-        var dic = new Dictionary<int, List<int>>();
-        foreach (var item in edges)
-        { 
-            dic.TryAdd(item[0], new List<int>());
-            dic.TryAdd(item[1], new List<int>());
-            dic[item[0]].Add(item[1]);
-            dic[item[1]].Add(item[0]);
-        }
-        return DFS(dic, visited, source, destination); 
-    }
+        var stack=new Stack<int>();
 
-    public   bool DFS(Dictionary<int,  List<int>> path, bool[] visited, int start,int destination)
-    {
-        if (start == destination)
-        { 
-            return true;
-        }
-        if (!visited[start])
+        visited[0] = true;
+        stack.Push(0);
+
+        while (stack.Any())
         {
-            visited[start] = true;  
-                foreach (var child in path[start])
-                { 
-                        if (DFS(path, visited, child, destination))
-                            return true; 
+            int node=stack.Pop();             
+            foreach(var item in rooms[node])
+            {
+                if (!visited[item])
+                {
+                    visited[item]=true;
+                    stack.Push(item);
                 }
-           
+            }
         } 
-        return false;
+        foreach(var item in visited)
+        {
+            if(!item)
+                return false;
+        }
+        return true;
     }  
 }
 public static class Helper
