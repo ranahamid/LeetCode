@@ -37,17 +37,17 @@ namespace LeetCode.Z
             visited[index] = 0;
             while (stack.Count > 0)
             {
-                var current = stack.Pop();
-                if (dic.ContainsKey(current))
-                    foreach (var neigbour in dic[current])
+                var node = stack.Pop();
+                if (dic.ContainsKey(node))
+                    foreach (var neigbour in dic[node])
                     {
-                        if (visited[current] == visited[neigbour])
+                        if (visited[neigbour] == visited[node])
                         {
                             return false;
                         }
                         if (visited[neigbour] == -1)
                         {
-                            visited[neigbour] = 1 - visited[current];
+                            visited[neigbour] = 1 - visited[node];
                             stack.Push(neigbour);
                         }
                     }
