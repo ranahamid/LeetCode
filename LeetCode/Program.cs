@@ -109,37 +109,7 @@ var res2 = new int[] { 2, 1, 3, 3 };
 Solution s = new Solution();
 //Console.WriteLine(s.ValidPath(10, nums2,1,0));
 
-public class Solution
-{
-    public bool CanVisitAllRooms(IList<IList<int>> rooms)
-    {
-        var n = rooms.Count; 
-        var visited = new bool[n];
-        var stack=new Stack<int>();
-
-        visited[0] = true;
-        stack.Push(0);
-
-        while (stack.Any())
-        {
-            int node=stack.Pop();             
-            foreach(var item in rooms[node])
-            {
-                if (!visited[item])
-                {
-                    visited[item]=true;
-                    stack.Push(item);
-                }
-            }
-        } 
-        foreach(var item in visited)
-        {
-            if(!item)
-                return false;
-        }
-        return true;
-    }  
-}
+ 
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)
