@@ -95,7 +95,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 
 var resW1 = new string[]
 {
-"aba","aabb","abcd","bac","aabc"
+"a","b","leetcode"
 };
 var resW2 = new char[]
 {
@@ -104,12 +104,15 @@ var resW2 = new char[]
 
 
 var res1 = new int[] { 91, 4, 64, 78 };
-var res2 = new int[] { 2, 1, 3, 3 };
+var res2 = new int[] { 1, 0, 0, -1, 0, 0, -1, 0, 0, 1 };
 
 Solution s = new Solution();
-//Console.WriteLine(s.ValidPath(10, nums2,1,0));
-
+Console.WriteLine(s.ClosetTarget(resW1, "leetcode", 0));
  
+
+
+
+
 public static class Helper
 {
     private static IEnumerable<int> GetDivisors(int number)

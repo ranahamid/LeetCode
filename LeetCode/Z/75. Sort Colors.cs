@@ -31,8 +31,10 @@ namespace LeetCode.Z
                     current++;
                 }
             }
-            #region Dummy
-            public void SortColors_Cheat(int[] nums)
+
+        }
+        #region Dummy
+        public void SortColors_Cheat(int[] nums)
         {
             Array.Sort(nums);
         }
