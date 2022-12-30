@@ -36,7 +36,7 @@ namespace LeetCode.Z
             return newRoot;
         }
     }
-    public class Solution
+    public class Solution_226
     {
         public TreeNode_226 InvertTree(TreeNode_226 root)
         {

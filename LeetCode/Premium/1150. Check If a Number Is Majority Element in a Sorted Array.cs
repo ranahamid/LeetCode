@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Premium
 {
-    public class Solution
+    public class Solution33
     {
         public static bool IsMajorityElement(int[] nums, int target)
         {
