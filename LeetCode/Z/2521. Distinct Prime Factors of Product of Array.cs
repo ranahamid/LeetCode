@@ -26,13 +26,13 @@ namespace LeetCode.Z
         public static HashSet<int> GetPrimeFactors(int n)
         {
             HashSet<int> result = new HashSet<int>();
-            while (n % 2 == 0)
+            while (n % 2 == 0) //315
             {
                 if (!result.Contains(2))
                     result.Add(2);
                 n /= 2;
             }
-            for (int i = 3; i <= Math.Sqrt(n); i++)
+            for (int i = 3; i <= Math.Sqrt(n); i++) // 41 
             {
                 while (n % i == 0)
                 {
