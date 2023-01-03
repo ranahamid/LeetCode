@@ -106,13 +106,32 @@ var resW2 = new char[]
 var res1 = new int[] { 91, 4, 64, 78 };
 var res2 = new int[] { 1, 0, 0, -1, 0, 0, -1, 0, 0, 1 };
 
-//Solution s = new Solution();
-//Console.WriteLine(s.ClosetTarget(resW1, "leetcode", 0));
+Solution s = new Solution();
+Console.WriteLine(s.MinimumPartition("8182", 5));
+Console.WriteLine(s.MinimumPartition("7614953199576414777", 16));
 
 public class Solution
 {
+    public int MinimumPartition(string s, int k)
+    {
+        int counter = 1;
+        long n = 0;
+        for (int i = 0; i < s.Length; i++)
+        { 
+            n = n * 10 + s[i] - '0';
+            if (n > k)
+            {
+                counter++;
+                n = s[i] - '0';
+            }
 
-
+            if (n > k)
+            {
+                return -1;
+            }
+        } 
+        return counter;
+    }
 }
 
 
