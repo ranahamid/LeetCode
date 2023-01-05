@@ -17,18 +17,18 @@ using System.Text;
 
 int[][] nums2 = new int[][]
           {
-                new int[] {4,3},
-                new int[] {1,4},
-                new int[] {4,8},
+                new int[] {1,2},
+                new int[] {3,4},
+                new int[] {5,6},
 
-                 new int[] {1,7},
-                new int[] {6,4},
-                new int[] {4,2},
+                 new int[] {7,8},
+                //new int[] {6,4},
+                //new int[] {4,2},
 
-                 new int[] {7,4},
-                new int[] {4,0},
-                new int[] {0,9},
-                new int[] {5,4},
+                // new int[] {7,4},
+                //new int[] {4,0},
+                //new int[] {0,9},
+                //new int[] {5,4},
                 //new int[] {15,18},
                 //new int[] {5,0},
                 //new int[] {4,1},
@@ -107,33 +107,27 @@ var res1 = new int[] { 91, 4, 64, 78 };
 var res2 = new int[] { 1, 0, 0, -1, 0, 0, -1, 0, 0, 1 };
 
 Solution s = new Solution();
-Console.WriteLine(s.MinimumPartition("8182", 5));
-Console.WriteLine(s.MinimumPartition("7614953199576414777", 16));
+ 
+Console.WriteLine(s.FindMinArrowShots(nums2));
 
 public class Solution
 {
-    public int MinimumPartition(string s, int k)
+    public int FindMinArrowShots(int[][] points)
     {
+        if(points.Length==0) return 0; 
+       Array.Sort(points, (x, y) => x[1].CompareTo(y[1]) ); 
+        int start = points[0][1];
         int counter = 1;
-        long n = 0;
-        for (int i = 0; i < s.Length; i++)
-        { 
-            n = n * 10 + s[i] - '0';
-            if (n > k)
-            {
-                counter++;
-                n = s[i] - '0';
-            }
-
-            if (n > k)
-            {
-                return -1;
-            }
-        } 
+        for (int i = 1; i < points.Length; i++)
+        {
+            if (start >= points[i][0])
+                continue;
+            counter++;
+            start= points[i][1];    
+        }
         return counter;
     }
 }
-
 
 public static class Helper
 {
