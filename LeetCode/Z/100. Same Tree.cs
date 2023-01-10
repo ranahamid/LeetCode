@@ -20,6 +20,18 @@ namespace LeetCode.Z
     }
     internal class _100
     {
+
+        public bool IsSameTree(TreeNode p, TreeNode q)
+        {
+            if (p == null && q == null)
+                return true;
+            if (p == null || q == null)
+                return false;
+            if (p.val != q.val)
+                return false;
+            return IsSameTree(p.left, q.left) && IsSameTree(p.right, q.right);
+        }
+
         /// <summary>
         /// Runtime: 153 ms, faster than 32.29% of C# online submissions for Same Tree.
         /// Memory Usage: 38.7 MB, less than 42.27% of C# online submissions for Same Tree.
@@ -27,7 +39,7 @@ namespace LeetCode.Z
         /// <param name="p"></param>
         /// <param name="q"></param>
         /// <returns></returns>
-        public static bool IsSameTree(TreeNode_100 p, TreeNode_100 q)
+        public static bool IsSameTree_1(TreeNode_100 p, TreeNode_100 q)
         {
             if (p == null && q == null)
                 return true;
