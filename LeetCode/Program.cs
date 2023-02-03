@@ -107,49 +107,38 @@ var res1 = new int[] { 91, 4, 64, 78 };
 var res2 = new int[] { 1, 0, 0, -1, 0, 0, -1, 0, 0, 1 };
 
 Solution s = new Solution();
- 
-Console.WriteLine(s.FindMinArrowShots(nums2));
+
+Console.WriteLine(s.Convert("PAYPALISHIRING", 3));
+
+
 
 public class Solution
 {
-    public int FindMinArrowShots(int[][] points)
-    {
-        if(points.Length==0) return 0; 
-       Array.Sort(points, (x, y) => x[1].CompareTo(y[1]) ); 
-        int start = points[0][1];
-        int counter = 1;
-        for (int i = 1; i < points.Length; i++)
-        {
-            if (start >= points[i][0])
-                continue;
-            counter++;
-            start= points[i][1];    
-        }
-        return counter;
-    }
+  
 }
+
 
 public static class Helper
 {
-    public static HashSet<int>GetPrimeFactors(int n)
+    public static HashSet<int> GetPrimeFactors(int n)
     {
-        HashSet<int> result= new HashSet<int>();
-        while (n % 2==0)
+        HashSet<int> result = new HashSet<int>();
+        while (n % 2 == 0)
         {
-            if(!result.Contains(2))
+            if (!result.Contains(2))
                 result.Add(2);
             n /= 2;
         }
-        for(int i = 3; i <= Math.Sqrt(n); i++)
+        for (int i = 3; i <= Math.Sqrt(n); i++)
         {
             while (n % i == 0)
             {
                 if (!result.Contains(i))
                     result.Add(i);
-                n/= i;
+                n /= i;
             }
         }
-        if(n>2 && !result.Contains(n))
+        if (n > 2 && !result.Contains(n))
         {
             result.Add(n);
         }
