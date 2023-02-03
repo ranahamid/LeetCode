@@ -1,4 +1,5 @@
-﻿with cte as
+﻿-- double cte 
+with cte as
 (
     select id, p.name as personName,   c.name as   countryName 
     from Person as p
