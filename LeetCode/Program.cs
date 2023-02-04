@@ -108,13 +108,39 @@ var res2 = new int[] { 1, 0, 0, -1, 0, 0, -1, 0, 0, 1 };
 
 Solution s = new Solution();
 
-Console.WriteLine(s.Convert("PAYPALISHIRING", 3));
+Console.WriteLine(s.LongestPalindrome("cbbd"));
 
 
 
 public class Solution
 {
-  
+    public string LongestPalindrome(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return "";
+        if (s.Length == 1) return s;
+        int start = 0, end = 0;
+        for(int i = 0; i < s.Length; i++)
+        {
+            var len1 = ExpandAndFindPalindrome(s, i, i);
+            var len2 = ExpandAndFindPalindrome(s, i, i+1);
+            var maxLen=Math.Max(len1, len2);
+            if (maxLen > end - start)
+            {
+                start = i - (maxLen - 1) / 2;
+                end = i + maxLen/2;
+            }
+        }
+        return s.Substring(start, end - start+1);
+    }
+    public int ExpandAndFindPalindrome(string s , int left, int right)
+    {
+        while(left>=0 && right<s.Length && s[left] == s[right])
+        {
+            left--;
+            right++;
+        }
+        return right - left - 1;
+    }
 }
 
 

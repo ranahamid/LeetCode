@@ -15,22 +15,25 @@ namespace LeetCode.Z
         /// <param name="p"></param>
         /// <param name="s"></param>
         /// <returns></returns>
-        public bool CheckInclusion(string p, string s)
+        public bool CheckInclusion(string s1, string s2)
         {
-            var result = new List<int>();
-            var pChar = p.ToCharArray();
-            Array.Sort(pChar);
-            p = new string(pChar);
-
-            for (int i = 0; i < s.Length - p.Length + 1; i++)
+            s1 = SortedString(s1);
+            for (int i = 0; i < s2.Length - s1.Length + 1; i++)
             {
-                var subStr = s.Substring(i, p.Length);
-                var ar = subStr.ToArray();
-                Array.Sort(ar);
-                if (p == new string(ar))
+
+                var temp = s2.Substring(i, s1.Length);
+                temp = SortedString(temp);
+                if (temp == s1)
                     return true;
             }
             return false;
+        }
+        public string SortedString(string s1)
+        {
+            var s1Char = s1.ToCharArray();
+            Array.Sort(s1Char);
+            s1 = new string(s1Char);
+            return s1;
         }
     }
 }
