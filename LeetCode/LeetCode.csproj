@@ -23,6 +23,7 @@
     <Compile Remove="Leet\Contest 307\2384. Largest Palindromic Number.cs" />
     <Compile Remove="Leet\Weekly Contest 321\2486. Append Characters to String to Make Subsequence.cs" />
     <Compile Remove="Premium\1271. Hexspeak.cs" />
+    <Compile Remove="Z\2540. Minimum Common Value.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +35,7 @@
     <None Include="Z\112. Path Sum.cs" />
     <None Include="Z\121. Best Time to Buy and Sell Stock.cs" />
     <None Include="Z\123. Best Time to Buy and Sell Stock III.cs" />
+    <None Include="Z\2540. Minimum Common Value.cs" />
     <None Include="Z\387. First Unique Character in a String.cs" />
     <None Include="Z\506. Relative Ranks.cs" />
     <None Include="Z\650. 2 Keys Keyboard.cs" />
