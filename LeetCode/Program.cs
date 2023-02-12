@@ -118,38 +118,7 @@ Console.WriteLine(s.CategorizeBox(2909
 
 public class Solution
 {
-    public int[] VowelStrings(string[] words, int[][] queries)
-    {
-        var vowels = new bool[words.Length];
-        var chars = new List<char>() { 'a', 'e', 'i', 'o', 'u' };
-        var prefixSum = new int[words.Length+1];
-        prefixSum[0] = 0;
-        int i = 0;
-        for (i = 0; i < words.Length; i++)
-        {
-            var length = words[i].Length;
-            if (i != 0)
-                prefixSum[i+1] = prefixSum[i];
-
-            if (chars.Contains(words[i][0]) && chars.Contains(words[i][length - 1]))
-            {
-                vowels[i] = true;
-                if (i == 0)
-                    prefixSum[i+1] = 1;
-                else
-                    prefixSum[i+1] = prefixSum[i ] + 1;
-            }
-        }
-        var result = new int[queries.Length];
-        i = 0;
-        foreach (var q in queries)
-        {
-            int val = prefixSum[q[1]+1] - prefixSum[q[0]];
-            result[i++] = val;
-        }
-
-        return result;
-    }
+   
 }
 
 
