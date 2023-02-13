@@ -17,13 +17,11 @@ namespace LeetCode.Z
         /// <returns></returns>
         public int CountOdds(int low, int high)
         {
-            var range = high - low;
-            var div = range / 2;
+            var diff = (high - low) / 2;
+            Console.WriteLine(diff);
             if (low % 2 == 1 || high % 2 == 1)
-            {
-                div++;
-            }
-            return div;
+                diff++;
+            return diff;
         }
     }
 }
