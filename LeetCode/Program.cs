@@ -104,21 +104,41 @@ var resW2 = new char[]
 };
 
 
-var res1 = new int[] { 91, 4, 64, 78 };
+var res1 = new int[] { 1, 2, 0, 0 };
 var res2 = new int[] { 25, 64, 9, 4, 100 };
 
 Solution s = new Solution();
 
-Console.WriteLine(s.CategorizeBox(2909
-, 3968
-, 3272
-, 727));
+Console.WriteLine(s.AddToArrayForm(res1
+, 34));
 
 
 
 public class Solution
 {
-   
+    public IList<int> AddToArrayForm(int[] num, int k)
+    {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i <= num.Length-1; i++)
+        {
+            char ch = (char)(num[i] + 48);
+            sb.Append(ch);
+        }
+        var n = long.Parse(sb.ToString());
+        n += k;
+        var s = n.ToString();
+
+        List<int> result = new List<int>();
+        foreach (var st in s)
+        {
+            result.Add(Int32.Parse(st.ToString()));
+        }
+
+        return result;
+
+
+    }
+
 }
 
 
