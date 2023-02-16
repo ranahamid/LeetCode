@@ -107,39 +107,32 @@ var resW2 = new char[]
 var res1 = new int[] { 1, 2, 0, 0 };
 var res2 = new int[] { 25, 64, 9, 4, 100 };
 
-Solution s = new Solution();
-
-Console.WriteLine(s.AddToArrayForm(res1
-, 34));
 
 
-
-public class Solution
+IEnumerable<int> GetSquares(IEnumerable<int> numbers)
 {
-    public IList<int> AddToArrayForm(int[] num, int k)
+    foreach (var number in numbers)
     {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i <= num.Length-1; i++)
-        {
-            char ch = (char)(num[i] + 48);
-            sb.Append(ch);
-        }
-        var n = long.Parse(sb.ToString());
-        n += k;
-        var s = n.ToString();
-
-        List<int> result = new List<int>();
-        foreach (var st in s)
-        {
-            result.Add(Int32.Parse(st.ToString()));
-        }
-
-        return result;
-
-
+        yield return number;
     }
-
 }
+
+var numbers = new List<int>() { 1, 2, 3, 4, 5, 6 };
+foreach (var num in GetSquares(numbers))
+{
+    Console.WriteLine(num);
+}
+//Solution s = new Solution();
+
+//Console.WriteLine(s.AddToArrayForm(res1
+//, 34));
+
+
+
+//public class Solution
+//{
+
+//}
 
 
 public static class Helper
