@@ -125,7 +125,7 @@ public class Solution
         while (left<right)
         {
             var mid=(left+right)/2;
-            if (isValid(weights, mid, days))
+            if (IsValid(weights, mid, days))
             {
                 right=mid;
             }
@@ -136,7 +136,7 @@ public class Solution
         } 
         return left;
     } 
-    public bool isValid(int[] weights, int mid, int days)
+    public bool IsValid(int[] weights, int mid, int days)
     {
         int dayCounter = 1;
         var total = 0;
