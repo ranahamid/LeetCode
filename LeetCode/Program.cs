@@ -104,35 +104,54 @@ var resW2 = new char[]
 };
 
 
-var res1 = new int[] { 1, 2, 0, 0 };
+var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 var res2 = new int[] { 25, 64, 9, 4, 100 };
 
 
+ 
+Solution s = new Solution();
 
-IEnumerable<int> GetSquares(IEnumerable<int> numbers)
+Console.WriteLine(s.ShipWithinDays(res1, 5));
+
+
+
+public class Solution
 {
-    foreach (var number in numbers)
+    public int ShipWithinDays(int[] weights, int days)
     {
-        yield return number;
+        var max = weights.Max();
+        var total = weights.Sum();
+        int left = max, right = total;
+        while (left<right)
+        {
+            var mid=(left+right)/2;
+            if (isValid(weights, mid, days))
+            {
+                right=mid;
+            }
+            else
+            {
+                left = mid + 1;
+            }
+        } 
+        return left;
+    } 
+    public bool isValid(int[] weights, int mid, int days)
+    {
+        int dayCounter = 1;
+        var total = 0;
+        foreach (var weight in weights)
+        {
+            total += weight;
+            if (total > mid)
+            {
+                dayCounter++;
+                total = weight;
+            }
+        }
+        return dayCounter <= days;
     }
 }
-
-var numbers = new List<int>() { 1, 2, 3, 4, 5, 6 };
-foreach (var num in GetSquares(numbers))
-{
-    Console.WriteLine(num);
-}
-//Solution s = new Solution();
-
-//Console.WriteLine(s.AddToArrayForm(res1
-//, 34));
-
-
-
-//public class Solution
-//{
-
-//}
 
 
 public static class Helper
