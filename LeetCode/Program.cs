@@ -107,7 +107,10 @@ Console.WriteLine(s.MinMaxDifference(11891));
 
 public class Solution
 {
-   
+    public int MinOperations(int n)
+    {
+        return System.Numerics.BitOperations.PopCount( (uint) ( (n^ (n * 3))));
+    }
 }
 #region Helper
 public static class Helper
