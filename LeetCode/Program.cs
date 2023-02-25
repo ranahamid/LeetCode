@@ -1,5 +1,4 @@
 ﻿
-
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
@@ -11,6 +10,7 @@
 using LeetCode.codesignal;
 using LeetCode.Premium;
 using LeetCode.Z;
+using RulesEngine.Models;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
@@ -102,16 +102,7 @@ var res2 = new int[] { 25, 64, 9, 4, 100 };
 
 
  
-Solution s = new Solution();
-Console.WriteLine(s.MinMaxDifference(11891));
 
-public class Solution
-{
-    public int MinOperations(int n)
-    {
-        return System.Numerics.BitOperations.PopCount( (uint) ( (n^ (n * 3))));
-    }
-}
 #region Helper
 public static class Helper
 {
