@@ -106,7 +106,6 @@ var res2 = new int[] { 25, 64, 9, 4, 100 };
 #region Helper
 public static class Helper
 {
-   
     public static HashSet<int> GetPrimeFactors(int n)
     {
         HashSet<int> result = new HashSet<int>();
@@ -131,7 +130,6 @@ public static class Helper
         }
         return result;
     }
-
     private static IEnumerable<int> GetDivisors(int number)
     {
         if (number <= 0) { yield return default; }
