@@ -16,25 +16,18 @@ using System.IO;
 using System.Text;
 using System.Xml.XPath;
 
-int[][] nums2 = new int[][]
+
+int[][] nums1 = new int[][]
           {
                 new int[] {1,2},
-                new int[] {3,4},
-                new int[] {5,6},
-
-                 new int[] {7,8},
-                //new int[] {6,4},
-                //new int[] {4,2},
-
-                // new int[] {7,4},
-                //new int[] {4,0},
-                //new int[] {0,9},
-                //new int[] {5,4},
-                //new int[] {15,18},
-                //new int[] {5,0},
-                //new int[] {4,1},
-                //new int[] {5,8},
-                //new int[] {5,9},
+                new int[] {2,3},
+                new int[] {4,5},
+          };
+int[][] nums2 = new int[][]
+          {
+                new int[] {1,4},
+                new int[] {3,2},
+                new int[] {4,1}, 
           };
 
 #region node
@@ -110,19 +103,16 @@ var res2 = new int[] { 25, 64, 9, 4, 100 };
 
  
 Solution s = new Solution();
-
-Console.WriteLine(s.ShipWithinDays(res1, 5));
-
-
+Console.WriteLine(s.MinMaxDifference(11891));
 
 public class Solution
 {
    
 }
-
-
+#region Helper
 public static class Helper
 {
+   
     public static HashSet<int> GetPrimeFactors(int n)
     {
         HashSet<int> result = new HashSet<int>();
@@ -237,7 +227,11 @@ public static class Helper
         }
         return digits;
     }
+
+
 }
+#endregion
+#region class
 public class ListNode
 {
     public int val;
@@ -273,3 +267,4 @@ public class Node
         random = null;
     }
 }
+#endregion
