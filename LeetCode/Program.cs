@@ -1,20 +1,12 @@
 ﻿
+
 //int intTemp = Convert.ToInt32(Console.ReadLine());
 
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 
-
-
-using LeetCode.codesignal;
-using LeetCode.Premium;
-using LeetCode.Z;
-using RulesEngine.Models;
-using System.ComponentModel;
-using System.IO;
-using System.Text;
-using System.Xml.XPath;
+ 
 
 
 int[][] nums1 = new int[][]
