@@ -109,10 +109,30 @@ var res2 = new int[] { 25, 64, 9, 4, 100 };
 
 
  
-Solution s = new Solution();
+//Solution s = new Solution();
 
-Console.WriteLine(s.ShipWithinDays(res1, 5));
+//Console.WriteLine(s.ShipWithinDays(res1, 5));
 
+int n = 5;
+
+int k = n;
+int s = 0;
+for (int i = 0; i < n; i++)
+{
+    k--;
+    for (int j = 0; j < k; j++)
+    {
+        Console.Write(" ");
+    }
+
+    int m = n - k;
+    for (int p = 0; p < m+s; p++)
+    {
+        Console.Write("*");
+    }   
+    s++;
+    Console.WriteLine();
+}
 
 
 public class Solution
