@@ -6,7 +6,7 @@
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 
- 
+
 
 
 int[][] nums1 = new int[][]
@@ -19,7 +19,7 @@ int[][] nums2 = new int[][]
           {
                 new int[] {1,4},
                 new int[] {3,2},
-                new int[] {4,1}, 
+                new int[] {4,1},
           };
 
 #region node
@@ -90,10 +90,73 @@ var resW2 = new char[]
 
 
 var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-var res2 = new int[] { 25, 64, 9, 4, 100 };
+var res2 = new int[] { 1, 3, 4, 1, 2, 3, 1 };
+Solution s= new Solution();
+//Console.WriteLine(s.FindTheLongestBalancedSubstring("111"));
+s.FindMatrix(res2);
+public class Solution
+{
 
 
- 
+    public IList<IList<int>> FindMatrix(int[] nums)
+    {
+        List<IList<int>> result= new List<IList<int>>();
+        var dic=new SortedDictionary<int, int>();
+        foreach(var item in nums)
+        {
+            dic.TryAdd(item, 0);
+            dic[item]++;
+        }
+        var max=dic.Select(x=>x.Value).Max();
+        var dicItems=dic.Select(x=>x.Key).ToList();
+
+        for(int i=0;i<max; i++)
+        {
+            List<int> row = new List<int>();
+            foreach(var item in dicItems)
+            {
+              
+                if (dic[item] > 0)
+                {
+                    dic[item]--;
+                    row.Add(item);
+                }
+            }
+            result.Add(row);
+        }
+    
+        return result;
+    }
+    public int FindTheLongestBalancedSubstring(string s)
+    {
+        var max = 0;
+        var start = 0;
+        var zero = 0;
+        var one = 0;
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (s[i] == '0')
+            {
+                if (one == 0)
+                    zero++;
+                else
+                {
+                    zero = 1;
+                    one = 0;
+                }
+            }
+            if (s[i] == '1')
+            {
+                if (zero > one)
+                    one++;
+
+                max = Math.Max(one * 2,max);
+            }
+        }
+        return max;
+    }
+}
+
 
 #region Helper
 public static class Helper
