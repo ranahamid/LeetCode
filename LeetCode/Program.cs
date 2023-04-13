@@ -97,64 +97,7 @@ s.FindMatrix(res2);
 public class Solution
 {
 
-
-    public IList<IList<int>> FindMatrix(int[] nums)
-    {
-        List<IList<int>> result= new List<IList<int>>();
-        var dic=new SortedDictionary<int, int>();
-        foreach(var item in nums)
-        {
-            dic.TryAdd(item, 0);
-            dic[item]++;
-        }
-        var max=dic.Select(x=>x.Value).Max();
-        var dicItems=dic.Select(x=>x.Key).ToList();
-
-        for(int i=0;i<max; i++)
-        {
-            List<int> row = new List<int>();
-            foreach(var item in dicItems)
-            {
-              
-                if (dic[item] > 0)
-                {
-                    dic[item]--;
-                    row.Add(item);
-                }
-            }
-            result.Add(row);
-        }
-    
-        return result;
-    }
-    public int FindTheLongestBalancedSubstring(string s)
-    {
-        var max = 0;
-        var start = 0;
-        var zero = 0;
-        var one = 0;
-        for (int i = 0; i < s.Length; i++)
-        {
-            if (s[i] == '0')
-            {
-                if (one == 0)
-                    zero++;
-                else
-                {
-                    zero = 1;
-                    one = 0;
-                }
-            }
-            if (s[i] == '1')
-            {
-                if (zero > one)
-                    one++;
-
-                max = Math.Max(one * 2,max);
-            }
-        }
-        return max;
-    }
+     
 }
 
 
