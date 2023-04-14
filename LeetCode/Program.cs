@@ -93,14 +93,33 @@ var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 var res2 = new int[] { 1, 3, 4, 1, 2, 3, 1 };
 Solution s= new Solution();
 //Console.WriteLine(s.FindTheLongestBalancedSubstring("111"));
-s.FindMatrix(res2);
+s.SplitNum(4325);
 public class Solution
 {
+    public int SplitNum(int num)
+    {
+        var charArray= num.ToString().ToCharArray().OrderBy(x=>x).ToArray();
+        int n = charArray.Length;
 
-     
+        int n1=0, n2=0;
+        var first = true;
+       // foreach(var x in charArray)
+       for(int i=0; i< charArray.Count(); i++)
+        {
+            if (first)
+            {
+                n1 = n1 * 10 + charArray[i] - 48;
+            }
+            else
+            {
+                n2 = n2 * 10 + charArray[i] - 48;
+            }
+            first = !first;
+        }
+        return n1+n2;
+
+    }
 }
-
-
 #region Helper
 public static class Helper
 {
