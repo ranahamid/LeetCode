@@ -92,19 +92,18 @@ var resW2 = new char[]
 var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 var res2 = new int[] { 1, 3, 4, 1, 2, 3, 1 };
 Solution s = new Solution();
-//Console.WriteLine(s.FindTheLongestBalancedSubstring("111"));
+Console.WriteLine(s.FindColumnWidth(nums2));
 
 public class Solution
 {
  
-
 }
 
 
 #region Helper
 public static class Helper
 {
-    private bool IsPrime(int num)
+    private static bool IsPrime(int num)
     {
         if (num <= 1)
         {
