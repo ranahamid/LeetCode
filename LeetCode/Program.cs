@@ -92,20 +92,11 @@ var resW2 = new char[]
 var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 var res2 = new int[] { 1, 3, 4, 1, 2, 3, 1 };
 Solution s = new Solution();
-Console.WriteLine(s.FindColumnWidth(nums2));
+Console.WriteLine(s.IsFascinating(111));
 
 public class Solution
 {
-    public int SumOfMultiples(int n)
-    {
-        var sum = 0;
-        for(int i = 1; i < n; i++)
-        {
-            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0)
-                sum += i;
-        }
-        return sum;
-    }
+  
 }
 
 
