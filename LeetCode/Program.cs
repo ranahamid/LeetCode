@@ -87,18 +87,7 @@ var resW2 = new char[]
 {
 't','h','e',' ','s','k','y',' ','i','s',' ','b','l','u','e'
 };
-
-
-var res1 = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-var res2 = new int[] { 1, 3, 4, 1, 2, 3, 1 };
-Solution s = new Solution();
-Console.WriteLine(s.IsFascinating(111));
-
-public class Solution
-{
-  
-}
-
+ 
 
 #region Helper
 public static class Helper
