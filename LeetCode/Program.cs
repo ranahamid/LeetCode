@@ -8,7 +8,6 @@
 
 
 
-
 int[][] nums1 = new int[][]
           {
                 new int[] {1,2},
@@ -87,7 +86,37 @@ var resW2 = new char[]
 {
 't','h','e',' ','s','k','y',' ','i','s',' ','b','l','u','e'
 };
- 
+Solution s = new Solution();
+s.CountBits(5);
+
+public class Solution
+{
+    public int[] CountBits(int n)
+    {
+        var result = new int[n + 1];
+        for (int i = 0; i <= n; i++)
+        {
+            result[i] = CountOnesInBinary(i);
+        }
+        return result;
+    }
+    static int CountOnesInBinary(int number)
+    {
+        string binary = Convert.ToString(number, 2); // Convert number to binary
+        int count = 0;
+
+        foreach (char c in binary)
+        {
+            if (c == '1')
+            {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+
 
 #region Helper
 public static class Helper

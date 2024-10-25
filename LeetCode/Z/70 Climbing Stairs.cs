@@ -29,6 +29,36 @@ namespace LeetCode.Z
             }
             return p[n];
         }
+        public int ClimbStairs_2(int n)
+        {
+            if (n == 1)
+                return 1;
+            int temp = 0;
+            int a = 1, b = 2, c = a + b;
+            for (int i = 2; i < n; i++)
+            {
+                temp = c;
+                a = b;
+                b = c;
+                c = a + b;
+            }
+            return c;
+        }
+
+
+        public int ClimbStairs_3(int n)
+        {
+            if (n == 1)
+                return 1;
+            int[] dp = new int[n];
+            dp[0] = 1;
+            dp[1] = 2;
+            for (int i = 2; i < n; i++)
+            {
+                dp[i] = dp[i - 1] + dp[i - 2];
+            }
+            return dp[n - 1];
+        }
 
     }
 }
