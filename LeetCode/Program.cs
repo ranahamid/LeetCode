@@ -7,6 +7,7 @@
 
 using System.Text;
 
+using System.Text;
 
 int[][] nums1 = new int[][]
           {

@@ -8,7 +8,7 @@
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
-        public static int[] CountBits(int n)
+        public static int[] CountBits_1(int n)
         {
             int[] result = new int[n + 1];
             result[0] = 0;
@@ -28,6 +28,31 @@
 
         }
 
+        public int[] CountBits_3(int n)
+        {
+            var result = new int[n + 1];
+            for (int i = 0; i <= n; i++)
+            {
+                result[i] = CountOnesInBinary(i);
+            }
+            return result;
+        }
+        static int CountOnesInBinary(int number)
+        {
+            string binary = Convert.ToString(number, 2); 
+            int count = 0;
 
+            foreach (char c in binary)
+            {
+                if (c == '1')
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+      
     }
 }
