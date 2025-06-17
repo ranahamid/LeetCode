@@ -5,8 +5,7 @@
 //IList<String> strList = new List<String>() { "One", "Two", "Three", "Four", "Five" };
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
-
-
+using System.Text;
 
 
 int[][] nums1 = new int[][]
@@ -87,7 +86,50 @@ var resW2 = new char[]
 {
 't','h','e',' ','s','k','y',' ','i','s',' ','b','l','u','e'
 };
- 
+
+
+
+Solution s = new Solution();
+var ss= s.GenerateTag(" fPysaRtLQLiMKVvRhMkkDLNedQKffPnCjbITBTOVhoVjiKbfSawvpisDaNzXJctQkn");
+Console.WriteLine(ss);
+
+public class Solution
+{
+    public string GenerateTag(string caption)
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.Append("#");
+        var words = caption.Split(' ');
+        int i = 0;
+        foreach (var word in words)
+        {
+          
+            if (word.Length > 0)
+            {
+                i++;
+                if (i == 1)
+                {
+                    sb.Append(word[0].ToString().ToLower() + word.Substring(1).ToLower());
+                }
+                else
+                {
+                    sb.Append(word[0].ToString().ToUpper() + word.Substring(1).ToLower());
+                }
+            }
+
+            if (sb.Length >= 100)
+            {
+                sb= new StringBuilder(sb.ToString().Substring(0,100)) ;
+                break;
+            }
+
+         
+        }
+        
+        return sb.ToString();
+    }
+}
+
 
 #region Helper
 public static class Helper
