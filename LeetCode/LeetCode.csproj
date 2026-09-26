@@ -23,6 +23,7 @@
     <Compile Remove="Leet\Contest 307\2384. Largest Palindromic Number.cs" />
     <Compile Remove="Leet\Weekly Contest 321\2486. Append Characters to String to Make Subsequence.cs" />
     <Compile Remove="Premium\1271. Hexspeak.cs" />
+    <Compile Remove="Z\1629. Slowest Key.cs" />
     <Compile Remove="Z\2540. Minimum Common Value.cs" />
     <Compile Remove="Z\2567. Minimum Score by Changing Two Elements.cs" />
     <Compile Remove="Z\3174. Clear Digits.cs" />
@@ -37,6 +38,7 @@
     <None Include="Z\112. Path Sum.cs" />
     <None Include="Z\121. Best Time to Buy and Sell Stock.cs" />
     <None Include="Z\123. Best Time to Buy and Sell Stock III.cs" />
+    <None Include="Z\1629. Slowest Key.cs" />
     <None Include="Z\2540. Minimum Common Value.cs" />
     <None Include="Z\2567. Minimum Score by Changing Two Elements.cs" />
     <None Include="Z\3174. Clear Digits.cs" />
@@ -57,6 +59,10 @@
 
   <ItemGroup>
     <EditorConfigFiles Remove="E:\E\Project\Home\LeetCode\LeetCode\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Z\2667. Create Hello World Function.js" />
   </ItemGroup>
 
 </Project>

@@ -91,43 +91,43 @@ var resW2 = new char[]
 
 
 Solution s = new Solution();
-var ss= s.GenerateTag(" fPysaRtLQLiMKVvRhMkkDLNedQKffPnCjbITBTOVhoVjiKbfSawvpisDaNzXJctQkn");
+var ss = s.IsWinner(new int[] { 5, 10, 3, 2 }, new int[] { 6, 5, 7, 3 });
 Console.WriteLine(ss);
+
 
 public class Solution
 {
-    public string GenerateTag(string caption)
+    public int IsWinner(int[] player1, int[] player2)
     {
-        StringBuilder sb = new StringBuilder();
-        sb.Append("#");
-        var words = caption.Split(' ');
-        int i = 0;
-        foreach (var word in words)
+        var len = player1.Length;
+        var p1 = GetScore(player1);
+        var p2 = GetScore(player2);
+        if (p1 == p2)
+            return 0;
+        if(p1 > p2)
+            return 1;
+        return 2;
+    }
+    public int GetScore(int[] scores)
+    {
+        var len = scores.Length;
+        var result = 0;
+        var prev1 = -1; 
+        var prev2=-1;
+        for(int i = 0; i < len;i++)
         {
-          
-            if (word.Length > 0)
+            if(prev1==10 || prev2 == 10)
             {
-                i++;
-                if (i == 1)
-                {
-                    sb.Append(word[0].ToString().ToLower() + word.Substring(1).ToLower());
-                }
-                else
-                {
-                    sb.Append(word[0].ToString().ToUpper() + word.Substring(1).ToLower());
-                }
+                result= result + scores[i] * 2;
             }
-
-            if (sb.Length >= 100)
+            else
             {
-                sb= new StringBuilder(sb.ToString().Substring(0,100)) ;
-                break;
+                result = result + scores[i];
             }
-
-         
+            prev2 = prev1;
+            prev1 = scores[i];
         }
-        
-        return sb.ToString();
+        return result;
     }
 }
 
