@@ -91,47 +91,18 @@ var resW2 = new char[]
 
 
 Solution s = new Solution();
-var ss = s.IsWinner(new int[] { 5, 10, 3, 2 }, new int[] { 6, 5, 7, 3 });
+var ss = s.RecoverOrder(new int[] { 3, 1, 2, 5, 4 }, new int[] { 1, 3, 4 });
 Console.WriteLine(ss);
+
 
 
 public class Solution
 {
-    public int IsWinner(int[] player1, int[] player2)
+    public int DigitFrequencyScore(int n)
     {
-        var len = player1.Length;
-        var p1 = GetScore(player1);
-        var p2 = GetScore(player2);
-        if (p1 == p2)
-            return 0;
-        if(p1 > p2)
-            return 1;
-        return 2;
-    }
 
-    public int GetScore(int[] scores)
-    {
-        var len = scores.Length;
-        var result = 0;
-        var prev1 = -1; 
-        var prev2=-1;
-        for(int i = 0; i < len;i++)
-        {
-            if(prev1==10 || prev2 == 10)
-            {
-                result= result + scores[i] * 2;
-            }
-            else
-            {
-                result = result + scores[i];
-            }
-            prev2 = prev1;
-            prev1 = scores[i];
-        }
-        return result;
     }
 }
-
 
 #region Helper
 public static class Helper
