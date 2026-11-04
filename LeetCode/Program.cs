@@ -108,6 +108,7 @@ public class Solution
             return 1;
         return 2;
     }
+
     public int GetScore(int[] scores)
     {
         var len = scores.Length;
