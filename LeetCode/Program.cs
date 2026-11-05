@@ -6,8 +6,9 @@
 //Console.WriteLine(strList.Aggregate((s1, s2) => s1 + ", " + s2));
 
 using System.Text;
-
+using System.Numerics;
 using System.Text;
+using Quartz.Xml.JobSchedulingData20;
 
 int[][] nums1 = new int[][]
           {
@@ -81,7 +82,7 @@ var pathsAdjacency = new List<(Char, List<Char>)>()
 
 var resW1 = new string[]
 {
-"a","b","leetcode"
+"abcd","def","xyz"
 };
 var resW2 = new char[]
 {
@@ -91,19 +92,14 @@ var resW2 = new char[]
 
 
 Solution s = new Solution();
-var ss = s.RecoverOrder(new int[] { 3, 1, 2, 5, 4 }, new int[] { 1, 3, 4 });
+var ss = s.NumberOfEmployeesWhoMetTarget    (new int[] { 0, 1, 2, 3, 4 }, 2);
 Console.WriteLine(ss);
-
 
 
 public class Solution
 {
-    public int DigitFrequencyScore(int n)
-    {
-
-    }
+    
 }
-
 #region Helper
 public static class Helper
 {
